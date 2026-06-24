@@ -15,6 +15,18 @@
 | Скрежетник | `content/cities/middle-lands/common/skrezhetnik.md` | draft-clean-card |
 | Бьющий Колокол | `content/cities/middle-lands/common/byuschiy-kolokol.md` | draft-clean-card |
 | Усадьба Леденёвых | `content/cities/middle-lands/common/usadba-ledenevyh.md` | draft-clean-card |
+| Крик Химеры | `content/cities/middle-lands/common/krik-himery.md` | draft-clean-card |
+| Тарный Столб | `content/cities/middle-lands/common/tarnyy-stolb.md` | draft-clean-card |
+| Берег Сухих Глаз | `content/cities/middle-lands/common/bereg-suhih-glaz.md` | draft-clean-card |
+| Горлица | `content/cities/middle-lands/common/gorlitsa.md` | draft-clean-card |
+| Острог Прахобоя | `content/cities/middle-lands/common/ostrog-prahoboya.md` | draft-clean-card |
+| Пустотень | `content/cities/middle-lands/common/pustoten.md` | draft-clean-card |
+| Сычий Брод | `content/cities/middle-lands/common/sychiy-brod.md` | draft-clean-card |
+| Липуши | `content/cities/middle-lands/common/lipushi.md` | draft-clean-card |
+| Лагерь Семиглазого | `content/cities/middle-lands/common/lager-semiglazogo.md` | draft-clean-card |
+| Тонкая Гряда | `content/cities/middle-lands/common/tonkaya-gryada.md` | draft-clean-card |
+| Рубеж Трясин | `content/cities/middle-lands/common/rubezh-tryasin.md` | draft-clean-card |
+| Варница Чёрного Дыма | `content/cities/middle-lands/common/varnitsa-chernogo-dyma.md` | draft-clean-card |
 
 ## Теневой Осколок
 
