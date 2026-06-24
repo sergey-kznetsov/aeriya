@@ -51,7 +51,12 @@
 
 ### Лес Чёрного Шёпота
 
-Ожидает следующей волны переноса.
+| Город / локация | Путь | Статус |
+|---|---|---|
+| Корень Тёмного Мха | `content/cities/shadow-shard/black-whisper-forest/koren-tyomnogo-mha.md` | draft-clean-card |
+| Сердечная Просека | `content/cities/shadow-shard/black-whisper-forest/serdechnaya-proseka.md` | draft-clean-card |
+| Старая лесная застава | `content/cities/shadow-shard/black-whisper-forest/staraya-lesnaya-zastava.md` | draft-clean-card |
+| Серый Приют | `content/cities/shadow-shard/black-whisper-forest/seryj-priyut.md` | draft-clean-card |
 
 ### Вечные Льды
 
