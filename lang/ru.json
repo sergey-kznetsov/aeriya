@@ -1,6 +1,12 @@
 {
   "AEЯIA.Settings.ReactionRecoveryThreshold.Name": "Аэрия: порог восстановления реакции",
   "AEЯIA.Settings.ReactionRecoveryThreshold.Hint": "Бросок 1d10 восстанавливает реакцию, если результат меньше или равен этому значению. Базовое значение: 4.",
+  "AEЯIA.Settings.EnableAeriaReactions.Name": "Аэрия: включить реакции",
+  "AEЯIA.Settings.EnableAeriaReactions.Hint": "Включает механику реакции Аэрии поверх стандартной системы D&D 5e.",
+  "AEЯIA.Settings.EnableTargetedAttacks.Name": "Аэрия: включить точные попадания",
+  "AEЯIA.Settings.EnableTargetedAttacks.Hint": "Включает инструменты для точных попаданий, слабых мест и анатомических эффектов.",
+  "AEЯIA.Settings.EnableRitualTools.Name": "Аэрия: включить ритуальные инструменты",
+  "AEЯIA.Settings.EnableRitualTools.Hint": "Включает инструменты для ритуалов, откатов и некромантических последствий.",
   "AEЯIA.Notifications.SelectActor": "Выберите персонажа или передайте актора в команду Аэрии.",
   "AEЯIA.Notifications.NoReaction": "У {actor} сейчас нет доступной реакции.",
   "AEЯIA.Reaction.Recovered": "{actor}: реакция восстановлена. Успех на 1–{threshold}.",
@@ -10,6 +16,7 @@
   "AEЯIA.Reaction.Mode.dodge": "уклонение",
   "AEЯIA.Reaction.Mode.parry": "парирование",
   "AEЯIA.Reaction.Mode.counterattack": "контратака",
-  "AEЯIA.Reaction.Mode.protect": "защита союзника",
-  "AEЯIA.Reaction.Mode.backlash": "отражение отката"
+  "AEЯIA.Reaction.Mode.protect-ally": "защита союзника",
+  "AEЯIA.Reaction.Mode.backlash-deflection": "отражение отката",
+  "AEЯIA.Reaction.Mode.custom": "особая реакция"
 }
