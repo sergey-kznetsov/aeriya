@@ -15,15 +15,33 @@
 | Дом Леденёвых | `content/factions/middle-lands/common/dom-ledenevyh.md` | draft-clean-card |
 | Колоколисты | `content/factions/middle-lands/common/kolokolisty.md` | draft-clean-card |
 
+## Теневой Осколок
+
+### Пепельная Степь
+
+| Фракция | Путь | Статус |
+|---|---|---|
+| Совет Пяти Клинков | `content/factions/shadow-shard/ash-steppe/sovet-pyati-klinkov.md` | draft-clean-card |
+| Совет Золотых | `content/factions/shadow-shard/ash-steppe/sovet-zolotyh.md` | draft-clean-card |
+| Пепельные Лезвия | `content/factions/shadow-shard/ash-steppe/pepelnye-lezviya.md` | draft-clean-card |
+| Серые Купцы | `content/factions/shadow-shard/ash-steppe/serye-kuptsy.md` | pending-tool-safe-import |
+| Цепные Тени | `content/factions/shadow-shard/ash-steppe/tsepnye-teni.md` | pending-tool-safe-import |
+| Водные Смотрители | `content/factions/shadow-shard/ash-steppe/vodnye-smotriteli.md` | pending-tool-safe-import |
+| Чайные Дома Степи | `content/factions/shadow-shard/ash-steppe/chaynye-doma-stepi.md` | pending-tool-safe-import |
+
+### Лес Чёрного Шёпота
+
+Ожидает следующей волны переноса.
+
+### Вечные Льды
+
+Ожидает следующей волны переноса.
+
 ## Палящий Осколок
 
 | Фракция | Путь | Статус |
 |---|---|---|
 | Совет Пяти Пламён | `content/factions/scorching-shard/common/sovet-pyati-plamen.md` | draft-clean-card |
-
-## Теневой Осколок
-
-Пока ожидает следующей волны переноса. Основной порядок: Пепельные Степи, Лес Чёрного Шёпота, Вечные Льды.
 
 ## Правило переноса
 
