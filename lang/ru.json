@@ -1,0 +1,15 @@
+{
+  "AEЯIA.Settings.ReactionRecoveryThreshold.Name": "Аэрия: порог восстановления реакции",
+  "AEЯIA.Settings.ReactionRecoveryThreshold.Hint": "Бросок 1d10 восстанавливает реакцию, если результат меньше или равен этому значению. Базовое значение: 4.",
+  "AEЯIA.Notifications.SelectActor": "Выберите персонажа или передайте актора в команду Аэрии.",
+  "AEЯIA.Notifications.NoReaction": "У {actor} сейчас нет доступной реакции.",
+  "AEЯIA.Reaction.Recovered": "{actor}: реакция восстановлена. Успех на 1–{threshold}.",
+  "AEЯIA.Reaction.NotRecovered": "{actor}: реакция не восстановлена. Успех на 1–{threshold}.",
+  "AEЯIA.Reaction.Spent": "{actor} использует реакцию: {mode}.",
+  "AEЯIA.Reaction.Mode.reaction": "реакция",
+  "AEЯIA.Reaction.Mode.dodge": "уклонение",
+  "AEЯIA.Reaction.Mode.parry": "парирование",
+  "AEЯIA.Reaction.Mode.counterattack": "контратака",
+  "AEЯIA.Reaction.Mode.protect": "защита союзника",
+  "AEЯIA.Reaction.Mode.backlash": "отражение отката"
+}
