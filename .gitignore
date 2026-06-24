@@ -1,0 +1,34 @@
+# Local Foundry worlds and runtime data
+/worlds/
+/data/
+/shadow-lands/
+
+# Foundry runtime databases and locks
+*.ldb
+*.log
+LOCK
+LOG
+LOG.old
+MANIFEST-*
+CURRENT
+
+# Local media assets are added manually in Foundry, not committed by default
+/assets/
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.webm
+*.mp4
+*.mov
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node dependencies and build outputs
+node_modules/
+dist/
+build/
