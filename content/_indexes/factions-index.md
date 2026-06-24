@@ -11,6 +11,7 @@
 | Клинки Клятв | `content/factions/middle-lands/common/klinki-klyatv.md` | draft-clean-card |
 | Храм Последней Торговки | `content/factions/middle-lands/common/hram-posledney-torgovki.md` | draft-clean-card |
 | Ловчие | `content/factions/middle-lands/common/lovchie.md` | draft-clean-card |
+| Кровляные Черви | `content/factions/middle-lands/common/krovlyanye-chervi.md` | draft-clean-card |
 | Дом Леденёвых | `content/factions/middle-lands/common/dom-ledenevyh.md` | draft-clean-card |
 | Колоколисты | `content/factions/middle-lands/common/kolokolisty.md` | draft-clean-card |
 
