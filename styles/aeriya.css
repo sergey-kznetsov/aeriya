@@ -1,0 +1,29 @@
+.aeriya-panel {
+  padding: 12px;
+}
+
+.aeriya-panel__section {
+  border: 1px solid var(--color-border-light-tertiary, #7a7971);
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.aeriya-panel__section h2,
+.aeriya-panel__section h3 {
+  margin-top: 0;
+}
+
+.aeriya-rules-note {
+  font-size: 0.95em;
+  line-height: 1.45;
+}
+
+.aeriya-tag {
+  display: inline-block;
+  border: 1px solid var(--color-border-light-tertiary, #7a7971);
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin: 2px;
+  font-size: 0.85em;
+}
