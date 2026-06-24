@@ -1,0 +1,48 @@
+{
+  "id": "aeriya",
+  "title": "Aeria Core",
+  "description": "Модуль Foundry VTT для проведения кампаний в мире Аэрии: лор, боевые расширения, ритуалы, духи, фракции и инструменты мастера.",
+  "authors": [
+    {
+      "name": "Сергей"
+    }
+  ],
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.350"
+  },
+  "system": [
+    "dnd5e"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "verified": "5.2.5"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/aeriya-core.js"
+  ],
+  "styles": [
+    "styles/aeriya.css"
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "packs": [],
+  "socket": true,
+  "url": "https://github.com/sergey-kznetsov/aeriya",
+  "manifest": "https://raw.githubusercontent.com/sergey-kznetsov/aeriya/main/module.json",
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md"
+}
