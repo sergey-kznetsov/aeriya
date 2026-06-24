@@ -1,5 +1,53 @@
 const MODULE_ID = "aeriya";
 
+const AERIYA_FLAGS = Object.freeze({
+  reaction: {
+    available: "reaction.available",
+    lastRoll: "reaction.lastRoll",
+    usedThisRound: "reaction.usedThisRound",
+    lastUseType: "reaction.lastUseType"
+  },
+  targeting: {
+    knownWeakSpots: "targeting.knownWeakSpots",
+    lastTargetedZone: "targeting.lastTargetedZone",
+    lastTargetingResult: "targeting.lastTargetingResult"
+  },
+  weakSpots: "weakSpots",
+  rituals: {
+    knownRituals: "rituals.knownRituals",
+    activeBacklash: "rituals.activeBacklash",
+    lastRitualId: "rituals.lastRitualId",
+    lastOutcome: "rituals.lastOutcome"
+  },
+  necromancy: {
+    patron: "necromancy.patron",
+    soulDebt: "necromancy.soulDebt",
+    boundSouls: "necromancy.boundSouls",
+    funeralViolation: "necromancy.funeralViolation"
+  },
+  spirits: {
+    oaths: "spirits.oaths",
+    favor: "spirits.favor",
+    debt: "spirits.debt",
+    lastSign: "spirits.lastSign"
+  },
+  factions: {
+    reputation: "factions.reputation",
+    debts: "factions.debts",
+    access: "factions.access"
+  },
+  epicActions: {
+    history: "epicActions.history",
+    lastCost: "epicActions.lastCost",
+    lastOutcome: "epicActions.lastOutcome"
+  },
+  region: {
+    currentRegion: "region.currentRegion",
+    threatClock: "region.threatClock",
+    activeHazards: "region.activeHazards"
+  }
+});
+
 class AeriyaLogger {
   static info(...args) {
     console.info("Aeria Core |", ...args);
@@ -10,9 +58,31 @@ class AeriyaLogger {
   }
 }
 
+class AeriyaFlags {
+  static async set(document, key, value) {
+    if (!document) return null;
+    return document.setFlag(MODULE_ID, key, value);
+  }
+
+  static get(document, key, fallback = null) {
+    if (!document) return fallback;
+    const value = document.getFlag(MODULE_ID, key);
+    return value ?? fallback;
+  }
+
+  static async unset(document, key) {
+    if (!document) return null;
+    return document.unsetFlag(MODULE_ID, key);
+  }
+}
+
 class AeriyaReactionManager {
   static get recoveryThreshold() {
     return game.settings.get(MODULE_ID, "reactionRecoveryThreshold") ?? 4;
+  }
+
+  static isAvailable(actor) {
+    return Boolean(AeriyaFlags.get(actor, AERIYA_FLAGS.reaction.available, false));
   }
 
   static async rollRecovery(actor) {
@@ -32,8 +102,9 @@ class AeriyaReactionManager {
         : game.i18n.format("AEЯIA.Reaction.NotRecovered", { actor: actor.name, threshold })
     });
 
-    await actor.setFlag(MODULE_ID, "reaction.available", recovered);
-    await actor.setFlag(MODULE_ID, "reaction.lastRecoveryRoll", roll.total);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.reaction.available, recovered);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.reaction.lastRoll, roll.total);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.reaction.usedThisRound, false);
 
     return { actor, roll, recovered };
   }
@@ -41,14 +112,15 @@ class AeriyaReactionManager {
   static async spend(actor, mode = "reaction") {
     if (!actor) return false;
 
-    const available = actor.getFlag(MODULE_ID, "reaction.available");
+    const available = this.isAvailable(actor);
     if (!available) {
       ui.notifications?.warn(game.i18n.format("AEЯIA.Notifications.NoReaction", { actor: actor.name }));
       return false;
     }
 
-    await actor.setFlag(MODULE_ID, "reaction.available", false);
-    await actor.setFlag(MODULE_ID, "reaction.lastSpentMode", mode);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.reaction.available, false);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.reaction.usedThisRound, true);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.reaction.lastUseType, mode);
 
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor }),
@@ -57,6 +129,16 @@ class AeriyaReactionManager {
         mode: game.i18n.localize(`AEЯIA.Reaction.Mode.${mode}`) || mode
       })
     });
+
+    return true;
+  }
+
+  static async reset(actor) {
+    if (!actor) return false;
+
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.reaction.available, false);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.reaction.usedThisRound, false);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.reaction.lastUseType, null);
 
     return true;
   }
@@ -71,8 +153,25 @@ class AeriyaTargetedAttacks {
     spirit: ["якорь проявления", "обетная метка", "граница формы", "эхо имени"]
   };
 
-  static getWeakPoints(type = "humanoid") {
+  static getWeakPointExamples(type = "humanoid") {
     return this.weakPointExamples[type] ?? this.weakPointExamples.humanoid;
+  }
+
+  static getWeakSpots(actor) {
+    return AeriyaFlags.get(actor, AERIYA_FLAGS.weakSpots, []);
+  }
+
+  static async setWeakSpots(actor, weakSpots = []) {
+    return AeriyaFlags.set(actor, AERIYA_FLAGS.weakSpots, weakSpots);
+  }
+
+  static async recordTargeting(actor, zone, result = "manual") {
+    if (!actor) return false;
+
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.targeting.lastTargetedZone, zone);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.targeting.lastTargetingResult, result);
+
+    return true;
   }
 
   static buildEffectDescription(targetPart) {
@@ -121,6 +220,24 @@ class AeriyaRitualManager {
   static describeRequirements() {
     return this.requirements.join(", ");
   }
+
+  static async recordOutcome(actor, ritualId, outcome) {
+    if (!actor) return false;
+
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.rituals.lastRitualId, ritualId);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.rituals.lastOutcome, outcome);
+
+    return true;
+  }
+
+  static async addBacklash(actor, backlash) {
+    if (!actor) return false;
+
+    const current = AeriyaFlags.get(actor, AERIYA_FLAGS.rituals.activeBacklash, []);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.rituals.activeBacklash, [...current, backlash]);
+
+    return true;
+  }
 }
 
 class AeriyaEpicActions {
@@ -142,6 +259,37 @@ class AeriyaEpicActions {
   static randomCost() {
     return this.costs[Math.floor(Math.random() * this.costs.length)];
   }
+
+  static async record(actor, action) {
+    if (!actor) return false;
+
+    const history = AeriyaFlags.get(actor, AERIYA_FLAGS.epicActions.history, []);
+    const nextHistory = [...history, action];
+
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.epicActions.history, nextHistory);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.epicActions.lastCost, action?.cost ?? null);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.epicActions.lastOutcome, action?.outcome ?? null);
+
+    return true;
+  }
+}
+
+class AeriyaFactions {
+  static getReputation(actor) {
+    return AeriyaFlags.get(actor, AERIYA_FLAGS.factions.reputation, {});
+  }
+
+  static async setReputation(actor, factionId, value) {
+    if (!actor || !factionId) return false;
+
+    const reputation = this.getReputation(actor);
+    await AeriyaFlags.set(actor, AERIYA_FLAGS.factions.reputation, {
+      ...reputation,
+      [factionId]: Number(value)
+    });
+
+    return true;
+  }
 }
 
 Hooks.once("init", () => {
@@ -159,11 +307,42 @@ Hooks.once("init", () => {
     }
   });
 
+  game.settings.register(MODULE_ID, "enableAeriaReactions", {
+    name: "AEЯIA.Settings.EnableAeriaReactions.Name",
+    hint: "AEЯIA.Settings.EnableAeriaReactions.Hint",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
+  game.settings.register(MODULE_ID, "enableTargetedAttacks", {
+    name: "AEЯIA.Settings.EnableTargetedAttacks.Name",
+    hint: "AEЯIA.Settings.EnableTargetedAttacks.Hint",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
+  game.settings.register(MODULE_ID, "enableRitualTools", {
+    name: "AEЯIA.Settings.EnableRitualTools.Name",
+    hint: "AEЯIA.Settings.EnableRitualTools.Hint",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
   game.aeriya = {
+    MODULE_ID,
+    flags: AERIYA_FLAGS,
+    flagApi: AeriyaFlags,
     reactions: AeriyaReactionManager,
     targetedAttacks: AeriyaTargetedAttacks,
     rituals: AeriyaRitualManager,
-    epicActions: AeriyaEpicActions
+    epicActions: AeriyaEpicActions,
+    factions: AeriyaFactions
   };
 
   AeriyaLogger.info("module initialized");
