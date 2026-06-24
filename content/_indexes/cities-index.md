@@ -30,9 +30,32 @@
 
 ## Теневой Осколок
 
+### Пепельная Степь
+
 | Город / поселение | Путь | Статус |
 |---|---|---|
+| Перекрёсток Трёх Теней | `content/cities/shadow-shard/ash-steppe/perekrestok-treh-teney.md` | draft-clean-card |
+| Чёрная Кузня | `content/cities/shadow-shard/ash-steppe/chernaya-kuznya.md` | draft-clean-card |
+| Аалмар | `content/cities/shadow-shard/ash-steppe/aalmar.md` | draft-clean-card |
 | Окрам | `content/cities/shadow-shard/ash-steppe/okram.md` | needs-shadow-lands-verification |
+| Ташвейн | `content/cities/shadow-shard/ash-steppe/tashveyn.md` | draft-clean-card |
+| Борос | `content/cities/shadow-shard/ash-steppe/boros.md` | draft-clean-card |
+| Гар-Шахр | `content/cities/shadow-shard/ash-steppe/gar-shahr.md` | pending-tool-safe-import |
+| Бату | `content/cities/shadow-shard/ash-steppe/batu.md` | draft-clean-card |
+| Сайрам | `content/cities/shadow-shard/ash-steppe/sairam.md` | draft-clean-card |
+| Ак-Куль | `content/cities/shadow-shard/ash-steppe/ak-kul.md` | draft-clean-card |
+| Кум-Алам | `content/cities/shadow-shard/ash-steppe/kum-alam.md` | draft-clean-card |
+| Хурнаир | `content/cities/shadow-shard/ash-steppe/hurnair.md` | draft-clean-card |
+| Деревня Ип | `content/cities/shadow-shard/ash-steppe/derevnya-ip.md` | draft-clean-card |
+| Пепельное Сердце | `content/cities/shadow-shard/ash-steppe/pepelnoe-serdtse.md` | draft-clean-card |
+
+### Лес Чёрного Шёпота
+
+Ожидает следующей волны переноса.
+
+### Вечные Льды
+
+Ожидает следующей волны переноса.
 
 ## Палящий Осколок
 
