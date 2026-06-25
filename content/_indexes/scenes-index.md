@@ -21,6 +21,17 @@
 | Закрытый сад Леденёвых | `content/scenes/middle-lands/city-groups/zakrytyy-sad-ledenevyh.md` | draft-clean-card |
 | Старая клетка Крика Химеры | `content/scenes/middle-lands/city-groups/staraya-kletka-krika-himery.md` | draft-clean-card |
 | Узкая дорога Тонкой Гряды | `content/scenes/middle-lands/city-groups/uzkaya-doroga-tonkoy-gryady.md` | draft-clean-card |
+| Зубчатый двор Скрежетника | `content/scenes/middle-lands/city-groups/zubchatyy-dvor-skrezhetnika.md` | draft-clean-card |
+| Склад у Тарного Столба | `content/scenes/middle-lands/city-groups/sklad-u-tarnogo-stolba.md` | draft-clean-card |
+| Чёрный чан Варницы | `content/scenes/middle-lands/city-groups/chernyy-chan-varnitsy.md` | draft-clean-card |
+| Мокрые мостки Плавени | `content/scenes/middle-lands/city-groups/mokrye-mostki-plaveni.md` | draft-clean-card |
+| Старый брод Сычьего Брода | `content/scenes/middle-lands/city-groups/staryy-brod-sychiy.md` | draft-clean-card |
+| Пограничная топь Рубежа Трясин | `content/scenes/middle-lands/city-groups/pogranichnaya-top-rubezha.md` | draft-clean-card |
+| Сухая пристань Берега Сухих Глаз | `content/scenes/middle-lands/city-groups/suhaya-pristan-berega.md` | draft-clean-card |
+| Пустой дом Пустотени | `content/scenes/middle-lands/city-groups/pustoy-dom-pustoteni.md` | draft-clean-card |
+| Старый пост Прахобоя | `content/scenes/middle-lands/city-groups/staryy-post-prahoboya.md` | draft-clean-card |
+| Липовый дом Горлицы | `content/scenes/middle-lands/city-groups/lipovyy-dom-gorlitsy.md` | draft-clean-card |
+| Малая колокольня Бьющего Колокола | `content/scenes/middle-lands/city-groups/malaya-kolokolnya.md` | draft-clean-card |
 
 ## Теневой Осколок
 
