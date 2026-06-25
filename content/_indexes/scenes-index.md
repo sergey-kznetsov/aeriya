@@ -31,3 +31,6 @@
 | Стоянка у трёх скал | `content/scenes/scorching-shard/common/stoanka-u-treh-skal.md` | draft-clean-card |
 | Пещерный вход | `content/scenes/scorching-shard/common/peschernyy-vhod.md` | draft-clean-card |
 | Высокий знак | `content/scenes/scorching-shard/common/vysokiy-znak.md` | draft-clean-card |
+| Ворота форта | `content/scenes/scorching-shard/common/fort-vorota.md` | draft-clean-card |
+| Родник у красного камня | `content/scenes/scorching-shard/common/krasnyy-rodnik-scene.md` | draft-clean-card |
+| Руины Соляной Мельницы | `content/scenes/scorching-shard/common/ruiny-solyanoy-melnitsy-scene.md` | draft-clean-card |

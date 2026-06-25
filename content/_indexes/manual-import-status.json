@@ -1,10 +1,11 @@
 {
-  "status": "patch-applied",
+  "status": "indexed",
   "target_repo": "sergey-kznetsov/aeriya",
   "manual_import": false,
-  "last_patch_commit": "pending",
+  "last_patch_commit": "432d55d095fe9620935137ebaafe77c05c87c3c4",
   "notes": [
-    "Blocked markdown content was imported via Git tree commit.",
-    "Continue by running npm run content:check and npm run journals:build locally."
+    "Blocked markdown content was imported via Git tree commits.",
+    "General indexes include the Scorching Shard gameplay layers.",
+    "Run npm run content:check and npm run journals:build locally."
   ]
 }

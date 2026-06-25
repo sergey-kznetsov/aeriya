@@ -44,3 +44,9 @@
 | Дорун, пещерный проводник | `content/npcs/scorching-shard/common/dorun-peschernyy-provodnik.md` | draft-clean-card |
 | Ашара, хозяйка стоянки | `content/npcs/scorching-shard/common/ashara-hozyayka-stoyanki.md` | draft-clean-card |
 | Вейра, мастер линз | `content/npcs/scorching-shard/common/veyra-master-linz.md` | draft-clean-card |
+| Тавар, старший ворот | `content/npcs/scorching-shard/common/tavar-starshiy-vorot.md` | draft-clean-card |
+| Ирен, посредница каравана | `content/npcs/scorching-shard/common/iren-posrednitsa-karavana.md` | draft-clean-card |
+| Бору, соляной мастер | `content/npcs/scorching-shard/common/boru-solyanoj-master.md` | draft-clean-card |
+| Халима, хранительница родника | `content/npcs/scorching-shard/common/halima-hranitel-rodnika.md` | draft-clean-card |
+| Сорен, смотритель знака | `content/npcs/scorching-shard/common/soren-smotritel-znaka.md` | draft-clean-card |
+| Лата, собирательница стекла | `content/npcs/scorching-shard/common/lata-sobiratelnitsa-stekla.md` | draft-clean-card |

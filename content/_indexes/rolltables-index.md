@@ -29,3 +29,4 @@
 |---|---|---|
 | Дорожные события | `content/rolltables/scorching-shard/common/road-events.md` | draft-clean-card |
 | Встречи на стоянке | `content/rolltables/scorching-shard/common/stop-encounters.md` | draft-clean-card |
+| Осложнения запасов | `content/rolltables/scorching-shard/common/resource-complications.md` | draft-clean-card |

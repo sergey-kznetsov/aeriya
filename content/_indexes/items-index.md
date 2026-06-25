@@ -35,3 +35,6 @@
 | Соляная метка | `content/items/scorching-shard/common/solyanaya-metka.md` | draft-clean-card |
 | Теневой навес | `content/items/scorching-shard/common/tenevoj-naves.md` | draft-clean-card |
 | Бурка для песка | `content/items/scorching-shard/common/burka-dlya-peska.md` | draft-clean-card |
+| Караванная печать | `content/items/scorching-shard/common/karavannaya-pechat.md` | draft-clean-card |
+| Стеклянный образец | `content/items/scorching-shard/common/steklyannyy-obrazets.md` | draft-clean-card |
+| Запись стоянки | `content/items/scorching-shard/common/zapis-stoyanki.md` | draft-clean-card |
