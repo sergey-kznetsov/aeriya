@@ -1,5 +1,10 @@
 {
-  "status": "patch",
+  "status": "patch-applied",
   "target_repo": "sergey-kznetsov/aeriya",
-  "manual_import": true
+  "manual_import": false,
+  "last_patch_commit": "pending",
+  "notes": [
+    "Blocked markdown content was imported via Git tree commit.",
+    "Continue by running npm run content:check and npm run journals:build locally."
+  ]
 }
