@@ -12,7 +12,7 @@
 npm run foundry:check
 ```
 
-Эта команда проверяет markdown-карточки, пересобирает индекс, создаёт Foundry Journal Entry export и сверяет структуру результата.
+Эта команда проверяет `module.json`, markdown-карточки, индекс контента, Foundry Journal Entry export и staging-структуру `aeriya-journals`.
 
 После этого в модуле должны появиться:
 
