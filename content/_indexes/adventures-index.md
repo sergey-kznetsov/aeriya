@@ -1,5 +1,12 @@
 # Индекс мини-сценариев Аэрии
 
+## Срединные Земли
+
+| Мини-сценарий | Путь | Статус |
+|---|---|---|
+| Долг на рынке | `content/handouts/middle-lands/common/adventure-dolg-na-rynke.md` | draft-clean-card |
+| Колокол и мост | `content/handouts/middle-lands/common/adventure-kolokol-i-most.md` | draft-clean-card |
+
 ## Палящий Осколок
 
 | Мини-сценарий | Путь | Статус |

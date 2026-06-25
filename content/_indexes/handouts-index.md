@@ -1,5 +1,23 @@
 # Индекс handout-материалов Аэрии
 
+## Срединные Земли
+
+### Памятки
+
+| Материал | Путь | Статус |
+|---|---|---|
+| Памятка игрокам: обычаи Срединных Земель | `content/handouts/middle-lands/common/player-city-customs-handout.md` | draft-clean-card |
+| Мастерская памятка: городская сцена Срединных Земель | `content/handouts/middle-lands/common/gm-city-scene-checklist.md` | draft-clean-card |
+
+### Поручения и мини-сценарии
+
+| Материал | Путь | Статус |
+|---|---|---|
+| Поручение: рыночная запись | `content/handouts/middle-lands/common/quest-rynkovaya-zapis.md` | draft-clean-card |
+| Поручение: ночной колокол | `content/handouts/middle-lands/common/quest-nochnoy-kolokol.md` | draft-clean-card |
+| Мини-сценарий: долг на рынке | `content/handouts/middle-lands/common/adventure-dolg-na-rynke.md` | draft-clean-card |
+| Мини-сценарий: колокол и мост | `content/handouts/middle-lands/common/adventure-kolokol-i-most.md` | draft-clean-card |
+
 ## Теневой Осколок
 
 | Материал | Путь | Статус |

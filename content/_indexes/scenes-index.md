@@ -1,5 +1,14 @@
 # Индекс сцен Аэрии
 
+## Срединные Земли
+
+| Сцена | Путь | Статус |
+|---|---|---|
+| Рыночная площадь | `content/scenes/middle-lands/common/rynochnaya-ploschad.md` | draft-clean-card |
+| Городские ворота | `content/scenes/middle-lands/common/gorodskie-vorota.md` | draft-clean-card |
+| Дорожный трактир | `content/scenes/middle-lands/common/dorozhnyy-traktir.md` | draft-clean-card |
+| Старый мост | `content/scenes/middle-lands/common/staryy-most.md` | draft-clean-card |
+
 ## Теневой Осколок
 
 ### Пепельная Степь
@@ -26,13 +35,4 @@
 
 ## Палящий Осколок
 
-| Сцена | Путь | Статус |
-|---|---|---|
-| Стоянка у трёх скал | `content/scenes/scorching-shard/common/stoanka-u-treh-skal.md` | draft-clean-card |
-| Пещерный вход | `content/scenes/scorching-shard/common/peschernyy-vhod.md` | draft-clean-card |
-| Высокий знак | `content/scenes/scorching-shard/common/vysokiy-znak.md` | draft-clean-card |
-| Ворота форта | `content/scenes/scorching-shard/common/fort-vorota.md` | draft-clean-card |
-| Родник у красного камня | `content/scenes/scorching-shard/common/krasnyy-rodnik-scene.md` | draft-clean-card |
-| Руины Соляной Мельницы | `content/scenes/scorching-shard/common/ruiny-solyanoy-melnitsy-scene.md` | draft-clean-card |
-| Караванный двор | `content/scenes/scorching-shard/common/karavannyy-dvor.md` | draft-clean-card |
-| Стеклянная площадка | `content/scenes/scorching-shard/common/steklyannaya-ploschadka.md` | draft-clean-card |
+См. `content/_indexes/scorching-shard-index.md` и папку `content/scenes/scorching-shard/common/`.

@@ -1,5 +1,13 @@
 # Индекс таблиц Аэрии
 
+## Срединные Земли
+
+| Таблица | Путь | Статус |
+|---|---|---|
+| Городские слухи | `content/rolltables/middle-lands/common/city-rumors.md` | draft-clean-card |
+| Дорожные события | `content/rolltables/middle-lands/common/road-events.md` | draft-clean-card |
+| Реакции фракций | `content/rolltables/middle-lands/common/faction-reactions.md` | draft-clean-card |
+
 ## Теневой Осколок
 
 ### Пепельная Степь
