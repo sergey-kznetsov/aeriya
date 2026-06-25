@@ -18,12 +18,12 @@
 | Материал | Путь | Статус |
 |---|---|---|
 | Статблоки НИПов Срединных Земель, партия 01 | `content/actor-statblocks/npcs/middle-lands-city-npcs-batch-01.md` | actor-ready-statblocks |
+| Статблоки НИПов Срединных Земель, партия 02 | `content/actor-statblocks/npcs/middle-lands-city-npcs-batch-02.md` | actor-ready-statblocks |
 
 ## Следующие партии
 
 | Партия | Состав | Статус |
 |---|---|---|
-| Middle NPC batch 02 | оставшиеся городские НИПы Срединных Земель | todo |
 | Middle NPC batch 03 | общие НИПы Срединных Земель | todo |
 | Shadow NPC batch 01 | НИПы Пепельной Степи, Леса, Льдов | todo |
 | Scorching NPC batch 01 | НИПы Палящего Осколка | todo |
