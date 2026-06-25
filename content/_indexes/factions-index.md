@@ -22,6 +22,10 @@
 | Совет Пяти Клинков | `content/factions/shadow-shard/ash-steppe/sovet-pyati-klinkov.md` | draft-clean-card |
 | Совет Золотых | `content/factions/shadow-shard/ash-steppe/sovet-zolotyh.md` | draft-clean-card |
 | Пепельные Лезвия | `content/factions/shadow-shard/ash-steppe/pepelnye-lezviya.md` | draft-clean-card |
+| Серые Купцы | `content/factions/shadow-shard/ash-steppe/serye-kuptsy.md` | draft-clean-card |
+| Цепные Тени | `content/factions/shadow-shard/ash-steppe/tsepnye-teni.md` | draft-clean-card |
+| Водные Смотрители | `content/factions/shadow-shard/ash-steppe/vodnye-smotriteli.md` | draft-clean-card |
+| Чайные Дома Степи | `content/factions/shadow-shard/ash-steppe/chaynye-doma-stepi.md` | draft-clean-card |
 
 ### Лес Чёрного Шёпота
 
@@ -29,6 +33,7 @@
 |---|---|---|
 | Хранители Троп | `content/factions/shadow-shard/black-whisper-forest/hraniteli-trop.md` | draft-clean-card |
 | Смотрители Настилов | `content/factions/shadow-shard/black-whisper-forest/smotriteli-nastilov.md` | draft-clean-card |
+| Дом Мха | `content/factions/shadow-shard/black-whisper-forest/dom-mha.md` | draft-clean-card |
 
 ### Вечные Льды
 
@@ -43,3 +48,6 @@
 | Фракция | Путь | Статус |
 |---|---|---|
 | Совет Пяти Пламён | `content/factions/scorching-shard/common/sovet-pyati-plamen.md` | draft-clean-card |
+| Хранители Пещер | `content/factions/scorching-shard/common/hraniteli-pescher.md` | draft-clean-card |
+| Песчаные Братья | `content/factions/scorching-shard/common/peschanye-bratya.md` | draft-clean-card |
+| Свободные Капли | `content/factions/scorching-shard/common/svobodnye-kapli.md` | draft-clean-card |

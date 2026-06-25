@@ -13,6 +13,8 @@
 | Илем-писец | `content/npcs/shadow-shard/ash-steppe/ilem-pisets.md` | draft-clean-card |
 | Туран-дозорный | `content/npcs/shadow-shard/ash-steppe/turan-dozornyy.md` | draft-clean-card |
 | Яра-знаковед | `content/npcs/shadow-shard/ash-steppe/yara-znakoved.md` | draft-clean-card |
+| Дар-Ол, кузнец | `content/npcs/shadow-shard/ash-steppe/dar-ol-kuznets.md` | draft-clean-card |
+| Савир-посредник | `content/npcs/shadow-shard/ash-steppe/savir-posrednik.md` | draft-clean-card |
 
 ### Лес Чёрного Шёпота
 
@@ -32,10 +34,13 @@
 | Весна, хранительница записей | `content/npcs/shadow-shard/icy-limit/vesna-hranitel-zapisej.md` | draft-clean-card |
 | Рада-следопыт | `content/npcs/shadow-shard/icy-limit/rada-sledopyt.md` | draft-clean-card |
 
-## Срединные Земли
-
-Ожидают следующей волны переноса.
-
 ## Палящий Осколок
 
-Ожидает следующей волны переноса.
+| НИП | Путь | Статус |
+|---|---|---|
+| Салим-проводник | `content/npcs/scorching-shard/common/salim-provodnik.md` | draft-clean-card |
+| Нура, смотрительница воды | `content/npcs/scorching-shard/common/nura-smotritelnitsa-vody.md` | draft-clean-card |
+| Марик-картограф | `content/npcs/scorching-shard/common/marik-kartograf.md` | draft-clean-card |
+| Дорун, пещерный проводник | `content/npcs/scorching-shard/common/dorun-peschernyy-provodnik.md` | draft-clean-card |
+| Ашара, хозяйка стоянки | `content/npcs/scorching-shard/common/ashara-hozyayka-stoyanki.md` | draft-clean-card |
+| Вейра, мастер линз | `content/npcs/scorching-shard/common/veyra-master-linz.md` | draft-clean-card |

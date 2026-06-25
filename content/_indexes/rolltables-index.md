@@ -22,3 +22,10 @@
 |---|---|---|
 | Северные переходы | `content/rolltables/shadow-shard/icy-limit/northern-road-events.md` | draft-clean-card |
 | Встречи у огня | `content/rolltables/shadow-shard/icy-limit/hearth-encounters.md` | draft-clean-card |
+
+## Палящий Осколок
+
+| Таблица | Путь | Статус |
+|---|---|---|
+| Дорожные события | `content/rolltables/scorching-shard/common/road-events.md` | draft-clean-card |
+| Встречи на стоянке | `content/rolltables/scorching-shard/common/stop-encounters.md` | draft-clean-card |

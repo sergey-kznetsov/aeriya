@@ -1,7 +1,5 @@
 # Индекс городов и поселений Аэрии
 
-Индекс нужен для быстрой навигации мастера по городам и поселениям. Машинный индекс для Foundry собирается отдельно через `scripts/dev/build-content-index.mjs`.
-
 ## Срединные Земли
 
 | Город / поселение | Путь | Статус |
@@ -30,52 +28,18 @@
 
 ## Теневой Осколок
 
-### Пепельная Степь
-
-| Город / поселение | Путь | Статус |
-|---|---|---|
-| Перекрёсток Трёх Теней | `content/cities/shadow-shard/ash-steppe/perekrestok-treh-teney.md` | draft-clean-card |
-| Чёрная Кузня | `content/cities/shadow-shard/ash-steppe/chernaya-kuznya.md` | draft-clean-card |
-| Аалмар | `content/cities/shadow-shard/ash-steppe/aalmar.md` | draft-clean-card |
-| Окрам | `content/cities/shadow-shard/ash-steppe/okram.md` | needs-shadow-lands-verification |
-| Ташвейн | `content/cities/shadow-shard/ash-steppe/tashveyn.md` | draft-clean-card |
-| Борос | `content/cities/shadow-shard/ash-steppe/boros.md` | draft-clean-card |
-| Гар-Шахр | `content/cities/shadow-shard/ash-steppe/gar-shahr.md` | pending-tool-safe-import |
-| Бату | `content/cities/shadow-shard/ash-steppe/batu.md` | draft-clean-card |
-| Сайрам | `content/cities/shadow-shard/ash-steppe/sairam.md` | draft-clean-card |
-| Ак-Куль | `content/cities/shadow-shard/ash-steppe/ak-kul.md` | draft-clean-card |
-| Кум-Алам | `content/cities/shadow-shard/ash-steppe/kum-alam.md` | draft-clean-card |
-| Хурнаир | `content/cities/shadow-shard/ash-steppe/hurnair.md` | draft-clean-card |
-| Деревня Ип | `content/cities/shadow-shard/ash-steppe/derevnya-ip.md` | draft-clean-card |
-| Пепельное Сердце | `content/cities/shadow-shard/ash-steppe/pepelnoe-serdtse.md` | draft-clean-card |
-
-### Лес Чёрного Шёпота
-
-| Город / локация | Путь | Статус |
-|---|---|---|
-| Корень Тёмного Мха | `content/cities/shadow-shard/black-whisper-forest/koren-tyomnogo-mha.md` | draft-clean-card |
-| Сердечная Просека | `content/cities/shadow-shard/black-whisper-forest/serdechnaya-proseka.md` | draft-clean-card |
-| Старая лесная застава | `content/cities/shadow-shard/black-whisper-forest/staraya-lesnaya-zastava.md` | draft-clean-card |
-| Серый Приют | `content/cities/shadow-shard/black-whisper-forest/seryj-priyut.md` | draft-clean-card |
-
-### Вечные Льды
-
-| Город / локация | Путь | Статус |
-|---|---|---|
-| Ледяной Клык | `content/cities/shadow-shard/icy-limit/ledyanoy-klyk.md` | draft-clean-card |
-| Станция Последний Огонь | `content/cities/shadow-shard/icy-limit/stantsiya-posledniy-ogon.md` | draft-clean-card |
-| Перевал Синего Ветра | `content/cities/shadow-shard/icy-limit/pereval-sinego-vetra.md` | draft-clean-card |
-| Стоянка Белых Камней | `content/cities/shadow-shard/icy-limit/stoyanka-belyh-kamney.md` | draft-clean-card |
+Сводный список Теневого Осколка разделён по региональным папкам: Пепельная Степь, Лес Чёрного Шёпота и Вечные Льды.
 
 ## Палящий Осколок
 
 | Город / локация | Путь | Статус |
 |---|---|---|
 | Три Тени | `content/cities/scorching-shard/burning-wastes/tri-teni.md` | draft-clean-card |
+| Пылающий Клинок | `content/cities/scorching-shard/burning-wastes/pylayuschiy-klinok.md` | draft-clean-card |
+| Стеклянный Городок | `content/cities/scorching-shard/burning-wastes/steklyannyy-gorodok.md` | draft-clean-card |
+| Последний Вздох | `content/cities/scorching-shard/burning-wastes/posledniy-vzdoh.md` | draft-clean-card |
 | Пещерный Порог | `content/cities/scorching-shard/common/peschernyy-porog.md` | draft-clean-card |
 | Красная Соль | `content/cities/scorching-shard/common/krasnaya-sol.md` | draft-clean-card |
 | Небесный Якорь | `content/cities/scorching-shard/common/nebesnyy-yakor.md` | draft-clean-card |
-
-## Правило переноса
-
-Новые документы Аэрии являются основным источником. Для Окрама старая версия из `shadow-lands` имеет приоритет при финальной сверке, если она точнее раскрывает город.
+| Лагерь Шёпот Ветра | `content/cities/scorching-shard/common/lager-shepot-vetra.md` | draft-clean-card |
+| Тихая Корка | `content/cities/scorching-shard/common/tihaya-korka.md` | draft-clean-card |

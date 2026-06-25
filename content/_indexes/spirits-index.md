@@ -48,6 +48,8 @@
 | Песчаная Мать | `content/spirits/scorching-shard/common/peschanaya-mat.md` | draft-clean-card |
 | Рунай Палящий | `content/spirits/scorching-shard/common/runay-palyaschiy.md` | draft-clean-card |
 | Игнис-Песчаный Змей | `content/spirits/scorching-shard/common/ignis-peschanyy-zmey.md` | draft-clean-card |
+| Глас Сухой Дороги | `content/spirits/scorching-shard/common/glas-suhoy-dorogi.md` | draft-clean-card |
+| Мать Соли | `content/spirits/scorching-shard/common/mat-soli.md` | draft-clean-card |
 | Дух Зеркала | `content/spirits/scorching-shard/salt-deserts/duh-zerkala.md` | draft-clean-card |
 | Голос Лавы | `content/spirits/scorching-shard/fire-canyons/golos-lavy.md` | draft-clean-card |
 | Тихая Капля | `content/spirits/scorching-shard/cave-keepers/tihaya-kaplya.md` | draft-clean-card |

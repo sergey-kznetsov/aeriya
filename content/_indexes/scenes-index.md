@@ -23,3 +23,11 @@
 |---|---|---|
 | Общий огонь станции | `content/scenes/shadow-shard/icy-limit/obshchiy-ogon-stantsii.md` | draft-clean-card |
 | Перевал Синего Ветра | `content/scenes/shadow-shard/icy-limit/pereval-sinego-vetra-scene.md` | draft-clean-card |
+
+## Палящий Осколок
+
+| Сцена | Путь | Статус |
+|---|---|---|
+| Стоянка у трёх скал | `content/scenes/scorching-shard/common/stoanka-u-treh-skal.md` | draft-clean-card |
+| Пещерный вход | `content/scenes/scorching-shard/common/peschernyy-vhod.md` | draft-clean-card |
+| Высокий знак | `content/scenes/scorching-shard/common/vysokiy-znak.md` | draft-clean-card |

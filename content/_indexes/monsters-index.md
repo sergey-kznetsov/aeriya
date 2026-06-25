@@ -26,11 +26,13 @@
 | Северное снежное существо | `content/monsters/shadow-shard/icy-limit/snezhnaya-tvar.md` | draft-clean-card |
 | Ледяной сторож | `content/monsters/shadow-shard/icy-limit/ledyanoy-storozh.md` | draft-clean-card |
 | Белый бегун | `content/monsters/shadow-shard/icy-limit/belyj-begun.md` | draft-clean-card |
-
-## Срединные Земли
-
-Ожидают следующей волны переноса.
+| Тонколёдная змея | `content/monsters/shadow-shard/icy-limit/tonkolyodnaya-zmeya.md` | draft-clean-card |
 
 ## Палящий Осколок
 
-Ожидает следующей волны переноса.
+| Существо | Путь | Статус |
+|---|---|---|
+| Соляной скорпион | `content/monsters/scorching-shard/common/solyanoy-skorpion.md` | draft-clean-card |
+| Стеклянная ящерица | `content/monsters/scorching-shard/common/steklyannaya-yashcheritsa.md` | draft-clean-card |
+| Песчаный бегун | `content/monsters/scorching-shard/common/peschanyy-begun.md` | draft-clean-card |
+| Жаровой сторож | `content/monsters/scorching-shard/common/zharovoy-storozh.md` | draft-clean-card |
