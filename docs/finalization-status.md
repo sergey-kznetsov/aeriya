@@ -37,6 +37,19 @@
 | Набор встреч: рыночный долг | `content/handouts/middle-lands/encounters/encounter-market-debt.md` | content-ready-final |
 | Доски поручений Срединных Земель | `content/handouts/middle-lands/boards/city-board-middle-lands.md` | content-ready-final |
 
+## Пакет финализации 03
+
+Финализированы городские квестовые цепочки Срединных Земель:
+
+| Карточка | Путь | Статус |
+|---|---|---|
+| Городской квест: архив и пустая строка | `content/handouts/middle-lands/city-quests/quest-archive-and-empty-name.md` | content-ready-final |
+| Городской квест: груз без владельца | `content/handouts/middle-lands/city-quests/quest-cargo-without-owner.md` | content-ready-final |
+| Городской квест: вода и деревянные пути | `content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md` | content-ready-final |
+| Городской квест: колокол и домовой долг | `content/handouts/middle-lands/city-quests/quest-bell-and-house-debt.md` | content-ready-final |
+| Городской квест: звериные дороги и ложные знаки | `content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md` | content-ready-final |
+| Городской квест: нижние зубцы и чёрный дым | `content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md` | content-ready-final |
+
 ## Что изменяется при финализации
 
 Карточки не просто получают новый статус. Каждая финализированная карточка дополняется до полноценного игрового состояния:
@@ -52,15 +65,9 @@
 
 ## Следующая партия
 
-Следующими должны быть финализированы городские квестовые карточки Срединных Земель:
+Следующими должны быть финализированы 2 in-world книги Срединных Земель:
 
-1. `content/handouts/middle-lands/city-quests/quest-archive-and-empty-name.md`
-2. `content/handouts/middle-lands/city-quests/quest-cargo-without-owner.md`
-3. `content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md`
-4. `content/handouts/middle-lands/city-quests/quest-bell-and-house-debt.md`
-5. `content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md`
-6. `content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md`
-7. `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md`
-8. `content/handouts/middle-lands/books/pismo-bez-dveri.md`
+1. `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md`
+2. `content/handouts/middle-lands/books/pismo-bez-dveri.md`
 
 После этого таким же способом финализируются сцены, региональные handouts, квестовые карточки Теневого Осколка и Палящего Осколка.
