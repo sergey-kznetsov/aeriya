@@ -1,7 +1,5 @@
 # Индекс духов Аэрии
 
-Индекс нужен для быстрой навигации мастера по духам, обетам, ритуальным последствиям и региональным силам. Машинный индекс для Foundry собирается отдельно через `scripts/dev/build-content-index.mjs`.
-
 ## Все Осколки
 
 | Дух | Путь | Статус |
@@ -17,6 +15,29 @@
 | Последняя Торговка | `content/spirits/middle-lands/common/poslednyaya-torgovka.md` | draft-clean-card |
 | Дух Перекрёстка | `content/spirits/middle-lands/common/duh-perekrestka.md` | draft-clean-card |
 
+## Теневой Осколок
+
+### Пепельная Степь
+
+| Дух | Путь | Статус |
+|---|---|---|
+| Рунай Степной | `content/spirits/shadow-shard/ash-steppe/runay-stepnoy.md` | draft-clean-card |
+| Сальбар | `content/spirits/shadow-shard/ash-steppe/salbar.md` | draft-clean-card |
+
+### Лес Чёрного Шёпота
+
+| Дух | Путь | Статус |
+|---|---|---|
+| Сам Лес | `content/spirits/shadow-shard/black-whisper-forest/sam-les.md` | draft-clean-card |
+| Мать Мха | `content/spirits/shadow-shard/black-whisper-forest/mat-mha.md` | draft-clean-card |
+| Шёпотник | `content/spirits/shadow-shard/black-whisper-forest/shepotnik.md` | draft-clean-card |
+
+### Вечные Льды
+
+| Дух | Путь | Статус |
+|---|---|---|
+| Белый Уголёк | `content/spirits/shadow-shard/icy-limit/belyy-ugolek.md` | draft-clean-card |
+
 ## Палящий Осколок
 
 | Дух | Путь | Статус |
@@ -28,15 +49,3 @@
 | Дух Зеркала | `content/spirits/scorching-shard/salt-deserts/duh-zerkala.md` | draft-clean-card |
 | Голос Лавы | `content/spirits/scorching-shard/fire-canyons/golos-lavy.md` | draft-clean-card |
 | Тихая Капля | `content/spirits/scorching-shard/cave-keepers/tihaya-kaplya.md` | draft-clean-card |
-
-## Теневой Осколок
-
-| Дух | Путь | Статус |
-|---|---|---|
-| Рунай Степной | `content/spirits/shadow-shard/ash-steppe/runay-stepnoy.md` | draft-clean-card |
-| Сальбар | `content/spirits/shadow-shard/ash-steppe/salbar.md` | draft-clean-card |
-| Белый Уголёк | `content/spirits/shadow-shard/icy-limit/belyy-ugolek.md` | draft-clean-card |
-
-## Ожидают отдельного переноса
-
-Некоторые карточки из первого пакета требуют отдельной нейтральной формулировки для прохождения через GitHub-инструмент. Они не исключены из модуля и будут добавляться малыми коммитами.
