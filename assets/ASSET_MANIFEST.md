@@ -25,6 +25,17 @@ optional — можно добавить позже
 done     — ассет готов и лежит в репозитории
 ```
 
+## Приоритет handout-изображений
+
+| Сущность | Карточка | Тип ассета | Статус | Комментарий |
+|---|---|---|---|---|
+| Книга дорожных заметок | `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md` | handout image | needed | старая дорожная тетрадь |
+| Письмо без двери | `content/handouts/middle-lands/books/pismo-bez-dveri.md` | handout image | needed | записка и железный ключ |
+| Запись о пяти чашах | `content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md` | handout image | needed | тонкая пластина с текстом |
+| Шесть правил мха | `content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md` | handout image | needed | береста с продавленными буквами |
+| Запись об общем огне | `content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md` | handout image | needed | кожаный лист у очага |
+| Список сухой дороги | `content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md` | handout image | needed | дорожная дощечка со списком |
+
 ## Срединные Земли
 
 | Сущность | Карточка | Тип ассета | Статус | Комментарий |
