@@ -1,7 +1,5 @@
 # Индекс фракций Аэрии
 
-Индекс нужен для быстрой навигации мастера по карточкам фракций. Машинный индекс для Foundry собирается отдельно через `scripts/dev/build-content-index.mjs`.
-
 ## Срединные Земли
 
 | Фракция | Путь | Статус |
@@ -24,25 +22,16 @@
 | Совет Пяти Клинков | `content/factions/shadow-shard/ash-steppe/sovet-pyati-klinkov.md` | draft-clean-card |
 | Совет Золотых | `content/factions/shadow-shard/ash-steppe/sovet-zolotyh.md` | draft-clean-card |
 | Пепельные Лезвия | `content/factions/shadow-shard/ash-steppe/pepelnye-lezviya.md` | draft-clean-card |
-| Серые Купцы | `content/factions/shadow-shard/ash-steppe/serye-kuptsy.md` | pending-tool-safe-import |
-| Цепные Тени | `content/factions/shadow-shard/ash-steppe/tsepnye-teni.md` | pending-tool-safe-import |
-| Водные Смотрители | `content/factions/shadow-shard/ash-steppe/vodnye-smotriteli.md` | pending-tool-safe-import |
-| Чайные Дома Степи | `content/factions/shadow-shard/ash-steppe/chaynye-doma-stepi.md` | pending-tool-safe-import |
 
 ### Лес Чёрного Шёпота
 
-Ожидает следующей волны переноса.
-
-### Вечные Льды
-
-Ожидает следующей волны переноса.
+| Фракция | Путь | Статус |
+|---|---|---|
+| Хранители Троп | `content/factions/shadow-shard/black-whisper-forest/hraniteli-trop.md` | draft-clean-card |
+| Смотрители Настилов | `content/factions/shadow-shard/black-whisper-forest/smotriteli-nastilov.md` | draft-clean-card |
 
 ## Палящий Осколок
 
 | Фракция | Путь | Статус |
 |---|---|---|
 | Совет Пяти Пламён | `content/factions/scorching-shard/common/sovet-pyati-plamen.md` | draft-clean-card |
-
-## Правило переноса
-
-Новые документы Аэрии являются основным источником. Старый мир `shadow-lands` используется только точечно, если конкретная сущность там описана точнее. Старые compendium packs не копируются.
