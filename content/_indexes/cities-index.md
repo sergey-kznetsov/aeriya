@@ -32,14 +32,4 @@
 
 ## Палящий Осколок
 
-| Город / локация | Путь | Статус |
-|---|---|---|
-| Три Тени | `content/cities/scorching-shard/burning-wastes/tri-teni.md` | draft-clean-card |
-| Пылающий Клинок | `content/cities/scorching-shard/burning-wastes/pylayuschiy-klinok.md` | draft-clean-card |
-| Стеклянный Городок | `content/cities/scorching-shard/burning-wastes/steklyannyy-gorodok.md` | draft-clean-card |
-| Последний Вздох | `content/cities/scorching-shard/burning-wastes/posledniy-vzdoh.md` | draft-clean-card |
-| Пещерный Порог | `content/cities/scorching-shard/common/peschernyy-porog.md` | draft-clean-card |
-| Красная Соль | `content/cities/scorching-shard/common/krasnaya-sol.md` | draft-clean-card |
-| Небесный Якорь | `content/cities/scorching-shard/common/nebesnyy-yakor.md` | draft-clean-card |
-| Лагерь Шёпот Ветра | `content/cities/scorching-shard/common/lager-shepot-vetra.md` | draft-clean-card |
-| Тихая Корка | `content/cities/scorching-shard/common/tihaya-korka.md` | draft-clean-card |
+Полный список см. в `content/_indexes/scorching-shard-index.md`.
