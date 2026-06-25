@@ -8,11 +8,17 @@ const OUT_DIR = path.join(ROOT, 'build', 'foundry');
 const OUT_FILE = path.join(OUT_DIR, 'journal-entries.json');
 
 const TYPE_TO_FOLDER = {
-  city: 'Города',
-  faction: 'Фракции',
-  spirit: 'Духи',
-  handout: 'Книги и заметки',
-  region: 'Регионы'
+  city: 'Cities',
+  faction: 'Factions',
+  spirit: 'Spirits',
+  npc: 'NPCs',
+  monster: 'Creatures',
+  item: 'Items',
+  ritual: 'Rituals',
+  rolltable: 'Tables',
+  scene: 'Scenes',
+  handout: 'Handouts',
+  region: 'Regions'
 };
 
 function slugId(input) {
@@ -26,15 +32,11 @@ function parseFrontmatter(text) {
   const raw = text.slice(3, end).trim();
   const body = text.slice(end + 4).trim();
   const data = {};
-
   for (const line of raw.split('\n')) {
     const match = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
     if (!match) continue;
-    const key = match[1];
-    const value = match[2].trim().replace(/^['"]|['"]$/g, '');
-    data[key] = value;
+    data[match[1]] = match[2].trim().replace(/^['"]|['"]$/g, '');
   }
-
   return { data, body };
 }
 
@@ -57,63 +59,40 @@ function markdownToHtml(markdown) {
 async function walk(dir) {
   const result = [];
   const entries = await fs.readdir(dir, { withFileTypes: true });
-
   for (const entry of entries) {
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      result.push(...await walk(full));
-    } else if (entry.isFile() && entry.name.endsWith('.md')) {
-      result.push(full);
-    }
+    if (entry.isDirectory()) result.push(...await walk(full));
+    else if (entry.isFile() && entry.name.endsWith('.md')) result.push(full);
   }
-
   return result;
 }
 
 async function main() {
   const files = await walk(CONTENT_ROOT);
   const journals = [];
-
   for (const file of files) {
     const relativePath = path.relative(ROOT, file).replaceAll(path.sep, '/');
     if (relativePath.includes('/_templates/') || relativePath.includes('/_indexes/')) continue;
     if (relativePath.endsWith('/README.md')) continue;
-
     const text = await fs.readFile(file, 'utf8');
     const { data, body } = parseFrontmatter(text);
     if (!data.type || !data.name) continue;
-
-    const folder = TYPE_TO_FOLDER[data.type] ?? 'Аэрия';
-    const pageId = slugId(relativePath);
-
+    const folder = TYPE_TO_FOLDER[data.type] ?? 'Aeria';
     journals.push({
-      _id: pageId,
+      _id: slugId(relativePath),
       name: data.name,
       type: 'journalentry',
       folder,
-      flags: {
-        aeriya: {
-          type: data.type,
-          shard: data.shard ?? 'unknown',
-          region: data.region ?? 'unknown',
-          source: data.source ?? 'unknown',
-          sourcePath: relativePath
-        }
-      },
-      pages: [
-        {
-          _id: slugId(`${relativePath}:page`),
-          name: data.name,
-          type: 'text',
-          text: {
-            format: 1,
-            content: markdownToHtml(body)
-          }
-        }
-      ]
+      flags: { aeriya: {
+        type: data.type,
+        shard: data.shard ?? 'unknown',
+        region: data.region ?? 'unknown',
+        source: data.source ?? 'unknown',
+        sourcePath: relativePath
+      }},
+      pages: [{ _id: slugId(`${relativePath}:page`), name: data.name, type: 'text', text: { format: 1, content: markdownToHtml(body) }}]
     });
   }
-
   journals.sort((a, b) => a.name.localeCompare(b.name, 'ru'));
   await fs.mkdir(OUT_DIR, { recursive: true });
   await fs.writeFile(OUT_FILE, JSON.stringify(journals, null, 2), 'utf8');

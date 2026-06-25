@@ -3,7 +3,7 @@ type: "city"
 name: "Небесный Якорь"
 shard: "scorching-shard"
 region: "common"
-source: "new-documents"
+source: "module-expansion"
 status: "draft-clean-card"
 ---
 
@@ -11,8 +11,12 @@ status: "draft-clean-card"
 
 ## Кратко
 
-Локация Палящего Осколка.
+Высокая дорожная точка, используемая как ориентир и место наблюдения.
+
+## Роль в игре
+
+Наблюдение, встреча с проводником, проверка карты и передача сигнала.
 
 ## Использование в Foundry
 
-Journal Entry для локации.
+Journal Entry или заготовка для дальнейшего импорта в Foundry.
