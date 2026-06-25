@@ -39,9 +39,12 @@ npm run journals:build
 ```text
 build/foundry/journal-entries.json
 build/foundry/aeriya-journals/_source/*.json
+build/foundry/aeriya-journals/manifest.json
 ```
 
-`journal-entries.json` нужен как общий проверочный экспорт. `_source` нужен как staging-слой для первого будущего pack `aeriya-journals`.
+`journal-entries.json` нужен как общий проверочный экспорт. `_source` нужен как staging-слой для первого будущего pack `aeriya-journals`. `manifest.json` фиксирует состав staging-экспорта, количество документов и набор папок.
+
+Journal Entry уже получают стабильный `folder` id. Человекочитаемое имя папки дополнительно сохраняется в `flags.aeriya.folderName`, а сами folder-заготовки лежат в `manifest.json`. Это промежуточный формат для конвертера, а не финальная база Foundry.
 
 Проверочный скрипт Journal Entry export:
 
@@ -52,11 +55,13 @@ npm run journals:verify
 Он проверяет:
 
 - что `journal-entries.json` существует и содержит массив;
-- что каждая запись имеет `_id`, `name`, `folder`, `flags.aeriya.sourcePath` и одну text page;
+- что каждая запись имеет `_id`, `name`, `folder`, `flags.aeriya.sourcePath`, `flags.aeriya.folderName` и одну text page;
+- что `folder` у каждой записи ссылается на folder id из `manifest.json`;
 - что `pages[0].text.content` заполнен;
 - что `_id` и `sourcePath` не дублируются;
 - что количество файлов в `_source` совпадает с количеством Journal Entry;
-- что `manifest.json` описывает `aeriya-journals` как `JournalEntry` pack staging.
+- что `manifest.json` описывает `aeriya-journals` как `JournalEntry` pack staging;
+- что folder-заготовки в `manifest.json` имеют уникальные id и имена.
 
 Проверочный скрипт Foundry module manifest:
 
@@ -111,8 +116,8 @@ npm run foundry:check
 ## Что нужно сделать дальше
 
 1. Запустить `npm run foundry:check` локально.
-2. Проверить количество документов и структуру `build/foundry/aeriya-journals/manifest.json`.
-3. Конвертировать `_source` в валидный Foundry compendium pack.
+2. Проверить, что `build/foundry/aeriya-journals/manifest.json` содержит `documentCount`, `folderCount` и folder-заготовки.
+3. Конвертировать `_source` и folder metadata в валидный Foundry compendium pack.
 4. Добавить pack в `module.json`.
 5. Проверить модуль в чистом мире Foundry.
 6. После этого добавить второй слой packs по типам.
