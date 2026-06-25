@@ -1,5 +1,15 @@
 # Индекс монстров Аэрии
 
+## Срединные Земли
+
+| Существо | Путь | Статус |
+|---|---|---|
+| Кровляный червь | `content/monsters/middle-lands/common/krovlyanoy-cherv.md` | draft-clean-card |
+| Болотный шатун | `content/monsters/middle-lands/common/bolotnyy-shatun.md` | draft-clean-card |
+| Колокольный ворон | `content/monsters/middle-lands/common/kolokolnyy-voron.md` | draft-clean-card |
+| Складской хват | `content/monsters/middle-lands/common/skladskoy-hvat.md` | draft-clean-card |
+| Сухоглазый сторож | `content/monsters/middle-lands/common/suhoglazyy-storozh.md` | draft-clean-card |
+
 ## Теневой Осколок
 
 ### Пепельная Степь
