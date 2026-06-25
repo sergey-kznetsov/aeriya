@@ -23,6 +23,15 @@
 | Тихон-слухач | `content/npcs/shadow-shard/black-whisper-forest/tihon-sluhach.md` | draft-clean-card |
 | Радомир-заставник | `content/npcs/shadow-shard/black-whisper-forest/radomir-zastavnik.md` | draft-clean-card |
 
+### Вечные Льды
+
+| НИП | Путь | Статус |
+|---|---|---|
+| Яромир, смотритель огня | `content/npcs/shadow-shard/icy-limit/yaromir-smotritel-ognya.md` | draft-clean-card |
+| Северин, ледовый проводник | `content/npcs/shadow-shard/icy-limit/severin-ledovyj-provodnik.md` | draft-clean-card |
+| Весна, хранительница записей | `content/npcs/shadow-shard/icy-limit/vesna-hranitel-zapisej.md` | draft-clean-card |
+| Рада-следопыт | `content/npcs/shadow-shard/icy-limit/rada-sledopyt.md` | draft-clean-card |
+
 ## Срединные Земли
 
 Ожидают следующей волны переноса.
