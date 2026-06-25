@@ -44,20 +44,17 @@
 
 ## НИПы
 
-| Название | Путь | Статус |
+См. общий индекс `content/_indexes/npcs-index.md`.
+
+## Поручения и handouts
+
+| Материал | Путь | Статус |
 |---|---|---|
-| Салим-проводник | `content/npcs/scorching-shard/common/salim-provodnik.md` | draft-clean-card |
-| Нура, смотрительница воды | `content/npcs/scorching-shard/common/nura-smotritelnitsa-vody.md` | draft-clean-card |
-| Марик-картограф | `content/npcs/scorching-shard/common/marik-kartograf.md` | draft-clean-card |
-| Дорун, пещерный проводник | `content/npcs/scorching-shard/common/dorun-peschernyy-provodnik.md` | draft-clean-card |
-| Ашара, хозяйка стоянки | `content/npcs/scorching-shard/common/ashara-hozyayka-stoyanki.md` | draft-clean-card |
-| Вейра, мастер линз | `content/npcs/scorching-shard/common/veyra-master-linz.md` | draft-clean-card |
-| Тавар, старший ворот | `content/npcs/scorching-shard/common/tavar-starshiy-vorot.md` | draft-clean-card |
-| Ирен, посредница каравана | `content/npcs/scorching-shard/common/iren-posrednitsa-karavana.md` | draft-clean-card |
-| Бору, соляной мастер | `content/npcs/scorching-shard/common/boru-solyanoj-master.md` | draft-clean-card |
-| Халима, хранительница родника | `content/npcs/scorching-shard/common/halima-hranitel-rodnika.md` | draft-clean-card |
-| Сорен, смотритель знака | `content/npcs/scorching-shard/common/soren-smotritel-znaka.md` | draft-clean-card |
-| Лата, собирательница стекла | `content/npcs/scorching-shard/common/lata-sobiratelnitsa-stekla.md` | draft-clean-card |
+| Неверная караванная печать | `content/handouts/scorching-shard/common/quest-nevernaya-karavannaya-pechat.md` | draft-clean-card |
+| Метка у родника | `content/handouts/scorching-shard/common/quest-metka-u-rodnika.md` | draft-clean-card |
+| Стеклянный образец | `content/handouts/scorching-shard/common/quest-steklyannyy-obrazets.md` | draft-clean-card |
+| Руины Соляной Мельницы | `content/handouts/scorching-shard/common/quest-ruiny-solyanoy-melnitsy.md` | draft-clean-card |
+| Пропавший сигнал | `content/handouts/scorching-shard/common/quest-propavshiy-signal.md` | draft-clean-card |
 
 ## Дополнительные слои
 
