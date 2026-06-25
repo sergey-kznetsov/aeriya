@@ -30,6 +30,14 @@
 | Хранители Троп | `content/factions/shadow-shard/black-whisper-forest/hraniteli-trop.md` | draft-clean-card |
 | Смотрители Настилов | `content/factions/shadow-shard/black-whisper-forest/smotriteli-nastilov.md` | draft-clean-card |
 
+### Вечные Льды
+
+| Фракция | Путь | Статус |
+|---|---|---|
+| Хранители Последнего Огня | `content/factions/shadow-shard/icy-limit/hraniteli-poslednego-ognya.md` | draft-clean-card |
+| Ледяные Скульпторы | `content/factions/shadow-shard/icy-limit/ledyanye-skulptory.md` | draft-clean-card |
+| Синие Языки | `content/factions/shadow-shard/icy-limit/sinie-yazyki.md` | draft-clean-card |
+
 ## Палящий Осколок
 
 | Фракция | Путь | Статус |
