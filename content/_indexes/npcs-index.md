@@ -27,6 +27,19 @@
 | Тома, мосточница Плавени | Плавень | `content/npcs/middle-lands/cities/toma-mostochnitsa-plaveni.md` | draft-clean-card |
 | Бран, мастер зубцов Скрежетника | Скрежетник | `content/npcs/middle-lands/cities/bran-master-zubtsov.md` | draft-clean-card |
 | Вир, колокольщик Бьющего Колокола | Бьющий Колокол | `content/npcs/middle-lands/cities/vir-kolokolschik.md` | draft-clean-card |
+| Марта, управляющая Леденёвых | Усадьба Леденёвых | `content/npcs/middle-lands/cities/marta-upravlyayuschaya-ledenevyh.md` | draft-clean-card |
+| Яр, клетник Крика Химеры | Крик Химеры | `content/npcs/middle-lands/cities/yar-kletnik-krika-himery.md` | draft-clean-card |
+| Остап, метельщик Тарного Столба | Тарный Столб | `content/npcs/middle-lands/cities/ostap-metelschik-tarnogo-stolba.md` | draft-clean-card |
+| Ира, сухая приставка | Берег Сухих Глаз | `content/npcs/middle-lands/cities/ira-suhaya-pristavka.md` | draft-clean-card |
+| Сеня, травница Горлицы | Горлица | `content/npcs/middle-lands/cities/senya-travnitsa-gorlitsy.md` | draft-clean-card |
+| Ригор, начальник Острога Прахобоя | Острог Прахобоя | `content/npcs/middle-lands/cities/rigor-nachalnik-ostroga.md` | draft-clean-card |
+| Ноль, сиделка Пустотени | Пустотень | `content/npcs/middle-lands/cities/nol-sidelka-pustoteni.md` | draft-clean-card |
+| Фед, сычий переправщик | Сычий Брод | `content/npcs/middle-lands/cities/fed-sychiy-perepravschik.md` | draft-clean-card |
+| Агла, липовая пасечница | Липуши | `content/npcs/middle-lands/cities/agla-lipovaya-pasechnitsa.md` | draft-clean-card |
+| Семиглазый наблюдатель | Лагерь Семиглазого | `content/npcs/middle-lands/cities/semiglazyy-nablyudatel.md` | draft-clean-card |
+| Ласло, горный меточник | Тонкая Гряда | `content/npcs/middle-lands/cities/laszlo-gornyy-metochik.md` | draft-clean-card |
+| Харон, дозорный Трясин | Рубеж Трясин | `content/npcs/middle-lands/cities/haron-dozornyy-tryasin.md` | draft-clean-card |
+| Ефим, варщик Чёрного Дыма | Варница Чёрного Дыма | `content/npcs/middle-lands/cities/efim-varschik-chernogo-dyma.md` | draft-clean-card |
 
 ## Теневой Осколок
 
