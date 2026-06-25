@@ -12,6 +12,7 @@
 |---|---|---|
 | Карта переноса чарников бестиария | `content/actor-statblocks/bestiary/bestiary-source-map.md` | actor-ready-map |
 | Бестиарий: импорт чарников, партия 01 | `content/actor-statblocks/bestiary/source-import-batch-01.md` | actor-ready-import |
+| Бестиарий: новые существа Срединных Земель, партия 01 | `content/actor-statblocks/bestiary/new-middle-creatures-batch-01.md` | actor-ready-statblocks |
 
 ## НИПы
 
@@ -29,4 +30,4 @@
 |---|---|---|
 | Bestiary source batch 02 | остальные существа Книги III | todo |
 | Bestiary source batch 03 | остальные существа Книги VII | todo |
-| Bestiary new batch 01 | новые существа модуля без исходного чарника | todo |
+| Bestiary module batch 02 | модульные существа Теневого и Палящего Осколков | todo |
