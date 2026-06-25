@@ -8,10 +8,10 @@
 | Мастерская памятка: городская сцена Срединных Земель | `content/handouts/middle-lands/common/gm-city-scene-checklist.md` | content-ready-final |
 | Поручение: рыночная запись | `content/handouts/middle-lands/common/quest-rynkovaya-zapis.md` | content-ready-final |
 | Поручение: ночной колокол | `content/handouts/middle-lands/common/quest-nochnoy-kolokol.md` | content-ready-final |
-| Мини-сценарий: долг на рынке | `content/handouts/middle-lands/common/adventure-dolg-na-rynke.md` | draft-clean-card |
-| Мини-сценарий: колокол и мост | `content/handouts/middle-lands/common/adventure-kolokol-i-most.md` | draft-clean-card |
-| Набор встреч: рыночный долг | `content/handouts/middle-lands/encounters/encounter-market-debt.md` | draft-clean-card |
-| Доски поручений Срединных Земель | `content/handouts/middle-lands/boards/city-board-middle-lands.md` | draft-clean-card |
+| Мини-сценарий: долг на рынке | `content/handouts/middle-lands/common/adventure-dolg-na-rynke.md` | content-ready-final |
+| Мини-сценарий: колокол и мост | `content/handouts/middle-lands/common/adventure-kolokol-i-most.md` | content-ready-final |
+| Набор встреч: рыночный долг | `content/handouts/middle-lands/encounters/encounter-market-debt.md` | content-ready-final |
+| Доски поручений Срединных Земель | `content/handouts/middle-lands/boards/city-board-middle-lands.md` | content-ready-final |
 | Городской квест: архив и пустая строка | `content/handouts/middle-lands/city-quests/quest-archive-and-empty-name.md` | draft-clean-card |
 | Городской квест: груз без владельца | `content/handouts/middle-lands/city-quests/quest-cargo-without-owner.md` | draft-clean-card |
 | Городской квест: вода и деревянные пути | `content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md` | draft-clean-card |
