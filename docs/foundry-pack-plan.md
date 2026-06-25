@@ -22,9 +22,28 @@
 
 | Pack | Тип Foundry | Что внутри | Статус |
 |---|---|---|---|
-| `aeriya-journals` | JournalEntry | все markdown-карточки, кроме `_indexes` и `_templates` | next |
+| `aeriya-journals` | JournalEntry | все markdown-карточки, кроме `_indexes` и `_templates` | in progress |
 
 Этот вариант самый быстрый и безопасный. Он не требует сразу конвертировать монстров, предметы и сцены в системные документы dnd5e.
+
+## Текущий технический экспорт
+
+Скрипт:
+
+```bash
+npm run journals:build
+```
+
+Он делает два результата:
+
+```text
+build/foundry/journal-entries.json
+build/foundry/aeriya-journals/_source/*.json
+```
+
+`journal-entries.json` нужен как общий проверочный экспорт. `_source` нужен как staging-слой для первого будущего pack `aeriya-journals`.
+
+Важно: это ещё не финальная LevelDB-база Foundry. `module.json` не должен ссылаться на `aeriya-journals`, пока pack не будет превращён в валидный compendium и проверен в чистом мире.
 
 ## Второй pack-слой
 
@@ -56,8 +75,9 @@
 
 ## Что нужно сделать дальше
 
-1. Подготовить технический экспорт `aeriya-journals`.
-2. Сгенерировать pack из markdown-карточек.
-3. Добавить pack в `module.json`.
-4. Проверить модуль в чистом мире Foundry.
-5. После этого добавить второй слой packs по типам.
+1. Запустить `npm run journals:build` локально.
+2. Проверить количество документов и структуру `build/foundry/aeriya-journals/manifest.json`.
+3. Конвертировать `_source` в валидный Foundry compendium pack.
+4. Добавить pack в `module.json`.
+5. Проверить модуль в чистом мире Foundry.
+6. После этого добавить второй слой packs по типам.
