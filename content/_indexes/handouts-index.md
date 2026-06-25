@@ -11,6 +11,7 @@
 | Мини-сценарий: долг на рынке | `content/handouts/middle-lands/common/adventure-dolg-na-rynke.md` | draft-clean-card |
 | Мини-сценарий: колокол и мост | `content/handouts/middle-lands/common/adventure-kolokol-i-most.md` | draft-clean-card |
 | Набор встреч: рыночный долг | `content/handouts/middle-lands/encounters/encounter-market-debt.md` | draft-clean-card |
+| Доски поручений Срединных Земель | `content/handouts/middle-lands/boards/city-board-middle-lands.md` | draft-clean-card |
 | Книга дорожных заметок | `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md` | draft-clean-card |
 | Письмо без двери | `content/handouts/middle-lands/books/pismo-bez-dveri.md` | draft-clean-card |
 
@@ -19,6 +20,7 @@
 | Материал | Путь | Статус |
 |---|---|---|
 | Игровой индекс Теневого Осколка | `content/_indexes/shadow-shard-play-index.md` | draft-clean-card |
+| Доски поручений Теневого Осколка | `content/handouts/shadow-shard/boards/city-board-shadow-shard.md` | draft-clean-card |
 | Набор встреч: спор в чайном доме | `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md` | draft-clean-card |
 | Набор встреч: мховая тропа | `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md` | draft-clean-card |
 | Набор встреч: последний огонь | `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md` | draft-clean-card |
@@ -30,6 +32,7 @@
 
 | Материал | Путь | Статус |
 |---|---|---|
+| Доски поручений Палящего Осколка | `content/handouts/scorching-shard/boards/city-board-scorching-shard.md` | draft-clean-card |
 | Набор встреч: сухая дорога | `content/handouts/scorching-shard/encounters/encounter-dry-road.md` | draft-clean-card |
 | Список сухой дороги | `content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md` | draft-clean-card |
 | Остальные поручения, памятки и мини-сценарии | `content/_indexes/scorching-shard-index.md` | draft-clean-card |
