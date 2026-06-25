@@ -24,6 +24,12 @@ const TYPE_TO_FOLDER = {
   region: 'Regions'
 };
 
+const FOLDER_IDS = Object.fromEntries(
+  [...new Set(Object.values(TYPE_TO_FOLDER).concat('Aeria'))]
+    .sort((a, b) => a.localeCompare(b, 'en'))
+    .map((name) => [name, slugId(`folder:${name}`)])
+);
+
 function slugId(input) {
   return crypto.createHash('sha1').update(input).digest('hex').slice(0, 16);
 }
@@ -102,21 +108,39 @@ function shouldSkip(relativePath) {
   return false;
 }
 
+function buildFolderDocuments(folderNames) {
+  return folderNames.map((name) => ({
+    _id: FOLDER_IDS[name] ?? slugId(`folder:${name}`),
+    name,
+    type: 'JournalEntry',
+    sorting: 'a',
+    color: null,
+    folder: null,
+    flags: {
+      aeriya: {
+        pack: 'aeriya-journals',
+        role: 'journal-folder'
+      }
+    }
+  }));
+}
+
 function buildJournalEntry({ relativePath, data, body }) {
-  const folder = TYPE_TO_FOLDER[data.type] ?? 'Aeria';
+  const folderName = TYPE_TO_FOLDER[data.type] ?? 'Aeria';
   const id = slugId(relativePath);
   return {
     _id: id,
     name: data.name,
     type: 'journalentry',
-    folder,
+    folder: FOLDER_IDS[folderName] ?? slugId(`folder:${folderName}`),
     flags: {
       aeriya: {
         type: data.type,
         shard: data.shard ?? 'unknown',
         region: data.region ?? 'unknown',
         source: data.source ?? 'unknown',
-        sourcePath: relativePath
+        sourcePath: relativePath,
+        folderName
       }
     },
     pages: [
@@ -154,15 +178,17 @@ async function writePackSource(journals) {
     await fs.writeFile(path.join(PACK_SOURCE_DIR, fileName), JSON.stringify(journal, null, 2), 'utf8');
   }
 
-  const folders = [...new Set(journals.map((journal) => journal.folder))].sort((a, b) => a.localeCompare(b, 'ru'));
+  const folderNames = [...new Set(journals.map((journal) => journal.flags.aeriya.folderName))].sort((a, b) => a.localeCompare(b, 'ru'));
+  const folders = buildFolderDocuments(folderNames);
   const manifest = {
     id: 'aeriya-journals',
     type: 'JournalEntry',
     generatedFrom: 'content/**/*.md',
     sourceDirectory: 'build/foundry/aeriya-journals/_source',
     documentCount: journals.length,
+    folderCount: folders.length,
     folders,
-    note: 'Staging output for the first Aeria Core Journal Entry pack. Do not add this pack to module.json until it is converted into a valid Foundry compendium database and tested in a clean world.'
+    note: 'Staging output for the first Aeria Core Journal Entry pack. Journal entries already reference stable folder ids, but this still must be converted into a valid Foundry compendium database and tested in a clean world before adding the pack to module.json.'
   };
   await fs.writeFile(PACK_MANIFEST_FILE, JSON.stringify(manifest, null, 2), 'utf8');
 }
