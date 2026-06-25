@@ -9,6 +9,7 @@
 | Поручение: пятая чаша | `content/handouts/shadow-shard/ash-steppe/quest-pyataya-chasha.md` | draft-clean-card |
 | Поручение: пропавший маяк | `content/handouts/shadow-shard/ash-steppe/quest-propavshiy-mayak.md` | draft-clean-card |
 | Мини-сценарий: чаша и маяк | `content/handouts/shadow-shard/ash-steppe/adventure-chasha-i-mayak.md` | draft-clean-card |
+| Городской квест: Окрам, закрытый узел | `content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md` | draft-clean-card |
 
 ## Лес Чёрного Шёпота
 
@@ -19,6 +20,8 @@
 | Поручение: серая часовня | `content/handouts/shadow-shard/black-whisper-forest/quest-seraya-chasovnya.md` | draft-clean-card |
 | Поручение: сбитая тропа | `content/handouts/shadow-shard/black-whisper-forest/quest-sbitaya-tropa.md` | draft-clean-card |
 | Мини-сценарий: тропа и часовня | `content/handouts/shadow-shard/black-whisper-forest/adventure-tropa-i-chasovnya.md` | draft-clean-card |
+| Лесной квест: Корень и Дом Мха | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md` | draft-clean-card |
+| Лесной квест: Серый Приют и старая застава | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md` | draft-clean-card |
 
 ## Вечные Льды
 
@@ -29,6 +32,8 @@
 | Поручение: последний огонь | `content/handouts/shadow-shard/icy-limit/quest-posledniy-ogon.md` | draft-clean-card |
 | Поручение: синий перевал | `content/handouts/shadow-shard/icy-limit/quest-siniy-pereval.md` | draft-clean-card |
 | Мини-сценарий: огонь и перевал | `content/handouts/shadow-shard/icy-limit/adventure-ogon-i-pereval.md` | draft-clean-card |
+| Северный квест: огонь и Ледяной Клык | `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md` | draft-clean-card |
+| Северный квест: перевал и Белые Камни | `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md` | draft-clean-card |
 
 ## Общая таблица
 
