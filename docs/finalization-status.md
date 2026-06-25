@@ -15,7 +15,7 @@
 
 Технический контроль добавлен в `scripts/dev/validate-content-cards.mjs`: контентная карточка с таким статусом должна проваливать проверку.
 
-## Первый пакет финализации
+## Пакет финализации 01
 
 Финализированы базовые handout-карточки Срединных Земель:
 
@@ -26,33 +26,41 @@
 | Поручение: рыночная запись | `content/handouts/middle-lands/common/quest-rynkovaya-zapis.md` | content-ready-final |
 | Поручение: ночной колокол | `content/handouts/middle-lands/common/quest-nochnoy-kolokol.md` | content-ready-final |
 
-## Что изменилось в финализированных карточках
+## Пакет финализации 02
 
-Карточки не просто получили новый статус. Они дополнены до полноценного игрового состояния:
+Финализированы расширенные игровые handout-карточки Срединных Земель:
 
-- добавлено назначение;
-- добавлены участники и роли;
-- добавлены проверки и последствия;
-- добавлены связи с NPC-чарниками;
-- добавлены связи с бестиарием и угрозами;
-- добавлено Foundry-назначение;
-- удалён черновой статус.
+| Карточка | Путь | Статус |
+|---|---|---|
+| Мини-сценарий: долг на рынке | `content/handouts/middle-lands/common/adventure-dolg-na-rynke.md` | content-ready-final |
+| Мини-сценарий: колокол и мост | `content/handouts/middle-lands/common/adventure-kolokol-i-most.md` | content-ready-final |
+| Набор встреч: рыночный долг | `content/handouts/middle-lands/encounters/encounter-market-debt.md` | content-ready-final |
+| Доски поручений Срединных Земель | `content/handouts/middle-lands/boards/city-board-middle-lands.md` | content-ready-final |
+
+## Что изменяется при финализации
+
+Карточки не просто получают новый статус. Каждая финализированная карточка дополняется до полноценного игрового состояния:
+
+- назначение;
+- участники и роли;
+- проверки и последствия;
+- сцены или акты;
+- угрозы и связи с бестиарием;
+- ссылки на NPC-чарники;
+- Foundry-назначение;
+- отсутствие внутренних пометок «дописать потом», «черновик», `todo`, `pending`.
 
 ## Следующая партия
 
-Следующими должны быть финализированы оставшиеся handout-карточки Срединных Земель:
+Следующими должны быть финализированы городские квестовые карточки Срединных Земель:
 
-1. `content/handouts/middle-lands/common/adventure-dolg-na-rynke.md`
-2. `content/handouts/middle-lands/common/adventure-kolokol-i-most.md`
-3. `content/handouts/middle-lands/encounters/encounter-market-debt.md`
-4. `content/handouts/middle-lands/boards/city-board-middle-lands.md`
-5. `content/handouts/middle-lands/city-quests/quest-archive-and-empty-name.md`
-6. `content/handouts/middle-lands/city-quests/quest-cargo-without-owner.md`
-7. `content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md`
-8. `content/handouts/middle-lands/city-quests/quest-bell-and-house-debt.md`
-9. `content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md`
-10. `content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md`
-11. `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md`
-12. `content/handouts/middle-lands/books/pismo-bez-dveri.md`
+1. `content/handouts/middle-lands/city-quests/quest-archive-and-empty-name.md`
+2. `content/handouts/middle-lands/city-quests/quest-cargo-without-owner.md`
+3. `content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md`
+4. `content/handouts/middle-lands/city-quests/quest-bell-and-house-debt.md`
+5. `content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md`
+6. `content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md`
+7. `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md`
+8. `content/handouts/middle-lands/books/pismo-bez-dveri.md`
 
 После этого таким же способом финализируются сцены, региональные handouts, квестовые карточки Теневого Осколка и Палящего Осколка.
