@@ -25,6 +25,16 @@ optional — можно добавить позже
 done     — ассет готов и лежит в репозитории
 ```
 
+## Приоритет сцен и токенов по наборам встреч
+
+| Набор | Карточка | Ассеты high priority |
+|---|---|---|
+| Рыночный долг | `content/handouts/middle-lands/encounters/encounter-market-debt.md` | Рыночная площадь, Дорожный трактир, Городские ворота |
+| Спор в чайном доме | `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md` | Чайный двор, Караванная стоянка, Пепельный маяк |
+| Мховая тропа | `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md` | Мховая тропа, Серая часовня, токен мхового ходока |
+| Последний огонь | `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md` | Общий огонь станции, Перевал Синего Ветра, токен белого бегуна |
+| Сухая дорога | `content/handouts/scorching-shard/encounters/encounter-dry-road.md` | Ворота форта, Караванный двор, Родник у красного камня, токен соляного шороха |
+
 ## Приоритет handout-изображений
 
 | Сущность | Карточка | Тип ассета | Статус | Комментарий |
