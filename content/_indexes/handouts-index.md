@@ -17,6 +17,7 @@
 | Городской квест: вода и деревянные пути | `content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md` | draft-clean-card |
 | Городской квест: колокол и домовой долг | `content/handouts/middle-lands/city-quests/quest-bell-and-house-debt.md` | draft-clean-card |
 | Городской квест: звериные дороги и ложные знаки | `content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md` | draft-clean-card |
+| Городской квест: нижние зубцы и чёрный дым | `content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md` | draft-clean-card |
 | Книга дорожных заметок | `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md` | draft-clean-card |
 | Письмо без двери | `content/handouts/middle-lands/books/pismo-bez-dveri.md` | draft-clean-card |
 
