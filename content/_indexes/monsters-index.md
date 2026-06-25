@@ -19,6 +19,14 @@
 | Шорох ветвей | `content/monsters/shadow-shard/black-whisper-forest/shoroh-vetvey.md` | draft-clean-card |
 | Слепая сова | `content/monsters/shadow-shard/black-whisper-forest/slepaya-sova.md` | draft-clean-card |
 
+### Вечные Льды
+
+| Существо | Путь | Статус |
+|---|---|---|
+| Северное снежное существо | `content/monsters/shadow-shard/icy-limit/snezhnaya-tvar.md` | draft-clean-card |
+| Ледяной сторож | `content/monsters/shadow-shard/icy-limit/ledyanoy-storozh.md` | draft-clean-card |
+| Белый бегун | `content/monsters/shadow-shard/icy-limit/belyj-begun.md` | draft-clean-card |
+
 ## Срединные Земли
 
 Ожидают следующей волны переноса.
