@@ -9,14 +9,17 @@
 В локальной копии репозитория выполнить:
 
 ```bash
-npm run content:check
-npm run journals:build
+npm run foundry:check
 ```
 
-После этого в модуле должен появиться файл:
+Эта команда проверяет markdown-карточки, пересобирает индекс, создаёт Foundry Journal Entry export и сверяет структуру результата.
+
+После этого в модуле должны появиться:
 
 ```text
 build/foundry/journal-entries.json
+build/foundry/aeriya-journals/_source/*.json
+build/foundry/aeriya-journals/manifest.json
 ```
 
 ## Установка
@@ -73,11 +76,12 @@ scripts/foundry/import-journal-entries.js
 
 Проверить:
 
-1. Выполнен ли `npm run journals:build`.
+1. Выполнен ли `npm run foundry:check` без ошибок.
 2. Есть ли файл `build/foundry/journal-entries.json` внутри папки модуля.
-3. Совпадает ли путь в `AERIA_JOURNAL_JSON_URL`.
-4. Выполняется ли код от GM-пользователя.
-5. Есть ли ошибки в консоли Foundry.
+3. Есть ли staging-папка `build/foundry/aeriya-journals/_source`.
+4. Совпадает ли путь в `AERIA_JOURNAL_JSON_URL`.
+5. Выполняется ли код от GM-пользователя.
+6. Есть ли ошибки в консоли Foundry.
 
 ## Когда smoke test считается пройденным
 
