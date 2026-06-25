@@ -1,0 +1,20 @@
+{
+  "snapshot": "manual",
+  "covered_layers": [
+    "cities",
+    "factions",
+    "spirits",
+    "npcs",
+    "monsters",
+    "items",
+    "rituals",
+    "rolltables",
+    "scenes",
+    "regions"
+  ],
+  "notes": [
+    "The main content is stored in markdown cards.",
+    "Some cards require a later alternate import pass.",
+    "Generated content-index.json should be rebuilt locally with npm run content:index."
+  ]
+}
