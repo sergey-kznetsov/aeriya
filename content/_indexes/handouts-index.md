@@ -12,12 +12,12 @@
 | Мини-сценарий: колокол и мост | `content/handouts/middle-lands/common/adventure-kolokol-i-most.md` | content-ready-final |
 | Набор встреч: рыночный долг | `content/handouts/middle-lands/encounters/encounter-market-debt.md` | content-ready-final |
 | Доски поручений Срединных Земель | `content/handouts/middle-lands/boards/city-board-middle-lands.md` | content-ready-final |
-| Городской квест: архив и пустая строка | `content/handouts/middle-lands/city-quests/quest-archive-and-empty-name.md` | draft-clean-card |
-| Городской квест: груз без владельца | `content/handouts/middle-lands/city-quests/quest-cargo-without-owner.md` | draft-clean-card |
-| Городской квест: вода и деревянные пути | `content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md` | draft-clean-card |
-| Городской квест: колокол и домовой долг | `content/handouts/middle-lands/city-quests/quest-bell-and-house-debt.md` | draft-clean-card |
-| Городской квест: звериные дороги и ложные знаки | `content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md` | draft-clean-card |
-| Городской квест: нижние зубцы и чёрный дым | `content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md` | draft-clean-card |
+| Городской квест: архив и пустая строка | `content/handouts/middle-lands/city-quests/quest-archive-and-empty-name.md` | content-ready-final |
+| Городской квест: груз без владельца | `content/handouts/middle-lands/city-quests/quest-cargo-without-owner.md` | content-ready-final |
+| Городской квест: вода и деревянные пути | `content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md` | content-ready-final |
+| Городской квест: колокол и домовой долг | `content/handouts/middle-lands/city-quests/quest-bell-and-house-debt.md` | content-ready-final |
+| Городской квест: звериные дороги и ложные знаки | `content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md` | content-ready-final |
+| Городской квест: нижние зубцы и чёрный дым | `content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md` | content-ready-final |
 | Книга дорожных заметок | `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md` | draft-clean-card |
 | Письмо без двери | `content/handouts/middle-lands/books/pismo-bez-dveri.md` | draft-clean-card |
 
