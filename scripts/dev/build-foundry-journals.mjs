@@ -59,18 +59,27 @@ function escapeHtml(value) {
     .replace(/>/g, '&gt;');
 }
 
+function renderInline(markdown) {
+  return escapeHtml(markdown).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+}
+
 function markdownToHtml(markdown) {
   return markdown
-    .replace(/^### (.*)$/gm, '<h3>$1</h3>')
-    .replace(/^## (.*)$/gm, '<h2>$1</h2>')
-    .replace(/^# (.*)$/gm, '<h1>$1</h1>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
     .split(/\n{2,}/)
     .map((block) => {
       const trimmed = block.trim();
       if (!trimmed) return '';
-      if (trimmed.startsWith('<h')) return trimmed;
-      return `<p>${escapeHtml(trimmed).replace(/\n/g, '<br>')}</p>`;
+
+      const h3 = trimmed.match(/^###\s+(.+)$/);
+      if (h3) return `<h3>${renderInline(h3[1])}</h3>`;
+
+      const h2 = trimmed.match(/^##\s+(.+)$/);
+      if (h2) return `<h2>${renderInline(h2[1])}</h2>`;
+
+      const h1 = trimmed.match(/^#\s+(.+)$/);
+      if (h1) return `<h1>${renderInline(h1[1])}</h1>`;
+
+      return `<p>${renderInline(trimmed).replace(/\n/g, '<br>')}</p>`;
     })
     .join('\n');
 }
