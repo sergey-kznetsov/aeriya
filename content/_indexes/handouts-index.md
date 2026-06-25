@@ -27,6 +27,11 @@
 |---|---|---|
 | Игровой индекс Теневого Осколка | `content/_indexes/shadow-shard-play-index.md` | draft-clean-card |
 | Доски поручений Теневого Осколка | `content/handouts/shadow-shard/boards/city-board-shadow-shard.md` | draft-clean-card |
+| Городской квест: Окрам, закрытый узел | `content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md` | draft-clean-card |
+| Лесной квест: Корень и Дом Мха | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md` | draft-clean-card |
+| Лесной квест: Серый Приют и старая застава | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md` | draft-clean-card |
+| Северный квест: огонь и Ледяной Клык | `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md` | draft-clean-card |
+| Северный квест: перевал и Белые Камни | `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md` | draft-clean-card |
 | Набор встреч: спор в чайном доме | `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md` | draft-clean-card |
 | Набор встреч: мховая тропа | `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md` | draft-clean-card |
 | Набор встреч: последний огонь | `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md` | draft-clean-card |
@@ -39,6 +44,11 @@
 | Материал | Путь | Статус |
 |---|---|---|
 | Доски поручений Палящего Осколка | `content/handouts/scorching-shard/boards/city-board-scorching-shard.md` | draft-clean-card |
+| Палящий квест: Три Тени и Последний Вздох | `content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md` | draft-clean-card |
+| Палящий квест: Клинок и Стеклянный Городок | `content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md` | draft-clean-card |
+| Палящий квест: Родник и Белый Колодец | `content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md` | draft-clean-card |
+| Палящий квест: форт, дворец и Красная Соль | `content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md` | draft-clean-card |
+| Палящий квест: мельница, порог и Тихая Корка | `content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md` | draft-clean-card |
 | Набор встреч: сухая дорога | `content/handouts/scorching-shard/encounters/encounter-dry-road.md` | draft-clean-card |
 | Список сухой дороги | `content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md` | draft-clean-card |
 | Остальные поручения, памятки и мини-сценарии | `content/_indexes/scorching-shard-index.md` | draft-clean-card |
