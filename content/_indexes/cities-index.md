@@ -69,7 +69,12 @@
 
 ## Палящий Осколок
 
-Пока ожидает следующей волны переноса.
+| Город / локация | Путь | Статус |
+|---|---|---|
+| Три Тени | `content/cities/scorching-shard/burning-wastes/tri-teni.md` | draft-clean-card |
+| Пещерный Порог | `content/cities/scorching-shard/common/peschernyy-porog.md` | draft-clean-card |
+| Красная Соль | `content/cities/scorching-shard/common/krasnaya-sol.md` | draft-clean-card |
+| Небесный Якорь | `content/cities/scorching-shard/common/nebesnyy-yakor.md` | draft-clean-card |
 
 ## Правило переноса
 
