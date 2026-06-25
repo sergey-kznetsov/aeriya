@@ -11,7 +11,8 @@
 | Материал | Путь | Статус |
 |---|---|---|
 | Карта переноса чарников бестиария | `content/actor-statblocks/bestiary/bestiary-source-map.md` | actor-ready-map |
-| Бестиарий: импорт чарников, партия 01 | `content/actor-statblocks/bestiary/source-import-batch-01.md` | actor-ready-import |
+| Бестиарий: импорт чарников, партия 01 | `content/actor-statblocks/bestiary/source-import-batch-01.md` | actor-ready-final |
+| Бестиарий: Срединные Земли, source batch 02 | `content/actor-statblocks/bestiary/source-middle-creatures-batch-02.md` | actor-ready-final |
 | Бестиарий: новые существа Срединных Земель, партия 01 | `content/actor-statblocks/bestiary/new-middle-creatures-batch-01.md` | actor-ready-final |
 | Бестиарий: модульные существа Теневого Осколка, партия 02 | `content/actor-statblocks/bestiary/module-shadow-creatures-batch-02.md` | actor-ready-final |
 | Бестиарий: модульные существа Палящего Осколка, партия 02 | `content/actor-statblocks/bestiary/module-scorching-creatures-batch-02.md` | actor-ready-final |
@@ -30,5 +31,5 @@
 
 | Партия | Состав | Статус |
 |---|---|---|
-| Bestiary source batch 02 | остальные существа Книги III | todo-source-import |
-| Bestiary source batch 03 | остальные существа Книги VII | todo-source-import |
+| Bestiary source batch 03 | остальные существа Книги III | todo-source-import |
+| Bestiary source batch 04 | остальные существа Книги VII | todo-source-import |
