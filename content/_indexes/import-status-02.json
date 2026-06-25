@@ -1,0 +1,13 @@
+{
+  "status": "partial",
+  "imported_counts": {
+    "cities": 4,
+    "factions": 3
+  },
+  "pending_counts": {
+    "regions": 1,
+    "cities": 4,
+    "factions": 1,
+    "npcs": 1
+  }
+}
