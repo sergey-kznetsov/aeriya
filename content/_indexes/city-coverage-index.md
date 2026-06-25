@@ -4,27 +4,27 @@
 
 | Город / поселение | City card | Локальный НИП | Доска поручений | Сцена | Монстр / угроза | Статус |
 |---|---|---|---|---|---|---|
-| Гравен Холлоу | есть | Эсма | есть | needs-specific-scene | Сухоглазый сторож | npc-covered |
-| Морнстэд | есть | Тирон | есть | базовая городская сцена | Складской хват | npc-covered |
-| Кладовая Перекрёстков | есть | Рем | есть | базовая складская сцена | Складской хват | npc-covered |
-| Фарн’Крот | есть | Дара | есть | needs-specific-scene | Болотный шатун / подземная угроза позже | npc-covered |
-| Озерник | есть | Лесья | есть | needs-specific-scene | Болотный шатун | npc-covered |
-| Плавень | есть | Тома | есть | базовая болотная сцена позже | Болотный шатун | npc-covered |
-| Скрежетник | есть | Бран | есть | needs-specific-scene | Складской хват | npc-covered |
-| Бьющий Колокол | есть | Вир | есть | колокольня позже | Колокольный ворон | npc-covered |
-| Усадьба Леденёвых | есть | Марта | есть | needs-specific-scene | Сухоглазый сторож | npc-covered |
-| Крик Химеры | есть | Яр | есть | needs-specific-scene | needs-creature | npc-covered |
-| Тарный Столб | есть | Остап | есть | needs-specific-scene | Складской хват | npc-covered |
-| Берег Сухих Глаз | есть | Ира | есть | needs-specific-scene | Сухоглазый сторож | npc-covered |
-| Горлица | есть | Сеня | есть | needs-specific-scene | Колокольный ворон | npc-covered |
-| Острог Прахобоя | есть | Ригор | есть | needs-specific-scene | Сухоглазый сторож | npc-covered |
-| Пустотень | есть | Ноль | есть | needs-specific-scene | Сухоглазый сторож | npc-covered |
-| Сычий Брод | есть | Фед | есть | needs-specific-scene | Болотный шатун | npc-covered |
-| Липуши | есть | Агла | есть | needs-specific-scene | needs-creature | npc-covered |
-| Лагерь Семиглазого | есть | Семиглазый наблюдатель | есть | needs-specific-scene | needs-creature | npc-covered |
-| Тонкая Гряда | есть | Ласло | есть | needs-specific-scene | needs-creature | npc-covered |
-| Рубеж Трясин | есть | Харон | есть | needs-specific-scene | Болотный шатун | npc-covered |
-| Варница Чёрного Дыма | есть | Ефим | есть | needs-specific-scene | Складской хват | npc-covered |
+| Гравен Холлоу | есть | Эсма | есть | needs-specific-scene | Сухоглазый сторож | npc-threat-covered |
+| Морнстэд | есть | Тирон | есть | базовая городская сцена | Складской хват | npc-threat-covered |
+| Кладовая Перекрёстков | есть | Рем | есть | базовая складская сцена | Складской хват | npc-threat-covered |
+| Фарн’Крот | есть | Дара | есть | needs-specific-scene | Болотный шатун / подземная угроза позже | npc-threat-covered |
+| Озерник | есть | Лесья | есть | needs-specific-scene | Болотный шатун | npc-threat-covered |
+| Плавень | есть | Тома | есть | базовая болотная сцена позже | Болотный шатун | npc-threat-covered |
+| Скрежетник | есть | Бран | есть | needs-specific-scene | Складской хват | npc-threat-covered |
+| Бьющий Колокол | есть | Вир | есть | колокольня позже | Колокольный ворон | npc-threat-covered |
+| Усадьба Леденёвых | есть | Марта | есть | needs-specific-scene | Сухоглазый сторож | npc-threat-covered |
+| Крик Химеры | есть | Яр | есть | needs-specific-scene | Химерный выкормок | npc-threat-covered |
+| Тарный Столб | есть | Остап | есть | needs-specific-scene | Складской хват | npc-threat-covered |
+| Берег Сухих Глаз | есть | Ира | есть | needs-specific-scene | Сухоглазый сторож | npc-threat-covered |
+| Горлица | есть | Сеня | есть | needs-specific-scene | Колокольный ворон | npc-threat-covered |
+| Острог Прахобоя | есть | Ригор | есть | needs-specific-scene | Сухоглазый сторож | npc-threat-covered |
+| Пустотень | есть | Ноль | есть | needs-specific-scene | Сухоглазый сторож | npc-threat-covered |
+| Сычий Брод | есть | Фед | есть | needs-specific-scene | Болотный шатун | npc-threat-covered |
+| Липуши | есть | Агла | есть | needs-specific-scene | Липовый роевик | npc-threat-covered |
+| Лагерь Семиглазого | есть | Семиглазый наблюдатель | есть | needs-specific-scene | Семиглазая тень | npc-threat-covered |
+| Тонкая Гряда | есть | Ласло | есть | needs-specific-scene | Грядовый прыгун | npc-threat-covered |
+| Рубеж Трясин | есть | Харон | есть | needs-specific-scene | Болотный шатун | npc-threat-covered |
+| Варница Чёрного Дыма | есть | Ефим | есть | needs-specific-scene | Складской хват | npc-threat-covered |
 
 ## Теневой Осколок
 
@@ -49,6 +49,5 @@
 ## Следующая партия
 
 1. Добавить 4-6 групповых city-quest cards для Срединных Земель.
-2. Добавить 3-5 существ для пробелов: Крик Химеры, Липуши, Лагерь Семиглазого, Тонкая Гряда.
-3. Добавить specific-scene cards для городских групп Срединных Земель.
-4. После этого переходить к точечным хвостам Теневого Осколка.
+2. Добавить specific-scene cards для городских групп Срединных Земель.
+3. После этого переходить к точечным хвостам Теневого Осколка.
