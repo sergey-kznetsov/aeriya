@@ -37,6 +37,8 @@
 | Дух | Путь | Статус |
 |---|---|---|
 | Белый Уголёк | `content/spirits/shadow-shard/icy-limit/belyy-ugolek.md` | draft-clean-card |
+| Айрун Северный | `content/spirits/shadow-shard/icy-limit/ayrun-severnyy.md` | draft-clean-card |
+| Искра Предков | `content/spirits/shadow-shard/icy-limit/iskra-predkov.md` | draft-clean-card |
 
 ## Палящий Осколок
 
