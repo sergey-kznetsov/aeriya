@@ -7,6 +7,14 @@
 | Долг на рынке | `content/handouts/middle-lands/common/adventure-dolg-na-rynke.md` | draft-clean-card |
 | Колокол и мост | `content/handouts/middle-lands/common/adventure-kolokol-i-most.md` | draft-clean-card |
 
+## Теневой Осколок
+
+| Мини-сценарий | Путь | Статус |
+|---|---|---|
+| Чаша и маяк | `content/handouts/shadow-shard/ash-steppe/adventure-chasha-i-mayak.md` | draft-clean-card |
+| Тропа и часовня | `content/handouts/shadow-shard/black-whisper-forest/adventure-tropa-i-chasovnya.md` | draft-clean-card |
+| Огонь и перевал | `content/handouts/shadow-shard/icy-limit/adventure-ogon-i-pereval.md` | draft-clean-card |
+
 ## Палящий Осколок
 
 | Мини-сценарий | Путь | Статус |

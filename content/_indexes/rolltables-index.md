@@ -10,26 +10,15 @@
 
 ## Теневой Осколок
 
-### Пепельная Степь
-
 | Таблица | Путь | Статус |
 |---|---|---|
-| Дорожные события | `content/rolltables/shadow-shard/ash-steppe/road-events.md` | draft-clean-card |
-| Встречи за чаем | `content/rolltables/shadow-shard/ash-steppe/tea-encounters.md` | draft-clean-card |
-
-### Лес Чёрного Шёпота
-
-| Таблица | Путь | Статус |
-|---|---|---|
-| Лесные сигналы | `content/rolltables/shadow-shard/black-whisper-forest/forest-whispers.md` | draft-clean-card |
-| Лесные тропы | `content/rolltables/shadow-shard/black-whisper-forest/lost-paths.md` | draft-clean-card |
-
-### Вечные Льды
-
-| Таблица | Путь | Статус |
-|---|---|---|
-| Северные переходы | `content/rolltables/shadow-shard/icy-limit/northern-road-events.md` | draft-clean-card |
-| Встречи у огня | `content/rolltables/shadow-shard/icy-limit/hearth-encounters.md` | draft-clean-card |
+| Повороты поручений | `content/rolltables/shadow-shard/common/shadow-quest-twists.md` | draft-clean-card |
+| Пепельная Степь — дорожные события | `content/rolltables/shadow-shard/ash-steppe/road-events.md` | draft-clean-card |
+| Пепельная Степь — встречи за чаем | `content/rolltables/shadow-shard/ash-steppe/tea-encounters.md` | draft-clean-card |
+| Лес Чёрного Шёпота — лесные сигналы | `content/rolltables/shadow-shard/black-whisper-forest/forest-whispers.md` | draft-clean-card |
+| Лес Чёрного Шёпота — лесные тропы | `content/rolltables/shadow-shard/black-whisper-forest/lost-paths.md` | draft-clean-card |
+| Вечные Льды — северные переходы | `content/rolltables/shadow-shard/icy-limit/northern-road-events.md` | draft-clean-card |
+| Вечные Льды — встречи у огня | `content/rolltables/shadow-shard/icy-limit/hearth-encounters.md` | draft-clean-card |
 
 ## Палящий Осколок
 
