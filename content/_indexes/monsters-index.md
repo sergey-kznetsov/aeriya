@@ -36,3 +36,5 @@
 | Стеклянная ящерица | `content/monsters/scorching-shard/common/steklyannaya-yashcheritsa.md` | draft-clean-card |
 | Песчаный бегун | `content/monsters/scorching-shard/common/peschanyy-begun.md` | draft-clean-card |
 | Жаровой сторож | `content/monsters/scorching-shard/common/zharovoy-storozh.md` | draft-clean-card |
+| Соляной шорох | `content/monsters/scorching-shard/common/solyanoy-shoroh.md` | draft-clean-card |
+| Ослепительный жук | `content/monsters/scorching-shard/common/oslepitelnyy-zhuk.md` | draft-clean-card |

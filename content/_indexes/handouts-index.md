@@ -10,6 +10,8 @@
 
 | Материал | Путь | Статус |
 |---|---|---|
+| Памятка игрокам: обычаи дорог Палящего Осколка | `content/handouts/scorching-shard/common/player-road-customs-handout.md` | draft-clean-card |
+| Мастерская памятка: дорожная сцена Палящего Осколка | `content/handouts/scorching-shard/common/gm-road-scene-checklist.md` | draft-clean-card |
 | Поручение: неверная караванная печать | `content/handouts/scorching-shard/common/quest-nevernaya-karavannaya-pechat.md` | draft-clean-card |
 | Поручение: метка у родника | `content/handouts/scorching-shard/common/quest-metka-u-rodnika.md` | draft-clean-card |
 | Поручение: стеклянный образец | `content/handouts/scorching-shard/common/quest-steklyannyy-obrazets.md` | draft-clean-card |

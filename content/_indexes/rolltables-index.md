@@ -31,3 +31,5 @@
 | Встречи на стоянке | `content/rolltables/scorching-shard/common/stop-encounters.md` | draft-clean-card |
 | Осложнения запасов | `content/rolltables/scorching-shard/common/resource-complications.md` | draft-clean-card |
 | Слухи стоянок | `content/rolltables/scorching-shard/common/stop-rumors.md` | draft-clean-card |
+| Реакции фракций | `content/rolltables/scorching-shard/common/faction-reactions.md` | draft-clean-card |
+| Дорожные находки | `content/rolltables/scorching-shard/common/road-finds.md` | draft-clean-card |

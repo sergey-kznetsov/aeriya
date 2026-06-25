@@ -38,3 +38,6 @@
 | Караванная печать | `content/items/scorching-shard/common/karavannaya-pechat.md` | draft-clean-card |
 | Стеклянный образец | `content/items/scorching-shard/common/steklyannyy-obrazets.md` | draft-clean-card |
 | Запись стоянки | `content/items/scorching-shard/common/zapis-stoyanki.md` | draft-clean-card |
+| Путевой журнал каравана | `content/items/scorching-shard/common/putevoj-zhurnal-karavana.md` | draft-clean-card |
+| Знак Стражи Пламени | `content/items/scorching-shard/common/znak-strazhi-plameni.md` | draft-clean-card |
+| Капельный мерник | `content/items/scorching-shard/common/kapelnyy-mernik.md` | draft-clean-card |

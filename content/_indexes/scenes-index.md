@@ -34,3 +34,5 @@
 | Ворота форта | `content/scenes/scorching-shard/common/fort-vorota.md` | draft-clean-card |
 | Родник у красного камня | `content/scenes/scorching-shard/common/krasnyy-rodnik-scene.md` | draft-clean-card |
 | Руины Соляной Мельницы | `content/scenes/scorching-shard/common/ruiny-solyanoy-melnitsy-scene.md` | draft-clean-card |
+| Караванный двор | `content/scenes/scorching-shard/common/karavannyy-dvor.md` | draft-clean-card |
+| Стеклянная площадка | `content/scenes/scorching-shard/common/steklyannaya-ploschadka.md` | draft-clean-card |

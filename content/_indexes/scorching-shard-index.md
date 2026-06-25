@@ -29,33 +29,14 @@
 | Соляные дороги | `content/regions/scorching-shard/salt-roads-overview.md` | draft-clean-card |
 | Пещерные маршруты | `content/regions/scorching-shard/cave-routes-overview.md` | draft-clean-card |
 
-## Фракции
+## Фракции и НИПы
 
-| Название | Путь | Статус |
-|---|---|---|
-| Совет Пяти Пламён | `content/factions/scorching-shard/common/sovet-pyati-plamen.md` | draft-clean-card |
-| Хранители Пещер | `content/factions/scorching-shard/common/hraniteli-pescher.md` | draft-clean-card |
-| Песчаные Братья | `content/factions/scorching-shard/common/peschanye-bratya.md` | draft-clean-card |
-| Свободные Капли | `content/factions/scorching-shard/common/svobodnye-kapli.md` | draft-clean-card |
-| Стража Пламени | `content/factions/scorching-shard/common/strazha-plameni.md` | draft-clean-card |
-| Дети Солнца | `content/factions/scorching-shard/common/deti-solntsa.md` | draft-clean-card |
-| Соляной Круг | `content/factions/scorching-shard/common/solyanoy-krug.md` | draft-clean-card |
-| Мастерские Линз | `content/factions/scorching-shard/common/masterskie-linz.md` | draft-clean-card |
-
-## НИПы
-
-См. общий индекс `content/_indexes/npcs-index.md`.
+См. общие индексы `factions-index.md` и `npcs-index.md`.
 
 ## Поручения и handouts
 
-| Материал | Путь | Статус |
-|---|---|---|
-| Неверная караванная печать | `content/handouts/scorching-shard/common/quest-nevernaya-karavannaya-pechat.md` | draft-clean-card |
-| Метка у родника | `content/handouts/scorching-shard/common/quest-metka-u-rodnika.md` | draft-clean-card |
-| Стеклянный образец | `content/handouts/scorching-shard/common/quest-steklyannyy-obrazets.md` | draft-clean-card |
-| Руины Соляной Мельницы | `content/handouts/scorching-shard/common/quest-ruiny-solyanoy-melnitsy.md` | draft-clean-card |
-| Пропавший сигнал | `content/handouts/scorching-shard/common/quest-propavshiy-signal.md` | draft-clean-card |
+См. `content/_indexes/handouts-index.md`.
 
 ## Дополнительные слои
 
-Существа, предметы, таблицы, сцены, духи и ритуалы заведены отдельными карточками в соответствующих папках.
+Существа, предметы, таблицы, сцены, духи и ритуалы заведены отдельными карточками в соответствующих папках и общих индексах.
