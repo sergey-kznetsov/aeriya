@@ -6,6 +6,7 @@
   "scripts": {
     "content:index": "node scripts/dev/build-content-index.mjs",
     "content:validate": "node scripts/dev/validate-content-cards.mjs",
-    "content:check": "npm run content:validate && npm run content:index"
+    "content:check": "npm run content:validate && npm run content:index",
+    "journals:build": "node scripts/dev/build-foundry-journals.mjs"
   }
 }
