@@ -26,6 +26,19 @@ Foundry-side импортёр:
 scripts/foundry/import-journal-entries.js
 ```
 
+## Формат данных
+
+Текущий сборщик создаёт записи в Foundry-like формате:
+
+```text
+entry.name
+entry.folder
+entry.flags.aeriya.sourcePath
+entry.pages[0].text.content
+```
+
+Импортёр читает именно этот формат и сохраняет `sourcePath` обратно в `flags.aeriya.sourcePath`, чтобы повторный импорт обновлял существующие записи, а не создавал дубли.
+
 ## Порядок проверки
 
 1. В локальной копии репозитория выполнить:
@@ -60,7 +73,15 @@ scripts/foundry/import-journal-entries.js
 - Загружает `modules/aeriya/build/foundry/journal-entries.json`.
 - Создаёт папки Journal Entry.
 - Создаёт или обновляет записи.
-- Сохраняет путь исходной карточки во `flags.aeriya.import.sourcePath`.
+- Сохраняет путь исходной карточки во `flags.aeriya.sourcePath`.
+
+## Smoke test
+
+Подробный чеклист ручной проверки лежит здесь:
+
+```text
+docs/foundry-smoke-test.md
+```
 
 ## Ограничения
 
