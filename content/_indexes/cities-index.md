@@ -60,7 +60,12 @@
 
 ### Вечные Льды
 
-Ожидает следующей волны переноса.
+| Город / локация | Путь | Статус |
+|---|---|---|
+| Ледяной Клык | `content/cities/shadow-shard/icy-limit/ledyanoy-klyk.md` | draft-clean-card |
+| Станция Последний Огонь | `content/cities/shadow-shard/icy-limit/stantsiya-posledniy-ogon.md` | draft-clean-card |
+| Перевал Синего Ветра | `content/cities/shadow-shard/icy-limit/pereval-sinego-vetra.md` | draft-clean-card |
+| Стоянка Белых Камней | `content/cities/shadow-shard/icy-limit/stoyanka-belyh-kamney.md` | draft-clean-card |
 
 ## Палящий Осколок
 
