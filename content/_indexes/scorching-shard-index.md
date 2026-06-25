@@ -29,6 +29,16 @@
 | Стекло и сигнал | `content/handouts/scorching-shard/common/adventure-steklo-i-signal.md` | draft-clean-card |
 | Мельница и старый путь | `content/handouts/scorching-shard/common/adventure-melnitsa-i-staryy-put.md` | draft-clean-card |
 
+## City/location quest cards
+
+| Название | Путь | Статус |
+|---|---|---|
+| Три Тени и Последний Вздох | `content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md` | draft-clean-card |
+| Клинок и Стеклянный Городок | `content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md` | draft-clean-card |
+| Родник и Белый Колодец | `content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md` | draft-clean-card |
+| Форт, дворец и Красная Соль | `content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md` | draft-clean-card |
+| Мельница, порог и Тихая Корка | `content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md` | draft-clean-card |
+
 ## Навигация
 
 Фракции, НИПы, предметы, сцены, таблицы, handouts, духи и ритуалы заведены в соответствующих общих индексах.
