@@ -33,3 +33,4 @@
 | Слухи стоянок | `content/rolltables/scorching-shard/common/stop-rumors.md` | draft-clean-card |
 | Реакции фракций | `content/rolltables/scorching-shard/common/faction-reactions.md` | draft-clean-card |
 | Дорожные находки | `content/rolltables/scorching-shard/common/road-finds.md` | draft-clean-card |
+| Повороты мини-сценария | `content/rolltables/scorching-shard/common/adventure-twists.md` | draft-clean-card |

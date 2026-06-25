@@ -20,23 +20,15 @@
 | Белый Колодец | `content/cities/scorching-shard/common/belyy-kolodets.md` | draft-clean-card |
 | Каменный Навес | `content/cities/scorching-shard/common/kamennyy-naves.md` | draft-clean-card |
 
-## Региональные карточки
+## Мини-сценарии
 
-| Регион | Путь | Статус |
+| Название | Путь | Статус |
 |---|---|---|
-| Палящий Осколок | `content/regions/scorching-shard/scorching-shard-overview.md` | draft-clean-card |
-| Выжженные Пустоши | `content/regions/scorching-shard/burning-wastes-overview.md` | draft-clean-card |
-| Соляные дороги | `content/regions/scorching-shard/salt-roads-overview.md` | draft-clean-card |
-| Пещерные маршруты | `content/regions/scorching-shard/cave-routes-overview.md` | draft-clean-card |
+| Ворота и печать | `content/handouts/scorching-shard/common/adventure-vorota-i-pechat.md` | draft-clean-card |
+| Родник и метка | `content/handouts/scorching-shard/common/adventure-rodnik-i-metka.md` | draft-clean-card |
+| Стекло и сигнал | `content/handouts/scorching-shard/common/adventure-steklo-i-signal.md` | draft-clean-card |
+| Мельница и старый путь | `content/handouts/scorching-shard/common/adventure-melnitsa-i-staryy-put.md` | draft-clean-card |
 
-## Фракции и НИПы
+## Навигация
 
-См. общие индексы `factions-index.md` и `npcs-index.md`.
-
-## Поручения и handouts
-
-См. `content/_indexes/handouts-index.md`.
-
-## Дополнительные слои
-
-Существа, предметы, таблицы, сцены, духи и ритуалы заведены отдельными карточками в соответствующих папках и общих индексах.
+Фракции, НИПы, предметы, сцены, таблицы, handouts, духи и ритуалы заведены в соответствующих общих индексах.
