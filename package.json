@@ -7,8 +7,9 @@
     "content:index": "node scripts/dev/build-content-index.mjs",
     "content:validate": "node scripts/dev/validate-content-cards.mjs",
     "content:check": "npm run content:validate && npm run content:index",
+    "module:verify": "node scripts/dev/verify-foundry-module.mjs",
     "journals:build": "node scripts/dev/build-foundry-journals.mjs",
     "journals:verify": "node scripts/dev/verify-foundry-journals.mjs",
-    "foundry:check": "npm run content:check && npm run journals:build && npm run journals:verify"
+    "foundry:check": "npm run module:verify && npm run content:check && npm run journals:build && npm run journals:verify"
   }
 }
