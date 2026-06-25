@@ -2,12 +2,25 @@
 
 ## Срединные Земли
 
+### Базовые сцены
+
 | Сцена | Путь | Статус |
 |---|---|---|
 | Рыночная площадь | `content/scenes/middle-lands/common/rynochnaya-ploschad.md` | draft-clean-card |
 | Городские ворота | `content/scenes/middle-lands/common/gorodskie-vorota.md` | draft-clean-card |
 | Дорожный трактир | `content/scenes/middle-lands/common/dorozhnyy-traktir.md` | draft-clean-card |
 | Старый мост | `content/scenes/middle-lands/common/staryy-most.md` | draft-clean-card |
+
+### Городские specific-scenes
+
+| Сцена | Путь | Статус |
+|---|---|---|
+| Архив Гравен Холлоу | `content/scenes/middle-lands/city-groups/arhiv-graven-hollou.md` | draft-clean-card |
+| Нижняя штольня Фарн’Крота | `content/scenes/middle-lands/city-groups/nizhnyaya-shtolnya-farnkrota.md` | draft-clean-card |
+| Шлюзы Озерника | `content/scenes/middle-lands/city-groups/shlyuzy-ozernika.md` | draft-clean-card |
+| Закрытый сад Леденёвых | `content/scenes/middle-lands/city-groups/zakrytyy-sad-ledenevyh.md` | draft-clean-card |
+| Старая клетка Крика Химеры | `content/scenes/middle-lands/city-groups/staraya-kletka-krika-himery.md` | draft-clean-card |
+| Узкая дорога Тонкой Гряды | `content/scenes/middle-lands/city-groups/uzkaya-doroga-tonkoy-gryady.md` | draft-clean-card |
 
 ## Теневой Осколок
 
