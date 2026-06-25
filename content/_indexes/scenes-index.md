@@ -32,6 +32,8 @@
 | Старый пост Прахобоя | `content/scenes/middle-lands/city-groups/staryy-post-prahoboya.md` | draft-clean-card |
 | Липовый дом Горлицы | `content/scenes/middle-lands/city-groups/lipovyy-dom-gorlitsy.md` | draft-clean-card |
 | Малая колокольня Бьющего Колокола | `content/scenes/middle-lands/city-groups/malaya-kolokolnya.md` | draft-clean-card |
+| Липовая роща Липушей | `content/scenes/middle-lands/city-groups/lipovaya-roscha-lipushey.md` | draft-clean-card |
+| Ночная стоянка Семиглазого | `content/scenes/middle-lands/city-groups/nochnaya-stoyanka-semiglazogo.md` | draft-clean-card |
 
 ## Теневой Осколок
 
