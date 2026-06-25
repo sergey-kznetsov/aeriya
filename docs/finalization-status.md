@@ -50,6 +50,15 @@
 | Городской квест: звериные дороги и ложные знаки | `content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md` | content-ready-final |
 | Городской квест: нижние зубцы и чёрный дым | `content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md` | content-ready-final |
 
+## Пакет финализации 04
+
+Финализированы in-world книги Срединных Земель:
+
+| Карточка | Путь | Статус |
+|---|---|---|
+| Книга дорожных заметок | `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md` | content-ready-final |
+| Письмо без двери | `content/handouts/middle-lands/books/pismo-bez-dveri.md` | content-ready-final |
+
 ## Что изменяется при финализации
 
 Карточки не просто получают новый статус. Каждая финализированная карточка дополняется до полноценного игрового состояния:
@@ -63,11 +72,19 @@
 - Foundry-назначение;
 - отсутствие внутренних пометок «дописать потом», «черновик», `todo`, `pending`.
 
+## Текущий итог
+
+Срединные Земли по handout-материалам закрыты: 16 из 16 карточек имеют статус `content-ready-final`.
+
 ## Следующая партия
 
-Следующими должны быть финализированы 2 in-world книги Срединных Земель:
+Следующими должны быть финализированы материалы Теневого Осколка:
 
-1. `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md`
-2. `content/handouts/middle-lands/books/pismo-bez-dveri.md`
-
-После этого таким же способом финализируются сцены, региональные handouts, квестовые карточки Теневого Осколка и Палящего Осколка.
+1. `content/handouts/shadow-shard/boards/city-board-shadow-shard.md`
+2. `content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md`
+3. `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md`
+4. `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md`
+5. `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md`
+6. `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md`
+7. encounter-карточки Теневого Осколка;
+8. in-world записи Теневого Осколка.
