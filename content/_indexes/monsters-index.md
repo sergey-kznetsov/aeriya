@@ -9,6 +9,10 @@
 | Колокольный ворон | `content/monsters/middle-lands/common/kolokolnyy-voron.md` | draft-clean-card |
 | Складской хват | `content/monsters/middle-lands/common/skladskoy-hvat.md` | draft-clean-card |
 | Сухоглазый сторож | `content/monsters/middle-lands/common/suhoglazyy-storozh.md` | draft-clean-card |
+| Химерный выкормок | `content/monsters/middle-lands/common/himernyy-vykormok.md` | draft-clean-card |
+| Липовый роевик | `content/monsters/middle-lands/common/lipovyy-roevik.md` | draft-clean-card |
+| Семиглазая тень | `content/monsters/middle-lands/common/semiglazaya-ten.md` | draft-clean-card |
+| Грядовый прыгун | `content/monsters/middle-lands/common/gryadovyy-prygun.md` | draft-clean-card |
 
 ## Теневой Осколок
 
