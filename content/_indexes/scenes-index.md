@@ -16,3 +16,10 @@
 |---|---|---|
 | Мховая тропа | `content/scenes/shadow-shard/black-whisper-forest/mhovaya-tropa.md` | draft-clean-card |
 | Серая часовня | `content/scenes/shadow-shard/black-whisper-forest/seraya-chasovnya.md` | draft-clean-card |
+
+### Вечные Льды
+
+| Сцена | Путь | Статус |
+|---|---|---|
+| Общий огонь станции | `content/scenes/shadow-shard/icy-limit/obshchiy-ogon-stantsii.md` | draft-clean-card |
+| Перевал Синего Ветра | `content/scenes/shadow-shard/icy-limit/pereval-sinego-vetra-scene.md` | draft-clean-card |
