@@ -1,56 +1,63 @@
 # Быстрый план доведения Aeria Core до рабочего модуля
 
-Цель: быстро довести модуль до состояния, когда мастер может поставить его в Foundry, открыть справочники, использовать таблицы/handouts/мини-сценарии, а автор может заняться картинками, картами, портретами и токенами.
+Цель: быстро довести модуль до состояния, когда мастер может поставить его в Foundry, открыть справочники, использовать таблицы, handouts и мини-сценарии, а автор может заняться картинками, картами, портретами и токенами.
 
 ## Этап 1. Закрыть контентные провалы
 
+Статус: done for first playable layer.
+
 ### Срединные Земли
 
-Сделать минимум:
+Сделано:
 
 - 8 НИПов;
 - 4 сцены;
 - 3 таблицы;
-- 4 поручения;
+- 2 поручения;
 - 2 мини-сценария;
 - 1 player-facing handout;
-- 1 GM handout.
+- 1 GM handout;
+- набор встреч.
 
 ### Теневой Осколок
 
-Сделать минимум:
+Сделано:
 
 - 2 поручения Пепельной Степи;
 - 2 поручения Леса Чёрного Шёпота;
 - 2 поручения Вечных Льдов;
 - 3 мини-сценария по регионам;
-- 3 player-facing handouts;
 - 3 GM handouts;
-- сверить Окрам или явно пометить его как отложенный.
+- 3 player-facing handouts с учётом чайной памятки;
+- наборы встреч по трём регионам.
 
 ### Палящий Осколок
 
-Не расширять, только поддерживать индексы и готовить к Foundry.
+Сделано:
+
+- расширенный игровой слой;
+- поручения;
+- мини-сценарии;
+- набор встреч;
+- asset priorities.
 
 ## Этап 2. Подготовить asset manifest
 
-Нужны файлы:
+Статус: done.
+
+Созданы:
 
 - `assets/ASSET_MANIFEST.md`;
 - `assets/maps/.gitkeep`;
 - `assets/tokens/.gitkeep`;
 - `assets/portraits/.gitkeep`;
 - `assets/scenes/.gitkeep`;
-- `assets/handouts/.gitkeep`.
-
-В manifest указать для каждой сущности:
-
-- путь карточки;
-- тип ассета: map, token, portrait, scene, handout image;
-- статус: needed, optional, done;
-- комментарий для генерации или ручной подготовки.
+- `assets/handouts/.gitkeep`;
+- `assets/ui/.gitkeep`.
 
 ## Этап 3. Быстрый Foundry export
+
+Статус: next.
 
 Минимальный рабочий вариант:
 
@@ -68,22 +75,24 @@
 
 ## Этап 4. module.json и packs
 
-Добавить packs:
+Статус: planned. Не включать packs в `module.json`, пока не создан и не проверен первый рабочий pack.
 
-- `aeriya-journals`;
-- `aeriya-handouts`;
+Сначала один pack:
+
+- `aeriya-journals`.
+
+После проверки:
+
 - `aeriya-regions`;
 - `aeriya-cities`;
 - `aeriya-factions`;
-- `aeriya-npcs`;
-- `aeriya-creatures`;
+- `aeriya-handouts`;
+- `aeriya-spirits`;
+- `aeriya-rituals`;
+- `aeriya-rolltables`;
+- `aeriya-actors`;
 - `aeriya-items`;
-- `aeriya-scenes`;
-- `aeriya-rolltables`.
-
-Если быстро, можно начать с одного pack:
-
-- `aeriya-journals`.
+- `aeriya-scenes`.
 
 ## Этап 5. Проверка в Foundry
 
