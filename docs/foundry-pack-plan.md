@@ -43,7 +43,7 @@ build/foundry/aeriya-journals/_source/*.json
 
 `journal-entries.json` нужен как общий проверочный экспорт. `_source` нужен как staging-слой для первого будущего pack `aeriya-journals`.
 
-Проверочный скрипт:
+Проверочный скрипт Journal Entry export:
 
 ```bash
 npm run journals:verify
@@ -57,6 +57,20 @@ npm run journals:verify
 - что `_id` и `sourcePath` не дублируются;
 - что количество файлов в `_source` совпадает с количеством Journal Entry;
 - что `manifest.json` описывает `aeriya-journals` как `JournalEntry` pack staging.
+
+Проверочный скрипт Foundry module manifest:
+
+```bash
+npm run module:verify
+```
+
+Он проверяет:
+
+- обязательные поля `module.json`;
+- подключённые JS, CSS и файлы локализации;
+- валидность JSON локализации;
+- наличие `README.md` и `CHANGELOG.md`;
+- структуру массива `packs`, даже если он пока пустой.
 
 Полная локальная проверка перед ручным Foundry smoke test:
 
