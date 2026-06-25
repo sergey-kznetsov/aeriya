@@ -28,7 +28,7 @@
 
 ## Текущий технический экспорт
 
-Скрипт:
+Скрипт сборки:
 
 ```bash
 npm run journals:build
@@ -42,6 +42,27 @@ build/foundry/aeriya-journals/_source/*.json
 ```
 
 `journal-entries.json` нужен как общий проверочный экспорт. `_source` нужен как staging-слой для первого будущего pack `aeriya-journals`.
+
+Проверочный скрипт:
+
+```bash
+npm run journals:verify
+```
+
+Он проверяет:
+
+- что `journal-entries.json` существует и содержит массив;
+- что каждая запись имеет `_id`, `name`, `folder`, `flags.aeriya.sourcePath` и одну text page;
+- что `pages[0].text.content` заполнен;
+- что `_id` и `sourcePath` не дублируются;
+- что количество файлов в `_source` совпадает с количеством Journal Entry;
+- что `manifest.json` описывает `aeriya-journals` как `JournalEntry` pack staging.
+
+Полная локальная проверка перед ручным Foundry smoke test:
+
+```bash
+npm run foundry:check
+```
 
 Важно: это ещё не финальная LevelDB-база Foundry. `module.json` не должен ссылаться на `aeriya-journals`, пока pack не будет превращён в валидный compendium и проверен в чистом мире.
 
@@ -75,7 +96,7 @@ build/foundry/aeriya-journals/_source/*.json
 
 ## Что нужно сделать дальше
 
-1. Запустить `npm run journals:build` локально.
+1. Запустить `npm run foundry:check` локально.
 2. Проверить количество документов и структуру `build/foundry/aeriya-journals/manifest.json`.
 3. Конвертировать `_source` в валидный Foundry compendium pack.
 4. Добавить pack в `module.json`.
