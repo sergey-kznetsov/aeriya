@@ -1,0 +1,105 @@
+<section class="aeriya-panel aeriya-travel-console__body">
+  <form class="aeriya-travel-form">
+    <div class="aeriya-panel__section">
+      <h2>Консоль путешествия</h2>
+      <p class="aeriya-rules-note">
+        Инструмент мастера для быстрого запуска перехода. Перед стартом выдели на сцене токены персонажей, которые идут в путь. При открытии консоли модуль включает режим путешествия, случайно распределяет дорожные роли только между выбранными токенами и публикует их в общий чат. Пока режим активен, роли не перебрасываются. После прибытия нажми «Завершить путешествие», чтобы снять роли.
+      </p>
+    </div>
+
+    <div class="aeriya-panel__section aeriya-travel-grid">
+      <label>
+        Откуда
+        <input type="text" name="from" value="точка А" />
+      </label>
+
+      <label>
+        Куда
+        <input type="text" name="to" value="точка Б" />
+      </label>
+
+      <label>
+        Регион
+        <select name="region">
+          {{#each regions}}
+            <option value="{{id}}">{{name}}</option>
+          {{/each}}
+        </select>
+      </label>
+
+      <label>
+        Дней пути
+        <input type="number" name="days" value="3" min="1" max="30" />
+      </label>
+
+      <label>
+        Уровень риска
+        <select name="danger">
+          {{#each dangerOptions}}
+            <option value="{{value}}">{{label}}</option>
+          {{/each}}
+        </select>
+      </label>
+
+      <label>
+        Цель перехода
+        <input type="text" name="purpose" value="добраться до цели" />
+      </label>
+
+      <label class="aeriya-travel-grid__wide">
+        Груз или важный объект
+        <input type="text" name="cargo" value="обычный дорожный груз" />
+      </label>
+    </div>
+
+    <div class="aeriya-panel__section aeriya-travel-flags">
+      <label>
+        <input type="checkbox" name="deadline" />
+        Есть дедлайн: время давит на решения
+      </label>
+
+      <label>
+        <input type="checkbox" name="secrecy" />
+        Нужно идти скрытно
+      </label>
+
+      <label>
+        <input type="checkbox" name="dangerousCargo" />
+        Груз опасный или спорный
+      </label>
+    </div>
+
+    <div class="aeriya-panel__section aeriya-travel-actions">
+      <button type="button" data-action="generate-journey">
+        Сгенерировать переход
+      </button>
+      <button type="button" data-action="generate-encounter">
+        Случайная встреча
+      </button>
+      <button type="button" data-action="generate-supplies">
+        Осложнение припасов
+      </button>
+      <button type="button" data-action="assign-roles">
+        Перебросить роли вручную
+      </button>
+      <button type="button" data-action="complete-travel">
+        Завершить путешествие
+      </button>
+      <button type="button" data-action="post-chat">
+        Отправить переход мастеру в чат
+      </button>
+      <button type="button" data-action="create-journal">
+        Создать журнал перехода
+      </button>
+    </div>
+  </form>
+
+  <div class="aeriya-panel__section">
+    <h3>Результат генерации</h3>
+    <div class="aeriya-travel-output-placeholder" data-aeriya-travel-output>
+      <p class="aeriya-rules-note">
+        Перед стартом выдели токены персонажей на сцене. Заполни маршрут и нажми «Сгенерировать переход». Сцены, узлы, осложнения и мастерские последствия появятся здесь. Роли игроков публикуются отдельно в общий чат. Когда партия прибыла в точку назначения, нажми «Завершить путешествие».
+      </p>
+    </div>
+  </div>
+</section>
