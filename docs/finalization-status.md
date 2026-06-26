@@ -78,6 +78,15 @@
 | Лесной квест: Корень и Дом Мха | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md` | content-ready-final |
 | Лесной квест: Серый Приют и старая застава | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md` | content-ready-final |
 
+## Пакет финализации 07
+
+Финализированы северные квесты Теневого Осколка:
+
+| Карточка | Путь | Статус |
+|---|---|---|
+| Северный квест: огонь и Ледяной Клык | `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md` | content-ready-final |
+| Северный квест: перевал и Белые Камни | `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md` | content-ready-final |
+
 ## Что изменяется при финализации
 
 Карточки не просто получают новый статус. Каждая финализированная карточка дополняется до полноценного игрового состояния:
@@ -95,15 +104,15 @@
 
 Срединные Земли по handout-материалам закрыты: 16 из 16 карточек имеют статус `content-ready-final`.
 
-Теневой Осколок по handout-материалам: 5 из 13 строк текущего handout-индекса имеют статус `content-ready-final`. Осталось закрыть 8 строк Теневого Осколка.
+Теневой Осколок по handout-материалам: 7 из 13 строк текущего handout-индекса имеют статус `content-ready-final`. Осталось закрыть 6 строк Теневого Осколка.
 
 ## Следующая партия
 
 Следующими должны быть финализированы материалы Теневого Осколка:
 
-1. `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md`
-2. `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md`
-3. `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md`
-4. `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md`
-5. `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md`
-6. in-world записи Теневого Осколка.
+1. `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md`
+2. `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md`
+3. `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md`
+4. `content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md`
+5. `content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md`
+6. `content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md`
