@@ -1,13 +1,13 @@
 {
   "id": "aeriya",
   "title": "Aeria Core",
-  "description": "Модуль Foundry VTT для проведения кампаний в мире Аэрии: лор, боевые расширения, ритуалы, духи, фракции и инструменты мастера.",
+  "description": "Модуль Foundry VTT для кампаний в мире Аэрии: лор, города, фракции, духи, бестиарий, квесты, атласы, дорожные байки, легенды, предания, предсказания и пророчества. Полный автоимпорт при включении у GM.",
   "authors": [
     {
       "name": "Сергей"
     }
   ],
-  "version": "0.2.4",
+  "version": "0.3.1",
   "compatibility": {
     "minimum": "13",
     "verified": "13.350"
@@ -21,7 +21,7 @@
         "id": "dnd5e",
         "type": "system",
         "compatibility": {
-          "verified": "5.2.5"
+          "verified": "5.3.0"
         }
       }
     ]
@@ -29,7 +29,6 @@
   "esmodules": [
     "scripts/aeriya-core.js",
     "scripts/aeriya-content-importer.js",
-    "scripts/aeriya-scene-importer.js",
     "scripts/aeriya-travel.js",
     "scripts/aeriya-travel-roles.js",
     "scripts/aeriya-travel-role-ui.js"
@@ -46,9 +45,9 @@
   ],
   "packs": [],
   "socket": true,
-  "url": "\u0068ttps://github.com/sergey-kznetsov/aeriya",
-  "manifest": "\u0068ttps://raw.githubusercontent.com/sergey-kznetsov/aeriya/main/module.json",
-  "download": "\u0068ttps://github.com/sergey-kznetsov/aeriya/archive/refs/heads/main.zip",
+  "url": "https://github.com/sergey-kznetsov/aeriya",
+  "manifest": "https://raw.githubusercontent.com/sergey-kznetsov/aeriya/main/module.json",
+  "download": "https://github.com/sergey-kznetsov/aeriya/archive/refs/heads/main.zip",
   "readme": "README.md",
   "changelog": "CHANGELOG.md"
 }

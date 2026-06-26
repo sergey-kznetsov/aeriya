@@ -16,7 +16,8 @@
     "scenes:build": "node scripts/dev/build-foundry-scenes.mjs",
     "scenes:verify": "node scripts/dev/verify-foundry-scenes.mjs",
     "assets:verify": "node scripts/dev/verify-assets-manifest.mjs",
+    "import:validate": "node scripts/dev/validate-import-ready.mjs",
     "foundry:check": "npm run module:verify && npm run content:check && npm run assets:verify && npm run journals:build && npm run journals:verify && npm run actors:build && npm run actors:verify && npm run scenes:build && npm run scenes:verify",
-    "release:test": "npm run foundry:check && node scripts/dev/verify-release-test-ready.mjs"
+    "release:test": "npm run foundry:check && node scripts/dev/verify-release-test-ready.mjs && npm run import:validate"
   }
 }

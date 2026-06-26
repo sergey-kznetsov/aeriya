@@ -1,0 +1,551 @@
+[
+  {
+    "name": "Гравен Холлоу",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Города",
+    "shard": "middle-lands",
+    "region": "common",
+    "type": "city",
+    "description": "Сердце Срединных Земель. Каменный город с мокрыми мостовыми, поясами рынков и Храмом Последней Торговки. Столица сделок, долгов и публичной власти.",
+    "sourcePath": "scene:middle-lands/common/гравен_холлоу"
+  },
+  {
+    "name": "Кладовая Перекрёстков",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Города",
+    "shard": "middle-lands",
+    "region": "common",
+    "type": "city",
+    "description": "Главный узел грузов Срединного Осколка. Ряды амбаров, навесов, счётных домов и ворот на дороги.",
+    "sourcePath": "scene:middle-lands/common/кладовая_перекрёстков"
+  },
+  {
+    "name": "Морнстэд",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Север / Города",
+    "shard": "middle-lands",
+    "region": "north",
+    "type": "city",
+    "description": "Серый город у карьеров. Держится на страхе перед тем, что под ним. Тяжёлые ворота и усталые лица.",
+    "sourcePath": "scene:middle-lands/north/морнстэд"
+  },
+  {
+    "name": "Фарн'Крот",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Подземные / Города",
+    "shard": "middle-lands",
+    "region": "underground",
+    "type": "city",
+    "description": "Многоуровневый подземный город. Стены слушают шаги. Известен Первой Заслонкой и дорогами под болотами.",
+    "sourcePath": "scene:middle-lands/underground/фарн'крот"
+  },
+  {
+    "name": "Озерник",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Запад / Города",
+    "shard": "middle-lands",
+    "region": "west",
+    "type": "city",
+    "description": "Водный город. Пахнет холодом, сетями и чайками. Знаменит озёрными маршрутами и молчаливыми птицами.",
+    "sourcePath": "scene:middle-lands/west/озерник"
+  },
+  {
+    "name": "Плавень",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Юг / Города",
+    "shard": "middle-lands",
+    "region": "south",
+    "type": "city",
+    "description": "Болотный город на сваях. Улицы двигаются вместе с водой. Точка входа в болота под подземельями.",
+    "sourcePath": "scene:middle-lands/south/плавень"
+  },
+  {
+    "name": "Скрежетник",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Восток / Города",
+    "shard": "middle-lands",
+    "region": "east",
+    "type": "city",
+    "description": "Шахтёрский город, вросший в гору. Металл скрежещет даже ночью. Знаменит звонцом и легендой о жадных шахтёрах.",
+    "sourcePath": "scene:middle-lands/east/скрежетник"
+  },
+  {
+    "name": "Бьющий Колокол",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Восток / Города",
+    "shard": "middle-lands",
+    "region": "east",
+    "type": "city",
+    "description": "Город-маяк. Воздух вибрирует. Колокол ведёт дороги и пугает чужаков.",
+    "sourcePath": "scene:middle-lands/east/бьющий_колокол"
+  },
+  {
+    "name": "Усадьба Леденёвых",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Север / Поселения",
+    "shard": "middle-lands",
+    "region": "north",
+    "type": "settlement",
+    "description": "Холодная усадьба с длинными коридорами и белыми окнами. Власть старой крови и долгих договоров.",
+    "sourcePath": "scene:middle-lands/north/усадьба_леденёвых"
+  },
+  {
+    "name": "Крик Химеры",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Восток / Локации",
+    "shard": "middle-lands",
+    "region": "east",
+    "type": "location",
+    "description": "Город-свалка ценных ошибок. Клети, навесы и дым. Принимает грузы, от которых другие отказываются.",
+    "sourcePath": "scene:middle-lands/east/крик_химеры"
+  },
+  {
+    "name": "Тарный Столб",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Поселения",
+    "shard": "middle-lands",
+    "region": "common",
+    "type": "settlement",
+    "description": "Вертикальный город вокруг столбов и подъёмников. Идеальная тара и странная дисциплина.",
+    "sourcePath": "scene:middle-lands/common/тарный_столб"
+  },
+  {
+    "name": "Берег Сухих Глаз",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Юг / Поселения",
+    "shard": "middle-lands",
+    "region": "south",
+    "type": "settlement",
+    "description": "Низкие дома у сухого берега и ветра. Известен обычаем сухого траура.",
+    "sourcePath": "scene:middle-lands/south/берег_сухих_глаз"
+  },
+  {
+    "name": "Горлица",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Поселения",
+    "shard": "middle-lands",
+    "region": "common",
+    "type": "settlement",
+    "description": "Светлый на вид город с площадями для песен. Певцы-посланники.",
+    "sourcePath": "scene:middle-lands/common/горлица"
+  },
+  {
+    "name": "Острог Прахобоя",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Север / Поселения",
+    "shard": "middle-lands",
+    "region": "north",
+    "type": "settlement",
+    "description": "Жёсткая крепость из грубого камня. Держит то, что нельзя выпускать.",
+    "sourcePath": "scene:middle-lands/north/острог_прахобоя"
+  },
+  {
+    "name": "Пустотень",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Локации",
+    "shard": "middle-lands",
+    "region": "common",
+    "type": "location",
+    "description": "Место, где тень ведёт себя не как тень. Аномалии Завязи.",
+    "sourcePath": "scene:middle-lands/common/пустотень"
+  },
+  {
+    "name": "Сычий Брод",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Юг / Поселения",
+    "shard": "middle-lands",
+    "region": "south",
+    "type": "settlement",
+    "description": "Свайные дома в тумане. Совы не всегда птицы. Умение спорить с болотом.",
+    "sourcePath": "scene:middle-lands/south/сычий_брод"
+  },
+  {
+    "name": "Липуши",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Поселения",
+    "shard": "middle-lands",
+    "region": "common",
+    "type": "settlement",
+    "description": "Мягкая деревня на липовых холмах. Самый спокойный вид в неспокойном мире.",
+    "sourcePath": "scene:middle-lands/common/липуши"
+  },
+  {
+    "name": "Лагерь Семиглазого",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Локации",
+    "shard": "middle-lands",
+    "region": "common",
+    "type": "location",
+    "description": "Шатры, костры и семь дозорных вышек. Информация и странные предсказания.",
+    "sourcePath": "scene:middle-lands/common/лагерь_семиглазого"
+  },
+  {
+    "name": "Тонкая Гряда",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Север / Локации",
+    "shard": "middle-lands",
+    "region": "north",
+    "type": "location",
+    "description": "Узкий гребень с ветром, который режет слова. Опасная дорога между регионами.",
+    "sourcePath": "scene:middle-lands/north/тонкая_гряда"
+  },
+  {
+    "name": "Рубеж Трясин",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Юг / Поселения",
+    "shard": "middle-lands",
+    "region": "south",
+    "type": "settlement",
+    "description": "Грязная граница деревянных настилов. Последняя сухая точка перед топями.",
+    "sourcePath": "scene:middle-lands/south/рубеж_трясин"
+  },
+  {
+    "name": "Варница Чёрного Дыма",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Восток / Поселения",
+    "shard": "middle-lands",
+    "region": "east",
+    "type": "settlement",
+    "description": "Поселение под чёрным дымом и горячими трубами. Алхимические компоненты, смолы, соли.",
+    "sourcePath": "scene:middle-lands/east/варница_чёрного_дыма"
+  },
+  {
+    "name": "Дозорный Утёс",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Запад / Локации",
+    "shard": "middle-lands",
+    "region": "west",
+    "type": "location",
+    "description": "Сторожевая крепость между Озерником и Гравен Холлоу.",
+    "sourcePath": "scene:middle-lands/west/дозорный_утёс"
+  },
+  {
+    "name": "Ржавый Знак",
+    "folder": "Aeria Core / Сцены / Срединные Земли / Юг / Локации",
+    "shard": "middle-lands",
+    "region": "south",
+    "type": "location",
+    "description": "Старая застава юго-западнее Озерника у болотной дороги к Горлице и Плавню.",
+    "sourcePath": "scene:middle-lands/south/ржавый_знак"
+  },
+  {
+    "name": "Перекрёсток Трёх Теней",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "city",
+    "description": "Торговый узел Степи. Шатры, маяки пепла, постоянный шум телег.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/перекрёсток_трёх_теней"
+  },
+  {
+    "name": "Чёрная Кузня",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "city",
+    "description": "Город-кузница. Чёрные трубы, раскалённые дворы, гул молотов. Сталь и оружие Степи.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/чёрная_кузня"
+  },
+  {
+    "name": "А'алмар",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "city",
+    "description": "Пепельные башни, хранилища, закрытые кварталы. Архив и школы магов.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/а'алмар"
+  },
+  {
+    "name": "Окрам",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "city",
+    "description": "Город воды и охоты. Низкие стены, загоны, костяные ворота.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/окрам"
+  },
+  {
+    "name": "Таш'Вейн",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "city",
+    "description": "Богатый город. Золотистые купола сквозь пепел, закрытые сады.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/таш'вейн"
+  },
+  {
+    "name": "Борос",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "city",
+    "description": "Горный город гномьих кланов. Тяжёлый и упрямый.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/борос"
+  },
+  {
+    "name": "Гар-Шахр",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "city",
+    "description": "Город воинов. Арены, казармы, пыльные дворы.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/гар-шахр"
+  },
+  {
+    "name": "Бату",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "city",
+    "description": "Город тишины. Тихие залы, катакомбы. Орден Безмолвных Слушателей.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/бату"
+  },
+  {
+    "name": "Саи'Рам",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Поселения",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "settlement",
+    "description": "Город у странного озера, где вода отражает небо неправильно.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/саи'рам"
+  },
+  {
+    "name": "Ак-Куль",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Поселения",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "settlement",
+    "description": "Солёный город. Белёсые стены у солёного озера. Строгий водный закон.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/ак-куль"
+  },
+  {
+    "name": "Кум-Алам",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Поселения",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "settlement",
+    "description": "Южный город мастеров. Жаркий город мастерских и насосов.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/кум-алам"
+  },
+  {
+    "name": "Хур'Наир",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Поселения",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "settlement",
+    "description": "Город перехода. Последняя надёжная точка на юге.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/хур'наир"
+  },
+  {
+    "name": "Деревня ИП",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Поселения",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "settlement",
+    "description": "Неприметная деревня среди пепла. Проводники-гоблины.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/деревня_ип"
+  },
+  {
+    "name": "Пепельное Сердце",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Локации",
+    "shard": "shadow-shard",
+    "region": "ash-steppe",
+    "type": "location",
+    "description": "Священная локация. Обо, пепельные круги, ветер без источника.",
+    "sourcePath": "scene:shadow-shard/ash-steppe/пепельное_сердце"
+  },
+  {
+    "name": "Лагерь Сломанный Рог",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота / Поселения",
+    "shard": "shadow-shard",
+    "region": "black-whisper-forest",
+    "type": "settlement",
+    "description": "Лесной лагерь. Шатры и хижины под чёрными деревьями. Убежище для изгоев.",
+    "sourcePath": "scene:shadow-shard/black-whisper-forest/лагерь_сломанный_рог"
+  },
+  {
+    "name": "Дозорная Вышка у Озера",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота / Локации",
+    "shard": "shadow-shard",
+    "region": "black-whisper-forest",
+    "type": "location",
+    "description": "Сырая вышка у воды. Вид на Озеро Бездонных Зеркал.",
+    "sourcePath": "scene:shadow-shard/black-whisper-forest/дозорная_вышка_у_озера"
+  },
+  {
+    "name": "Гнилой Собор",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота / Локации",
+    "shard": "shadow-shard",
+    "region": "black-whisper-forest",
+    "type": "location",
+    "description": "Собор из корней, плоти, грибов и шёпота. Культ Кровавого Корня.",
+    "sourcePath": "scene:shadow-shard/black-whisper-forest/гнилой_собор"
+  },
+  {
+    "name": "Прогалина Первого Костра",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота / Локации",
+    "shard": "shadow-shard",
+    "region": "black-whisper-forest",
+    "type": "location",
+    "description": "Редкая светлая поляна в вечных сумерках. Место честных лесных договоров.",
+    "sourcePath": "scene:shadow-shard/black-whisper-forest/прогалина_первого_костра"
+  },
+  {
+    "name": "Ледяной Клык",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Города",
+    "shard": "shadow-shard",
+    "region": "icy-limit",
+    "type": "city",
+    "description": "Ледяной город на хребте. Ледяные скульптуры и живая память. Йормунга под льдом.",
+    "sourcePath": "scene:shadow-shard/icy-limit/ледяной_клык"
+  },
+  {
+    "name": "Станция Последний Огонь",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Поселения",
+    "shard": "shadow-shard",
+    "region": "icy-limit",
+    "type": "settlement",
+    "description": "Рубежная станция. Низкая крепость вокруг огромного очага. Закон тепла.",
+    "sourcePath": "scene:shadow-shard/icy-limit/станция_последний_огонь"
+  },
+  {
+    "name": "Пылающий Клинок",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Города",
+    "shard": "scorching-shard",
+    "region": "burned-wasteland",
+    "type": "city",
+    "description": "Главный город Выжженных Пустошей. Трёхуровневый из жёлтого камня над резервуаром.",
+    "sourcePath": "scene:scorching-shard/burned-wasteland/пылающий_клинок"
+  },
+  {
+    "name": "Три Тени",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Поселения",
+    "shard": "scorching-shard",
+    "region": "burned-wasteland",
+    "type": "settlement",
+    "description": "Торговая застава. Навесы из стеклоткани вокруг центрального резервуара.",
+    "sourcePath": "scene:scorching-shard/burned-wasteland/три_тени"
+  },
+  {
+    "name": "Форт Раскалённой Соли",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Поселения",
+    "shard": "scorching-shard",
+    "region": "burned-wasteland",
+    "type": "settlement",
+    "description": "Военный форпост на переходе к Соляным пустыням.",
+    "sourcePath": "scene:scorching-shard/burned-wasteland/форт_раскалённой_соли"
+  },
+  {
+    "name": "Стеклянный Городок",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Поселения",
+    "shard": "scorching-shard",
+    "region": "burned-wasteland",
+    "type": "settlement",
+    "description": "Ремесленное поселение. Малый городок из сияющих навесов и печей. Солнечное стекло.",
+    "sourcePath": "scene:scorching-shard/burned-wasteland/стеклянный_городок"
+  },
+  {
+    "name": "Последний Вздох",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Локации",
+    "shard": "scorching-shard",
+    "region": "burned-wasteland",
+    "type": "location",
+    "description": "Оазис-база банды. Грязный оазис с вооружёнными вышками.",
+    "sourcePath": "scene:scorching-shard/burned-wasteland/последний_вздох"
+  },
+  {
+    "name": "Дворец Золотого Каравана",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Локации",
+    "shard": "scorching-shard",
+    "region": "burned-wasteland",
+    "type": "location",
+    "description": "Золотые руины, наполовину съеденные песком. Архивы до Разлома.",
+    "sourcePath": "scene:scorching-shard/burned-wasteland/дворец_золотого_каравана"
+  },
+  {
+    "name": "Небесный Якорь",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Локации",
+    "shard": "scorching-shard",
+    "region": "burned-wasteland",
+    "type": "location",
+    "description": "Скрытая площадка для летающих плотов. Пиратская стоянка.",
+    "sourcePath": "scene:scorching-shard/burned-wasteland/небесный_якорь"
+  },
+  {
+    "name": "Кровавый Родник",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни / Поселения",
+    "shard": "scorching-shard",
+    "region": "salt-deserts",
+    "type": "settlement",
+    "description": "Малый оазис среди белого жара. Красная вода и слухи о Глазе.",
+    "sourcePath": "scene:scorching-shard/salt-deserts/кровавый_родник"
+  },
+  {
+    "name": "Лагерь Шёпот Ветра",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни / Локации",
+    "shard": "scorching-shard",
+    "region": "salt-deserts",
+    "type": "location",
+    "description": "Наблюдательный пост Хранителей Пещер. Шатры на краю Белого Лабиринта.",
+    "sourcePath": "scene:scorching-shard/salt-deserts/лагерь_шёпот_ветра"
+  },
+  {
+    "name": "Тихая Корка",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни / Поселения",
+    "shard": "scorching-shard",
+    "region": "salt-deserts",
+    "type": "settlement",
+    "description": "Поселение Солегрызов. Полуземлянки за соляными дюнами.",
+    "sourcePath": "scene:scorching-shard/salt-deserts/тихая_корка"
+  },
+  {
+    "name": "Красная Соль",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни / Локации",
+    "shard": "scorching-shard",
+    "region": "salt-deserts",
+    "type": "location",
+    "description": "Заброшенный военный пост у красных отложений.",
+    "sourcePath": "scene:scorching-shard/salt-deserts/красная_соль"
+  },
+  {
+    "name": "Руины Соляной Мельницы",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни / Локации",
+    "shard": "scorching-shard",
+    "region": "salt-deserts",
+    "type": "location",
+    "description": "Сломанные колёса среди белых плоскостей. Доразломная инфраструктура.",
+    "sourcePath": "scene:scorching-shard/salt-deserts/руины_соляной_мельницы"
+  },
+  {
+    "name": "Пещерный Порог",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Подземные / Поселения",
+    "shard": "scorching-shard",
+    "region": "underground",
+    "type": "settlement",
+    "description": "Подземно-наземный переход. Полупещерная станция. Хранители Пещер.",
+    "sourcePath": "scene:scorching-shard/underground/пещерный_порог"
+  },
+  {
+    "name": "Огненный каньон — Перевал Лавы",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны / Локации",
+    "shard": "scorching-shard",
+    "region": "fire-canyons",
+    "type": "location",
+    "description": "Узкий проход через застывшую лавовую реку. Раскалённые стены, трещины из которых идёт жар. Место опасных переходов и редких стоянок.",
+    "sourcePath": "scene:scorching-shard/fire-canyons/lava-pass"
+  },
+  {
+    "name": "Огненный каньон — Стеклянная Площадка",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны / Локации",
+    "shard": "scorching-shard",
+    "region": "fire-canyons",
+    "type": "location",
+    "description": "Обширное оплавленное плато из застывшего стекла. Поверхность отражает солнце и дезориентирует путников. Место встреч стеклянных змей.",
+    "sourcePath": "scene:scorching-shard/fire-canyons/glass-plateau"
+  },
+  {
+    "name": "Огненный каньон — Пещера Голоса Лавы",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны / Локации",
+    "shard": "scorching-shard",
+    "region": "fire-canyons",
+    "type": "location",
+    "description": "Глубокая пещера с активными вентиляционными отверстиями. Говорят, здесь обитает дух лавы — Голос Лавы. Место редких обрядов.",
+    "sourcePath": "scene:scorching-shard/fire-canyons/lava-voice-cave"
+  },
+  {
+    "name": "Ледяной Предел — Перевал Синего Ветра",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Локации",
+    "shard": "shadow-shard",
+    "region": "icy-limit",
+    "type": "location",
+    "description": "Продуваемый перевал с постоянным северным ветром. Верёвочные маркеры и каменные пирамидки помогают ориентироваться в снегу.",
+    "sourcePath": "scene:shadow-shard/icy-limit/blue-wind-pass"
+  },
+  {
+    "name": "Ледяной Предел — Общий Очаг Станции",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Локации",
+    "shard": "shadow-shard",
+    "region": "icy-limit",
+    "type": "location",
+    "description": "Центральный зал дорожной станции. Большой каменный очаг, скамьи для путников, доска с записями о погоде и маршрутах.",
+    "sourcePath": "scene:shadow-shard/icy-limit/station-common-hearth"
+  }
+]
