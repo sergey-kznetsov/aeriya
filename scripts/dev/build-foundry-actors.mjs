@@ -4,11 +4,14 @@ import crypto from 'node:crypto';
 
 const ROOT = process.cwd();
 const ACTOR_CONTENT_ROOT = path.join(ROOT, 'content', 'actor-statblocks');
+const ASSET_MANIFEST_FILE = path.join(ROOT, 'assets', 'manifests', 'old-world-assets.json');
 const OUT_DIR = path.join(ROOT, 'build', 'foundry');
 const OUT_FILE = path.join(OUT_DIR, 'actor-entries.json');
 const PACK_DIR = path.join(OUT_DIR, 'aeriya-actors');
 const PACK_SOURCE_DIR = path.join(PACK_DIR, '_source');
 const PACK_MANIFEST_FILE = path.join(PACK_DIR, 'manifest.json');
+
+const DEFAULT_ACTOR_IMAGE = 'icons/svg/mystery-man.svg';
 
 const FOLDERS = {
   npcs: 'NPCs',
@@ -27,6 +30,15 @@ function safeFileName(input) {
     .replace(/-+/g, '-')
     .replace(/^-|-$/g, '')
     .slice(0, 96);
+}
+
+function normalizeName(input) {
+  return String(input ?? '')
+    .toLowerCase()
+    .replace(/ё/g, 'е')
+    .replace(/[^a-z0-9а-я -]+/giu, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function parseFrontmatter(text) {
@@ -87,6 +99,20 @@ function repoPath(filePath) {
   return path.relative(ROOT, filePath).replaceAll(path.sep, '/');
 }
 
+async function loadImportedTokenMap() {
+  try {
+    const manifest = JSON.parse(await fs.readFile(ASSET_MANIFEST_FILE, 'utf8'));
+    const map = new Map();
+    for (const token of manifest.tokens ?? []) {
+      if (token.status !== 'imported') continue;
+      map.set(normalizeName(token.name), token.path);
+    }
+    return map;
+  } catch {
+    return new Map();
+  }
+}
+
 function folderNameFor(relativePath) {
   if (relativePath.includes('/npcs/')) return FOLDERS.npcs;
   if (relativePath.includes('/bestiary/')) return FOLDERS.bestiary;
@@ -133,19 +159,21 @@ function buildFolderDocuments(folderNames) {
   }));
 }
 
-function buildActorDocument({ block, sourcePath, batchData, folderName }) {
+function buildActorDocument({ block, sourcePath, batchData, folderName, tokenMap }) {
   const id = slugId(`${sourcePath}:${block.name}`);
   const cr = parseMetric(block.markdown, 'CR') ?? parseMetric(block.markdown, 'КО');
   const ac = parseMetric(block.markdown, 'КД');
   const hp = parseMetric(block.markdown, 'ХП');
   const speed = parseMetric(block.markdown, 'Скорость');
+  const importedTokenPath = tokenMap.get(normalizeName(block.name));
+  const imagePath = importedTokenPath ?? DEFAULT_ACTOR_IMAGE;
 
   return {
     _id: id,
     name: block.name,
     type: 'npc',
     folder: slugId(`actor-folder:${folderName}`),
-    img: 'icons/svg/mystery-man.svg',
+    img: imagePath,
     system: {
       details: {
         biography: {
@@ -177,6 +205,7 @@ function buildActorDocument({ block, sourcePath, batchData, folderName }) {
         ac,
         hp,
         speed,
+        imageSource: importedTokenPath ? 'old-world-imported-token' : 'default-placeholder',
         stagingOnly: true
       }
     }
@@ -206,6 +235,7 @@ async function writePackSource(actors) {
 
   const folderNames = [...new Set(actors.map((actor) => actor.flags.aeriya.folderName))].sort((a, b) => a.localeCompare(b, 'ru'));
   const folders = buildFolderDocuments(folderNames);
+  const tokenCount = actors.filter((actor) => actor.flags.aeriya.imageSource === 'old-world-imported-token').length;
   const manifest = {
     id: 'aeriya-actors',
     type: 'Actor',
@@ -213,14 +243,16 @@ async function writePackSource(actors) {
     sourceDirectory: 'build/foundry/aeriya-actors/_source',
     documentCount: actors.length,
     folderCount: folders.length,
+    importedTokenCount: tokenCount,
     folders,
-    note: 'Staging output for Aeria Core Actor pack. Actor documents preserve the source statblock as biography HTML and basic parsed metrics in flags/system fields. This output still must be converted into a valid Foundry compendium database and tested in a clean world before adding the pack to module.json.'
+    note: 'Staging output for Aeria Core Actor pack. Actor documents preserve the source statblock as biography HTML and basic parsed metrics in flags/system fields. Imported old-world tokens are applied when their manifest records are marked imported. This output still must be converted into a valid Foundry compendium database and tested in a clean world before adding the pack to module.json.'
   };
   await fs.writeFile(PACK_MANIFEST_FILE, JSON.stringify(manifest, null, 2), 'utf8');
 }
 
 async function main() {
   const files = await walk(ACTOR_CONTENT_ROOT);
+  const tokenMap = await loadImportedTokenMap();
   const actors = [];
 
   for (const file of files) {
@@ -231,7 +263,7 @@ async function main() {
     const folderName = folderNameFor(relativePath);
 
     for (const block of blocks) {
-      actors.push(buildActorDocument({ block, sourcePath: relativePath, batchData: data, folderName }));
+      actors.push(buildActorDocument({ block, sourcePath: relativePath, batchData: data, folderName, tokenMap }));
     }
   }
 
