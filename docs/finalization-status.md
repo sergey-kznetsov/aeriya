@@ -33,7 +33,7 @@
 
 По текущему поиску в репозитории не найдено старых маркеров `draft`, `todo`, `pending`, `stub`, `placeholder`, `needs`.
 
-Следующий обязательный контроль — локальный запуск `npm run content:check`, потому что поиск по репозиторию не заменяет выполнение валидаторов.
+Следующий обязательный контроль — локальный запуск `npm run foundry:check`, потому что поиск по репозиторию не заменяет выполнение валидаторов и сборщиков.
 
 ## Технические команды перед релизом
 
@@ -46,19 +46,22 @@
 | `npm run module:verify` | проверка `module.json` и ссылок на файлы модуля |
 | `npm run journals:build` | сборка Journal staging |
 | `npm run journals:verify` | проверка Journal staging |
-| `npm run foundry:check` | полный технический прогон модуля |
+| `npm run actors:build` | сборка Actor staging из actor-ready Markdown-статблоков |
+| `npm run actors:verify` | проверка Actor staging, manifest, папок и source JSON |
+| `npm run foundry:check` | полный технический прогон модуля: module, content, journals, actors |
 
 ## Foundry pack-статус
 
 `module.json` пока содержит пустой массив `packs`. Это остаётся корректным до ручной проверки реальных Foundry compendium DB.
 
+Journal pack и Actor pack теперь имеют staging build/verify-скрипты. Они всё ещё не являются готовыми LevelDB compendium packs до ручной проверки в Foundry VTT.
+
 Паки нельзя подключать в `module.json`, пока Journal pack и Actor pack не собраны, не проверены и не открыты вручную в Foundry VTT.
 
 ## Следующий порядок работы
 
-1. Локально прогнать `npm run content:check`.
-2. Исправить найденные валидатором карточки или ссылки, если они появятся.
-3. Проверить готовность Journal pack.
-4. Проверить готовность Actor pack.
-5. После локального запуска `npm run foundry:check` зафиксировать фактический результат.
-6. После ручной Foundry-проверки подключить packs в `module.json`.
+1. Локально прогнать `npm run foundry:check`.
+2. Исправить найденные валидатором карточки, ссылки или staging-ошибки, если они появятся.
+3. После успешного локального прогона зафиксировать фактический результат.
+4. Провести ручную проверку Journal pack и Actor pack в Foundry VTT.
+5. После ручной Foundry-проверки подключить packs в `module.json`.
