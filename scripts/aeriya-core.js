@@ -48,6 +48,48 @@ const AERIYA_FLAGS = Object.freeze({
   }
 });
 
+const AERIYA_RELEASE_HANDOUT_PATHS = [
+  "content/handouts/middle-lands/common/player-city-customs-handout.md",
+  "content/handouts/middle-lands/common/gm-city-scene-checklist.md",
+  "content/handouts/middle-lands/common/quest-rynkovaya-zapis.md",
+  "content/handouts/middle-lands/common/quest-nochnoy-kolokol.md",
+  "content/handouts/middle-lands/common/adventure-dolg-na-rynke.md",
+  "content/handouts/middle-lands/common/adventure-kolokol-i-most.md",
+  "content/handouts/middle-lands/encounters/encounter-market-debt.md",
+  "content/handouts/middle-lands/boards/city-board-middle-lands.md",
+  "content/handouts/middle-lands/city-quests/quest-archive-and-empty-name.md",
+  "content/handouts/middle-lands/city-quests/quest-cargo-without-owner.md",
+  "content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md",
+  "content/handouts/middle-lands/city-quests/quest-bell-and-house-debt.md",
+  "content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md",
+  "content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md",
+  "content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md",
+  "content/handouts/middle-lands/books/pismo-bez-dveri.md",
+  "content/handouts/shadow-shard/boards/city-board-shadow-shard.md",
+  "content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md",
+  "content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md",
+  "content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md",
+  "content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md",
+  "content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md",
+  "content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md",
+  "content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md",
+  "content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md",
+  "content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md",
+  "content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md",
+  "content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md",
+  "content/handouts/scorching-shard/boards/city-board-scorching-shard.md",
+  "content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md",
+  "content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md",
+  "content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md",
+  "content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md",
+  "content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md",
+  "content/handouts/scorching-shard/encounters/encounter-dry-road.md",
+  "content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md",
+  "content/_indexes/shadow-shard-play-index.md",
+  "content/_indexes/scorching-shard-index.md",
+  "content/_indexes/handouts-index.md"
+];
+
 class AeriyaLogger {
   static info(...args) {
     console.info("Aeria Core |", ...args);
@@ -292,6 +334,162 @@ class AeriyaFactions {
   }
 }
 
+class AeriyaContentImporter {
+  static get releasePaths() {
+    return AERIYA_RELEASE_HANDOUT_PATHS;
+  }
+
+  static parseMarkdownDocument(markdown, sourcePath) {
+    const frontmatterMatch = markdown.match(/^---\n([\s\S]*?)\n---\n?/);
+    const frontmatter = {};
+    let body = markdown;
+
+    if (frontmatterMatch) {
+      body = markdown.slice(frontmatterMatch[0].length).trim();
+      for (const line of frontmatterMatch[1].split("\n")) {
+        const separatorIndex = line.indexOf(":");
+        if (separatorIndex === -1) continue;
+        const key = line.slice(0, separatorIndex).trim();
+        const value = line.slice(separatorIndex + 1).trim().replace(/^["']|["']$/g, "");
+        frontmatter[key] = value;
+      }
+    }
+
+    const title = frontmatter.name || body.match(/^#\s+(.+)$/m)?.[1]?.trim() || sourcePath.split("/").pop()?.replace(/\.md$/, "") || sourcePath;
+    return { frontmatter, body, title };
+  }
+
+  static escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
+
+  static renderInline(markdown) {
+    return this.escapeHtml(markdown)
+      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+      .replace(/`([^`]+)`/g, "<code>$1</code>");
+  }
+
+  static markdownToHtml(markdown) {
+    return markdown
+      .split(/\n{2,}/)
+      .map((block) => {
+        const trimmed = block.trim();
+        if (!trimmed) return "";
+
+        const heading = trimmed.match(/^(#{1,6})\s+(.+)$/);
+        if (heading) {
+          const level = Math.min(heading[1].length, 6);
+          return `<h${level}>${this.renderInline(heading[2])}</h${level}>`;
+        }
+
+        if (trimmed.startsWith("|")) {
+          return `<pre>${this.escapeHtml(trimmed)}</pre>`;
+        }
+
+        if (trimmed.startsWith("- ")) {
+          const items = trimmed.split("\n").map((line) => line.replace(/^-\s+/, "").trim()).filter(Boolean);
+          return `<ul>${items.map((item) => `<li>${this.renderInline(item)}</li>`).join("")}</ul>`;
+        }
+
+        return `<p>${this.renderInline(trimmed).replace(/\n/g, "<br>")}</p>`;
+      })
+      .join("\n");
+  }
+
+  static folderNameFor(path, data) {
+    const shard = data.shard || "common";
+    if (shard === "middle-lands") return "Aeria Core — Срединные Земли";
+    if (shard === "shadow-shard") return "Aeria Core — Теневой Осколок";
+    if (shard === "scorching-shard") return "Aeria Core — Палящий Осколок";
+    return "Aeria Core — Индексы и справки";
+  }
+
+  static async getOrCreateFolder(name) {
+    const existing = game.folders.find((folder) => folder.type === "JournalEntry" && folder.name === name);
+    if (existing) return existing;
+    return Folder.create({ name, type: "JournalEntry", sorting: "a" });
+  }
+
+  static async importReleaseContent({ overwrite = false } = {}) {
+    if (!game.user?.isGM) {
+      ui.notifications?.warn("Aeria Core: импорт материалов доступен только мастеру.");
+      return { created: 0, updated: 0, skipped: 0, failed: [] };
+    }
+
+    let created = 0;
+    let updated = 0;
+    let skipped = 0;
+    const failed = [];
+
+    for (const sourcePath of this.releasePaths) {
+      try {
+        const response = await fetch(`modules/${MODULE_ID}/${sourcePath}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const markdown = await response.text();
+        const { frontmatter, body, title } = this.parseMarkdownDocument(markdown, sourcePath);
+        const folder = await this.getOrCreateFolder(this.folderNameFor(sourcePath, frontmatter));
+        const existing = game.journal.find((entry) => entry.getFlag(MODULE_ID, "sourcePath") === sourcePath);
+        const content = this.markdownToHtml(body);
+
+        if (existing && !overwrite) {
+          skipped += 1;
+          continue;
+        }
+
+        const payload = {
+          name: title,
+          folder: folder.id,
+          flags: {
+            [MODULE_ID]: {
+              sourcePath,
+              shard: frontmatter.shard || "",
+              region: frontmatter.region || "",
+              source: frontmatter.source || "",
+              status: frontmatter.status || "",
+              importedBy: "AeriyaContentImporter"
+            }
+          },
+          pages: [
+            {
+              name: title,
+              type: "text",
+              text: {
+                format: 1,
+                content
+              }
+            }
+          ]
+        };
+
+        if (existing && overwrite) {
+          await existing.update({ name: title, folder: folder.id, flags: payload.flags });
+          const page = existing.pages.contents[0];
+          if (page) await page.update(payload.pages[0]);
+          else await JournalEntryPage.create(payload.pages[0], { parent: existing });
+          updated += 1;
+          continue;
+        }
+
+        await JournalEntry.create(payload);
+        created += 1;
+      } catch (error) {
+        failed.push({ sourcePath, error: error.message });
+        AeriyaLogger.warn("content import failed", sourcePath, error);
+      }
+    }
+
+    const message = `Aeria Core: импорт материалов завершён. Создано: ${created}, обновлено: ${updated}, пропущено: ${skipped}, ошибок: ${failed.length}.`;
+    if (failed.length > 0) ui.notifications?.warn(message);
+    else ui.notifications?.info(message);
+
+    return { created, updated, skipped, failed };
+  }
+}
+
 Hooks.once("init", () => {
   game.settings.register(MODULE_ID, "reactionRecoveryThreshold", {
     name: "AEЯIA.Settings.ReactionRecoveryThreshold.Name",
@@ -342,7 +540,9 @@ Hooks.once("init", () => {
     targetedAttacks: AeriyaTargetedAttacks,
     rituals: AeriyaRitualManager,
     epicActions: AeriyaEpicActions,
-    factions: AeriyaFactions
+    factions: AeriyaFactions,
+    contentImporter: AeriyaContentImporter,
+    importReleaseContent: (options = {}) => AeriyaContentImporter.importReleaseContent(options)
   };
 
   AeriyaLogger.info("module initialized");
