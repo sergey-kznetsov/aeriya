@@ -59,7 +59,7 @@ class AeriyaTravelRoleAssigner {
 
     const assignment = this.assignRoles(actors);
     await this.persistAssignment(assignment);
-    await this.postRolesToGmChat(assignment);
+    await this.postRolesToChat(assignment);
 
     return assignment;
   }
@@ -190,15 +190,11 @@ class AeriyaTravelRoleAssigner {
     return game.settings.get(AERIYA_TRAVEL_ROLES_MODULE_ID, "lastTravelRoles");
   }
 
-  static async postRolesToGmChat(assignment) {
-    const content = this.renderAssignmentHtml(assignment);
-    const whisper = ChatMessage.getWhisperRecipients("GM").map((user) => user.id);
-
+  static async postRolesToChat(assignment) {
     return ChatMessage.create({
       user: game.user.id,
       speaker: ChatMessage.getSpeaker(),
-      whisper,
-      content
+      content: this.renderAssignmentHtml(assignment)
     });
   }
 
@@ -227,7 +223,7 @@ class AeriyaTravelRoleAssigner {
           </thead>
           <tbody>${rows}</tbody>
         </table>
-        <p class="aeriya-rules-note">Роли записаны в flags.aeriya.travel.currentRoles у соответствующих персонажей. Если выбранных токенов нет, модуль берёт персонажей активных игроков, затем всех player-owned персонажей мира.</p>
+        <p class="aeriya-rules-note">Роли опубликованы в общий чат и записаны в flags.aeriya.travel.currentRoles у соответствующих персонажей. Если выбранных токенов нет, модуль берёт персонажей активных игроков, затем всех player-owned персонажей мира.</p>
       </section>
     `;
   }
