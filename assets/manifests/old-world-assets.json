@@ -122,7 +122,7 @@
       "source": "old-world"
     },
     {
-      "id": "pepeln yy-vikhr-token",
+      "id": "pepelnyy-vikhr-token",
       "name": "Пепельный вихрь",
       "type": "creature-token",
       "path": "assets/tokens/creatures/pepelnyy-vikhr-token.webp",
@@ -202,7 +202,7 @@
       "source": "old-world"
     },
     {
-      "id": "pepeln yy-shakal-token",
+      "id": "pepelnyy-shakal-token",
       "name": "Пепельный шакал",
       "type": "creature-token",
       "path": "assets/tokens/creatures/pepelnyy-shakal-token.webp",
