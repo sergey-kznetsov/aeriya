@@ -4,44 +4,32 @@ const AERIYA_TRAVEL_ROLE_DEFINITIONS = Object.freeze([
   {
     id: "pathfinder",
     title: "Проводник маршрута",
-    responsibility: "выбирает путь, читает местность, замечает обходы и опасные сокращения",
-    skills: ["sur", "nat", "prc"],
-    abilities: ["wis", "int"]
+    responsibility: "выбирает путь, читает местность, замечает обходы и опасные сокращения"
   },
   {
     id: "watcher",
     title: "Дозорный",
-    responsibility: "следит за угрозами, ночным дозором, засадами, хвостом и странными знаками",
-    skills: ["prc", "ins", "ste"],
-    abilities: ["wis", "dex"]
+    responsibility: "следит за угрозами, ночным дозором, засадами, хвостом и странными знаками"
   },
   {
     id: "quartermaster",
     title: "Снабженец",
-    responsibility: "ведёт припасы, воду, фляги, лекарства, корм, состояние еды и расходников",
-    skills: ["sur", "med", "nat"],
-    abilities: ["wis", "int"]
+    responsibility: "ведёт припасы, воду, фляги, лекарства, корм, состояние еды и расходников"
   },
   {
     id: "speaker",
     title: "Переговорщик",
-    responsibility: "говорит с проводниками, караванами, заставами, местными и случайными попутчиками",
-    skills: ["per", "ins", "dec", "itm"],
-    abilities: ["cha", "wis"]
+    responsibility: "говорит с проводниками, караванами, заставами, местными и случайными попутчиками"
   },
   {
     id: "cargo_keeper",
     title: "Хранитель груза",
-    responsibility: "следит за телегой, сумками, опасным грузом, креплениями, животными и пропажами",
-    skills: ["inv", "ath", "sur"],
-    abilities: ["int", "str", "wis"]
+    responsibility: "следит за телегой, сумками, опасным грузом, креплениями, животными и пропажами"
   },
   {
     id: "chronicler",
     title: "Летописец пути",
-    responsibility: "ведёт карту, слухи, приметы, долги, договоры и то, что дорога может потом вернуть",
-    skills: ["his", "rel", "arc", "inv"],
-    abilities: ["int", "wis"]
+    responsibility: "ведёт карту, слухи, приметы, долги, договоры и то, что дорога может потом вернуть"
   }
 ]);
 
@@ -50,14 +38,29 @@ class AeriyaTravelRoleAssigner {
     return AERIYA_TRAVEL_ROLE_DEFINITIONS;
   }
 
+  static isTravelModeActive() {
+    return Boolean(game.settings.get(AERIYA_TRAVEL_ROLES_MODULE_ID, "travelModeActive"));
+  }
+
   static async assignAndPost(options = {}) {
+    const isActive = this.isTravelModeActive();
+    const force = options.force === true;
+
+    if (isActive && !force) {
+      const current = await this.getLastAssignment();
+      if (!options.silentIfActive) ui.notifications?.info("Режим путешествия уже активен. Роли не переброшены.");
+      return current;
+    }
+
+    if (force) await this.clearCurrentRoles({ silent: true });
+
     const actors = this.getPartyActors();
     if (!actors.length) {
       if (!options.silentIfNoActors) ui.notifications?.warn("Не найдены персонажи для распределения дорожных ролей.");
       return null;
     }
 
-    const assignment = this.assignRoles(actors);
+    const assignment = this.assignRolesRandomly(actors);
     await this.persistAssignment(assignment);
     await this.postRolesToChat(assignment);
 
@@ -98,34 +101,43 @@ class AeriyaTravelRoleAssigner {
     return result;
   }
 
-  static assignRoles(actors = []) {
-    const usedActorIds = new Set();
+  static shuffle(list = []) {
+    const result = [...list];
+    for (let index = result.length - 1; index > 0; index -= 1) {
+      const randomIndex = Math.floor(Math.random() * (index + 1));
+      [result[index], result[randomIndex]] = [result[randomIndex], result[index]];
+    }
+    return result;
+  }
+
+  static assignRolesRandomly(actors = []) {
+    const shuffledRoles = this.shuffle(AERIYA_TRAVEL_ROLE_DEFINITIONS);
+    const primaryActors = this.shuffle(actors);
+    const extraActors = this.shuffle(actors);
     const assignments = [];
 
-    for (const role of AERIYA_TRAVEL_ROLE_DEFINITIONS) {
-      const unused = actors.filter((actor) => !usedActorIds.has(actor.id));
-      const pool = unused.length ? unused : actors;
-      const ranked = pool
-        .map((actor) => ({ actor, score: this.scoreActorForRole(actor, role) }))
-        .sort((a, b) => b.score - a.score || a.actor.name.localeCompare(b.actor.name, "ru"));
-      const winner = ranked[0];
+    for (let index = 0; index < shuffledRoles.length; index += 1) {
+      const role = shuffledRoles[index];
+      const actor = index < primaryActors.length
+        ? primaryActors[index]
+        : extraActors[(index - primaryActors.length) % extraActors.length];
 
-      if (!winner) continue;
-      usedActorIds.add(winner.actor.id);
+      if (!actor) continue;
+
       assignments.push({
         roleId: role.id,
         roleTitle: role.title,
         responsibility: role.responsibility,
-        actorId: winner.actor.id,
-        actorName: winner.actor.name,
-        score: winner.score,
-        source: unused.length ? "основная роль" : "дополнительная роль"
+        actorId: actor.id,
+        actorName: actor.name,
+        source: index < primaryActors.length ? "основная роль" : "дополнительная роль"
       });
     }
 
     return {
       createdAt: new Date().toISOString(),
       source: this.describePartySource(),
+      mode: "random",
       actorCount: actors.length,
       assignments
     };
@@ -138,30 +150,9 @@ class AeriyaTravelRoleAssigner {
     return "все player-owned персонажи мира";
   }
 
-  static scoreActorForRole(actor, role) {
-    const skillScore = Math.max(...role.skills.map((skill) => this.getSkillTotal(actor, skill)), -99);
-    const abilityScore = Math.max(...role.abilities.map((ability) => this.getAbilityMod(actor, ability)), 0);
-    const level = Number(actor.system?.details?.level ?? actor.system?.details?.cr ?? 0);
-    return skillScore + Math.max(0, Math.floor(abilityScore / 2)) + Math.min(level, 20) / 20;
-  }
-
-  static getSkillTotal(actor, key) {
-    const skill = actor.system?.skills?.[key];
-    if (!skill) return -10;
-    const candidates = [skill.total, skill.mod, skill.value, skill.bonus];
-    const value = candidates.find((candidate) => Number.isFinite(Number(candidate)));
-    return Number(value ?? -10);
-  }
-
-  static getAbilityMod(actor, key) {
-    const ability = actor.system?.abilities?.[key];
-    const candidates = [ability?.mod, ability?.value];
-    const value = candidates.find((candidate) => Number.isFinite(Number(candidate)));
-    return Number(value ?? 0);
-  }
-
   static async persistAssignment(assignment) {
     await game.settings.set(AERIYA_TRAVEL_ROLES_MODULE_ID, "lastTravelRoles", assignment);
+    await game.settings.set(AERIYA_TRAVEL_ROLES_MODULE_ID, "travelModeActive", true);
 
     const byActor = new Map();
     for (const item of assignment.assignments) {
@@ -190,11 +181,47 @@ class AeriyaTravelRoleAssigner {
     return game.settings.get(AERIYA_TRAVEL_ROLES_MODULE_ID, "lastTravelRoles");
   }
 
+  static getActorsWithTravelFlags(assignment = null) {
+    const actorIds = new Set(assignment?.assignments?.map((item) => item.actorId).filter(Boolean) ?? []);
+
+    for (const actor of game.actors ?? []) {
+      if (actor?.type !== "character") continue;
+      if (actor.getFlag(AERIYA_TRAVEL_ROLES_MODULE_ID, "travel.currentRoles")) actorIds.add(actor.id);
+      if (actor.getFlag(AERIYA_TRAVEL_ROLES_MODULE_ID, "travel.lastRoleAssignmentAt")) actorIds.add(actor.id);
+    }
+
+    return [...actorIds].map((actorId) => game.actors.get(actorId)).filter(Boolean);
+  }
+
+  static async clearCurrentRoles(options = {}) {
+    const assignment = await this.getLastAssignment();
+    const actors = this.getActorsWithTravelFlags(assignment);
+
+    for (const actor of actors) {
+      await actor.unsetFlag(AERIYA_TRAVEL_ROLES_MODULE_ID, "travel.currentRoles");
+      await actor.unsetFlag(AERIYA_TRAVEL_ROLES_MODULE_ID, "travel.lastRoleAssignmentAt");
+    }
+
+    await game.settings.set(AERIYA_TRAVEL_ROLES_MODULE_ID, "lastTravelRoles", null);
+    await game.settings.set(AERIYA_TRAVEL_ROLES_MODULE_ID, "travelModeActive", false);
+
+    if (!options.silent) await this.postTravelEndedToChat(actors.length);
+    return { clearedActors: actors.length };
+  }
+
   static async postRolesToChat(assignment) {
     return ChatMessage.create({
       user: game.user.id,
       speaker: ChatMessage.getSpeaker(),
       content: this.renderAssignmentHtml(assignment)
+    });
+  }
+
+  static async postTravelEndedToChat(clearedActors = 0) {
+    return ChatMessage.create({
+      user: game.user.id,
+      speaker: ChatMessage.getSpeaker(),
+      content: this.renderTravelEndedHtml(clearedActors)
     });
   }
 
@@ -210,7 +237,8 @@ class AeriyaTravelRoleAssigner {
 
     return `
       <section class="aeriya-travel-output">
-        <h2>Дорожные роли распределены</h2>
+        <h2>Путешествие началось</h2>
+        <p><strong>Дорожные роли распределены случайно.</strong></p>
         <p><strong>Источник группы:</strong> ${assignment.source}. <strong>Персонажей:</strong> ${assignment.actorCount}.</p>
         <table class="aeriya-travel-table">
           <thead>
@@ -223,7 +251,18 @@ class AeriyaTravelRoleAssigner {
           </thead>
           <tbody>${rows}</tbody>
         </table>
-        <p class="aeriya-rules-note">Роли опубликованы в общий чат и записаны в flags.aeriya.travel.currentRoles у соответствующих персонажей. Если выбранных токенов нет, модуль берёт персонажей активных игроков, затем всех player-owned персонажей мира.</p>
+        <p class="aeriya-rules-note">Роли опубликованы в общий чат и записаны в flags.aeriya.travel.currentRoles. Пока режим путешествия активен, повторное открытие консоли не перебрасывает роли. После прибытия мастер завершает путешествие, и роли снимаются.</p>
+      </section>
+    `;
+  }
+
+  static renderTravelEndedHtml(clearedActors = 0) {
+    return `
+      <section class="aeriya-travel-output">
+        <h2>Путешествие завершено</h2>
+        <p>Партия прибыла в точку назначения. Дорожные роли сняты, режим путешествия отключён.</p>
+        <p><strong>Очищено персонажей:</strong> ${clearedActors}.</p>
+        <p class="aeriya-rules-note">В следующем приключении роли будут назначены заново и случайно.</p>
       </section>
     `;
   }
@@ -235,7 +274,7 @@ class AeriyaTravelRoleAssigner {
 
     game.aeriya.travel.openConsole = (...args) => {
       if (game.user?.isGM && game.settings.get(AERIYA_TRAVEL_ROLES_MODULE_ID, "autoAssignTravelRoles")) {
-        this.assignAndPost({ silentIfNoActors: true });
+        this.assignAndPost({ silentIfNoActors: true, silentIfActive: true });
       }
       return originalOpenConsole(...args);
     };
@@ -259,6 +298,15 @@ Hooks.once("init", () => {
     config: false,
     type: Object,
     default: null
+  });
+
+  game.settings.register(AERIYA_TRAVEL_ROLES_MODULE_ID, "travelModeActive", {
+    name: "AEЯIA.Settings.TravelModeActive.Name",
+    hint: "AEЯIA.Settings.TravelModeActive.Hint",
+    scope: "world",
+    config: false,
+    type: Boolean,
+    default: false
   });
 });
 
