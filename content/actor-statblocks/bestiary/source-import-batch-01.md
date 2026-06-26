@@ -3,8 +3,8 @@ type: "handout"
 name: "Бестиарий: импорт чарников, партия 01"
 shard: "all"
 region: "all"
-source: "module-expansion"
-status: "actor-ready-import"
+source: "book-iii-and-vii-final"
+status: "actor-ready-final"
 ---
 
 # Бестиарий: импорт чарников, партия 01
