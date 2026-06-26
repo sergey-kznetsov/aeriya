@@ -27,46 +27,58 @@ status: "content-ready-final"
 | Лес Чёрного Шёпота | мховая метка, сбитая тропа, просьба без громких слов | лес не спорит словами, но меняет путь | Грибной шёпот, Корневой страж, Шорох ветвей, Слепая сова, Голодная тень |
 | Вечные Льды | общий огонь, треснувшая метка, спор у очага | кто-то нарушил право на тепло или безопасный путь | Ледяной сторож, Ледяной плясун, Белый бегун, Тонколёдная змея, Морозный исполин |
 
+## Релизный слой Теневого Осколка
+
+| Материал | Путь | Статус | Использование |
+|---|---|---|---|
+| Доски поручений Теневого Осколка | `content/handouts/shadow-shard/boards/city-board-shadow-shard.md` | content-ready-final | общий запуск трёх регионов |
+| Городской квест: Окрам, закрытый узел | `content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md` | content-ready-final | внешний периметр закрытого узла |
+| Лесной квест: Корень и Дом Мха | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md` | content-ready-final | живая мховая метка и спор о тропе |
+| Лесной квест: Серый Приют и старая застава | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md` | content-ready-final | ложная запись, застава и Серая часовня |
+| Северный квест: огонь и Ледяной Клык | `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md` | content-ready-final | общий огонь и треснувшая ледяная метка |
+| Северный квест: перевал и Белые Камни | `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md` | content-ready-final | безопасная метка, запас и тонкий лёд |
+| Набор встреч: спор в чайном доме | `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md` | content-ready-final | быстрый степной encounter |
+| Набор встреч: мховая тропа | `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md` | content-ready-final | быстрый лесной encounter |
+| Набор встреч: последний огонь | `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md` | content-ready-final | быстрый северный encounter |
+| Запись о пяти чашах | `content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md` | content-ready-final | player-facing находка о степном чае |
+| Шесть правил мха | `content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md` | content-ready-final | player-facing находка о лесных правилах |
+| Запись об общем огне | `content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md` | content-ready-final | player-facing находка о северном очаге |
+
 ## Пепельная Степь
 
 | Материал | Путь | Статус | Использование |
 |---|---|---|---|
-| Памятка игрокам: чай Пепельной Степи | `content/handouts/shadow-shard/ash-steppe/tea-custom-player-handout.md` | draft-clean-card | игрокам перед первым степным эпизодом |
-| Мастерская памятка: сцена Пепельной Степи | `content/handouts/shadow-shard/ash-steppe/gm-ash-steppe-scene-checklist.md` | draft-clean-card | быстрый запуск дороги, чайного дома, маяка |
-| Поручение: пятая чаша | `content/handouts/shadow-shard/ash-steppe/quest-pyataya-chasha.md` | draft-clean-card | короткий социальный крючок |
-| Поручение: пропавший маяк | `content/handouts/shadow-shard/ash-steppe/quest-propavshiy-mayak.md` | draft-clean-card | дорожный / караванный крючок |
-| Мини-сценарий: чаша и маяк | `content/handouts/shadow-shard/ash-steppe/adventure-chasha-i-mayak.md` | draft-clean-card | связка двух поручений в одну сессию |
 | Городской квест: Окрам, закрытый узел | `content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md` | content-ready-final | квест на внешнем периметре закрытого узла |
+| Набор встреч: спор в чайном доме | `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md` | content-ready-final | социальная сцена, стоянка и пепельный маяк |
+| Запись о пяти чашах | `content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md` | content-ready-final | находка для игроков перед чайным спором |
 
 ## Лес Чёрного Шёпота
 
 | Материал | Путь | Статус | Использование |
 |---|---|---|---|
-| Памятка игрокам: обычаи Леса Чёрного Шёпота | `content/handouts/shadow-shard/black-whisper-forest/player-forest-customs-handout.md` | draft-clean-card | игрокам перед входом в лес |
-| Мастерская памятка: сцена Леса Чёрного Шёпота | `content/handouts/shadow-shard/black-whisper-forest/gm-forest-scene-checklist.md` | draft-clean-card | быстрый запуск тропы, мха, заставы |
-| Поручение: серая часовня | `content/handouts/shadow-shard/black-whisper-forest/quest-seraya-chasovnya.md` | draft-clean-card | короткий хоррор-крючок без жёстких потерь персонажа |
-| Поручение: сбитая тропа | `content/handouts/shadow-shard/black-whisper-forest/quest-sbitaya-tropa.md` | draft-clean-card | навигационный и фракционный крючок |
-| Мини-сценарий: тропа и часовня | `content/handouts/shadow-shard/black-whisper-forest/adventure-tropa-i-chasovnya.md` | draft-clean-card | связка двух лесных поручений |
 | Лесной квест: Корень и Дом Мха | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md` | content-ready-final | полноценная цепочка о живой мховой метке |
 | Лесной квест: Серый Приют и старая застава | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md` | content-ready-final | полноценная цепочка о ложной записи и человеке, которого лес не выпускает |
+| Набор встреч: мховая тропа | `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md` | content-ready-final | короткий лесной эпизод между двумя квестами |
+| Шесть правил мха | `content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md` | content-ready-final | находка для понимания мховых троп |
 
 ## Вечные Льды / Морозный Предел
 
 | Материал | Путь | Статус | Использование |
 |---|---|---|---|
-| Памятка игрокам: обычаи Вечных Льдов | `content/handouts/shadow-shard/icy-limit/player-north-customs-handout.md` | draft-clean-card | игрокам перед северным маршрутом |
-| Мастерская памятка: сцена Вечных Льдов | `content/handouts/shadow-shard/icy-limit/gm-icy-limit-scene-checklist.md` | draft-clean-card | быстрый запуск станции, огня, перевала |
-| Поручение: последний огонь | `content/handouts/shadow-shard/icy-limit/quest-posledniy-ogon.md` | draft-clean-card | короткий конфликт вокруг общего огня |
-| Поручение: синий перевал | `content/handouts/shadow-shard/icy-limit/quest-siniy-pereval.md` | draft-clean-card | дорожный квест с меткой и тонким льдом |
-| Мини-сценарий: огонь и перевал | `content/handouts/shadow-shard/icy-limit/adventure-ogon-i-pereval.md` | draft-clean-card | северная сессия на 1–2 встречи |
-| Северный квест: огонь и Ледяной Клык | `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md` | draft-clean-card | следующая партия финализации |
-| Северный квест: перевал и Белые Камни | `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md` | draft-clean-card | следующая партия финализации |
+| Северный квест: огонь и Ледяной Клык | `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md` | content-ready-final | общий огонь, Клык и ледяная метка |
+| Северный квест: перевал и Белые Камни | `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md` | content-ready-final | перевал, безопасная метка и лагерь |
+| Набор встреч: последний огонь | `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md` | content-ready-final | короткая станционная / дорожная сцена |
+| Запись об общем огне | `content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md` | content-ready-final | находка для понимания северного очага |
 
-## Общая таблица
+## Дополнительный backlog вне основного handout-индекса
 
-| Таблица | Путь | Статус | Использование |
-|---|---|---|---|
-| Повороты поручений | `content/rolltables/shadow-shard/common/shadow-quest-twists.md` | draft-clean-card | d6/d12 осложнения для поручений Теневого Осколка |
+В репозитории могут оставаться более мелкие памятки, поручения, мини-сценарии и rolltable со старым статусом. Они не входят в текущие 13 строк основного `handouts-index.md` и считаются расширением будущей волны, а не блокером закрытия релизного слоя Теневого Осколка.
+
+| Материал | Пример пути | Статус |
+|---|---|---|
+| Памятки игроков и мастера по регионам | `content/handouts/shadow-shard/*/*handout.md` | future-expansion |
+| Короткие поручения и мини-сценарии | `content/handouts/shadow-shard/*/quest-*.md`, `adventure-*.md` | future-expansion |
+| Повороты поручений | `content/rolltables/shadow-shard/common/shadow-quest-twists.md` | future-expansion |
 
 ## Что уже можно запускать
 
@@ -76,11 +88,10 @@ status: "content-ready-final"
 - квест Окрама как внешний периметр закрытого узла;
 - лесной квест Корня и Дома Мха;
 - лесной квест Серого Приюта и Старой Заставы;
+- северные квесты Последнего Огня, Ледяного Клыка, Перевала и Белых Камней;
+- три encounter-набора Теневого Осколка;
+- три player-facing in-world записи;
 - любые сцены, где используются actor-ready угрозы из матрицы бестиария.
-
-## Что нельзя считать закрытым
-
-Этот индекс не скрывает долг: часть памяток, коротких поручений, мини-сценариев и rolltable ещё требуют финализации. Они могут использоваться как ориентир, но не считаются релизными карточками, пока не получат `content-ready-final` и полноценное наполнение.
 
 ## Связанные индексы
 
@@ -91,4 +102,4 @@ status: "content-ready-final"
 
 ## Использование в Foundry
 
-Создать Journal Entry `Игровой индекс Теневого Осколка`. Рекомендуемые подстраницы: `Быстрый старт`, `Пепельная Степь`, `Лес Чёрного Шёпота`, `Вечные Льды`, `Что уже можно запускать`, `Что требует финализации`.
+Создать Journal Entry `Игровой индекс Теневого Осколка`. Рекомендуемые подстраницы: `Быстрый старт`, `Релизный слой`, `Пепельная Степь`, `Лес Чёрного Шёпота`, `Вечные Льды`, `Backlog расширений`.
