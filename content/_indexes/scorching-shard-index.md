@@ -1,44 +1,113 @@
-# Индекс Палящего Осколка
+---
+type: "handout"
+name: "Игровой индекс Палящего Осколка"
+shard: "scorching-shard"
+region: "common"
+source: "module-final"
+status: "content-ready-final"
+---
 
-## Города и локации
+# Игровой индекс Палящего Осколка
 
-| Название | Путь | Статус |
+## Назначение
+
+Навигационный GM handout по релизному игровому слою Палящего Осколка. Индекс показывает, какие материалы уже готовы к использованию, как запускать регион и какие старые карточки остаются расширением будущей волны, а не блокером текущего релизного слоя.
+
+Палящий Осколок работает через три опоры:
+
+1. вода — право дожить до следующего перехода;
+2. тень — право переждать жару;
+3. направление — право не умереть в песке из-за ложной метки.
+
+## Быстрый старт региона
+
+| Игровой вход | Базовый конфликт | Угрозы |
 |---|---|---|
-| Три Тени | `content/cities/scorching-shard/burning-wastes/tri-teni.md` | draft-clean-card |
-| Пылающий Клинок | `content/cities/scorching-shard/burning-wastes/pylayuschiy-klinok.md` | draft-clean-card |
-| Стеклянный Городок | `content/cities/scorching-shard/burning-wastes/steklyannyy-gorodok.md` | draft-clean-card |
-| Последний Вздох | `content/cities/scorching-shard/burning-wastes/posledniy-vzdoh.md` | draft-clean-card |
-| Пещерный Порог | `content/cities/scorching-shard/common/peschernyy-porog.md` | draft-clean-card |
-| Красная Соль | `content/cities/scorching-shard/common/krasnaya-sol.md` | draft-clean-card |
-| Небесный Якорь | `content/cities/scorching-shard/common/nebesnyy-yakor.md` | draft-clean-card |
-| Лагерь Шёпот Ветра | `content/cities/scorching-shard/common/lager-shepot-vetra.md` | draft-clean-card |
-| Тихая Корка | `content/cities/scorching-shard/common/tihaya-korka.md` | draft-clean-card |
-| Форт Раскалённой Соли | `content/cities/scorching-shard/common/fort-raskalennoy-soli.md` | draft-clean-card |
-| Дворец Золотого Каравана | `content/cities/scorching-shard/common/dvorets-zolotogo-karavana.md` | draft-clean-card |
-| Кровавый Родник | `content/cities/scorching-shard/common/krovavyy-rodnik.md` | draft-clean-card |
-| Руины Соляной Мельницы | `content/cities/scorching-shard/common/ruiny-solyanoy-melnitsy.md` | draft-clean-card |
-| Белый Колодец | `content/cities/scorching-shard/common/belyy-kolodets.md` | draft-clean-card |
-| Каменный Навес | `content/cities/scorching-shard/common/kamennyy-naves.md` | draft-clean-card |
+| караванная запись | маршрут не сходится с водой | Песчаный бегун, Песчаная пиявка, Пепельный вихрь |
+| спор у источника | вода есть, но запись исчезла или подменена | Соляной скорпион, Песчаная пиявка, Пожиратель Звуков |
+| стеклянный сигнал | отражение показывает событие, которого не было | Ослепительный жук, Стеклянная ящерица, Огненный страж |
+| соляная метка | знак появился раньше события | Соляной шорох, Соляной скорпион, Песчаный червь-молодь |
+| старая пустота под солью | новый путь может быть спасением или катастрофой | Соляной шорох, Пожиратель Звуков, Песчаная пиявка |
 
-## Мини-сценарии
+## Релизный слой Палящего Осколка
 
-| Название | Путь | Статус |
+| Материал | Путь | Статус | Использование |
+|---|---|---|---|
+| Доски поручений Палящего Осколка | `content/handouts/scorching-shard/boards/city-board-scorching-shard.md` | content-ready-final | общий запуск 15 локаций и фракций |
+| Палящий квест: Три Тени и Последний Вздох | `content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md` | content-ready-final | три маршрута, пропавший караван, ложный след |
+| Палящий квест: Клинок и Стеклянный Городок | `content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md` | content-ready-final | огненный запор, стеклянный сигнал, Небесный Якорь |
+| Палящий квест: Родник и Белый Колодец | `content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md` | content-ready-final | право на воду, запись глубины, Каменный Навес |
+| Палящий квест: форт, дворец и Красная Соль | `content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md` | content-ready-final | печать, список даров, соляная метка |
+| Палящий квест: мельница, порог и Тихая Корка | `content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md` | content-ready-final | соляной механизм, Пещерный Порог, пустота под коркой |
+| Набор встреч: сухая дорога | `content/handouts/scorching-shard/encounters/encounter-dry-road.md` | content-ready-final | быстрый переход, ворота, запись воды, неверный сигнал |
+| Список сухой дороги | `content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md` | content-ready-final | player-facing находка перед переходом |
+
+## Локационные связки
+
+| Связка | Основной материал | Что даёт в игре |
 |---|---|---|
-| Ворота и печать | `content/handouts/scorching-shard/common/adventure-vorota-i-pechat.md` | draft-clean-card |
-| Родник и метка | `content/handouts/scorching-shard/common/adventure-rodnik-i-metka.md` | draft-clean-card |
-| Стекло и сигнал | `content/handouts/scorching-shard/common/adventure-steklo-i-signal.md` | draft-clean-card |
-| Мельница и старый путь | `content/handouts/scorching-shard/common/adventure-melnitsa-i-staryy-put.md` | draft-clean-card |
+| Три Тени + Последний Вздох | `quest-tri-teni-i-posledniy-vzdoh.md` | маршруты, ложные метки, Песчаные Братья |
+| Пылающий Клинок + Стеклянный Городок + Небесный Якорь | `quest-klinok-i-steklyannyy-gorodok.md` | стекло, жар, сигналы и мастерские |
+| Кровавый Родник + Белый Колодец + Каменный Навес | `quest-rodnik-i-belyy-kolodets.md` | вода, очередь, запись глубины |
+| Форт Раскалённой Соли + Дворец Золотого Каравана + Красная Соль | `quest-fort-dvorets-i-krasnaya-sol.md` | печати, дары, политическая подмена |
+| Руины Соляной Мельницы + Пещерный Порог + Тихая Корка | `quest-melnitsa-porog-i-tihaya-korka.md` | механизм, звук, подземный путь |
+| Любая дорога между узлами | `encounter-dry-road.md` | короткий дорожный эпизод |
 
-## City/location quest cards
+## Фракции для быстрого использования
 
-| Название | Путь | Статус |
+| Фракция | Как использовать |
+|---|---|
+| Стража Пламени | охрана фортов, печей, ворот и опасных запоров |
+| Соляной Круг | контроль воды, соли, колодцев и записей глубины |
+| Свободные Капли | право бедных стоянок на воду и тень |
+| Песчаные Братья | тайные маршруты, обходы, молчание и платные сведения |
+| Мастерские Линз | стеклянные сигналы, отражения и дальняя связь |
+| Совет Пяти Пламён | политическое давление, печати, дворцовые решения |
+
+## Actor-ready угрозы
+
+| Угроза | Тип сцены |
+|---|---|
+| Песчаный бегун | погоня, сухая дорога, ложный маршрут |
+| Жаровой сторож | мастерские, форт, старый приказ |
+| Стеклянная ящерица | стеклянные дворы, линзы, малые засады |
+| Ослепительный жук | сигнал, отражение, стеклянная вспышка |
+| Соляной шорох | руины, соляная метка, старая пустота |
+| Соляной скорпион | родник, красная соль, колодцы |
+| Песчаная пиявка | сухие ямы, нижние ходы, старые источники |
+| Пепельный вихрь | задержка на открытой дороге |
+| Поющий бархан | ложное направление, повторённый звук каравана |
+| Пожиратель Звуков | тяжёлая угроза пустот, дворцов и колодцев |
+| Огненный страж | печи, запоры, тяжёлый стражевой бой |
+| Песчаный червь-молодь | наружные соляные тропы и крупная силовая сцена |
+
+## Дополнительный backlog вне релизного handout-слоя
+
+В репозитории могут оставаться отдельные карточки городов, мини-сценарии и дополнительные региональные заметки со старым статусом. Они не входят в 9 строк текущего `handouts-index.md` и считаются расширением будущей волны, а не блокером закрытия основного handout-слоя.
+
+| Материал | Пример пути | Статус |
 |---|---|---|
-| Три Тени и Последний Вздох | `content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md` | draft-clean-card |
-| Клинок и Стеклянный Городок | `content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md` | draft-clean-card |
-| Родник и Белый Колодец | `content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md` | draft-clean-card |
-| Форт, дворец и Красная Соль | `content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md` | draft-clean-card |
-| Мельница, порог и Тихая Корка | `content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md` | draft-clean-card |
+| Детальные карточки городов и локаций | `content/cities/scorching-shard/**` | future-expansion |
+| Старые мини-сценарии | `content/handouts/scorching-shard/common/adventure-*.md` | future-expansion |
+| Дополнительные поручения и малые записи | `content/handouts/scorching-shard/**` вне релизного слоя | future-expansion |
 
-## Навигация
+## Что уже можно запускать
 
-Фракции, НИПы, предметы, сцены, таблицы, handouts, духи и ритуалы заведены в соответствующих общих индексах.
+Без дополнительной подготовки можно запускать:
+
+- доску поручений Палящего Осколка;
+- пять city/location квестов;
+- encounter `Сухая дорога`;
+- player-facing handout `Список сухой дороги`;
+- дорожные, водные, стеклянные и соляные сцены с actor-ready угрозами.
+
+## Связанные индексы
+
+- `content/_indexes/handouts-index.md`
+- `content/_indexes/bestiary-location-coverage-index.md`
+- `content/_indexes/actor-statblocks-index.md`
+- `docs/finalization-status.md`
+
+## Использование в Foundry
+
+Создать Journal Entry `Игровой индекс Палящего Осколка`. Рекомендуемые подстраницы: `Быстрый старт`, `Релизный слой`, `Локационные связки`, `Фракции`, `Угрозы`, `Backlog расширений`.
