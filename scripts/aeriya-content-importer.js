@@ -724,6 +724,19 @@ async function importScenes({ overwrite = false } = {}) {
     result.failed.push({ sourcePath: "content/generated/scenes-data.json", error: err.message });
     return result;
   }
+  // Migration: on overwrite, delete obsolete Aeria scenes whose sourcePath
+  // is no longer in the manifest (e.g. old "scene:..." format from v0.2.x).
+  if (overwrite) {
+    const manifestPaths = new Set(scenesData.map(s => s.sourcePath));
+    const obsolete = game.scenes.filter(s => {
+      const sp = s.getFlag(MODULE_ID, "sourcePath");
+      return sp && !manifestPaths.has(sp) && s.getFlag(MODULE_ID, "documentKind") === "scene";
+    });
+    if (obsolete.length > 0) {
+      await Scene.deleteDocuments(obsolete.map(s => s.id));
+      console.log(`Aeria Core | Deleted ${obsolete.length} obsolete scenes`);
+    }
+  }
   for (const spec of scenesData) {
     try {
       const existing = game.scenes.find(s => s.getFlag(MODULE_ID, "sourcePath") === spec.sourcePath);

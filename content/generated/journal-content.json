@@ -1849,15 +1849,11 @@
     "folder": "Aeria Core / Срединные Земли",
     "sourcePath": "generated:middle-lands-atlas",
     "shard": "middle-lands",
-    "name": "Срединные Земли",
+    "name": "Срединные Земли — города и поселения",
     "pages": [
       {
         "name": "Обзор региона",
-        "content": "<div class=\"aeriya-content\">\n<h2>Срединные Земли</h2>\n<p>Срединные Земли — центральный Осколок Аэрии. Торговый, противоречивый, живой мир, где сделки определяют судьбы, фракции борются за влияние, а города выросли из старых крепостей, рынков и дорожных узлов. Здесь нет места спасителям — только выжившим, свидетелям и тем, кто умеет читать воздух перед сделкой.</p>\n<h3>Города и поселения Срединных Земель</h3>\n</div>"
-      },
-      {
-        "name": "Города и поселения Срединных Земель",
-        "content": "<div class=\"aeriya-content\">\n<p>Здесь будут лежать карточки городов, поселений, форпостов и скрытых локаций Срединных Земель.</p>\n<p>Примеры материалов:</p>\n<p>``<code>text graven-hollow.md kladovaya-perekrestkov.md mornsted.md farn-krot.md ozernik.md plaven.md skrezhetnik.md byushchiy-kolokol.md seryy-priyut.md </code>``</p>\n<p>Каждый город оформляется по шаблону:</p>\n<p>``<code>text content/_templates/city.md </code>``</p>\n</div>"
+        "content": "<div class=\"aeriya-content\">\n<h2>Срединные Земли</h2>\n<p>Срединные Земли — центральный Осколок Аэрии. Торговый, противоречивый, живой мир, где сделки определяют судьбы, фракции борются за влияние, а города выросли из старых крепостей, рынков и дорожных узлов.</p>\n<p>Здесь нет места спасителям — только выжившим, свидетелям и тем, кто умеет читать воздух перед сделкой.</p>\n<h3>Города и поселения</h3>\n<p>Полный список городов и поселений Срединных Земель приведён ниже, каждый как отдельная страница.</p>\n</div>"
       },
       {
         "name": "Берег Сухих Глаз",
@@ -1950,7 +1946,7 @@
     "sourcePath": "generated:cities/shadow-shard/ash-steppe",
     "shard": "shadow-shard",
     "region": "ash-steppe",
-    "name": "Города — Теневой Осколок / Пепельная Степь",
+    "name": "Города — Пепельная Степь",
     "pages": [
       {
         "name": "Аалмар",
@@ -2015,7 +2011,7 @@
     "sourcePath": "generated:cities/shadow-shard/black-whisper-forest",
     "shard": "shadow-shard",
     "region": "black-whisper-forest",
-    "name": "Города — Теневой Осколок / Лес Чёрного Шёпота",
+    "name": "Города — Лес Чёрного Шёпота",
     "pages": [
       {
         "name": "Корень Тёмного Мха",
@@ -2040,7 +2036,7 @@
     "sourcePath": "generated:cities/shadow-shard/icy-limit",
     "shard": "shadow-shard",
     "region": "icy-limit",
-    "name": "Города — Теневой Осколок / Ледяной Предел",
+    "name": "Города — Ледяной Предел",
     "pages": [
       {
         "name": "Ледяной Клык",
@@ -2114,11 +2110,11 @@
     ]
   },
   {
-    "folder": "Aeria Core / Палящий Осколок / Выжженные Пустоши",
+    "folder": "Aeria Core / Палящий Осколок/Выжженные Пустоши",
     "sourcePath": "generated:cities/scorching-shard/burning-wastes",
     "shard": "scorching-shard",
     "region": "burning-wastes",
-    "name": "Города — Палящий Осколок / Выжженные Пустоши",
+    "name": "Города — Выжженные Пустоши",
     "pages": [
       {
         "name": "Последний Вздох",
