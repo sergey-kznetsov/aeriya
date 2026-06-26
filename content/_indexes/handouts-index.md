@@ -46,9 +46,9 @@
 | Доски поручений Палящего Осколка | `content/handouts/scorching-shard/boards/city-board-scorching-shard.md` | content-ready-final |
 | Палящий квест: Три Тени и Последний Вздох | `content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md` | content-ready-final |
 | Палящий квест: Клинок и Стеклянный Городок | `content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md` | content-ready-final |
-| Палящий квест: Родник и Белый Колодец | `content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md` | draft-clean-card |
-| Палящий квест: форт, дворец и Красная Соль | `content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md` | draft-clean-card |
-| Палящий квест: мельница, порог и Тихая Корка | `content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md` | draft-clean-card |
+| Палящий квест: Родник и Белый Колодец | `content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md` | content-ready-final |
+| Палящий квест: форт, дворец и Красная Соль | `content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md` | content-ready-final |
+| Палящий квест: мельница, порог и Тихая Корка | `content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md` | content-ready-final |
 | Набор встреч: сухая дорога | `content/handouts/scorching-shard/encounters/encounter-dry-road.md` | draft-clean-card |
 | Список сухой дороги | `content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md` | draft-clean-card |
 | Остальные поручения, памятки и мини-сценарии | `content/_indexes/scorching-shard-index.md` | draft-clean-card |
