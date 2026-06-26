@@ -31,6 +31,11 @@ function assert(condition, message) {
   if (!condition) throw new Error(message);
 }
 
+function assertEmptyArray(value, label) {
+  assert(Array.isArray(value), `${label}: must be an array`);
+  assert(value.length === 0, `${label}: must be empty for show-only city image scenes`);
+}
+
 function validateScene(scene, index) {
   const label = scene?.name ? `${scene.name}` : `scene #${index + 1}`;
   assert(scene && typeof scene === 'object', `Invalid scene at index ${index}`);
@@ -40,7 +45,22 @@ function validateScene(scene, index) {
   assert(scene.background?.src === scene.img, `${label}: background.src must match img`);
   assert(typeof scene.width === 'number' && scene.width > 0, `${label}: invalid width`);
   assert(typeof scene.height === 'number' && scene.height > 0, `${label}: invalid height`);
+  assert(scene.padding === 0, `${label}: padding must be 0 for show-only city image scenes`);
+  assert(scene.grid?.type === 0, `${label}: grid.type must be 0 for show-only city image scenes`);
+  assert(scene.tokenVision === false, `${label}: tokenVision must be false for show-only city image scenes`);
+  assert(scene.fogExploration === false, `${label}: fogExploration must be false for show-only city image scenes`);
+  assert(scene.navigation === false, `${label}: navigation must be false for show-only city image scenes`);
+  assertEmptyArray(scene.notes, `${label}: notes`);
+  assertEmptyArray(scene.tokens, `${label}: tokens`);
+  assertEmptyArray(scene.tiles, `${label}: tiles`);
+  assertEmptyArray(scene.walls, `${label}: walls`);
+  assertEmptyArray(scene.lights, `${label}: lights`);
+  assertEmptyArray(scene.sounds, `${label}: sounds`);
+  assertEmptyArray(scene.drawings, `${label}: drawings`);
   assert(scene.flags?.aeriya?.stagingOnly === true, `${label}: scene staging flag must be true`);
+  assert(scene.flags?.aeriya?.displayMode === 'show-only-city-image', `${label}: displayMode must be show-only-city-image`);
+  assert(scene.flags?.aeriya?.tacticalMap === false, `${label}: tacticalMap must be false`);
+  assert(scene.flags?.aeriya?.playerMovement === false, `${label}: playerMovement must be false`);
   assert(typeof scene.flags?.aeriya?.sourcePath === 'string' && scene.flags.aeriya.sourcePath === scene.img, `${label}: sourcePath must match img`);
 }
 
@@ -63,6 +83,7 @@ async function main() {
   const manifest = await readJson(PACK_MANIFEST_FILE);
   assert(manifest.id === 'aeriya-scenes', 'Scene pack manifest id must be aeriya-scenes');
   assert(manifest.type === 'Scene', 'Scene pack manifest type must be Scene');
+  assert(manifest.displayMode === 'show-only-city-image', 'Scene manifest displayMode must be show-only-city-image');
   assert(manifest.documentCount === scenes.length, `Scene manifest documentCount mismatch: ${manifest.documentCount} / ${scenes.length}`);
 
   scenes.forEach(validateScene);
@@ -72,7 +93,7 @@ async function main() {
   const sourceFiles = await listJsonFiles(PACK_SOURCE_DIR);
   assert(sourceFiles.length === scenes.length, `Scene source count mismatch: ${sourceFiles.length} files for ${scenes.length} scenes`);
 
-  console.log(`Verified ${scenes.length} scene entries and ${sourceFiles.length} scene source files.`);
+  console.log(`Verified ${scenes.length} show-only scene entries and ${sourceFiles.length} scene source files.`);
 }
 
 main().catch((error) => {
