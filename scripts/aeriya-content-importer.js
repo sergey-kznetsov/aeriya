@@ -210,7 +210,7 @@ function buildEmbeddedItems(md) {
             range: { value: reachM ? parseInt(reachM[1]) : 5, units: "ft" },
             actionType: "mwak",
             attackBonus: hitM ? parseInt(hitM[1]) : 0,
-            damage: { parts: dmgM ? [[dmgM[1].replace(/\s/g,""), dmgType]] : [["1d4","bludgeoning"]] },
+            damage: { parts: dmgM ? [[dmgM[1].replace(/\s/g,"").replace(/к/gi,"d"), dmgType]] : [["1d4","bludgeoning"]] },
             equipped: true, proficient: true,
             source: { custom: "Aeria Core" },
           },
@@ -270,7 +270,7 @@ function buildActorData(block, sourcePath, fm, folderID, tokenMap, kind) {
   const acNum = parseFirstNumber(acRaw, 10);
   const hpRaw = parseMetric(md, "ХП");
   const hpNum = parseFirstNumber(hpRaw, 1);
-  const hpDice = hpRaw.match(/\((.+?)\)/)?.[1] ?? "";
+  const hpDice = (hpRaw.match(/\((.+?)\)/)?.[1] ?? "").replace(/к/gi, "d");
   const speedRaw = parseMetric(md, "Скорость");
   const movement = parseMovement(speedRaw);
   const abilities = parseAbilityTable(md);
@@ -492,7 +492,7 @@ function parseTableActors(markdown, fm) {
                 activation: { type: "action", cost: 1 },
                 actionType: "mwak",
                 attackBonus: hitM ? parseInt(hitM[1]) : 0,
-                damage: { parts: [[dmgM[1].replace(/\s/g,""), "bludgeoning"]] },
+                damage: { parts: [[dmgM[1].replace(/\s/g,"").replace(/к/gi,"d"), "bludgeoning"]] },
                 equipped: true, proficient: true,
                 source: { custom: "Aeria Core" },
               },
