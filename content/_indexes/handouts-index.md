@@ -26,8 +26,8 @@
 | Материал | Путь | Статус |
 |---|---|---|
 | Игровой индекс Теневого Осколка | `content/_indexes/shadow-shard-play-index.md` | draft-clean-card |
-| Доски поручений Теневого Осколка | `content/handouts/shadow-shard/boards/city-board-shadow-shard.md` | draft-clean-card |
-| Городской квест: Окрам, закрытый узел | `content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md` | draft-clean-card |
+| Доски поручений Теневого Осколка | `content/handouts/shadow-shard/boards/city-board-shadow-shard.md` | content-ready-final |
+| Городской квест: Окрам, закрытый узел | `content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md` | content-ready-final |
 | Лесной квест: Корень и Дом Мха | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md` | draft-clean-card |
 | Лесной квест: Серый Приют и старая застава | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md` | draft-clean-card |
 | Северный квест: огонь и Ледяной Клык | `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md` | draft-clean-card |
