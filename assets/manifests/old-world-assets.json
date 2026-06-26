@@ -1,0 +1,214 @@
+{
+  "schema": 1,
+  "status": "pending-import",
+  "note": "Manifest for importing city images and tokens from the old world asset set. Records with pending-import are planned paths only. Change status to imported after the actual file is placed in the repository.",
+  "cityScenes": [
+    {
+      "id": "mornsted-city",
+      "name": "Морнстэд",
+      "shard": "middle-lands",
+      "kind": "city-scene",
+      "path": "assets/scenes/cities/middle-lands/mornsted-city.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "graven-hollow-city",
+      "name": "Гравен Холлоу",
+      "shard": "middle-lands",
+      "kind": "city-scene",
+      "path": "assets/scenes/cities/middle-lands/graven-hollow-city.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "krik-himery-city",
+      "name": "Крик Химеры",
+      "shard": "middle-lands",
+      "kind": "city-scene",
+      "path": "assets/scenes/cities/middle-lands/krik-himery-city.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "tarnyy-stolb-city",
+      "name": "Тарный Столб",
+      "shard": "middle-lands",
+      "kind": "city-scene",
+      "path": "assets/scenes/cities/middle-lands/tarnyy-stolb-city.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "varnitsa-city",
+      "name": "Варница",
+      "shard": "middle-lands",
+      "kind": "city-scene",
+      "path": "assets/scenes/cities/middle-lands/varnitsa-city.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "okram-city",
+      "name": "Окрам",
+      "shard": "shadow-shard",
+      "kind": "city-scene",
+      "path": "assets/scenes/cities/shadow-shard/okram-city.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "dom-mha-location",
+      "name": "Дом Мха",
+      "shard": "shadow-shard",
+      "kind": "location-scene",
+      "path": "assets/scenes/cities/shadow-shard/dom-mha-location.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "seryy-priyut-location",
+      "name": "Серый Приют",
+      "shard": "shadow-shard",
+      "kind": "location-scene",
+      "path": "assets/scenes/cities/shadow-shard/seryy-priyut-location.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "posledniy-ogon-station",
+      "name": "Станция Последний Огонь",
+      "shard": "shadow-shard",
+      "kind": "location-scene",
+      "path": "assets/scenes/cities/shadow-shard/posledniy-ogon-station.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "tri-teni-location",
+      "name": "Три Тени",
+      "shard": "scorching-shard",
+      "kind": "location-scene",
+      "path": "assets/scenes/cities/scorching-shard/tri-teni-location.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "steklyannyy-gorodok-city",
+      "name": "Стеклянный Городок",
+      "shard": "scorching-shard",
+      "kind": "city-scene",
+      "path": "assets/scenes/cities/scorching-shard/steklyannyy-gorodok-city.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "fort-raskalennoy-soli-location",
+      "name": "Форт Раскалённой Соли",
+      "shard": "scorching-shard",
+      "kind": "location-scene",
+      "path": "assets/scenes/cities/scorching-shard/fort-raskalennoy-soli-location.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    }
+  ],
+  "tokens": [
+    {
+      "id": "peschanaya-piyavka-token",
+      "name": "Песчаная пиявка",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/peschanaya-piyavka-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "pepeln yy-vikhr-token",
+      "name": "Пепельный вихрь",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/pepelnyy-vikhr-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "poyushchiy-barkhan-token",
+      "name": "Поющий бархан",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/poyushchiy-barkhan-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "ogonnyy-strazh-token",
+      "name": "Огненный страж",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/ogonnyy-strazh-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "pozhiratel-zvukov-token",
+      "name": "Пожиратель Звуков",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/pozhiratel-zvukov-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "steklyannaya-zmeya-token",
+      "name": "Стеклянная Змея",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/steklyannaya-zmeya-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "gribnoy-shepot-token",
+      "name": "Грибной шёпот",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/gribnoy-shepot-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "kornevoy-strazh-token",
+      "name": "Корневой страж",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/kornevoy-strazh-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "golodnaya-ten-token",
+      "name": "Голодная тень",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/golodnaya-ten-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "ledyanoy-plyasun-token",
+      "name": "Ледяной плясун",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/ledyanoy-plyasun-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "kostyanaya-gadyuka-token",
+      "name": "Костяная гадюка",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/kostyanaya-gadyuka-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    },
+    {
+      "id": "pepeln yy-shakal-token",
+      "name": "Пепельный шакал",
+      "type": "creature-token",
+      "path": "assets/tokens/creatures/pepelnyy-shakal-token.webp",
+      "status": "pending-import",
+      "source": "old-world"
+    }
+  ],
+  "portraits": []
+}
