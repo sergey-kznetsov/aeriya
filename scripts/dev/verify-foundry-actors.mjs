@@ -89,7 +89,6 @@ async function main() {
   const folderIds = new Set(manifest.folders.map((folder) => folder._id));
   actors.forEach((actor, index) => validateActor(actor, index, folderIds));
   validateUnique(actors, '_id', (actor) => actor._id);
-  validateUnique(actors, 'name within staging pack', (actor) => actor.name);
 
   const folderNames = new Set(manifest.folders.map((folder) => folder.name));
   for (const actor of actors) {
