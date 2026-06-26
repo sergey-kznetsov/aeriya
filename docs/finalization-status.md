@@ -107,6 +107,16 @@
 | Шесть правил мха | `content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md` | content-ready-final |
 | Запись об общем огне | `content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md` | content-ready-final |
 
+## Пакет финализации 10
+
+Начата финализация handout-материалов Палящего Осколка:
+
+| Карточка | Путь | Статус |
+|---|---|---|
+| Доски поручений Палящего Осколка | `content/handouts/scorching-shard/boards/city-board-scorching-shard.md` | content-ready-final |
+| Палящий квест: Три Тени и Последний Вздох | `content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md` | content-ready-final |
+| Палящий квест: Клинок и Стеклянный Городок | `content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md` | content-ready-final |
+
 ## Что изменяется при финализации
 
 Карточки не просто получают новый статус. Каждая финализированная карточка дополняется до полноценного игрового состояния:
@@ -126,16 +136,15 @@
 
 Теневой Осколок по handout-материалам закрыт: 13 из 13 строк текущего handout-индекса имеют статус `content-ready-final`.
 
+Палящий Осколок по handout-материалам: 3 из 9 строк текущего handout-индекса имеют статус `content-ready-final`. Осталось закрыть 6 строк Палящего Осколка.
+
 ## Следующая партия
 
-Следующий крупный контентный блок релиза — handout-материалы Палящего Осколка:
+Следующими должны быть финализированы материалы Палящего Осколка:
 
-1. `content/handouts/scorching-shard/boards/city-board-scorching-shard.md`
-2. `content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md`
-3. `content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md`
-4. `content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md`
-5. `content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md`
-6. `content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md`
-7. `content/handouts/scorching-shard/encounters/encounter-dry-road.md`
-8. `content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md`
-9. `content/_indexes/scorching-shard-index.md`
+1. `content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md`
+2. `content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md`
+3. `content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md`
+4. `content/handouts/scorching-shard/encounters/encounter-dry-road.md`
+5. `content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md`
+6. `content/_indexes/scorching-shard-index.md`
