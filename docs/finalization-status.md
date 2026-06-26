@@ -68,6 +68,16 @@
 | Доски поручений Теневого Осколка | `content/handouts/shadow-shard/boards/city-board-shadow-shard.md` | content-ready-final |
 | Городской квест: Окрам, закрытый узел | `content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md` | content-ready-final |
 
+## Пакет финализации 06
+
+Финализирован навигационный и лесной блок Теневого Осколка:
+
+| Карточка | Путь | Статус |
+|---|---|---|
+| Игровой индекс Теневого Осколка | `content/_indexes/shadow-shard-play-index.md` | content-ready-final |
+| Лесной квест: Корень и Дом Мха | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md` | content-ready-final |
+| Лесной квест: Серый Приют и старая застава | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md` | content-ready-final |
+
 ## Что изменяется при финализации
 
 Карточки не просто получают новый статус. Каждая финализированная карточка дополняется до полноценного игрового состояния:
@@ -85,16 +95,15 @@
 
 Срединные Земли по handout-материалам закрыты: 16 из 16 карточек имеют статус `content-ready-final`.
 
-Теневой Осколок по handout-материалам: 2 из 13 строк текущего индекса имеют статус `content-ready-final`. Осталось закрыть 11 строк Теневого Осколка.
+Теневой Осколок по handout-материалам: 5 из 13 строк текущего handout-индекса имеют статус `content-ready-final`. Осталось закрыть 8 строк Теневого Осколка.
 
 ## Следующая партия
 
 Следующими должны быть финализированы материалы Теневого Осколка:
 
-1. `content/_indexes/shadow-shard-play-index.md`
-2. `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md`
-3. `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md`
-4. `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md`
-5. `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md`
-6. encounter-карточки Теневого Осколка;
-7. in-world записи Теневого Осколка.
+1. `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md`
+2. `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md`
+3. `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md`
+4. `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md`
+5. `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md`
+6. in-world записи Теневого Осколка.
