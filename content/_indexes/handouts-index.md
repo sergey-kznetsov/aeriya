@@ -43,9 +43,9 @@
 
 | Материал | Путь | Статус |
 |---|---|---|
-| Доски поручений Палящего Осколка | `content/handouts/scorching-shard/boards/city-board-scorching-shard.md` | draft-clean-card |
-| Палящий квест: Три Тени и Последний Вздох | `content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md` | draft-clean-card |
-| Палящий квест: Клинок и Стеклянный Городок | `content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md` | draft-clean-card |
+| Доски поручений Палящего Осколка | `content/handouts/scorching-shard/boards/city-board-scorching-shard.md` | content-ready-final |
+| Палящий квест: Три Тени и Последний Вздох | `content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md` | content-ready-final |
+| Палящий квест: Клинок и Стеклянный Городок | `content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md` | content-ready-final |
 | Палящий квест: Родник и Белый Колодец | `content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md` | draft-clean-card |
 | Палящий квест: форт, дворец и Красная Соль | `content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md` | draft-clean-card |
 | Палящий квест: мельница, порог и Тихая Корка | `content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md` | draft-clean-card |
