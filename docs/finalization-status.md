@@ -8,6 +8,8 @@
 
 Дополнительный ссылочный контроль добавлен в `scripts/dev/validate-content-links.mjs`: Markdown-файлы в `content` и `docs` проверяются на внутренние пути `content/...`, `docs/...`, `scripts/...`, `module.json`, `README.md`, `CHANGELOG.md`.
 
+Визуальный слой старого мира вынесен в `assets/manifests/old-world-assets.json`. Записи со статусом `pending-import` являются планом переноса и не подключаются как готовые ассеты. Записи со статусом `imported` проверяются валидатором на физическое наличие файла.
+
 ## Текущий итог
 
 | Блок | Готово | Статус |
@@ -18,6 +20,7 @@
 | Статблоки NPC | 53/53 | closed |
 | Основной и расширенный бестиарий | closed | actor-ready-final |
 | Основной handout-слой трёх регионов | closed | content-ready-final |
+| Манифест старых city/token assets | 24 records | pending-import |
 
 ## Закрытые пакеты
 
@@ -28,6 +31,7 @@
 | 10 | Доска поручений Палящего Осколка; квесты `Три Тени и Последний Вздох`, `Клинок и Стеклянный Городок` | content-ready-final |
 | 11 | квесты `Родник и Белый Колодец`, `форт, дворец и Красная Соль`, `мельница, порог и Тихая Корка` | content-ready-final |
 | 12 | encounter `Сухая дорога`, player-facing `Список сухой дороги`, игровой индекс Палящего Осколка | content-ready-final |
+| 13 | структура `assets`, манифест старых городских картинок и токенов, assets/scene/token staging | pending-import-ready |
 
 ## Контроль запрещённых статусов
 
@@ -43,25 +47,30 @@
 | `npm run content:links` | проверка внутренних Markdown-ссылок на существующие пути |
 | `npm run content:index` | пересборка контентного индекса |
 | `npm run content:check` | проверка карточек, ссылок и индекса |
+| `npm run assets:verify` | проверка манифеста старых картинок и токенов |
 | `npm run module:verify` | проверка `module.json` и ссылок на файлы модуля |
 | `npm run journals:build` | сборка Journal staging |
 | `npm run journals:verify` | проверка Journal staging |
-| `npm run actors:build` | сборка Actor staging из actor-ready Markdown-статблоков |
+| `npm run actors:build` | сборка Actor staging из actor-ready Markdown-статблоков с автоподхватом imported-токенов |
 | `npm run actors:verify` | проверка Actor staging, manifest, папок и source JSON |
-| `npm run foundry:check` | полный технический прогон модуля: module, content, journals, actors |
+| `npm run scenes:build` | сборка Scene staging из imported cityScenes |
+| `npm run scenes:verify` | проверка Scene staging и source JSON |
+| `npm run foundry:check` | полный технический прогон модуля: module, content, assets, journals, actors, scenes |
 
 ## Foundry pack-статус
 
 `module.json` пока содержит пустой массив `packs`. Это остаётся корректным до ручной проверки реальных Foundry compendium DB.
 
-Journal pack и Actor pack теперь имеют staging build/verify-скрипты. Они всё ещё не являются готовыми LevelDB compendium packs до ручной проверки в Foundry VTT.
+Journal pack, Actor pack и Scene pack теперь имеют staging build/verify-скрипты. Они всё ещё не являются готовыми LevelDB compendium packs до ручной проверки в Foundry VTT.
 
-Паки нельзя подключать в `module.json`, пока Journal pack и Actor pack не собраны, не проверены и не открыты вручную в Foundry VTT.
+Паки нельзя подключать в `module.json`, пока Journal pack, Actor pack и Scene pack не собраны, не проверены и не открыты вручную в Foundry VTT.
 
 ## Следующий порядок работы
 
-1. Локально прогнать `npm run foundry:check`.
-2. Исправить найденные валидатором карточки, ссылки или staging-ошибки, если они появятся.
-3. После успешного локального прогона зафиксировать фактический результат.
-4. Провести ручную проверку Journal pack и Actor pack в Foundry VTT.
-5. После ручной Foundry-проверки подключить packs в `module.json`.
+1. Физически перенести старые картинки городов и токены по путям из `assets/manifests/old-world-assets.json`.
+2. Для перенесённых файлов сменить статус с `pending-import` на `imported`.
+3. Локально прогнать `npm run foundry:check`.
+4. Исправить найденные валидатором карточки, ссылки, ассеты или staging-ошибки, если они появятся.
+5. После успешного локального прогона зафиксировать фактический результат.
+6. Провести ручную проверку Journal, Actor и Scene pack в Foundry VTT.
+7. После ручной Foundry-проверки подключить packs в `module.json`.
