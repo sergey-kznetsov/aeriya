@@ -27,3 +27,91 @@
   margin: 2px;
   font-size: 0.85em;
 }
+
+.aeriya-travel-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.aeriya-travel-grid label,
+.aeriya-travel-flags label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.aeriya-travel-grid input,
+.aeriya-travel-grid select {
+  width: 100%;
+}
+
+.aeriya-travel-grid__wide {
+  grid-column: 1 / -1;
+}
+
+.aeriya-travel-flags {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.aeriya-travel-flags label {
+  align-items: flex-start;
+  flex-direction: row;
+  font-weight: 400;
+}
+
+.aeriya-travel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.aeriya-travel-output h2,
+.aeriya-travel-output h3,
+.aeriya-travel-output h4 {
+  margin: 8px 0 6px;
+}
+
+.aeriya-travel-card {
+  border-left: 3px solid var(--color-border-highlight, #b9955b);
+  margin: 8px 0;
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.aeriya-travel-card p {
+  margin: 4px 0;
+}
+
+.aeriya-travel-die {
+  display: inline-block;
+  border: 1px solid var(--color-border-light-tertiary, #7a7971);
+  border-radius: 4px;
+  margin: 2px;
+  padding: 1px 5px;
+  white-space: nowrap;
+}
+
+.aeriya-travel-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+}
+
+.aeriya-travel-table th,
+.aeriya-travel-table td {
+  border: 1px solid var(--color-border-light-tertiary, #7a7971);
+  padding: 5px;
+  vertical-align: top;
+}
+
+.aeriya-travel-table th {
+  text-align: left;
+}
+
+.aeriya-travel-output-placeholder {
+  min-height: 120px;
+}
