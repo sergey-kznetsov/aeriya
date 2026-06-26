@@ -14,6 +14,7 @@
 | Бестиарий: импорт чарников, партия 01 | `content/actor-statblocks/bestiary/source-import-batch-01.md` | actor-ready-final |
 | Бестиарий: Срединные Земли, source batch 02 | `content/actor-statblocks/bestiary/source-middle-creatures-batch-02.md` | actor-ready-final |
 | Бестиарий: Срединные Земли, source batch 03 | `content/actor-statblocks/bestiary/source-middle-creatures-batch-03.md` | actor-ready-final |
+| Бестиарий: Срединные Земли, source batch 04 | `content/actor-statblocks/bestiary/source-middle-creatures-batch-04.md` | actor-ready-final |
 | Бестиарий: новые существа Срединных Земель, партия 01 | `content/actor-statblocks/bestiary/new-middle-creatures-batch-01.md` | actor-ready-final |
 | Бестиарий: модульные существа Теневого Осколка, партия 02 | `content/actor-statblocks/bestiary/module-shadow-creatures-batch-02.md` | actor-ready-final |
 | Бестиарий: модульные существа Палящего Осколка, партия 02 | `content/actor-statblocks/bestiary/module-scorching-creatures-batch-02.md` | actor-ready-final |
@@ -32,6 +33,5 @@
 
 | Партия | Состав | Статус |
 |---|---|---|
-| Bestiary source batch 04 | оставшиеся средние существа Книги III: Болотная гарпия, Звонный червь, Сонокрад, Колокольный фантом, Мракоглаз-охотник | todo-source-import |
-| Bestiary source batch 05 | высокоуровневые существа Книги III | todo-source-import |
+| Bestiary source batch 05 | высокоуровневые существа Книги III: Самагхи-сновидец, Шлаковый голем, Вестник Раскола, Каменный страж, Глубинный пожиратель, Голод Зубила, Дух Молчаливого Зева | todo-source-import |
 | Bestiary source batch 06+ | существа Книги VII по регионам | todo-source-import |
