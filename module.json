@@ -29,7 +29,8 @@
   "esmodules": [
     "scripts/aeriya-core.js",
     "scripts/aeriya-travel.js",
-    "scripts/aeriya-travel-roles.js"
+    "scripts/aeriya-travel-roles.js",
+    "scripts/aeriya-travel-role-ui.js"
   ],
   "styles": [
     "styles/aeriya.css"
