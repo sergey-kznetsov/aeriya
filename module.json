@@ -7,7 +7,7 @@
       "name": "Сергей"
     }
   ],
-  "version": "0.2.0",
+  "version": "0.2.1",
   "compatibility": {
     "minimum": "13",
     "verified": "13.350"
@@ -46,6 +46,7 @@
   "socket": true,
   "url": "https://github.com/sergey-kznetsov/aeriya",
   "manifest": "https://raw.githubusercontent.com/sergey-kznetsov/aeriya/main/module.json",
+  "download": "\u0068ttps://github.com/sergey-kznetsov/aeriya/archive/refs/heads/main.zip",
   "readme": "README.md",
   "changelog": "CHANGELOG.md"
 }
