@@ -33,6 +33,7 @@ function isInternalCandidate(value) {
 }
 
 function isIgnoredPattern(value) {
+  if (value.includes('*')) return true;
   return IGNORE_SUFFIXES.some((suffix) => value.endsWith(suffix));
 }
 
