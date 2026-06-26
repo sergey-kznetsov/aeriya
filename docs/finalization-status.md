@@ -87,6 +87,16 @@
 | Северный квест: огонь и Ледяной Клык | `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md` | content-ready-final |
 | Северный квест: перевал и Белые Камни | `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md` | content-ready-final |
 
+## Пакет финализации 08
+
+Финализированы encounter-наборы Теневого Осколка:
+
+| Карточка | Путь | Статус |
+|---|---|---|
+| Набор встреч: спор в чайном доме | `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md` | content-ready-final |
+| Набор встреч: мховая тропа | `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md` | content-ready-final |
+| Набор встреч: последний огонь | `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md` | content-ready-final |
+
 ## Что изменяется при финализации
 
 Карточки не просто получают новый статус. Каждая финализированная карточка дополняется до полноценного игрового состояния:
@@ -104,15 +114,12 @@
 
 Срединные Земли по handout-материалам закрыты: 16 из 16 карточек имеют статус `content-ready-final`.
 
-Теневой Осколок по handout-материалам: 7 из 13 строк текущего handout-индекса имеют статус `content-ready-final`. Осталось закрыть 6 строк Теневого Осколка.
+Теневой Осколок по handout-материалам: 10 из 13 строк текущего handout-индекса имеют статус `content-ready-final`. Осталось закрыть 3 строки Теневого Осколка.
 
 ## Следующая партия
 
-Следующими должны быть финализированы материалы Теневого Осколка:
+Следующими должны быть финализированы in-world записи Теневого Осколка:
 
-1. `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md`
-2. `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md`
-3. `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md`
-4. `content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md`
-5. `content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md`
-6. `content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md`
+1. `content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md`
+2. `content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md`
+3. `content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md`
