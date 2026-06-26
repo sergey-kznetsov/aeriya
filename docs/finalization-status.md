@@ -35,9 +35,11 @@
 | 13 | структура `assets`, манифест старых городских картинок и токенов, assets/scene/token staging | pending-import-ready |
 | 14 | show-only city scene staging и единая команда `release:test` | release-test-ready-local |
 
-## Контроль запрещённых статусов
+## Контроль запрещённых контентных статусов
 
-По текущему поиску в репозитории не найдено старых маркеров `draft`, `todo`, `pending`, `stub`, `placeholder`, `needs`.
+В контентных карточках не должно быть старых маркеров `draft`, `todo`, `pending`, `stub`, `placeholder`, `needs`.
+
+Отдельно: `pending-import` разрешён только для записей ассет-манифеста `assets/manifests/old-world-assets.json`. Это не статус контентной карточки и не считается черновиком игрового материала.
 
 Следующий обязательный контроль — локальный запуск `npm run release:test`, потому что поиск по репозиторию не заменяет выполнение валидаторов, сборщиков и preflight-проверки build-выходов.
 
