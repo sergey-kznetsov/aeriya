@@ -56,7 +56,7 @@ class AeriyaTravelRoleAssigner {
 
     const actors = this.getPartyActors();
     if (!actors.length) {
-      if (!options.silentIfNoActors) ui.notifications?.warn("Не найдены персонажи для распределения дорожных ролей.");
+      if (!options.silentIfNoActors) ui.notifications?.warn("Выдели токены персонажей на сцене. Дорожные роли назначаются только вручную выбранной группе мастера.");
       return null;
     }
 
@@ -68,19 +68,7 @@ class AeriyaTravelRoleAssigner {
   }
 
   static getPartyActors() {
-    const selected = this.getSelectedTokenActors();
-    if (selected.length) return selected;
-
-    const activeCharacters = game.users
-      ?.filter((user) => !user.isGM && user.active && user.character)
-      .map((user) => user.character) ?? [];
-
-    if (activeCharacters.length) return this.uniqueActors(activeCharacters);
-
-    const playerOwned = game.actors
-      ?.filter((actor) => actor.type === "character" && actor.hasPlayerOwner) ?? [];
-
-    return this.uniqueActors(playerOwned);
+    return this.getSelectedTokenActors();
   }
 
   static getSelectedTokenActors() {
@@ -137,17 +125,14 @@ class AeriyaTravelRoleAssigner {
     return {
       createdAt: new Date().toISOString(),
       source: this.describePartySource(),
-      mode: "random",
+      mode: "random-selected-tokens-only",
       actorCount: actors.length,
       assignments
     };
   }
 
   static describePartySource() {
-    if (canvas?.tokens?.controlled?.length) return "выбранные токены на сцене";
-    const activeCharacters = game.users?.filter((user) => !user.isGM && user.active && user.character) ?? [];
-    if (activeCharacters.length) return "персонажи активных игроков";
-    return "все player-owned персонажи мира";
+    return "токены, вручную выбранные мастером на сцене";
   }
 
   static async persistAssignment(assignment) {
@@ -238,7 +223,7 @@ class AeriyaTravelRoleAssigner {
     return `
       <section class="aeriya-travel-output">
         <h2>Путешествие началось</h2>
-        <p><strong>Дорожные роли распределены случайно.</strong></p>
+        <p><strong>Дорожные роли распределены случайно между токенами, выбранными мастером.</strong></p>
         <p><strong>Источник группы:</strong> ${assignment.source}. <strong>Персонажей:</strong> ${assignment.actorCount}.</p>
         <table class="aeriya-travel-table">
           <thead>
@@ -262,7 +247,7 @@ class AeriyaTravelRoleAssigner {
         <h2>Путешествие завершено</h2>
         <p>Партия прибыла в точку назначения. Дорожные роли сняты, режим путешествия отключён.</p>
         <p><strong>Очищено персонажей:</strong> ${clearedActors}.</p>
-        <p class="aeriya-rules-note">В следующем приключении роли будут назначены заново и случайно.</p>
+        <p class="aeriya-rules-note">В следующем приключении мастер вручную выбирает токены группы, после чего роли будут назначены заново и случайно.</p>
       </section>
     `;
   }
@@ -274,7 +259,7 @@ class AeriyaTravelRoleAssigner {
 
     game.aeriya.travel.openConsole = (...args) => {
       if (game.user?.isGM && game.settings.get(AERIYA_TRAVEL_ROLES_MODULE_ID, "autoAssignTravelRoles")) {
-        this.assignAndPost({ silentIfNoActors: true, silentIfActive: true });
+        this.assignAndPost({ silentIfActive: true });
       }
       return originalOpenConsole(...args);
     };
