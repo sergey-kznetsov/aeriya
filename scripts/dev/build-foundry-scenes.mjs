@@ -49,16 +49,16 @@ function buildScene(record) {
     },
     width: 1600,
     height: 900,
-    padding: 0.25,
+    padding: 0,
     grid: {
       type: 0,
       size: 100,
       distance: 5,
       units: 'ft'
     },
-    tokenVision: true,
-    fogExploration: true,
-    navigation: true,
+    tokenVision: false,
+    fogExploration: false,
+    navigation: false,
     notes: [],
     tokens: [],
     tiles: [],
@@ -74,6 +74,9 @@ function buildScene(record) {
         kind: record.kind ?? 'unknown',
         source: record.source ?? 'unknown',
         sourcePath: record.path,
+        displayMode: 'show-only-city-image',
+        tacticalMap: false,
+        playerMovement: false,
         stagingOnly: true
       }
     }
@@ -102,7 +105,8 @@ async function writePackSource(scenes) {
     generatedFrom: 'assets/manifests/old-world-assets.json cityScenes imported records',
     sourceDirectory: 'build/foundry/aeriya-scenes/_source',
     documentCount: scenes.length,
-    note: 'Staging output for city and location scenes imported from old-world visual assets. Only manifest records marked imported are converted. Scene dimensions are staging defaults and must be checked manually in Foundry before adding the pack to module.json.'
+    displayMode: 'show-only-city-image',
+    note: 'Staging output for city and location images imported from old-world visual assets. Only manifest records marked imported are converted. These scenes are show-only images, not tactical maps: no grid, no vision, no fog, no tokens, no walls. They must be checked manually in Foundry before adding the pack to module.json.'
   };
   await fs.writeFile(PACK_MANIFEST_FILE, JSON.stringify(manifest, null, 2), 'utf8');
 }
@@ -118,8 +122,8 @@ async function main() {
   await fs.writeFile(OUT_FILE, JSON.stringify(scenes, null, 2), 'utf8');
   await writePackSource(scenes);
 
-  console.log(`Built ${scenes.length} scene entries: ${path.relative(ROOT, OUT_FILE)}`);
-  console.log(`Staged scene pack source: ${path.relative(ROOT, PACK_SOURCE_DIR)}`);
+  console.log(`Built ${scenes.length} show-only scene entries: ${path.relative(ROOT, OUT_FILE)}`);
+  console.log(`Staged show-only scene pack source: ${path.relative(ROOT, PACK_SOURCE_DIR)}`);
 }
 
 main().catch((error) => {
