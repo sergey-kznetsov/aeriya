@@ -35,9 +35,9 @@
 | Набор встреч: спор в чайном доме | `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md` | content-ready-final |
 | Набор встреч: мховая тропа | `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md` | content-ready-final |
 | Набор встреч: последний огонь | `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md` | content-ready-final |
-| Запись о пяти чашах | `content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md` | draft-clean-card |
-| Шесть правил мха | `content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md` | draft-clean-card |
-| Запись об общем огне | `content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md` | draft-clean-card |
+| Запись о пяти чашах | `content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md` | content-ready-final |
+| Шесть правил мха | `content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md` | content-ready-final |
+| Запись об общем огне | `content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md` | content-ready-final |
 
 ## Палящий Осколок
 
