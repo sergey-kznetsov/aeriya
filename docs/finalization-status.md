@@ -4,147 +4,37 @@
 
 Все карточки должны создаваться и обновляться сразу как финально наполненные материалы. Черновые статусы и заглушки не считаются готовым наполнением.
 
-Запрещены статусы:
-
-- `draft`;
-- `todo`;
-- `pending`;
-- `stub`;
-- `placeholder`;
-- `needs-*`.
-
-Технический контроль добавлен в `scripts/dev/validate-content-cards.mjs`: контентная карточка с таким статусом должна проваливать проверку.
-
-## Пакет финализации 01
-
-Финализированы базовые handout-карточки Срединных Земель:
-
-| Карточка | Путь | Статус |
-|---|---|---|
-| Памятка игрокам: обычаи Срединных Земель | `content/handouts/middle-lands/common/player-city-customs-handout.md` | content-ready-final |
-| Мастерская памятка: городская сцена Срединных Земель | `content/handouts/middle-lands/common/gm-city-scene-checklist.md` | content-ready-final |
-| Поручение: рыночная запись | `content/handouts/middle-lands/common/quest-rynkovaya-zapis.md` | content-ready-final |
-| Поручение: ночной колокол | `content/handouts/middle-lands/common/quest-nochnoy-kolokol.md` | content-ready-final |
-
-## Пакет финализации 02
-
-Финализированы расширенные игровые handout-карточки Срединных Земель:
-
-| Карточка | Путь | Статус |
-|---|---|---|
-| Мини-сценарий: долг на рынке | `content/handouts/middle-lands/common/adventure-dolg-na-rynke.md` | content-ready-final |
-| Мини-сценарий: колокол и мост | `content/handouts/middle-lands/common/adventure-kolokol-i-most.md` | content-ready-final |
-| Набор встреч: рыночный долг | `content/handouts/middle-lands/encounters/encounter-market-debt.md` | content-ready-final |
-| Доски поручений Срединных Земель | `content/handouts/middle-lands/boards/city-board-middle-lands.md` | content-ready-final |
-
-## Пакет финализации 03
-
-Финализированы городские квестовые цепочки Срединных Земель:
-
-| Карточка | Путь | Статус |
-|---|---|---|
-| Городской квест: архив и пустая строка | `content/handouts/middle-lands/city-quests/quest-archive-and-empty-name.md` | content-ready-final |
-| Городской квест: груз без владельца | `content/handouts/middle-lands/city-quests/quest-cargo-without-owner.md` | content-ready-final |
-| Городской квест: вода и деревянные пути | `content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md` | content-ready-final |
-| Городской квест: колокол и домовой долг | `content/handouts/middle-lands/city-quests/quest-bell-and-house-debt.md` | content-ready-final |
-| Городской квест: звериные дороги и ложные знаки | `content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md` | content-ready-final |
-| Городской квест: нижние зубцы и чёрный дым | `content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md` | content-ready-final |
-
-## Пакет финализации 04
-
-Финализированы in-world книги Срединных Земель:
-
-| Карточка | Путь | Статус |
-|---|---|---|
-| Книга дорожных заметок | `content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md` | content-ready-final |
-| Письмо без двери | `content/handouts/middle-lands/books/pismo-bez-dveri.md` | content-ready-final |
-
-## Пакет финализации 05
-
-Начата финализация handout-материалов Теневого Осколка:
-
-| Карточка | Путь | Статус |
-|---|---|---|
-| Доски поручений Теневого Осколка | `content/handouts/shadow-shard/boards/city-board-shadow-shard.md` | content-ready-final |
-| Городской квест: Окрам, закрытый узел | `content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md` | content-ready-final |
-
-## Пакет финализации 06
-
-Финализирован навигационный и лесной блок Теневого Осколка:
-
-| Карточка | Путь | Статус |
-|---|---|---|
-| Игровой индекс Теневого Осколка | `content/_indexes/shadow-shard-play-index.md` | content-ready-final |
-| Лесной квест: Корень и Дом Мха | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md` | content-ready-final |
-| Лесной квест: Серый Приют и старая застава | `content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md` | content-ready-final |
-
-## Пакет финализации 07
-
-Финализированы северные квесты Теневого Осколка:
-
-| Карточка | Путь | Статус |
-|---|---|---|
-| Северный квест: огонь и Ледяной Клык | `content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md` | content-ready-final |
-| Северный квест: перевал и Белые Камни | `content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md` | content-ready-final |
-
-## Пакет финализации 08
-
-Финализированы encounter-наборы Теневого Осколка:
-
-| Карточка | Путь | Статус |
-|---|---|---|
-| Набор встреч: спор в чайном доме | `content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md` | content-ready-final |
-| Набор встреч: мховая тропа | `content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md` | content-ready-final |
-| Набор встреч: последний огонь | `content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md` | content-ready-final |
-
-## Пакет финализации 09
-
-Финализированы in-world записи Теневого Осколка:
-
-| Карточка | Путь | Статус |
-|---|---|---|
-| Запись о пяти чашах | `content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md` | content-ready-final |
-| Шесть правил мха | `content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md` | content-ready-final |
-| Запись об общем огне | `content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md` | content-ready-final |
-
-## Пакет финализации 10
-
-Начата финализация handout-материалов Палящего Осколка:
-
-| Карточка | Путь | Статус |
-|---|---|---|
-| Доски поручений Палящего Осколка | `content/handouts/scorching-shard/boards/city-board-scorching-shard.md` | content-ready-final |
-| Палящий квест: Три Тени и Последний Вздох | `content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md` | content-ready-final |
-| Палящий квест: Клинок и Стеклянный Городок | `content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md` | content-ready-final |
-
-## Что изменяется при финализации
-
-Карточки не просто получают новый статус. Каждая финализированная карточка дополняется до полноценного игрового состояния:
-
-- назначение;
-- участники и роли;
-- проверки и последствия;
-- сцены или акты;
-- угрозы и связи с бестиарием;
-- ссылки на NPC-чарники;
-- Foundry-назначение;
-- отсутствие внутренних пометок «дописать потом», «черновик», `todo`, `pending`.
+Технический контроль добавлен в `scripts/dev/validate-content-cards.mjs`: контентная карточка со старым черновым статусом должна проваливать проверку.
 
 ## Текущий итог
 
-Срединные Земли по handout-материалам закрыты: 16 из 16 карточек имеют статус `content-ready-final`.
+| Блок | Готово | Статус |
+|---|---:|---|
+| Срединные Земли handout | 16/16 | closed |
+| Теневой Осколок handout | 13/13 | closed |
+| Палящий Осколок handout | 6/9 | in-progress |
+| Статблоки NPC | 53/53 | closed |
+| Основной и расширенный бестиарий | closed | actor-ready-final |
 
-Теневой Осколок по handout-материалам закрыт: 13 из 13 строк текущего handout-индекса имеют статус `content-ready-final`.
+## Закрытые пакеты
 
-Палящий Осколок по handout-материалам: 3 из 9 строк текущего handout-индекса имеют статус `content-ready-final`. Осталось закрыть 6 строк Палящего Осколка.
+| Пакет | Содержание | Статус |
+|---|---|---|
+| 01–04 | handout-карточки Срединных Земель | content-ready-final |
+| 05–09 | handout-карточки Теневого Осколка | content-ready-final |
+| 10 | Доска поручений Палящего Осколка; квесты `Три Тени и Последний Вздох`, `Клинок и Стеклянный Городок` | content-ready-final |
+| 11 | квесты `Родник и Белый Колодец`, `форт, дворец и Красная Соль`, `мельница, порог и Тихая Корка` | content-ready-final |
 
-## Следующая партия
+## Что изменяется при финализации
 
-Следующими должны быть финализированы материалы Палящего Осколка:
+Карточки не просто получают новый статус. Каждая финализированная карточка дополняется до полноценного игрового состояния: назначение, участники, проверки, сцены, угрозы, исходы, связи с бестиарием, Foundry-назначение и отсутствие внутренних пометок о доработке.
 
-1. `content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md`
-2. `content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md`
-3. `content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md`
-4. `content/handouts/scorching-shard/encounters/encounter-dry-road.md`
-5. `content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md`
-6. `content/_indexes/scorching-shard-index.md`
+## Палящий Осколок: текущий остаток
+
+Осталось закрыть 3 строки текущего handout-индекса:
+
+1. `content/handouts/scorching-shard/encounters/encounter-dry-road.md`
+2. `content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md`
+3. `content/_indexes/scorching-shard-index.md`
+
+После этого основной handout-слой Срединных Земель, Теневого Осколка и Палящего Осколка будет закрыт по текущему индексу.
