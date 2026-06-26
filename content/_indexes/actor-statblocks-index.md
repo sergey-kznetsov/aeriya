@@ -16,6 +16,7 @@
 | Бестиарий: Срединные Земли, source batch 03 | `content/actor-statblocks/bestiary/source-middle-creatures-batch-03.md` | actor-ready-final |
 | Бестиарий: Срединные Земли, source batch 04 | `content/actor-statblocks/bestiary/source-middle-creatures-batch-04.md` | actor-ready-final |
 | Бестиарий: Срединные Земли, source batch 05 | `content/actor-statblocks/bestiary/source-middle-creatures-batch-05.md` | actor-ready-final |
+| Бестиарий: Теневой Осколок, source batch 06 | `content/actor-statblocks/bestiary/source-shadow-creatures-batch-06.md` | actor-ready-final |
 | Бестиарий: новые существа Срединных Земель, партия 01 | `content/actor-statblocks/bestiary/new-middle-creatures-batch-01.md` | actor-ready-final |
 | Бестиарий: модульные существа Теневого Осколка, партия 02 | `content/actor-statblocks/bestiary/module-shadow-creatures-batch-02.md` | actor-ready-final |
 | Бестиарий: модульные существа Палящего Осколка, партия 02 | `content/actor-statblocks/bestiary/module-scorching-creatures-batch-02.md` | actor-ready-final |
@@ -35,4 +36,4 @@
 | Партия | Состав | Статус |
 |---|---|---|
 | Bestiary source audit Kнига III | расширенные разделы Книги III: Падший Луярнец, Мясник и другие существа зон искажений / городского ужаса | todo-source-audit |
-| Bestiary source batch 06+ | существа Книги VII по регионам | todo-source-import |
+| Bestiary source batch 07 | остаток Книги VII: Песчаная пиявка, Пепельный вихрь, Поющий бархан, Огненный страж, Пожиратель Звуков, Песчаный червь молодь, Йормунга | todo-source-import |
