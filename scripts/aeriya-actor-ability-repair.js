@@ -1,5 +1,6 @@
 const MODULE_ID = "aeriya";
-const SCHEMA = "actor-ability-repair-v1";
+const SCHEMA = "actor-ability-repair-v2";
+const pending = new Set();
 
 function folderPath(folder) {
   const names = [];
@@ -9,12 +10,13 @@ function folderPath(folder) {
 }
 
 function isAeriaNpc(actor) {
-  if (actor.type !== "npc") return false;
+  if (!actor || actor.type !== "npc") return false;
   if (actor.getFlag(MODULE_ID, "sourcePath")) return true;
   if (actor.getFlag(MODULE_ID, "externalBestiary")) return true;
   if (actor.getFlag(MODULE_ID, "documentKind")) return true;
   const path = actor.folder ? folderPath(actor.folder) : "";
-  return path.startsWith("Aeria Core") || path.includes("Aeria Core");
+  const source = String(actor.system?.details?.source?.custom || "").toLowerCase();
+  return path.startsWith("Aeria Core") || path.includes("Aeria Core") || path.startsWith("Бестиарий") || path.includes("Бестиарий") || source.includes("aeria") || source.includes("book-") || source.includes("аэр");
 }
 
 function values(actor) {
@@ -42,7 +44,8 @@ function blob(actor) {
     actor.system?.details?.type?.custom,
     actor.system?.details?.biography?.value,
     actor.getFlag(MODULE_ID, "externalRole"),
-    actor.getFlag(MODULE_ID, "externalGroup")
+    actor.getFlag(MODULE_ID, "externalGroup"),
+    actor.folder ? folderPath(actor.folder) : ""
   ].filter(Boolean).join(" ").toLowerCase();
 }
 
@@ -66,6 +69,7 @@ function build(actor) {
   if (text.includes("скрыт") || text.includes("тень") || text.includes("зме") || text.includes("паук") || text.includes("охот")) { v.dex += 3; v.wis += 1; }
   if (text.includes("лидер") || text.includes("элит") || text.includes("лорд") || text.includes("предвест") || text.includes("королев") || text.includes("легендар")) { v.cha += 3; v.wis += 2; }
   if (text.includes("зомби") || text.includes("гуль") || text.includes("лич") || text.includes("тлен") || text.includes("костян")) { v.con += 2; v.wis -= 1; v.cha -= 1; }
+  if (text.includes("артиллерия")) { v.str += 1; v.dex += 2; v.con += 2; v.int += 2; }
 
   const old = actor.system?.abilities ?? {};
   return {
@@ -78,20 +82,44 @@ function build(actor) {
   };
 }
 
+async function repairOne(actor, { overwrite = false, rerender = false } = {}) {
+  if (!game.user?.isGM || !isAeriaNpc(actor)) return false;
+  if (!overwrite && !isDefault(actor)) return false;
+  if (pending.has(actor.id)) return false;
+  pending.add(actor.id);
+  try {
+    await actor.update({ system: { abilities: build(actor) }, flags: { [MODULE_ID]: { abilityRepairSchema: SCHEMA } } });
+    if (rerender) actor.sheet?.render(false);
+    return true;
+  } finally {
+    pending.delete(actor.id);
+  }
+}
+
 async function repairActorAbilities({ overwrite = false } = {}) {
   if (!game.user?.isGM) return { updated: 0, skipped: 0, failed: [] };
   const result = { updated: 0, skipped: 0, failed: [] };
   for (const actor of game.actors) {
     if (!isAeriaNpc(actor)) continue;
     if (!overwrite && !isDefault(actor)) { result.skipped += 1; continue; }
-    try {
-      await actor.update({ system: { abilities: build(actor) }, flags: { [MODULE_ID]: { abilityRepairSchema: SCHEMA } } });
-      result.updated += 1;
-    } catch (error) { result.failed.push({ actor: actor.name, error: error.message }); }
+    try { if (await repairOne(actor, { overwrite })) result.updated += 1; }
+    catch (error) { result.failed.push({ actor: actor.name, error: error.message }); }
   }
   if (result.updated > 0) ui.notifications?.info(`Aeria Core: исправлены характеристики Actor: ${result.updated}.`);
   if (result.failed.length > 0) console.error("Aeria Core | ability repair failures", result.failed);
   return result;
+}
+
+async function repairSelectedActorAbilities({ overwrite = false } = {}) {
+  const actors = [...new Set((canvas?.tokens?.controlled ?? []).map((token) => token.actor).filter(Boolean))];
+  if (!actors.length) {
+    ui.notifications?.warn("Aeria Core: выбери токен Actor на сцене или запусти общий ремонт.");
+    return { updated: 0, skipped: 0, failed: [] };
+  }
+  let updated = 0;
+  for (const actor of actors) if (await repairOne(actor, { overwrite, rerender: true })) updated += 1;
+  ui.notifications?.info(`Aeria Core: исправлены характеристики выбранных Actor: ${updated}.`);
+  return { updated, skipped: actors.length - updated, failed: [] };
 }
 
 function wrapImportAll() {
@@ -109,10 +137,24 @@ function wrapImportAll() {
   game.aeriya.importAll = wrapped;
 }
 
+function installSheetRepairHooks() {
+  const handler = async (app) => {
+    const actor = app?.actor ?? app?.document;
+    if (!actor || !isDefault(actor) || !isAeriaNpc(actor)) return;
+    const fixed = await repairOne(actor, { overwrite: false, rerender: true });
+    if (fixed) ui.notifications?.info(`Aeria Core: исправлены характеристики ${actor.name}. Открой лист повторно, если значения не обновились сразу.`);
+  };
+  Hooks.on("renderActorSheet", handler);
+  Hooks.on("renderNPCActorSheet", handler);
+  Hooks.on("renderActorSheet5eNPC", handler);
+}
+
 Hooks.once("ready", () => {
   game.aeriya = game.aeriya ?? {};
   game.aeriya.repairActorAbilities = (options = {}) => repairActorAbilities(options);
+  game.aeriya.repairSelectedActorAbilities = (options = {}) => repairSelectedActorAbilities(options);
   wrapImportAll();
+  installSheetRepairHooks();
   if (!game.user?.isGM) return;
   const key = "actorAbilityRepairVersion";
   const current = `${game.modules.get(MODULE_ID)?.version ?? "unknown"}:${SCHEMA}`;
@@ -121,5 +163,5 @@ Hooks.once("ready", () => {
     wrapImportAll();
     const result = await repairActorAbilities({ overwrite: false });
     if (result.failed.length === 0) await game.settings.set(MODULE_ID, key, current);
-  }, 15000);
+  }, 4000);
 });
