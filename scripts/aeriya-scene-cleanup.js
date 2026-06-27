@@ -1,10 +1,28 @@
 const MODULE_ID = "aeriya";
-const SCENE_CLEANUP_SCHEMA = "book-scene-cleanup-v1";
+const SCENE_CLEANUP_SCHEMA = "book-scene-cleanup-v2";
 
 const BOOK_SCENE_NAMES = new Set([
   "Гравен Холлоу", "Кладовая Перекрёстков", "Морнстэд", "Фарн’Крот", "Озерник", "Плавень", "Скрежетник", "Бьющий Колокол", "Усадьба Леденёвых", "Крик Химеры", "Тарный Столб", "Берег Сухих Глаз", "Горлица", "Острог Прахобоя", "Пустотень", "Сычий Брод", "Липуши", "Лагерь Семиглазого", "Тонкая Гряда", "Рубеж Трясин", "Варница Чёрного Дыма",
   "Перекрёсток Трёх Теней", "Чёрная Кузня", "А’алмар", "Окрам", "Таш’Вейн", "Борос", "Гар-Шахр", "Бату", "Саи’Рам", "Ак-Куль", "Кум-Алам", "Хур’Наир", "Деревня ИП", "Пепельное Сердце", "Лагерь «Сломанный Рог»", "Дозорная Вышка у Озера", "Гнилой Собор", "Прогалина Первого Костра", "Ледяной Клык", "Станция «Последний Огонь»",
   "Пылающий Клинок", "Три Тени", "Форт Раскалённой Соли", "Стеклянный Городок", "Последний Вздох", "Дворец Золотого Каравана", "Небесный Якорь", "Пещерный Порог", "Кровавый Родник", "Лагерь «Шёпот Ветра»", "Тихая Корка", "Красная Соль", "Руины Соляной Мельницы"
+]);
+
+const LEGACY_FOLDER_NAMES = new Set([
+  "пепельная степь",
+  "огненные каньоны",
+  "ледяной предел",
+  "восток",
+  "запад",
+  "подземные"
+]);
+
+const LEGACY_EXACT_PATHS = new Set([
+  "Пепельная степь",
+  "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны",
+  "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел",
+  "Aeria Core / Сцены / Срединные Земли / Восток",
+  "Aeria Core / Сцены / Срединные Земли / Запад",
+  "Aeria Core / Сцены / Срединные Земли / Подземные"
 ]);
 
 function comparableName(value) {
@@ -19,8 +37,23 @@ function comparableName(value) {
 
 const BOOK_COMPARABLE_NAMES = new Set([...BOOK_SCENE_NAMES].map(comparableName));
 
+function folderPath(folder) {
+  const names = [];
+  let current = folder;
+  while (current) { names.unshift(current.name); current = current.folder; }
+  return names.join(" / ");
+}
+
+function descendantsOf(folder) {
+  const result = [folder];
+  for (const child of game.folders.filter((candidate) => candidate.type === "Scene" && candidate.folder?.id === folder.id)) {
+    result.push(...descendantsOf(child));
+  }
+  return result;
+}
+
 function isAeriaScene(scene) {
-  return scene.getFlag(MODULE_ID, "documentKind") === "scene" || scene.getFlag(MODULE_ID, "displayMode") === "show-only-city-image";
+  return scene.getFlag(MODULE_ID, "documentKind") === "scene" || scene.getFlag(MODULE_ID, "displayMode") === "show-only-city-image" || String(scene.getFlag(MODULE_ID, "sourcePath") || "").startsWith("content/generated/scenes");
 }
 
 function isBookScene(scene) {
@@ -28,30 +61,52 @@ function isBookScene(scene) {
   return sourcePath.startsWith("book:goroda-i-poseleniya-aerii/") || BOOK_COMPARABLE_NAMES.has(comparableName(scene.name));
 }
 
-function folderPath(folder) {
-  const names = [];
-  let current = folder;
-  while (current) {
-    names.unshift(current.name);
-    current = current.folder;
-  }
-  return names.join(" / ");
+function isLegacyFolder(folder) {
+  if (folder.type !== "Scene") return false;
+  const path = folderPath(folder);
+  if (LEGACY_EXACT_PATHS.has(path)) return true;
+  const name = String(folder.name || "").toLowerCase().replace(/ё/g, "е");
+  return LEGACY_FOLDER_NAMES.has(name);
 }
 
 function shouldInspectSceneFolder(folder) {
   const path = folderPath(folder);
-  return folder.type === "Scene" && (path === "Aeria Core / Сцены" || path.startsWith("Aeria Core / Сцены /"));
+  return folder.type === "Scene" && (path === "Aeria Core / Сцены" || path.startsWith("Aeria Core / Сцены /") || isLegacyFolder(folder));
 }
 
 function folderHasDocumentsOrChildren(folder) {
-  const hasScenes = game.scenes.some((scene) => scene.folder?.id === folder.id);
-  const hasChildren = game.folders.some((child) => child.type === "Scene" && child.folder?.id === folder.id);
-  return hasScenes || hasChildren;
+  return game.scenes.some((scene) => scene.folder?.id === folder.id) || game.folders.some((child) => child.type === "Scene" && child.folder?.id === folder.id);
+}
+
+async function cleanupLegacyFolders() {
+  let deletedScenes = 0;
+  const legacyFolders = game.folders.filter(isLegacyFolder);
+  for (const folder of legacyFolders) {
+    const folderIds = new Set(descendantsOf(folder).map((entry) => entry.id));
+    const staleIds = game.scenes
+      .filter((scene) => folderIds.has(scene.folder?.id))
+      .filter((scene) => !isBookScene(scene))
+      .map((scene) => scene.id);
+    if (staleIds.length > 0) {
+      await Scene.deleteDocuments(staleIds);
+      deletedScenes += staleIds.length;
+    }
+  }
+  return deletedScenes;
+}
+
+async function cleanupStaleAeriaScenes() {
+  const staleSceneIds = game.scenes
+    .filter((scene) => isAeriaScene(scene) || (scene.folder && shouldInspectSceneFolder(scene.folder)))
+    .filter((scene) => !isBookScene(scene))
+    .map((scene) => scene.id);
+  if (staleSceneIds.length > 0) await Scene.deleteDocuments(staleSceneIds);
+  return staleSceneIds.length;
 }
 
 async function cleanupEmptySceneFolders() {
   let deleted = 0;
-  for (let pass = 0; pass < 8; pass += 1) {
+  for (let pass = 0; pass < 12; pass += 1) {
     const emptyFolders = game.folders
       .filter(shouldInspectSceneFolder)
       .filter((folder) => folderPath(folder) !== "Aeria Core / Сцены")
@@ -67,19 +122,11 @@ async function cleanupBookSceneStructure({ deleteLegacyScenes = true } = {}) {
   if (!game.user?.isGM) return { deletedScenes: 0, deletedFolders: 0 };
   let deletedScenes = 0;
   if (deleteLegacyScenes) {
-    const staleSceneIds = game.scenes
-      .filter(isAeriaScene)
-      .filter((scene) => !isBookScene(scene))
-      .map((scene) => scene.id);
-    if (staleSceneIds.length > 0) {
-      await Scene.deleteDocuments(staleSceneIds);
-      deletedScenes = staleSceneIds.length;
-    }
+    deletedScenes += await cleanupLegacyFolders();
+    deletedScenes += await cleanupStaleAeriaScenes();
   }
   const deletedFolders = await cleanupEmptySceneFolders();
-  if (deletedScenes || deletedFolders) {
-    ui.notifications?.info(`Aeria Core: очищены старые сцены/папки. Сцен: ${deletedScenes}, папок: ${deletedFolders}.`);
-  }
+  if (deletedScenes || deletedFolders) ui.notifications?.info(`Aeria Core: очищены старые сцены/папки. Сцен: ${deletedScenes}, папок: ${deletedFolders}.`);
   return { deletedScenes, deletedFolders };
 }
 
@@ -106,7 +153,6 @@ Hooks.once("ready", () => {
   const settingKey = "sceneCleanupInstalledVersion";
   game.settings.register(MODULE_ID, settingKey, { name: "Aeria Core: версия очистки сцен", scope: "world", config: false, type: String, default: "" });
   const current = `${game.modules.get(MODULE_ID)?.version ?? "unknown"}:${SCENE_CLEANUP_SCHEMA}`;
-  if (game.settings.get(MODULE_ID, settingKey) === current) return;
   window.setTimeout(async () => {
     wrapImportAllWithSceneCleanup();
     await cleanupBookSceneStructure({ deleteLegacyScenes: true });
