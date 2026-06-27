@@ -1,5 +1,5 @@
 const MODULE_ID = "aeriya";
-const BOOK_SCENES_SCHEMA = "book-scenes-v1";
+const BOOK_SCENES_SCHEMA = "book-scenes-v2";
 const BOOK_SOURCE = "Города и поселения Аэрии";
 
 const BOOK_SCENES_TSV = `name	folder	shard	region	type	bookType
@@ -72,6 +72,16 @@ function slugify(value) {
     .replace(/^-|-$/g, "") || "scene";
 }
 
+function comparableName(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/ё/g, "е")
+    .replace(/й/g, "и")
+    .replace(/[’ʼ'`«»\"()\[\].,;:!?-]/g, "")
+    .replace(/\s+/g, "")
+    .trim();
+}
+
 function parseBookScenes() {
   const lines = BOOK_SCENES_TSV.trim().split("\n");
   const header = lines.shift().split("\t");
@@ -137,6 +147,18 @@ function sceneData(spec, folder, existing) {
   return data;
 }
 
+function mergeResults(...results) {
+  const merged = { created: 0, updated: 0, skipped: 0, failed: [] };
+  for (const r of results) {
+    if (!r) continue;
+    merged.created += r.created ?? 0;
+    merged.updated += r.updated ?? 0;
+    merged.skipped += r.skipped ?? 0;
+    merged.failed.push(...(r.failed ?? []));
+  }
+  return merged;
+}
+
 async function importBookScenes({ overwrite = true } = {}) {
   if (!game.user?.isGM) return { created: 0, updated: 0, skipped: 0, failed: [] };
   const specs = parseBookScenes();
@@ -146,9 +168,10 @@ async function importBookScenes({ overwrite = true } = {}) {
   for (const spec of specs) {
     try {
       const folder = await getOrCreateFolder("Scene", spec.folder);
+      const targetName = comparableName(spec.name);
       const matches = game.scenes.filter((scene) =>
         scene.getFlag(MODULE_ID, "sourcePath") === spec.sourcePath ||
-        (scene.name === spec.name && isAeriaScene(scene))
+        (isAeriaScene(scene) && comparableName(scene.name) === targetName)
       );
       const existing = matches[0] ?? null;
       if (existing && !overwrite) { result.skipped += 1; continue; }
@@ -175,9 +198,19 @@ async function importBookScenes({ overwrite = true } = {}) {
   return result;
 }
 
+function wrapImportAllWithBookScenes() {
+  game.aeriya = game.aeriya ?? {};
+  const originalImportAll = game.aeriya.importAll;
+  if (typeof originalImportAll !== "function" || originalImportAll.__aeriyaBookScenesWrapped) return;
+  const wrapped = async (options = {}) => mergeResults(await originalImportAll(options), await importBookScenes({ overwrite: options.overwrite ?? true }));
+  wrapped.__aeriyaBookScenesWrapped = true;
+  game.aeriya.importAll = wrapped;
+}
+
 Hooks.once("ready", () => {
   game.aeriya = game.aeriya ?? {};
   game.aeriya.importBookScenes = (options = {}) => importBookScenes(options);
+  wrapImportAllWithBookScenes();
   if (!game.user?.isGM) return;
   const moduleVersion = game.modules.get(MODULE_ID)?.version ?? "unknown";
   const settingKey = "bookScenesImportedVersion";
@@ -186,6 +219,7 @@ Hooks.once("ready", () => {
   const imported = game.settings.get(MODULE_ID, settingKey);
   if (imported === current) return;
   window.setTimeout(async () => {
+    wrapImportAllWithBookScenes();
     const result = await importBookScenes({ overwrite: true });
     if (result.failed.length === 0) await game.settings.set(MODULE_ID, settingKey, current);
   }, 5000);
