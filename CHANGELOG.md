@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.3.10
+
+Исправлено по результатам проверки в Foundry:
+
+- `scripts/aeriya-actor-normalizer.js` обновлён до `actor-normalizer-v2`: нормализатор теперь корректно читает строку характеристик из markdown-таблицы и не принимает строку `|---:|---:|...|` за значения;
+- уже созданные Actor из `content/actor-statblocks/**` при запуске модуля получают правильные `system.abilities`, поэтому верхний блок листа больше не должен оставаться 10/+0 при наличии характеристик в статблоке;
+- во внешнем бестиарии заменён битый `icons/svg/monster.svg` на штатный `icons/svg/mystery-man.svg`, чтобы убрать 404 в консоли Foundry;
+- внешний бестиарий обновлён до `external-bestiary-v3`, чтобы ранее созданные Actor получили исправленную иконку и prototype token;
+- добавлен `scripts/aeriya-scene-cleanup.js`: очистка старых Aeria-сцен, которых нет в книге `Города и поселения Аэрии`, и рекурсивное удаление пустых legacy-папок внутри `Aeria Core / Сцены`;
+- добавлен ручной метод `game.aeriya.cleanupBookSceneStructure({ deleteLegacyScenes: true })`.
+
 ## 0.3.9
 
 Добавлено:
