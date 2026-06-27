@@ -2,7 +2,7 @@
 type: "city"
 name: "Белый Колодец"
 shard: "scorching-shard"
-region: "common"
+region: "salt-deserts"
 source: "module-expansion"
 status: "clean-card"
 ---

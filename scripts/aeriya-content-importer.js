@@ -423,7 +423,8 @@ const LEGACY_HANDOUT_PATHS = [
   { sp:"content/handouts/middle-lands/books/pismo-bez-dveri.md", folder:"Aeria Core / Книги внутри мира / Дорожные байки" },
   { sp:"content/handouts/middle-lands/boards/city-board-middle-lands.md", folder:"Aeria Core / Квесты и приключения / Срединные Земли" },
   { sp:"content/handouts/shadow-shard/boards/city-board-shadow-shard.md", folder:"Aeria Core / Квесты и приключения / Теневой Осколок" },
-  { sp:"content/handouts/scorching-shard/boards/city-board-scorching-shard.md", folder:"Aeria Core / Квесты и приключения / Палящий Осколок" }
+  { sp:"content/handouts/scorching-shard/boards/city-board-scorching-shard.md", folder:"Aeria Core / Квесты и приключения / Палящий Осколок" },
+  { sp:"content/handouts/all-shards/world-lore-master-guide.md", folder:"Aeria Core / Раздаточные материалы" }
 ];
 
 const SPIRIT_PATHS = [

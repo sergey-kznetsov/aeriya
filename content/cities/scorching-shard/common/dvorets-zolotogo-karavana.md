@@ -2,7 +2,7 @@
 type: "city"
 name: "Дворец Золотого Каравана"
 shard: "scorching-shard"
-region: "common"
+region: "burning-wastes"
 source: "module-expansion"
 status: "clean-card"
 ---
