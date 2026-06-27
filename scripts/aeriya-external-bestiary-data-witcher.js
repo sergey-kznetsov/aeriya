@@ -18,4 +18,4 @@ globalThis.AERIA_EXTERNAL_BESTIARY_RECORDS.push(...`Ведьмак|Накер|1/
 Ведьмак|Гаркаин альфа|12|undead|ведьмачье чудовище|Ведьмак|-
 Ведьмак|Археспора|12|plant|ведьмачье чудовище|Ведьмак|-
 Ведьмак|Леший|14|monstrosity|ведьмачье чудовище|Ведьмак|-
-Ведьмак|Леший древний|20|monstrosity|ведьмакское чудовище|Ведьмак|-`.trim().split('\n').map(line=>{const [src,name,cr,type,role,group,flags='-']=line.split('|');return {src,name,cr,type,role,group,flags};}));
+Ведьмак|Леший древний|20|monstrosity|ведьмачье чудовище|Ведьмак|-`.trim().split('\n').map(line=>{const [src,name,cr,type,role,group,flags='-']=line.split('|');return {src,name,cr,type,role,group,flags};}));
