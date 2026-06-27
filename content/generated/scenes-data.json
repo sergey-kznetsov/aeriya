@@ -226,99 +226,99 @@
   },
   {
     "name": "Белый Колодец",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "salt-deserts",
     "type": "city",
     "description": "Малая стоянка вокруг глубокого колодца с белыми каменными стенками.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/belyy-kolodets.md"
   },
   {
     "name": "Дворец Золотого Каравана",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "burning-wastes",
     "type": "city",
     "description": "Богатая караванная резиденция Палящего Осколка, где заключают договоры, хранят записи дорог и принимают важных гостей.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/dvorets-zolotogo-karavana.md"
   },
   {
     "name": "Форт Раскалённой Соли",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "burning-wastes",
     "type": "city",
     "description": "Опорная точка на соляной дороге Палящего Осколка, где проверяют путь, запасы и договоры караванов.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/fort-raskalennoy-soli.md"
   },
   {
     "name": "Каменный Навес",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "burning-wastes",
     "type": "city",
     "description": "Природное укрытие на дороге Палящего Осколка, где путники пережидают тяжёлые часы дня.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/kamennyy-naves.md"
   },
   {
     "name": "Красная Соль",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "salt-deserts",
     "type": "city",
     "description": "Красная Соль — поселение Палящего Осколка, связанное с соляной дорогой, запасами, обменом и проводниками.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/krasnaya-sol.md"
   },
   {
     "name": "Кровавый Родник",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "salt-deserts",
     "type": "city",
     "description": "Редкий источник на соляной дороге, известный цветом камня и строгими правилами доступа.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/krovavyy-rodnik.md"
   },
   {
     "name": "Лагерь Шёпот Ветра",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "salt-deserts",
     "type": "city",
     "description": "Временная стоянка путников и проводников перед открытым маршрутом.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/lager-shepot-vetra.md"
   },
   {
     "name": "Небесный Якорь",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "burning-wastes",
     "type": "city",
     "description": "Высокая дорожная точка, используемая как ориентир и место наблюдения.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/nebesnyy-yakor.md"
   },
   {
     "name": "Пещерный Порог",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Подземный Предел",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "underground",
     "type": "city",
     "description": "Поселение у входа в систему подземных проходов.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/peschernyy-porog.md"
   },
   {
     "name": "Руины Соляной Мельницы",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "salt-deserts",
     "type": "city",
     "description": "Старое место на дороге, где сохранились остатки механизмов, соляные площадки и следы прежнего промысла.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/ruiny-solyanoy-melnitsy.md"
   },
   {
     "name": "Тихая Корка",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
     "shard": "scorching-shard",
-    "region": "common",
+    "region": "salt-deserts",
     "type": "city",
     "description": "Малое поселение Палящего Осколка на сухой соляной дороге.",
     "sourcePath": "scene-from:content/cities/scorching-shard/common/tihaya-korka.md"
@@ -907,5 +907,149 @@
     "type": "location",
     "description": "Сцена для перехода через открытый северный перевал, проверки видимости, поиска знака и встречи с ледяным существом или проводником.",
     "sourcePath": "scene-from:content/scenes/shadow-shard/icy-limit/pereval-sinego-vetra-scene.md"
+  },
+  {
+    "name": "Солёное Кольцо",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
+    "shard": "scorching-shard",
+    "region": "salt-deserts",
+    "type": "city",
+    "description": "Поселение в центре кольцеобразного соляного выхода.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/salt-deserts/solyanoye-kolco.md"
+  },
+  {
+    "name": "Белая Застава",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
+    "shard": "scorching-shard",
+    "region": "salt-deserts",
+    "type": "city",
+    "description": "Пограничный пост на краю Соляных Пустынь.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/salt-deserts/belaya-zastava.md"
+  },
+  {
+    "name": "Мёртвый Исток",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
+    "shard": "scorching-shard",
+    "region": "salt-deserts",
+    "type": "city",
+    "description": "Поселение у пересохшего источника.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/salt-deserts/myortvyy-istok.md"
+  },
+  {
+    "name": "Пыльный Переход",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
+    "shard": "scorching-shard",
+    "region": "salt-deserts",
+    "type": "city",
+    "description": "Перевалочный пункт посреди Соляных Пустынь.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/salt-deserts/pylnyy-perekhod.md"
+  },
+  {
+    "name": "Соляной Брод",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Соляные Пустыни",
+    "shard": "scorching-shard",
+    "region": "salt-deserts",
+    "type": "city",
+    "description": "Поселение у единственного безопасного перехода через соляное болото.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/salt-deserts/solyanoy-brod.md"
+  },
+  {
+    "name": "Нижний Порог",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Подземный Предел",
+    "shard": "scorching-shard",
+    "region": "underground",
+    "type": "city",
+    "description": "Первый город под землёй, ворота в Подземный Предел.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/underground/nizhniy-porog.md"
+  },
+  {
+    "name": "Слепой Рынок",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Подземный Предел",
+    "shard": "scorching-shard",
+    "region": "underground",
+    "type": "city",
+    "description": "Подземный торговый узел на пересечении пещерных переходов.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/underground/slepoy-rynok.md"
+  },
+  {
+    "name": "Корень Горы",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Подземный Предел",
+    "shard": "scorching-shard",
+    "region": "underground",
+    "type": "city",
+    "description": "Глубокое поселение в основании горного массива.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/underground/koren-gory.md"
+  },
+  {
+    "name": "Глухая Нора",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Подземный Предел",
+    "shard": "scorching-shard",
+    "region": "underground",
+    "type": "city",
+    "description": "Небольшое поселение в тупиковом ответвлении, куда приходят не быть найденными.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/underground/glukhaya-nora.md"
+  },
+  {
+    "name": "Ключ Лавы",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны",
+    "shard": "scorching-shard",
+    "region": "fire-canyons",
+    "type": "city",
+    "description": "Поселение у выхода геотермальной энергии, центр металлообработки.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/fire-canyons/klyuch-lavy.md"
+  },
+  {
+    "name": "Стеклянный Мост",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны",
+    "shard": "scorching-shard",
+    "region": "fire-canyons",
+    "type": "city",
+    "description": "Поселение у природного стеклянного моста через ущелье.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/fire-canyons/steklyannyy-most.md"
+  },
+  {
+    "name": "Живой Берег",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны",
+    "shard": "scorching-shard",
+    "region": "fire-canyons",
+    "type": "city",
+    "description": "Поселение на уступе над лавовым течением.",
+    "sourcePath": "scene-from:content/cities/scorching-shard/fire-canyons/zhivoy-bereg.md"
+  },
+  {
+    "name": "Лагерь «Сломанный Рог»",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота",
+    "shard": "shadow-shard",
+    "region": "black-whisper-forest",
+    "type": "city",
+    "description": "Лесной лагерь под чёрными деревьями. Убежище для тех, кому больше некуда идти.",
+    "sourcePath": "scene-from:content/cities/shadow-shard/black-whisper-forest/lager-slomanny-rog.md"
+  },
+  {
+    "name": "Дозорная Вышка у Озера",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота",
+    "shard": "shadow-shard",
+    "region": "black-whisper-forest",
+    "type": "city",
+    "description": "Сторожевой пост Стражей Тропы у берега лесного озера.",
+    "sourcePath": "scene-from:content/cities/shadow-shard/black-whisper-forest/dozornaya-vyshka-u-ozera.md"
+  },
+  {
+    "name": "Гнилой Собор",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота",
+    "shard": "shadow-shard",
+    "region": "black-whisper-forest",
+    "type": "city",
+    "description": "Поселение культа, сросшегося с Лесом. Страшная святость Культа Корня.",
+    "sourcePath": "scene-from:content/cities/shadow-shard/black-whisper-forest/gniloy-sobor.md"
+  },
+  {
+    "name": "Прогалина Первого Костра",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота",
+    "shard": "shadow-shard",
+    "region": "black-whisper-forest",
+    "type": "city",
+    "description": "Нейтральная поляна для честных договоров в Лесу Чёрного Шёпота.",
+    "sourcePath": "scene-from:content/cities/shadow-shard/black-whisper-forest/pregalina-pervogo-kostra.md"
   }
 ]

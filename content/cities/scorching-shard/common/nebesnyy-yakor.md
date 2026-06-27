@@ -2,7 +2,7 @@
 type: "city"
 name: "Небесный Якорь"
 shard: "scorching-shard"
-region: "common"
+region: "burning-wastes"
 source: "module-expansion"
 status: "clean-card"
 ---

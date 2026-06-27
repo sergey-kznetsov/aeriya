@@ -7,7 +7,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/bereg-suhih-glaz.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -17,7 +17,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/byuschiy-kolokol.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -27,7 +27,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/varnitsa-chernogo-dyma.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -37,7 +37,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/gorlitsa.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -47,7 +47,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/graven-hollou.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -57,7 +57,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/kladovaya-perekrestkov.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -67,7 +67,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/krik-himery.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -77,7 +77,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/lager-semiglazogo.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -87,7 +87,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/lipushi.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -97,7 +97,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/mornsted.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -147,7 +147,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/rubezh-tryasin.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -157,7 +157,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/skrezhetnik.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -167,7 +167,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/sychiy-brod.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -177,7 +177,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/tarnyy-stolb.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -187,7 +187,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/tonkaya-gryada.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -197,7 +197,7 @@
       "shard": "middle-lands",
       "region": "common",
       "path": "content/cities/middle-lands/common/usadba-ledenevyh.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -208,6 +208,36 @@
       "region": "common",
       "path": "content/cities/middle-lands/common/farnkrot.md",
       "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "dvorets-zolotogo-karavana",
+      "name": "Дворец Золотого Каравана",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "burning-wastes",
+      "path": "content/cities/scorching-shard/common/dvorets-zolotogo-karavana.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "kamennyy-naves",
+      "name": "Каменный Навес",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "burning-wastes",
+      "path": "content/cities/scorching-shard/common/kamennyy-naves.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "nebesnyy-yakor",
+      "name": "Небесный Якорь",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "burning-wastes",
+      "path": "content/cities/scorching-shard/common/nebesnyy-yakor.md",
+      "source": "module-expansion",
       "status": "clean-card"
     },
     {
@@ -251,32 +281,62 @@
       "status": "clean-card"
     },
     {
+      "id": "fort-raskalennoy-soli",
+      "name": "Форт Раскалённой Соли",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "burning-wastes",
+      "path": "content/cities/scorching-shard/common/fort-raskalennoy-soli.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "zhivoy-bereg",
+      "name": "Живой Берег",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "fire-canyons",
+      "path": "content/cities/scorching-shard/fire-canyons/zhivoy-bereg.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "klyuch-lavy",
+      "name": "Ключ Лавы",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "fire-canyons",
+      "path": "content/cities/scorching-shard/fire-canyons/klyuch-lavy.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "steklyannyy-most",
+      "name": "Стеклянный Мост",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "fire-canyons",
+      "path": "content/cities/scorching-shard/fire-canyons/steklyannyy-most.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "belaya-zastava",
+      "name": "Белая Застава",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "salt-deserts",
+      "path": "content/cities/scorching-shard/salt-deserts/belaya-zastava.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
       "id": "belyy-kolodets",
       "name": "Белый Колодец",
       "type": "city",
       "shard": "scorching-shard",
-      "region": "common",
+      "region": "salt-deserts",
       "path": "content/cities/scorching-shard/common/belyy-kolodets.md",
-      "source": "module-expansion",
-      "status": "clean-card"
-    },
-    {
-      "id": "dvorets-zolotogo-karavana",
-      "name": "Дворец Золотого Каравана",
-      "type": "city",
-      "shard": "scorching-shard",
-      "region": "common",
-      "path": "content/cities/scorching-shard/common/dvorets-zolotogo-karavana.md",
-      "source": "module-expansion",
-      "status": "clean-card"
-    },
-    {
-      "id": "kamennyy-naves",
-      "name": "Каменный Навес",
-      "type": "city",
-      "shard": "scorching-shard",
-      "region": "common",
-      "path": "content/cities/scorching-shard/common/kamennyy-naves.md",
       "source": "module-expansion",
       "status": "clean-card"
     },
@@ -285,9 +345,9 @@
       "name": "Красная Соль",
       "type": "city",
       "shard": "scorching-shard",
-      "region": "common",
+      "region": "salt-deserts",
       "path": "content/cities/scorching-shard/common/krasnaya-sol.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -295,39 +355,39 @@
       "name": "Кровавый Родник",
       "type": "city",
       "shard": "scorching-shard",
-      "region": "common",
+      "region": "salt-deserts",
       "path": "content/cities/scorching-shard/common/krovavyy-rodnik.md",
-      "source": "module-expansion",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
       "id": "lager-shepot-vetra",
-      "name": "Лагерь Шёпот Ветра",
+      "name": "Лагерь «Шёпот Ветра»",
       "type": "city",
       "shard": "scorching-shard",
-      "region": "common",
+      "region": "salt-deserts",
       "path": "content/cities/scorching-shard/common/lager-shepot-vetra.md",
-      "source": "module-expansion",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
-      "id": "nebesnyy-yakor",
-      "name": "Небесный Якорь",
+      "id": "myortvyy-istok",
+      "name": "Мёртвый Исток",
       "type": "city",
       "shard": "scorching-shard",
-      "region": "common",
-      "path": "content/cities/scorching-shard/common/nebesnyy-yakor.md",
-      "source": "module-expansion",
+      "region": "salt-deserts",
+      "path": "content/cities/scorching-shard/salt-deserts/myortvyy-istok.md",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
-      "id": "peschernyy-porog",
-      "name": "Пещерный Порог",
+      "id": "pylnyy-perekhod",
+      "name": "Пыльный Переход",
       "type": "city",
       "shard": "scorching-shard",
-      "region": "common",
-      "path": "content/cities/scorching-shard/common/peschernyy-porog.md",
-      "source": "module-expansion",
+      "region": "salt-deserts",
+      "path": "content/cities/scorching-shard/salt-deserts/pylnyy-perekhod.md",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -335,9 +395,29 @@
       "name": "Руины Соляной Мельницы",
       "type": "city",
       "shard": "scorching-shard",
-      "region": "common",
+      "region": "salt-deserts",
       "path": "content/cities/scorching-shard/common/ruiny-solyanoy-melnitsy.md",
-      "source": "module-expansion",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "solyanoye-kolco",
+      "name": "Солёное Кольцо",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "salt-deserts",
+      "path": "content/cities/scorching-shard/salt-deserts/solyanoye-kolco.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "solyanoy-brod",
+      "name": "Соляной Брод",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "salt-deserts",
+      "path": "content/cities/scorching-shard/salt-deserts/solyanoy-brod.md",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -345,29 +425,69 @@
       "name": "Тихая Корка",
       "type": "city",
       "shard": "scorching-shard",
-      "region": "common",
+      "region": "salt-deserts",
       "path": "content/cities/scorching-shard/common/tihaya-korka.md",
-      "source": "module-expansion",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
-      "id": "fort-raskalennoy-soli",
-      "name": "Форт Раскалённой Соли",
+      "id": "glukhaya-nora",
+      "name": "Глухая Нора",
       "type": "city",
       "shard": "scorching-shard",
-      "region": "common",
-      "path": "content/cities/scorching-shard/common/fort-raskalennoy-soli.md",
-      "source": "module-expansion",
+      "region": "underground",
+      "path": "content/cities/scorching-shard/underground/glukhaya-nora.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "koren-gory",
+      "name": "Корень Горы",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "underground",
+      "path": "content/cities/scorching-shard/underground/koren-gory.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "nizhniy-porog",
+      "name": "Нижний Порог",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "underground",
+      "path": "content/cities/scorching-shard/underground/nizhniy-porog.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "peschernyy-porog",
+      "name": "Пещерный Порог",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "underground",
+      "path": "content/cities/scorching-shard/common/peschernyy-porog.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "slepoy-rynok",
+      "name": "Слепой Рынок",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "underground",
+      "path": "content/cities/scorching-shard/underground/slepoy-rynok.md",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
       "id": "aalmar",
-      "name": "Аалмар",
+      "name": "А'алмар",
       "type": "city",
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/aalmar.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -377,7 +497,7 @@
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/ak-kul.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -387,7 +507,7 @@
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/batu.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -397,7 +517,7 @@
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/boros.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -407,17 +527,17 @@
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/gar-shahr.md",
-      "source": "module-expansion",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
       "id": "derevnya-ip",
-      "name": "Деревня Ип",
+      "name": "Деревня ИП",
       "type": "city",
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/derevnya-ip.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -427,7 +547,7 @@
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/kum-alam.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -437,7 +557,7 @@
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/okram.md",
-      "source": "new-documents-with-shadow-lands-check",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -447,7 +567,7 @@
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/pepelnoe-serdtse.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -457,37 +577,37 @@
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/perekrestok-treh-teney.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
       "id": "sairam",
-      "name": "Сайрам",
+      "name": "Саи'Рам",
       "type": "city",
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/sairam.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
       "id": "tashveyn",
-      "name": "Ташвейн",
+      "name": "Таш'Вейн",
       "type": "city",
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/tashveyn.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
       "id": "hurnair",
-      "name": "Хурнаир",
+      "name": "Хур'Наир",
       "type": "city",
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/hurnair.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -497,7 +617,27 @@
       "shard": "shadow-shard",
       "region": "ash-steppe",
       "path": "content/cities/shadow-shard/ash-steppe/chernaya-kuznya.md",
-      "source": "new-documents",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "gniloy-sobor",
+      "name": "Гнилой Собор",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/cities/shadow-shard/black-whisper-forest/gniloy-sobor.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "dozornaya-vyshka-u-ozera",
+      "name": "Дозорная Вышка у Озера",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/cities/shadow-shard/black-whisper-forest/dozornaya-vyshka-u-ozera.md",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -508,6 +648,26 @@
       "region": "black-whisper-forest",
       "path": "content/cities/shadow-shard/black-whisper-forest/koren-tyomnogo-mha.md",
       "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "lager-slomanny-rog",
+      "name": "Лагерь «Сломанный Рог»",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/cities/shadow-shard/black-whisper-forest/lager-slomanny-rog.md",
+      "source": "module-final",
+      "status": "clean-card"
+    },
+    {
+      "id": "pregalina-pervogo-kostra",
+      "name": "Прогалина Первого Костра",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/cities/shadow-shard/black-whisper-forest/pregalina-pervogo-kostra.md",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -547,7 +707,7 @@
       "shard": "shadow-shard",
       "region": "icy-limit",
       "path": "content/cities/shadow-shard/icy-limit/ledyanoy-klyk.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -562,12 +722,12 @@
     },
     {
       "id": "stantsiya-posledniy-ogon",
-      "name": "Станция Последний Огонь",
+      "name": "Станция «Последний Огонь»",
       "type": "city",
       "shard": "shadow-shard",
       "region": "icy-limit",
       "path": "content/cities/shadow-shard/icy-limit/stantsiya-posledniy-ogon.md",
-      "source": "new-documents",
+      "source": "module-final",
       "status": "clean-card"
     },
     {
@@ -2777,6 +2937,16 @@
       "path": "content/actor-statblocks/bestiary/bestiary-source-map.md",
       "source": "module-final",
       "status": "actor-ready-map-final"
+    },
+    {
+      "id": "world-lore-master-guide",
+      "name": "Мир Аэрии: Справочник Мастера",
+      "type": "handout",
+      "shard": "all",
+      "region": "common",
+      "path": "content/handouts/all-shards/world-lore-master-guide.md",
+      "source": "module-final",
+      "status": "clean-card"
     },
     {
       "id": "new-middle-creatures-batch-01",
