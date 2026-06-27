@@ -1,5 +1,5 @@
 const MODULE_ID = "aeriya";
-const ACTOR_NORMALIZER_SCHEMA = "actor-normalizer-v2";
+const ACTOR_NORMALIZER_SCHEMA = "actor-normalizer-v3";
 
 const DAMAGE_MAP = {
   кислот: "acid",
@@ -36,11 +36,69 @@ const CONDITION_MAP = {
   опутан: "restrained",
   удержан: "restrained",
   ошеломлен: "stunned",
-  без сознания: "unconscious"
+  "без сознания": "unconscious"
 };
+
+const SKILL_MAP_RU = {
+  "акробатика":"acr", "магия":"arc", "атлетика":"ath", "обман":"dec",
+  "история":"his", "проницательность":"ins", "запугивание":"itm",
+  "расследование":"inv", "медицина":"med", "природа":"nat",
+  "восприятие":"prc", "выступление":"prf", "убеждение":"per",
+  "религия":"rel", "ловкость рук":"slt", "скрытность":"ste",
+  "выживание":"sur", "уход за животными":"ani",
+};
+const SKILL_ABIL_MAP = {
+  acr:"dex", arc:"int", ath:"str", dec:"cha", his:"int", ins:"wis",
+  itm:"cha", inv:"int", med:"wis", nat:"int", prc:"wis", prf:"cha",
+  per:"cha", rel:"int", slt:"dex", ste:"dex", sur:"wis", ani:"wis",
+};
+const SAVE_ABIL_MAP = { СИЛ:"str", ЛОВ:"dex", ТЕЛ:"con", ИНТ:"int", МДР:"wis", МУД:"wis", ХАР:"cha" };
 
 function escapeRegExp(value) {
   return String(value || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function parseCRValue(raw) {
+  const s = String(raw || "0").trim().split(/[\s(]/)[0];
+  if (s === "1/2") return 0.5; if (s === "1/4") return 0.25; if (s === "1/8") return 0.125;
+  const n = parseFloat(s.replace(",", ".")); return Number.isFinite(n) ? n : 0;
+}
+
+function profBonusForCR(cr) {
+  if (cr <= 4) return 2; if (cr <= 8) return 3; if (cr <= 12) return 4;
+  if (cr <= 16) return 5; if (cr <= 20) return 6; if (cr <= 24) return 7;
+  if (cr <= 28) return 8; return 9;
+}
+
+function applyProficiencies(abilities, savesText) {
+  if (!abilities) return abilities;
+  const result = {};
+  for (const [k, v] of Object.entries(abilities)) result[k] = { ...v };
+  if (!savesText) return result;
+  for (const part of savesText.split(/,\s*/)) {
+    const m = part.match(/^(СИЛ|ЛОВ|ТЕЛ|ИНТ|МДР|МУД|ХАР)\s*([+-]\d+)/i);
+    if (m) { const key = SAVE_ABIL_MAP[m[1].toUpperCase()]; if (key && result[key]) result[key].proficient = 1; }
+  }
+  return result;
+}
+
+function buildSkillsData(skillsText, abilities, crValue) {
+  if (!skillsText || !abilities) return null;
+  const result = {};
+  const pb = profBonusForCR(crValue);
+  for (const part of skillsText.split(/,\s*/)) {
+    const m = part.match(/^([^+\-\d]+?)\s*([+-]\d+)/);
+    if (!m) continue;
+    const rawName = m[1].toLowerCase().trim();
+    const bonus = parseInt(m[2]);
+    let skillKey = null;
+    for (const [ru, key] of Object.entries(SKILL_MAP_RU)) { if (rawName.includes(ru)) { skillKey = key; break; } }
+    if (!skillKey) continue;
+    const abilKey = SKILL_ABIL_MAP[skillKey];
+    const abilMod = Math.floor(((abilities[abilKey]?.value ?? 10) - 10) / 2);
+    result[skillKey] = { value: bonus - abilMod >= pb * 2 - 1 ? 2 : 1, ability: abilKey };
+  }
+  return Object.keys(result).length ? result : null;
 }
 
 async function fetchText(path) {
@@ -179,7 +237,10 @@ function buildActorUpdate(actor, block) {
   const senses = parseMetric(block, "Чувства");
   const languages = parseMetric(block, "Языки");
   const speed = parseMetric(block, "Скорость");
-  const abilities = parseAbilityTable(block);
+  const crValue = parseCRValue(parseMetric(block, "CR", "КО", "КД опасности"));
+  const baseAbilities = parseAbilityTable(block);
+  const abilitiesWithSaves = applyProficiencies(baseAbilities, saves);
+  const skillsData = buildSkillsData(skills, abilitiesWithSaves || actor.system?.abilities, crValue);
   const immunities = splitImmunities(immunitiesRaw);
 
   const traits = actor.system?.traits ?? {};
@@ -197,7 +258,8 @@ function buildActorUpdate(actor, block) {
       ci: immunities.conditions.custom ? immunities.conditions : traits.ci
     }
   };
-  if (abilities) system.abilities = abilities;
+  if (abilitiesWithSaves) system.abilities = abilitiesWithSaves;
+  if (skillsData) system.skills = skillsData;
 
   return {
     system,
@@ -211,7 +273,8 @@ function buildActorUpdate(actor, block) {
         rawImmunities: immunitiesRaw,
         rawSenses: senses,
         rawLanguages: languages,
-        rawAbilitiesUpdated: Boolean(abilities)
+        rawAbilitiesUpdated: Boolean(abilitiesWithSaves),
+        rawSkillsUpdated: Boolean(skillsData)
       }
     }
   };
