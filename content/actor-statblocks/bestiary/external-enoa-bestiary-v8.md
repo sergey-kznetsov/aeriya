@@ -1,1 +1,0 @@
-$(cat /mnt/data/external_bestiary_out/external-enoa-bestiary-v8.md)
