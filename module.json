@@ -7,7 +7,7 @@
       "name": "Сергей"
     }
   ],
-  "version": "0.3.8",
+  "version": "0.3.9",
   "compatibility": {
     "minimum": "13",
     "verified": "13.350"
@@ -38,6 +38,7 @@
     "scripts/aeriya-external-bestiary.js",
     "scripts/aeriya-actor-normalizer.js",
     "scripts/aeriya-weather-macro.js",
+    "scripts/aeriya-calendar.js",
     "scripts/aeriya-travel.js",
     "scripts/aeriya-travel-roles.js",
     "scripts/aeriya-travel-role-ui.js"
