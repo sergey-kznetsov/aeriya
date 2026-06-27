@@ -7,7 +7,7 @@
       "name": "Сергей"
     }
   ],
-  "version": "0.3.9",
+  "version": "0.3.10",
   "compatibility": {
     "minimum": "13",
     "verified": "13.350"
@@ -30,6 +30,7 @@
     "scripts/aeriya-core.js",
     "scripts/aeriya-content-importer.js",
     "scripts/aeriya-book-scenes.js",
+    "scripts/aeriya-scene-cleanup.js",
     "scripts/aeriya-external-bestiary-data-enoa.js",
     "scripts/aeriya-external-bestiary-data-witcher.js",
     "scripts/aeriya-external-bestiary-data-tpk-1.js",
