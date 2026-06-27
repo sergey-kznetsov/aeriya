@@ -1,5 +1,5 @@
 const MODULE_ID = "aeriya";
-const ACTOR_NORMALIZER_SCHEMA = "actor-normalizer-v1";
+const ACTOR_NORMALIZER_SCHEMA = "actor-normalizer-v2";
 
 const DAMAGE_MAP = {
   кислот: "acid",
@@ -105,6 +105,36 @@ function splitImmunities(raw) {
   };
 }
 
+function parseAbilityScore(cell) {
+  const match = String(cell || "").match(/\d+/);
+  return match ? parseInt(match[0], 10) : null;
+}
+
+function parseAbilityTable(markdown) {
+  const lines = String(markdown || "").split("\n");
+  const headerIndex = lines.findIndex((line) => /\|\s*СИЛ\s*\|\s*ЛОВ\s*\|\s*ТЕЛ\s*\|\s*ИНТ\s*\|\s*М[ДУ]Р\s*\|\s*ХАР\s*\|/i.test(line));
+  if (headerIndex === -1) return null;
+  for (const line of lines.slice(headerIndex + 1, headerIndex + 6)) {
+    if (!line.includes("|")) continue;
+    if (/^\s*\|?\s*:?-{2,}/.test(line)) continue;
+    const cells = line.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim());
+    if (cells.length < 6) continue;
+    const values = cells.slice(0, 6).map(parseAbilityScore);
+    if (values.every((value) => Number.isFinite(value))) {
+      const [str, dex, con, int, wis, cha] = values;
+      return {
+        str: { value: str, proficient: 0 },
+        dex: { value: dex, proficient: 0 },
+        con: { value: con, proficient: 0 },
+        int: { value: int, proficient: 0 },
+        wis: { value: wis, proficient: 0 },
+        cha: { value: cha, proficient: 0 }
+      };
+    }
+  }
+  return null;
+}
+
 function parseMovement(raw, current = {}) {
   const text = String(raw || "");
   const movement = { ...current, units: current.units || "ft" };
@@ -149,24 +179,28 @@ function buildActorUpdate(actor, block) {
   const senses = parseMetric(block, "Чувства");
   const languages = parseMetric(block, "Языки");
   const speed = parseMetric(block, "Скорость");
+  const abilities = parseAbilityTable(block);
   const immunities = splitImmunities(immunitiesRaw);
 
   const traits = actor.system?.traits ?? {};
-  const update = {
-    system: {
-      attributes: {
-        movement: parseMovement(speed, actor.system?.attributes?.movement ?? {}),
-        senses: parseSenses(senses, actor.system?.attributes?.senses ?? {})
-      },
-      traits: {
-        ...traits,
-        languages: { ...(traits.languages ?? {}), custom: languages || traits.languages?.custom || "" },
-        dr: resistances ? normalizedTrait(resistances, DAMAGE_MAP) : traits.dr,
-        dv: vulnerabilities ? normalizedTrait(vulnerabilities, DAMAGE_MAP) : traits.dv,
-        di: immunities.damage.custom ? immunities.damage : traits.di,
-        ci: immunities.conditions.custom ? immunities.conditions : traits.ci
-      }
+  const system = {
+    attributes: {
+      movement: parseMovement(speed, actor.system?.attributes?.movement ?? {}),
+      senses: parseSenses(senses, actor.system?.attributes?.senses ?? {})
     },
+    traits: {
+      ...traits,
+      languages: { ...(traits.languages ?? {}), custom: languages || traits.languages?.custom || "" },
+      dr: resistances ? normalizedTrait(resistances, DAMAGE_MAP) : traits.dr,
+      dv: vulnerabilities ? normalizedTrait(vulnerabilities, DAMAGE_MAP) : traits.dv,
+      di: immunities.damage.custom ? immunities.damage : traits.di,
+      ci: immunities.conditions.custom ? immunities.conditions : traits.ci
+    }
+  };
+  if (abilities) system.abilities = abilities;
+
+  return {
+    system,
     flags: {
       [MODULE_ID]: {
         actorNormalizerSchema: ACTOR_NORMALIZER_SCHEMA,
@@ -176,11 +210,11 @@ function buildActorUpdate(actor, block) {
         rawVulnerabilities: vulnerabilities,
         rawImmunities: immunitiesRaw,
         rawSenses: senses,
-        rawLanguages: languages
+        rawLanguages: languages,
+        rawAbilitiesUpdated: Boolean(abilities)
       }
     }
   };
-  return update;
 }
 
 async function normalizeActors({ overwrite = true } = {}) {
