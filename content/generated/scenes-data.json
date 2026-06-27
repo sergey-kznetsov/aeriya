@@ -190,7 +190,7 @@
   },
   {
     "name": "Последний Вздох",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши",
     "shard": "scorching-shard",
     "region": "burning-wastes",
     "type": "city",
@@ -199,7 +199,7 @@
   },
   {
     "name": "Пылающий Клинок",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши",
     "shard": "scorching-shard",
     "region": "burning-wastes",
     "type": "city",
@@ -208,7 +208,7 @@
   },
   {
     "name": "Стеклянный Городок",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши",
     "shard": "scorching-shard",
     "region": "burning-wastes",
     "type": "city",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Три Тени",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши / Города",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Выжженные Пустоши",
     "shard": "scorching-shard",
     "region": "burning-wastes",
     "type": "city",
@@ -325,7 +325,7 @@
   },
   {
     "name": "Аалмар",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -334,7 +334,7 @@
   },
   {
     "name": "Ак-Куль",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -343,7 +343,7 @@
   },
   {
     "name": "Бату",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -352,7 +352,7 @@
   },
   {
     "name": "Борос",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -361,7 +361,7 @@
   },
   {
     "name": "Чёрная Кузня",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -370,7 +370,7 @@
   },
   {
     "name": "Деревня Ип",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -379,7 +379,7 @@
   },
   {
     "name": "Гар-Шахр",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -388,7 +388,7 @@
   },
   {
     "name": "Хурнаир",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -397,7 +397,7 @@
   },
   {
     "name": "Кум-Алам",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -406,7 +406,7 @@
   },
   {
     "name": "Окрам",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -415,7 +415,7 @@
   },
   {
     "name": "Пепельное Сердце",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -424,7 +424,7 @@
   },
   {
     "name": "Перекрёсток Трёх Теней",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -433,7 +433,7 @@
   },
   {
     "name": "Сайрам",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -442,7 +442,7 @@
   },
   {
     "name": "Ташвейн",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "city",
@@ -451,7 +451,7 @@
   },
   {
     "name": "Корень Тёмного Мха",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота",
     "shard": "shadow-shard",
     "region": "black-whisper-forest",
     "type": "city",
@@ -460,7 +460,7 @@
   },
   {
     "name": "Сердечная Просека",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота",
     "shard": "shadow-shard",
     "region": "black-whisper-forest",
     "type": "city",
@@ -469,7 +469,7 @@
   },
   {
     "name": "Серый Приют",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота",
     "shard": "shadow-shard",
     "region": "black-whisper-forest",
     "type": "city",
@@ -478,7 +478,7 @@
   },
   {
     "name": "Старая лесная застава",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота",
     "shard": "shadow-shard",
     "region": "black-whisper-forest",
     "type": "city",
@@ -487,7 +487,7 @@
   },
   {
     "name": "Ледяной Клык",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел",
     "shard": "shadow-shard",
     "region": "icy-limit",
     "type": "city",
@@ -496,7 +496,7 @@
   },
   {
     "name": "Перевал Синего Ветра",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел",
     "shard": "shadow-shard",
     "region": "icy-limit",
     "type": "city",
@@ -505,7 +505,7 @@
   },
   {
     "name": "Станция Последний Огонь",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел",
     "shard": "shadow-shard",
     "region": "icy-limit",
     "type": "city",
@@ -514,7 +514,7 @@
   },
   {
     "name": "Стоянка Белых Камней",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Города",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел",
     "shard": "shadow-shard",
     "region": "icy-limit",
     "type": "city",
@@ -523,7 +523,7 @@
   },
   {
     "name": "Огненный каньон — Перевал Лавы",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны / Локации",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны",
     "shard": "scorching-shard",
     "region": "fire-canyons",
     "type": "location",
@@ -532,7 +532,7 @@
   },
   {
     "name": "Огненный каньон — Стеклянная Площадка",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны / Локации",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны",
     "shard": "scorching-shard",
     "region": "fire-canyons",
     "type": "location",
@@ -541,7 +541,7 @@
   },
   {
     "name": "Огненный каньон — Пещера Голоса Лавы",
-    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны / Локации",
+    "folder": "Aeria Core / Сцены / Палящий Осколок / Огненные Каньоны",
     "shard": "scorching-shard",
     "region": "fire-canyons",
     "type": "location",
@@ -550,7 +550,7 @@
   },
   {
     "name": "Ледяной Предел — Перевал Синего Ветра",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Локации",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел",
     "shard": "shadow-shard",
     "region": "icy-limit",
     "type": "location",
@@ -559,7 +559,7 @@
   },
   {
     "name": "Ледяной Предел — Общий Очаг Станции",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Локации",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел",
     "shard": "shadow-shard",
     "region": "icy-limit",
     "type": "location",
@@ -847,7 +847,7 @@
   },
   {
     "name": "Чайный двор Пепельной Степи",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Локации",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "location",
@@ -856,7 +856,7 @@
   },
   {
     "name": "Караванная стоянка Пепельной Степи",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Локации",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "location",
@@ -865,7 +865,7 @@
   },
   {
     "name": "Пепельные маяки",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь / Локации",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Пепельная Степь",
     "shard": "shadow-shard",
     "region": "ash-steppe",
     "type": "location",
@@ -874,7 +874,7 @@
   },
   {
     "name": "Мховая тропа",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота / Локации",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота",
     "shard": "shadow-shard",
     "region": "black-whisper-forest",
     "type": "location",
@@ -883,7 +883,7 @@
   },
   {
     "name": "Серая часовня",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота / Локации",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Лес Чёрного Шёпота",
     "shard": "shadow-shard",
     "region": "black-whisper-forest",
     "type": "location",
@@ -892,7 +892,7 @@
   },
   {
     "name": "Общий огонь станции",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Локации",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел",
     "shard": "shadow-shard",
     "region": "icy-limit",
     "type": "location",
@@ -901,7 +901,7 @@
   },
   {
     "name": "Перевал Синего Ветра",
-    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел / Локации",
+    "folder": "Aeria Core / Сцены / Теневой Осколок / Ледяной Предел",
     "shard": "shadow-shard",
     "region": "icy-limit",
     "type": "location",
