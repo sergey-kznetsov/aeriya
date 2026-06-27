@@ -4,7 +4,7 @@ name: "Бран, мастер зубцов Скрежетника"
 shard: "middle-lands"
 region: "skrezhetnik"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Бран, мастер зубцов Скрежетника

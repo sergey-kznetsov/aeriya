@@ -4,7 +4,7 @@ name: "Обряд тихой тропы"
 shard: "shadow-shard"
 region: "black-whisper-forest"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "ритуал"
   - "теневой осколок"

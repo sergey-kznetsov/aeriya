@@ -4,7 +4,7 @@ name: "Мини-сценарий: ворота и печать"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Мини-сценарий: ворота и печать

@@ -4,7 +4,7 @@ name: "Поручение: руины Соляной Мельницы"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Поручение: руины Соляной Мельницы

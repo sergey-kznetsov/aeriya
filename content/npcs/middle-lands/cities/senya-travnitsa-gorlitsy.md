@@ -4,7 +4,7 @@ name: "Сеня, травница Горлицы"
 shard: "middle-lands"
 region: "gorlitsa"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Сеня, травница Горлицы

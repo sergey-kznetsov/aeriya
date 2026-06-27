@@ -4,7 +4,7 @@ name: "Варсан, капитан ворот"
 shard: "middle-lands"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Варсан, капитан ворот

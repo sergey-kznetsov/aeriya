@@ -4,7 +4,7 @@ name: "Старая клетка Крика Химеры"
 shard: "middle-lands"
 region: "krik-himery"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Старая клетка Крика Химеры

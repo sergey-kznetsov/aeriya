@@ -4,7 +4,7 @@ name: "Фед, сычий переправщик"
 shard: "middle-lands"
 region: "sychiy-brod"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Фед, сычий переправщик

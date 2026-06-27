@@ -4,7 +4,7 @@ name: "Пылевая карта"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "предмет"
   - "теневой осколок"

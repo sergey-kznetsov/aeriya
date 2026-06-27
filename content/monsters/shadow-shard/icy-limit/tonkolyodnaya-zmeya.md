@@ -4,7 +4,7 @@ name: "Тонколёдная змея"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Тонколёдная змея

@@ -4,7 +4,7 @@ name: "Палящий Осколок — дорожные находки"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Палящий Осколок — дорожные находки

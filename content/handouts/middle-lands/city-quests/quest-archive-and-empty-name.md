@@ -118,7 +118,7 @@ status: "content-ready-final"
 
 ## Связанные материалы
 
-- `content/scenes/middle-lands/common/gorodskoy-arhiv.md`;
+- `content/scenes/middle-lands/city-groups/arhiv-graven-hollou.md`;
 - `content/scenes/middle-lands/city-groups/pustoy-dom-pustoteni.md`;
 - `content/scenes/middle-lands/city-groups/staryy-post-prahoboya.md`;
 - `content/actor-statblocks/npcs/middle-lands-city-npcs-batch-01.md`;

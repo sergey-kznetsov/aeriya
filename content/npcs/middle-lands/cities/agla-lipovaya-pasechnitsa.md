@@ -4,7 +4,7 @@ name: "Агла, липовая пасечница"
 shard: "middle-lands"
 region: "lipushi"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Агла, липовая пасечница

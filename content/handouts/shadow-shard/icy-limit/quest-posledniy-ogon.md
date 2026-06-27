@@ -4,7 +4,7 @@ name: "Поручение: последний огонь"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Поручение: последний огонь

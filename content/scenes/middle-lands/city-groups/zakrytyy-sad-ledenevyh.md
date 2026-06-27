@@ -4,7 +4,7 @@ name: "Закрытый сад Леденёвых"
 shard: "middle-lands"
 region: "usadba-ledenevyh"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Закрытый сад Леденёвых

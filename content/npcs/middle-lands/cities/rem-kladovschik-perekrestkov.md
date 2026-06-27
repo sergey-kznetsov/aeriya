@@ -4,7 +4,7 @@ name: "Рем, кладовщик Перекрёстков"
 shard: "middle-lands"
 region: "kladovaya-perekrestkov"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Рем, кладовщик Перекрёстков

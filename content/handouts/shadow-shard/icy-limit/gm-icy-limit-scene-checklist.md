@@ -4,7 +4,7 @@ name: "Мастерская памятка: сцена Вечных Льдов"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Мастерская памятка: сцена Вечных Льдов

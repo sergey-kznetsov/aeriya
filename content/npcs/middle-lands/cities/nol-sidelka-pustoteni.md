@@ -4,7 +4,7 @@ name: "Ноль, сиделка Пустотени"
 shard: "middle-lands"
 region: "pustoten"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Ноль, сиделка Пустотени

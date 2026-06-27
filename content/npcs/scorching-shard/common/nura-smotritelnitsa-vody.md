@@ -4,7 +4,7 @@ name: "Нура, смотрительница воды"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Нура, смотрительница воды

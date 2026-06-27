@@ -4,7 +4,7 @@ name: "Нижняя штольня Фарн’Крота"
 shard: "middle-lands"
 region: "farnkrot"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Нижняя штольня Фарн’Крота

@@ -4,7 +4,7 @@ name: "Лесья, шлюзница Озерника"
 shard: "middle-lands"
 region: "ozernik"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Лесья, шлюзница Озерника

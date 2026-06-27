@@ -4,7 +4,7 @@ name: "Ашара, хозяйка стоянки"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Ашара, хозяйка стоянки

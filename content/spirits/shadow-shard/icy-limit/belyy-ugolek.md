@@ -4,7 +4,7 @@ name: "Белый Уголёк"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Белый Уголёк

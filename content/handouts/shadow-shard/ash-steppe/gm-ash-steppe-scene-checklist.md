@@ -4,7 +4,7 @@ name: "Мастерская памятка: сцена Пепельной Сте
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Мастерская памятка: сцена Пепельной Степи

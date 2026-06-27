@@ -4,7 +4,7 @@ name: "Поручение: метка у родника"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Поручение: метка у родника

@@ -4,7 +4,7 @@ name: "Корень Тёмного Мха"
 shard: "shadow-shard"
 region: "black-whisper-forest"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "поселение"
   - "теневой осколок"

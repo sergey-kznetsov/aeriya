@@ -4,7 +4,7 @@ name: "Остап, метельщик Тарного Столба"
 shard: "middle-lands"
 region: "tarnyy-stolb"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Остап, метельщик Тарного Столба

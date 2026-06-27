@@ -4,7 +4,7 @@ name: "Actor-ready статблоки бестиария Палящего Оск
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "actor-ready-draft"
+status: "actor-ready"
 ---
 
 # Actor-ready статблоки бестиария Палящего Осколка

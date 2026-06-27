@@ -4,7 +4,7 @@ name: "Песчаные Братья"
 shard: "scorching-shard"
 region: "common"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Песчаные Братья

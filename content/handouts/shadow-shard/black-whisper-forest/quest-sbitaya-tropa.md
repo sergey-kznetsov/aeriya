@@ -4,7 +4,7 @@ name: "Поручение: сбитая тропа"
 shard: "shadow-shard"
 region: "black-whisper-forest"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Поручение: сбитая тропа

@@ -4,7 +4,7 @@ name: "Савир-посредник"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Савир-посредник

@@ -4,7 +4,7 @@ name: "Серая часовня"
 shard: "shadow-shard"
 region: "black-whisper-forest"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "сцена"
   - "теневой осколок"

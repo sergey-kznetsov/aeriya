@@ -4,7 +4,7 @@ name: "Мховая нить"
 shard: "shadow-shard"
 region: "black-whisper-forest"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "предмет"
   - "теневой осколок"

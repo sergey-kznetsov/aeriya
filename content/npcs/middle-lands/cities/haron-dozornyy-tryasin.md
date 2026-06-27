@@ -4,7 +4,7 @@ name: "Харон, дозорный Трясин"
 shard: "middle-lands"
 region: "rubezh-tryasin"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Харон, дозорный Трясин

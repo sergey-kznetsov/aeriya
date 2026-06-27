@@ -4,7 +4,7 @@ name: "Пограничная топь Рубежа Трясин"
 shard: "middle-lands"
 region: "rubezh-tryasin"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Пограничная топь Рубежа Трясин

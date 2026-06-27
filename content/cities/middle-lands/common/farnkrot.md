@@ -4,7 +4,7 @@ name: "Фарн’Крот"
 shard: "middle-lands"
 region: "common"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Фарн’Крот

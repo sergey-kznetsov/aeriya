@@ -1,0 +1,3684 @@
+{
+  "cities": [
+    {
+      "id": "bereg-suhih-glaz",
+      "name": "Берег Сухих Глаз",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/bereg-suhih-glaz.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "byuschiy-kolokol",
+      "name": "Бьющий Колокол",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/byuschiy-kolokol.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "varnitsa-chernogo-dyma",
+      "name": "Варница Чёрного Дыма",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/varnitsa-chernogo-dyma.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "gorlitsa",
+      "name": "Горлица",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/gorlitsa.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "graven-hollou",
+      "name": "Гравен Холлоу",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/graven-hollou.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "kladovaya-perekrestkov",
+      "name": "Кладовая Перекрёстков",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/kladovaya-perekrestkov.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "krik-himery",
+      "name": "Крик Химеры",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/krik-himery.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "lager-semiglazogo",
+      "name": "Лагерь Семиглазого",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/lager-semiglazogo.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "lipushi",
+      "name": "Липуши",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/lipushi.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "mornsted",
+      "name": "Морнстэд",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/mornsted.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "ozernik",
+      "name": "Озерник",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/ozernik.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "ostrog-prahoboya",
+      "name": "Острог Прахобоя",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/ostrog-prahoboya.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "plaven",
+      "name": "Плавень",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/plaven.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "pustoten",
+      "name": "Пустотень",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/pustoten.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "rubezh-tryasin",
+      "name": "Рубеж Трясин",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/rubezh-tryasin.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "skrezhetnik",
+      "name": "Скрежетник",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/skrezhetnik.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "sychiy-brod",
+      "name": "Сычий Брод",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/sychiy-brod.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "tarnyy-stolb",
+      "name": "Тарный Столб",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/tarnyy-stolb.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "tonkaya-gryada",
+      "name": "Тонкая Гряда",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/tonkaya-gryada.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "usadba-ledenevyh",
+      "name": "Усадьба Леденёвых",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/usadba-ledenevyh.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "farnkrot",
+      "name": "Фарн’Крот",
+      "type": "city",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/cities/middle-lands/common/farnkrot.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "posledniy-vzdoh",
+      "name": "Последний Вздох",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "burning-wastes",
+      "path": "content/cities/scorching-shard/burning-wastes/posledniy-vzdoh.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "pylayuschiy-klinok",
+      "name": "Пылающий Клинок",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "burning-wastes",
+      "path": "content/cities/scorching-shard/burning-wastes/pylayuschiy-klinok.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "steklyannyy-gorodok",
+      "name": "Стеклянный Городок",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "burning-wastes",
+      "path": "content/cities/scorching-shard/burning-wastes/steklyannyy-gorodok.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "tri-teni",
+      "name": "Три Тени",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "burning-wastes",
+      "path": "content/cities/scorching-shard/burning-wastes/tri-teni.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "belyy-kolodets",
+      "name": "Белый Колодец",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/belyy-kolodets.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "dvorets-zolotogo-karavana",
+      "name": "Дворец Золотого Каравана",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/dvorets-zolotogo-karavana.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "kamennyy-naves",
+      "name": "Каменный Навес",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/kamennyy-naves.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "krasnaya-sol",
+      "name": "Красная Соль",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/krasnaya-sol.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "krovavyy-rodnik",
+      "name": "Кровавый Родник",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/krovavyy-rodnik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "lager-shepot-vetra",
+      "name": "Лагерь Шёпот Ветра",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/lager-shepot-vetra.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "nebesnyy-yakor",
+      "name": "Небесный Якорь",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/nebesnyy-yakor.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "peschernyy-porog",
+      "name": "Пещерный Порог",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/peschernyy-porog.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ruiny-solyanoy-melnitsy",
+      "name": "Руины Соляной Мельницы",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/ruiny-solyanoy-melnitsy.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "tihaya-korka",
+      "name": "Тихая Корка",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/tihaya-korka.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "fort-raskalennoy-soli",
+      "name": "Форт Раскалённой Соли",
+      "type": "city",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/cities/scorching-shard/common/fort-raskalennoy-soli.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "aalmar",
+      "name": "Аалмар",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/aalmar.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "ak-kul",
+      "name": "Ак-Куль",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/ak-kul.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "batu",
+      "name": "Бату",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/batu.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "boros",
+      "name": "Борос",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/boros.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "gar-shahr",
+      "name": "Гар-Шахр",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/gar-shahr.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "derevnya-ip",
+      "name": "Деревня Ип",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/derevnya-ip.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "kum-alam",
+      "name": "Кум-Алам",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/kum-alam.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "okram",
+      "name": "Окрам",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/okram.md",
+      "source": "new-documents-with-shadow-lands-check",
+      "status": "clean-card"
+    },
+    {
+      "id": "pepelnoe-serdtse",
+      "name": "Пепельное Сердце",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/pepelnoe-serdtse.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "perekrestok-treh-teney",
+      "name": "Перекрёсток Трёх Теней",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/perekrestok-treh-teney.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "sairam",
+      "name": "Сайрам",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/sairam.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "tashveyn",
+      "name": "Ташвейн",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/tashveyn.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "hurnair",
+      "name": "Хурнаир",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/hurnair.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "chernaya-kuznya",
+      "name": "Чёрная Кузня",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/cities/shadow-shard/ash-steppe/chernaya-kuznya.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "koren-tyomnogo-mha",
+      "name": "Корень Тёмного Мха",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/cities/shadow-shard/black-whisper-forest/koren-tyomnogo-mha.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "serdechnaya-proseka",
+      "name": "Сердечная Просека",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/cities/shadow-shard/black-whisper-forest/serdechnaya-proseka.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "seryj-priyut",
+      "name": "Серый Приют",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/cities/shadow-shard/black-whisper-forest/seryj-priyut.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "staraya-lesnaya-zastava",
+      "name": "Старая лесная застава",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/cities/shadow-shard/black-whisper-forest/staraya-lesnaya-zastava.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ledyanoy-klyk",
+      "name": "Ледяной Клык",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/cities/shadow-shard/icy-limit/ledyanoy-klyk.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "pereval-sinego-vetra",
+      "name": "Перевал Синего Ветра",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/cities/shadow-shard/icy-limit/pereval-sinego-vetra.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "stantsiya-posledniy-ogon",
+      "name": "Станция Последний Огонь",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/cities/shadow-shard/icy-limit/stantsiya-posledniy-ogon.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "stoyanka-belyh-kamney",
+      "name": "Стоянка Белых Камней",
+      "type": "city",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/cities/shadow-shard/icy-limit/stoyanka-belyh-kamney.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    }
+  ],
+  "factions": [
+    {
+      "id": "gildiya-pyatogo-zuba",
+      "name": "Гильдия Пятого Зуба",
+      "type": "faction",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/factions/middle-lands/common/gildiya-pyatogo-zuba.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "dom-ledenevyh",
+      "name": "Дом Леденёвых",
+      "type": "faction",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/factions/middle-lands/common/dom-ledenevyh.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "klinki-klyatv",
+      "name": "Клинки Клятв",
+      "type": "faction",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/factions/middle-lands/common/klinki-klyatv.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "kolokolisty",
+      "name": "Колоколисты",
+      "type": "faction",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/factions/middle-lands/common/kolokolisty.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "krovlyanye-chervi",
+      "name": "Кровляные Черви",
+      "type": "faction",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/factions/middle-lands/common/krovlyanye-chervi.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "lovchie",
+      "name": "Ловчие",
+      "type": "faction",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/factions/middle-lands/common/lovchie.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "hram-posledney-torgovki",
+      "name": "Храм Последней Торговки",
+      "type": "faction",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/factions/middle-lands/common/hram-posledney-torgovki.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "chernyy-karavan",
+      "name": "Чёрный Караван",
+      "type": "faction",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/factions/middle-lands/common/chernyy-karavan.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "deti-solntsa",
+      "name": "Дети Солнца",
+      "type": "faction",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/factions/scorching-shard/common/deti-solntsa.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "masterskie-linz",
+      "name": "Мастерские Линз",
+      "type": "faction",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/factions/scorching-shard/common/masterskie-linz.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "peschanye-bratya",
+      "name": "Песчаные Братья",
+      "type": "faction",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/factions/scorching-shard/common/peschanye-bratya.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "svobodnye-kapli",
+      "name": "Свободные Капли",
+      "type": "faction",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/factions/scorching-shard/common/svobodnye-kapli.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "sovet-pyati-plamen",
+      "name": "Совет Пяти Пламён",
+      "type": "faction",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/factions/scorching-shard/common/sovet-pyati-plamen.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "solyanoy-krug",
+      "name": "Соляной Круг",
+      "type": "faction",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/factions/scorching-shard/common/solyanoy-krug.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "strazha-plameni",
+      "name": "Стража Пламени",
+      "type": "faction",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/factions/scorching-shard/common/strazha-plameni.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "hraniteli-pescher",
+      "name": "Хранители Пещер",
+      "type": "faction",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/factions/scorching-shard/common/hraniteli-pescher.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "vodnye-smotriteli",
+      "name": "Водные Смотрители",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/factions/shadow-shard/ash-steppe/vodnye-smotriteli.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "pepelnye-lezviya",
+      "name": "Пепельные Лезвия",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/factions/shadow-shard/ash-steppe/pepelnye-lezviya.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "serye-kuptsy",
+      "name": "Серые Купцы",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/factions/shadow-shard/ash-steppe/serye-kuptsy.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "sovet-zolotyh",
+      "name": "Совет Золотых",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/factions/shadow-shard/ash-steppe/sovet-zolotyh.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "sovet-pyati-klinkov",
+      "name": "Совет Пяти Клинков",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/factions/shadow-shard/ash-steppe/sovet-pyati-klinkov.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "tsepnye-teni",
+      "name": "Цепные Тени",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/factions/shadow-shard/ash-steppe/tsepnye-teni.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "chaynye-doma-stepi",
+      "name": "Чайные Дома Степи",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/factions/shadow-shard/ash-steppe/chaynye-doma-stepi.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "dom-mha",
+      "name": "Дом Мха",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/factions/shadow-shard/black-whisper-forest/dom-mha.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "smotriteli-nastilov",
+      "name": "Смотрители Настилов",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/factions/shadow-shard/black-whisper-forest/smotriteli-nastilov.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "hraniteli-trop",
+      "name": "Хранители Троп",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/factions/shadow-shard/black-whisper-forest/hraniteli-trop.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ledyanye-skulptory",
+      "name": "Ледяные Скульпторы",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/factions/shadow-shard/icy-limit/ledyanye-skulptory.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "sinie-yazyki",
+      "name": "Синие Языки",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/factions/shadow-shard/icy-limit/sinie-yazyki.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "hraniteli-poslednego-ognya",
+      "name": "Хранители Последнего Огня",
+      "type": "faction",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/factions/shadow-shard/icy-limit/hraniteli-poslednego-ognya.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    }
+  ],
+  "spirits": [
+    {
+      "id": "vechnyy-zmey",
+      "name": "Вечный Змей",
+      "type": "spirit",
+      "shard": "all-shards",
+      "region": "common",
+      "path": "content/spirits/all-shards/common/vechnyy-zmey.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "niks",
+      "name": "Никс",
+      "type": "spirit",
+      "shard": "all-shards",
+      "region": "common",
+      "path": "content/spirits/all-shards/common/niks.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "omulu",
+      "name": "Омулу",
+      "type": "spirit",
+      "shard": "all-shards",
+      "region": "common",
+      "path": "content/spirits/all-shards/common/omulu.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "duh-perekrestka",
+      "name": "Дух Перекрёстка",
+      "type": "spirit",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/spirits/middle-lands/common/duh-perekrestka.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "poslednyaya-torgovka",
+      "name": "Последняя Торговка",
+      "type": "spirit",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/spirits/middle-lands/common/poslednyaya-torgovka.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "tihaya-kaplya",
+      "name": "Тихая Капля",
+      "type": "spirit",
+      "shard": "scorching-shard",
+      "region": "cave-keepers",
+      "path": "content/spirits/scorching-shard/cave-keepers/tihaya-kaplya.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "glas-suhoy-dorogi",
+      "name": "Глас Сухой Дороги",
+      "type": "spirit",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/spirits/scorching-shard/common/glas-suhoy-dorogi.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ignis-peschanyy-zmey",
+      "name": "Игнис-Песчаный Змей",
+      "type": "spirit",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/spirits/scorching-shard/common/ignis-peschanyy-zmey.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "mat-soli",
+      "name": "Мать Соли",
+      "type": "spirit",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/spirits/scorching-shard/common/mat-soli.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "peschanaya-mat",
+      "name": "Песчаная Мать",
+      "type": "spirit",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/spirits/scorching-shard/common/peschanaya-mat.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "runay-palyaschiy",
+      "name": "Рунай Палящий",
+      "type": "spirit",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/spirits/scorching-shard/common/runay-palyaschiy.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "shamas-solntselikiy",
+      "name": "Шамас-Солнцеликий",
+      "type": "spirit",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/spirits/scorching-shard/common/shamas-solntselikiy.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "golos-lavy",
+      "name": "Голос Лавы",
+      "type": "spirit",
+      "shard": "scorching-shard",
+      "region": "fire-canyons",
+      "path": "content/spirits/scorching-shard/fire-canyons/golos-lavy.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "duh-zerkala",
+      "name": "Дух Зеркала",
+      "type": "spirit",
+      "shard": "scorching-shard",
+      "region": "salt-deserts",
+      "path": "content/spirits/scorching-shard/salt-deserts/duh-zerkala.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "runay-stepnoy",
+      "name": "Рунай Степной",
+      "type": "spirit",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/spirits/shadow-shard/ash-steppe/runay-stepnoy.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "salbar",
+      "name": "Сальбар",
+      "type": "spirit",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/spirits/shadow-shard/ash-steppe/salbar.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "mat-mha",
+      "name": "Мать Мха",
+      "type": "spirit",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/spirits/shadow-shard/black-whisper-forest/mat-mha.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "sam-les",
+      "name": "Сам Лес",
+      "type": "spirit",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/spirits/shadow-shard/black-whisper-forest/sam-les.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "shepotnik",
+      "name": "Шёпотник",
+      "type": "spirit",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/spirits/shadow-shard/black-whisper-forest/shepotnik.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "ayrun-severnyy",
+      "name": "Айрун Северный",
+      "type": "spirit",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/spirits/shadow-shard/icy-limit/ayrun-severnyy.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "belyy-ugolek",
+      "name": "Белый Уголёк",
+      "type": "spirit",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/spirits/shadow-shard/icy-limit/belyy-ugolek.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "iskra-predkov",
+      "name": "Искра Предков",
+      "type": "spirit",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/spirits/shadow-shard/icy-limit/iskra-predkov.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    }
+  ],
+  "npcs": [
+    {
+      "id": "ira-suhaya-pristavka",
+      "name": "Ира, сухая приставка",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "bereg-suhih-glaz",
+      "path": "content/npcs/middle-lands/cities/ira-suhaya-pristavka.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "vir-kolokolschik",
+      "name": "Вир, колокольщик Бьющего Колокола",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "byuschiy-kolokol",
+      "path": "content/npcs/middle-lands/cities/vir-kolokolschik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "alda-agent-ledenevyh",
+      "name": "Альда, агент Леденёвых",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/npcs/middle-lands/common/alda-agent-ledenevyh.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "boris-traktirschik",
+      "name": "Борис-трактирщик",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/npcs/middle-lands/common/boris-traktirschik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "varsan-kapitan-vorot",
+      "name": "Варсан, капитан ворот",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/npcs/middle-lands/common/varsan-kapitan-vorot.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "grigor-posrednik-pyatogo-zuba",
+      "name": "Григор, посредник Пятого Зуба",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/npcs/middle-lands/common/grigor-posrednik-pyatogo-zuba.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "zhena-kolokolnaya-poslushnitsa",
+      "name": "Жена, колокольная послушница",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/npcs/middle-lands/common/zhena-kolokolnaya-poslushnitsa.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "lida-rynkovaya-pisets",
+      "name": "Лида, рыночная писец",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/npcs/middle-lands/common/lida-rynkovaya-pisets.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "mila-provodnitsa",
+      "name": "Мила-проводница",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/npcs/middle-lands/common/mila-provodnitsa.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "nika-krovlyanaya-begunya",
+      "name": "Ника, кровляная бегунья",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/npcs/middle-lands/common/nika-krovlyanaya-begunya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "dara-nizhnyaya-shtolnya",
+      "name": "Дара Нижней Штольни",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "farnkrot",
+      "path": "content/npcs/middle-lands/cities/dara-nizhnyaya-shtolnya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "senya-travnitsa-gorlitsy",
+      "name": "Сеня, травница Горлицы",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "gorlitsa",
+      "path": "content/npcs/middle-lands/cities/senya-travnitsa-gorlitsy.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "esma-arhivarius-graven-hollou",
+      "name": "Эсма, архивариус Гравен Холлоу",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "graven-hollou",
+      "path": "content/npcs/middle-lands/cities/esma-arhivarius-graven-hollou.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "rem-kladovschik-perekrestkov",
+      "name": "Рем, кладовщик Перекрёстков",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "kladovaya-perekrestkov",
+      "path": "content/npcs/middle-lands/cities/rem-kladovschik-perekrestkov.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "yar-kletnik-krika-himery",
+      "name": "Яр, клетник Крика Химеры",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "krik-himery",
+      "path": "content/npcs/middle-lands/cities/yar-kletnik-krika-himery.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "semiglazyy-nablyudatel",
+      "name": "Семиглазый наблюдатель",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "lager-semiglazogo",
+      "path": "content/npcs/middle-lands/cities/semiglazyy-nablyudatel.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "agla-lipovaya-pasechnitsa",
+      "name": "Агла, липовая пасечница",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "lipushi",
+      "path": "content/npcs/middle-lands/cities/agla-lipovaya-pasechnitsa.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "tiron-strazh-mornsted",
+      "name": "Тирон, страж Морнстэда",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "mornsted",
+      "path": "content/npcs/middle-lands/cities/tiron-strazh-mornsted.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "rigor-nachalnik-ostroga",
+      "name": "Ригор, начальник Острога Прахобоя",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "ostrog-prahoboya",
+      "path": "content/npcs/middle-lands/cities/rigor-nachalnik-ostroga.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "lesya-shlyuznitsa-ozernika",
+      "name": "Лесья, шлюзница Озерника",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "ozernik",
+      "path": "content/npcs/middle-lands/cities/lesya-shlyuznitsa-ozernika.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "toma-mostochnitsa-plaveni",
+      "name": "Тома, мосточница Плавени",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "plaven",
+      "path": "content/npcs/middle-lands/cities/toma-mostochnitsa-plaveni.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "nol-sidelka-pustoteni",
+      "name": "Ноль, сиделка Пустотени",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "pustoten",
+      "path": "content/npcs/middle-lands/cities/nol-sidelka-pustoteni.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "haron-dozornyy-tryasin",
+      "name": "Харон, дозорный Трясин",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "rubezh-tryasin",
+      "path": "content/npcs/middle-lands/cities/haron-dozornyy-tryasin.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "bran-master-zubtsov",
+      "name": "Бран, мастер зубцов Скрежетника",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "skrezhetnik",
+      "path": "content/npcs/middle-lands/cities/bran-master-zubtsov.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "fed-sychiy-perepravschik",
+      "name": "Фед, сычий переправщик",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "sychiy-brod",
+      "path": "content/npcs/middle-lands/cities/fed-sychiy-perepravschik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ostap-metelschik-tarnogo-stolba",
+      "name": "Остап, метельщик Тарного Столба",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "tarnyy-stolb",
+      "path": "content/npcs/middle-lands/cities/ostap-metelschik-tarnogo-stolba.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "laszlo-gornyy-metochik",
+      "name": "Ласло, горный меточник",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "tonkaya-gryada",
+      "path": "content/npcs/middle-lands/cities/laszlo-gornyy-metochik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "marta-upravlyayuschaya-ledenevyh",
+      "name": "Марта, управляющая Леденёвых",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "usadba-ledenevyh",
+      "path": "content/npcs/middle-lands/cities/marta-upravlyayuschaya-ledenevyh.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "efim-varschik-chernogo-dyma",
+      "name": "Ефим, варщик Чёрного Дыма",
+      "type": "npc",
+      "shard": "middle-lands",
+      "region": "varnitsa-chernogo-dyma",
+      "path": "content/npcs/middle-lands/cities/efim-varschik-chernogo-dyma.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ashara-hozyayka-stoyanki",
+      "name": "Ашара, хозяйка стоянки",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/ashara-hozyayka-stoyanki.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "boru-solyanoj-master",
+      "name": "Бору, соляной мастер",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/boru-solyanoj-master.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "veyra-master-linz",
+      "name": "Вейра, мастер линз",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/veyra-master-linz.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "dorun-peschernyy-provodnik",
+      "name": "Дорун, пещерный проводник",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/dorun-peschernyy-provodnik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "iren-posrednitsa-karavana",
+      "name": "Ирен, посредница каравана",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/iren-posrednitsa-karavana.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "lata-sobiratelnitsa-stekla",
+      "name": "Лата, собирательница стекла",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/lata-sobiratelnitsa-stekla.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "marik-kartograf",
+      "name": "Марик-картограф",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/marik-kartograf.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "nura-smotritelnitsa-vody",
+      "name": "Нура, смотрительница воды",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/nura-smotritelnitsa-vody.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "salim-provodnik",
+      "name": "Салим-проводник",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/salim-provodnik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "soren-smotritel-znaka",
+      "name": "Сорен, смотритель знака",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/soren-smotritel-znaka.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "tavar-starshiy-vorot",
+      "name": "Тавар, старший ворот",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/tavar-starshiy-vorot.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "halima-hranitel-rodnika",
+      "name": "Халима, хранительница родника",
+      "type": "npc",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/npcs/scorching-shard/common/halima-hranitel-rodnika.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "dar-ol-kuznets",
+      "name": "Дар-Ол, кузнец",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/npcs/shadow-shard/ash-steppe/dar-ol-kuznets.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ilem-pisets",
+      "name": "Илем-писец",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/npcs/shadow-shard/ash-steppe/ilem-pisets.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ker-provodnik",
+      "name": "Кер-проводник",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/npcs/shadow-shard/ash-steppe/ker-provodnik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "maara-smotritelnitsa",
+      "name": "Маара-смотрительница",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/npcs/shadow-shard/ash-steppe/maara-smotritelnitsa.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ortan-karavanschik",
+      "name": "Ортан-караванщик",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/npcs/shadow-shard/ash-steppe/ortan-karavanschik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "savir-posrednik",
+      "name": "Савир-посредник",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/npcs/shadow-shard/ash-steppe/savir-posrednik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "saida-chaynitsa",
+      "name": "Саида-чайница",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/npcs/shadow-shard/ash-steppe/saida-chaynitsa.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "turan-dozornyy",
+      "name": "Туран-дозорный",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/npcs/shadow-shard/ash-steppe/turan-dozornyy.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "yara-znakoved",
+      "name": "Яра-знаковед",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/npcs/shadow-shard/ash-steppe/yara-znakoved.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "mara-mhovaya",
+      "name": "Мара Мховая",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/npcs/shadow-shard/black-whisper-forest/mara-mhovaya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "olsha-provodnitsa",
+      "name": "Ольша-проводница",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/npcs/shadow-shard/black-whisper-forest/olsha-provodnitsa.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "radomir-zastavnik",
+      "name": "Радомир-заставник",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/npcs/shadow-shard/black-whisper-forest/radomir-zastavnik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "tihon-sluhach",
+      "name": "Тихон-слухач",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/npcs/shadow-shard/black-whisper-forest/tihon-sluhach.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "vesna-hranitel-zapisej",
+      "name": "Весна, хранительница записей",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/npcs/shadow-shard/icy-limit/vesna-hranitel-zapisej.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "rada-sledopyt",
+      "name": "Рада-следопыт",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/npcs/shadow-shard/icy-limit/rada-sledopyt.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "severin-ledovyj-provodnik",
+      "name": "Северин, ледовый проводник",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/npcs/shadow-shard/icy-limit/severin-ledovyj-provodnik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "yaromir-smotritel-ognya",
+      "name": "Яромир, смотритель огня",
+      "type": "npc",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/npcs/shadow-shard/icy-limit/yaromir-smotritel-ognya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    }
+  ],
+  "monsters": [
+    {
+      "id": "bolotnyy-shatun",
+      "name": "Болотный шатун",
+      "type": "monster",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/monsters/middle-lands/common/bolotnyy-shatun.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "gryadovyy-prygun",
+      "name": "Грядовый прыгун",
+      "type": "monster",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/monsters/middle-lands/common/gryadovyy-prygun.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "kolokolnyy-voron",
+      "name": "Колокольный ворон",
+      "type": "monster",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/monsters/middle-lands/common/kolokolnyy-voron.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "krovlyanoy-cherv",
+      "name": "Кровляный червь",
+      "type": "monster",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/monsters/middle-lands/common/krovlyanoy-cherv.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "lipovyy-roevik",
+      "name": "Липовый роевик",
+      "type": "monster",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/monsters/middle-lands/common/lipovyy-roevik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "semiglazaya-ten",
+      "name": "Семиглазая тень",
+      "type": "monster",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/monsters/middle-lands/common/semiglazaya-ten.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "skladskoy-hvat",
+      "name": "Складской хват",
+      "type": "monster",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/monsters/middle-lands/common/skladskoy-hvat.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "suhoglazyy-storozh",
+      "name": "Сухоглазый сторож",
+      "type": "monster",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/monsters/middle-lands/common/suhoglazyy-storozh.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "himernyy-vykormok",
+      "name": "Химерный выкормок",
+      "type": "monster",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/monsters/middle-lands/common/himernyy-vykormok.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "zharovoy-storozh",
+      "name": "Жаровой сторож",
+      "type": "monster",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/monsters/scorching-shard/common/zharovoy-storozh.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "oslepitelnyy-zhuk",
+      "name": "Ослепительный жук",
+      "type": "monster",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/monsters/scorching-shard/common/oslepitelnyy-zhuk.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "peschanyy-begun",
+      "name": "Песчаный бегун",
+      "type": "monster",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/monsters/scorching-shard/common/peschanyy-begun.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "solyanoy-skorpion",
+      "name": "Соляной скорпион",
+      "type": "monster",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/monsters/scorching-shard/common/solyanoy-skorpion.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "solyanoy-shoroh",
+      "name": "Соляной шорох",
+      "type": "monster",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/monsters/scorching-shard/common/solyanoy-shoroh.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "steklyannaya-yashcheritsa",
+      "name": "Стеклянная ящерица",
+      "type": "monster",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/monsters/scorching-shard/common/steklyannaya-yashcheritsa.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "pepelnaya-giena",
+      "name": "Пепельная гиена",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/monsters/shadow-shard/ash-steppe/pepelnaya-giena.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ptitsa-pepelnogo-mayaka",
+      "name": "Птица пепельного маяка",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/monsters/shadow-shard/ash-steppe/ptitsa-pepelnogo-mayaka.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "stepnoy-klesh",
+      "name": "Степной клеш",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/monsters/shadow-shard/ash-steppe/stepnoy-klesh.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "suhoy-begun",
+      "name": "Сухой бегун",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/monsters/shadow-shard/ash-steppe/suhoy-begun.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "mhovoy-hodok",
+      "name": "Мховой ходок",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/monsters/shadow-shard/black-whisper-forest/mhovoy-hodok.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "slepaya-sova",
+      "name": "Слепая сова",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/monsters/shadow-shard/black-whisper-forest/slepaya-sova.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "shoroh-vetvey",
+      "name": "Шорох ветвей",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/monsters/shadow-shard/black-whisper-forest/shoroh-vetvey.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "belyj-begun",
+      "name": "Белый бегун",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/monsters/shadow-shard/icy-limit/belyj-begun.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ledyanoy-storozh",
+      "name": "Ледяной сторож",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/monsters/shadow-shard/icy-limit/ledyanoy-storozh.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "snezhnaya-tvar",
+      "name": "Снежная тварь",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/monsters/shadow-shard/icy-limit/snezhnaya-tvar.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "tonkolyodnaya-zmeya",
+      "name": "Тонколёдная змея",
+      "type": "monster",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/monsters/shadow-shard/icy-limit/tonkolyodnaya-zmeya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    }
+  ],
+  "items": [
+    {
+      "id": "burka-dlya-peska",
+      "name": "Бурка для песка",
+      "type": "item",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/items/scorching-shard/common/burka-dlya-peska.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "dorozhnaya-linza",
+      "name": "Дорожная линза",
+      "type": "item",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/items/scorching-shard/common/dorozhnaya-linza.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "zapis-stoyanki",
+      "name": "Запись стоянки",
+      "type": "item",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/items/scorching-shard/common/zapis-stoyanki.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "znak-strazhi-plameni",
+      "name": "Знак Стражи Пламени",
+      "type": "item",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/items/scorching-shard/common/znak-strazhi-plameni.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "kapelnyy-mernik",
+      "name": "Капельный мерник",
+      "type": "item",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/items/scorching-shard/common/kapelnyy-mernik.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "karavannaya-pechat",
+      "name": "Караванная печать",
+      "type": "item",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/items/scorching-shard/common/karavannaya-pechat.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "putevoj-zhurnal-karavana",
+      "name": "Путевой журнал каравана",
+      "type": "item",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/items/scorching-shard/common/putevoj-zhurnal-karavana.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "solyanaya-metka",
+      "name": "Соляная метка",
+      "type": "item",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/items/scorching-shard/common/solyanaya-metka.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "steklyannyy-obrazets",
+      "name": "Стеклянный образец",
+      "type": "item",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/items/scorching-shard/common/steklyannyy-obrazets.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "tenevoj-naves",
+      "name": "Теневой навес",
+      "type": "item",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/items/scorching-shard/common/tenevoj-naves.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "karavannaya-metka",
+      "name": "Караванная метка",
+      "type": "item",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/items/shadow-shard/ash-steppe/karavannaya-metka.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "pylevaya-karta",
+      "name": "Пылевая карта",
+      "type": "item",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/items/shadow-shard/ash-steppe/pylevaya-karta.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "fonar-mayachnogo-storozha",
+      "name": "Фонарь маячного сторожа",
+      "type": "item",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/items/shadow-shard/ash-steppe/fonar-mayachnogo-storozha.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "chaynaya-svyazka",
+      "name": "Чайная связка степи",
+      "type": "item",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/items/shadow-shard/ash-steppe/chaynaya-svyazka.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "koren-provodnika",
+      "name": "Корень проводника",
+      "type": "item",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/items/shadow-shard/black-whisper-forest/koren-provodnika.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "mhovaya-nit",
+      "name": "Мховая нить",
+      "type": "item",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/items/shadow-shard/black-whisper-forest/mhovaya-nit.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "seryy-kamennyj-obereg",
+      "name": "Серый каменный оберег",
+      "type": "item",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/items/shadow-shard/black-whisper-forest/seryy-kamennyj-obereg.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "zapis-ochaga",
+      "name": "Запись очага",
+      "type": "item",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/items/shadow-shard/icy-limit/zapis-ochaga.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "putevoj-shnur",
+      "name": "Путевой шнур",
+      "type": "item",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/items/shadow-shard/icy-limit/putevoj-shnur.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "severnyj-signalnyj-fonar",
+      "name": "Северный сигнальный фонарь",
+      "type": "item",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/items/shadow-shard/icy-limit/severnyj-signalnyj-fonar.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    }
+  ],
+  "rituals": [
+    {
+      "id": "obryad-solyanoj-metki",
+      "name": "Обряд соляной метки",
+      "type": "ritual",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/rituals/scorching-shard/common/obryad-solyanoj-metki.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "obryad-teni-pered-dorogoy",
+      "name": "Обряд тени перед дорогой",
+      "type": "ritual",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/rituals/scorching-shard/common/obryad-teni-pered-dorogoy.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "obryad-mhovoj-metki",
+      "name": "Обряд мховой метки",
+      "type": "ritual",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/rituals/shadow-shard/black-whisper-forest/obryad-mhovoj-metki.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "obryad-tihoj-tropy",
+      "name": "Обряд тихой тропы",
+      "type": "ritual",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/rituals/shadow-shard/black-whisper-forest/obryad-tihoj-tropy.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "obryad-obshchego-ognya",
+      "name": "Обряд общего огня",
+      "type": "ritual",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/rituals/shadow-shard/icy-limit/obryad-obshchego-ognya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "obryad-putevogo-shnura",
+      "name": "Обряд путевого шнура",
+      "type": "ritual",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/rituals/shadow-shard/icy-limit/obryad-putevogo-shnura.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    }
+  ],
+  "rolltables": [
+    {
+      "id": "city-rumors",
+      "name": "Срединные Земли — городские слухи",
+      "type": "rolltable",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/rolltables/middle-lands/common/city-rumors.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "road-events",
+      "name": "Срединные Земли — дорожные события",
+      "type": "rolltable",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/rolltables/middle-lands/common/road-events.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "faction-reactions",
+      "name": "Срединные Земли — реакции фракций",
+      "type": "rolltable",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/rolltables/middle-lands/common/faction-reactions.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "stop-encounters",
+      "name": "Палящий Осколок — встречи на стоянке",
+      "type": "rolltable",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/rolltables/scorching-shard/common/stop-encounters.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "road-finds",
+      "name": "Палящий Осколок — дорожные находки",
+      "type": "rolltable",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/rolltables/scorching-shard/common/road-finds.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "road-events",
+      "name": "Палящий Осколок — дорожные события",
+      "type": "rolltable",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/rolltables/scorching-shard/common/road-events.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "resource-complications",
+      "name": "Палящий Осколок — осложнения запасов",
+      "type": "rolltable",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/rolltables/scorching-shard/common/resource-complications.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "adventure-twists",
+      "name": "Палящий Осколок — повороты мини-сценария",
+      "type": "rolltable",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/rolltables/scorching-shard/common/adventure-twists.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "faction-reactions",
+      "name": "Палящий Осколок — реакции фракций",
+      "type": "rolltable",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/rolltables/scorching-shard/common/faction-reactions.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "stop-rumors",
+      "name": "Палящий Осколок — слухи стоянок",
+      "type": "rolltable",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/rolltables/scorching-shard/common/stop-rumors.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "tea-encounters",
+      "name": "Пепельная Степь — встречи за чаем",
+      "type": "rolltable",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/rolltables/shadow-shard/ash-steppe/tea-encounters.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "road-events",
+      "name": "Пепельная Степь — дорожные события",
+      "type": "rolltable",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/rolltables/shadow-shard/ash-steppe/road-events.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "lost-paths",
+      "name": "Лес Чёрного Шёпота — сбившиеся тропы",
+      "type": "rolltable",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/rolltables/shadow-shard/black-whisper-forest/lost-paths.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "forest-whispers",
+      "name": "Лес Чёрного Шёпота — шёпоты",
+      "type": "rolltable",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/rolltables/shadow-shard/black-whisper-forest/forest-whispers.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "shadow-quest-twists",
+      "name": "Теневой Осколок — повороты поручений",
+      "type": "rolltable",
+      "shard": "shadow-shard",
+      "region": "common",
+      "path": "content/rolltables/shadow-shard/common/shadow-quest-twists.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "hearth-encounters",
+      "name": "Вечные Льды — встречи у огня",
+      "type": "rolltable",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/rolltables/shadow-shard/icy-limit/hearth-encounters.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "northern-road-events",
+      "name": "Вечные Льды — северные переходы",
+      "type": "rolltable",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/rolltables/shadow-shard/icy-limit/northern-road-events.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "suhaya-pristan-berega",
+      "name": "Сухая пристань Берега Сухих Глаз",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "bereg-suhih-glaz",
+      "path": "content/scenes/middle-lands/city-groups/suhaya-pristan-berega.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "malaya-kolokolnya",
+      "name": "Малая колокольня Бьющего Колокола",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "byuschiy-kolokol",
+      "path": "content/scenes/middle-lands/city-groups/malaya-kolokolnya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "gorodskie-vorota",
+      "name": "Городские ворота",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/scenes/middle-lands/common/gorodskie-vorota.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "dorozhnyy-traktir",
+      "name": "Дорожный трактир",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/scenes/middle-lands/common/dorozhnyy-traktir.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "rynochnaya-ploschad",
+      "name": "Рыночная площадь",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/scenes/middle-lands/common/rynochnaya-ploschad.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "staryy-most",
+      "name": "Старый мост",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/scenes/middle-lands/common/staryy-most.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "nizhnyaya-shtolnya-farnkrota",
+      "name": "Нижняя штольня Фарн’Крота",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "farnkrot",
+      "path": "content/scenes/middle-lands/city-groups/nizhnyaya-shtolnya-farnkrota.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "lipovyy-dom-gorlitsy",
+      "name": "Липовый дом Горлицы",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "gorlitsa",
+      "path": "content/scenes/middle-lands/city-groups/lipovyy-dom-gorlitsy.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "arhiv-graven-hollou",
+      "name": "Архив Гравен Холлоу",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "graven-hollou",
+      "path": "content/scenes/middle-lands/city-groups/arhiv-graven-hollou.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "staraya-kletka-krika-himery",
+      "name": "Старая клетка Крика Химеры",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "krik-himery",
+      "path": "content/scenes/middle-lands/city-groups/staraya-kletka-krika-himery.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "nochnaya-stoyanka-semiglazogo",
+      "name": "Ночная стоянка Семиглазого",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "lager-semiglazogo",
+      "path": "content/scenes/middle-lands/city-groups/nochnaya-stoyanka-semiglazogo.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "lipovaya-roscha-lipushey",
+      "name": "Липовая роща Липушей",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "lipushi",
+      "path": "content/scenes/middle-lands/city-groups/lipovaya-roscha-lipushey.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "staryy-post-prahoboya",
+      "name": "Старый пост Прахобоя",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "ostrog-prahoboya",
+      "path": "content/scenes/middle-lands/city-groups/staryy-post-prahoboya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "shlyuzy-ozernika",
+      "name": "Шлюзы Озерника",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "ozernik",
+      "path": "content/scenes/middle-lands/city-groups/shlyuzy-ozernika.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "mokrye-mostki-plaveni",
+      "name": "Мокрые мостки Плавени",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "plaven",
+      "path": "content/scenes/middle-lands/city-groups/mokrye-mostki-plaveni.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "pustoy-dom-pustoteni",
+      "name": "Пустой дом Пустотени",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "pustoten",
+      "path": "content/scenes/middle-lands/city-groups/pustoy-dom-pustoteni.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "pogranichnaya-top-rubezha",
+      "name": "Пограничная топь Рубежа Трясин",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "rubezh-tryasin",
+      "path": "content/scenes/middle-lands/city-groups/pogranichnaya-top-rubezha.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "zubchatyy-dvor-skrezhetnika",
+      "name": "Зубчатый двор Скрежетника",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "skrezhetnik",
+      "path": "content/scenes/middle-lands/city-groups/zubchatyy-dvor-skrezhetnika.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "staryy-brod-sychiy",
+      "name": "Старый брод Сычьего Брода",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "sychiy-brod",
+      "path": "content/scenes/middle-lands/city-groups/staryy-brod-sychiy.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "sklad-u-tarnogo-stolba",
+      "name": "Склад у Тарного Столба",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "tarnyy-stolb",
+      "path": "content/scenes/middle-lands/city-groups/sklad-u-tarnogo-stolba.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "uzkaya-doroga-tonkoy-gryady",
+      "name": "Узкая дорога Тонкой Гряды",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "tonkaya-gryada",
+      "path": "content/scenes/middle-lands/city-groups/uzkaya-doroga-tonkoy-gryady.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "zakrytyy-sad-ledenevyh",
+      "name": "Закрытый сад Леденёвых",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "usadba-ledenevyh",
+      "path": "content/scenes/middle-lands/city-groups/zakrytyy-sad-ledenevyh.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "chernyy-chan-varnitsy",
+      "name": "Чёрный чан Варницы",
+      "type": "scene",
+      "shard": "middle-lands",
+      "region": "varnitsa-chernogo-dyma",
+      "path": "content/scenes/middle-lands/city-groups/chernyy-chan-varnitsy.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "fort-vorota",
+      "name": "Ворота форта",
+      "type": "scene",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/scenes/scorching-shard/common/fort-vorota.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "vysokiy-znak",
+      "name": "Высокий знак",
+      "type": "scene",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/scenes/scorching-shard/common/vysokiy-znak.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "karavannyy-dvor",
+      "name": "Караванный двор",
+      "type": "scene",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/scenes/scorching-shard/common/karavannyy-dvor.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "peschernyy-vhod",
+      "name": "Пещерный вход",
+      "type": "scene",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/scenes/scorching-shard/common/peschernyy-vhod.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "krasnyy-rodnik-scene",
+      "name": "Родник у красного камня",
+      "type": "scene",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/scenes/scorching-shard/common/krasnyy-rodnik-scene.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ruiny-solyanoy-melnitsy-scene",
+      "name": "Руины Соляной Мельницы",
+      "type": "scene",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/scenes/scorching-shard/common/ruiny-solyanoy-melnitsy-scene.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "steklyannaya-ploschadka",
+      "name": "Стеклянная площадка",
+      "type": "scene",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/scenes/scorching-shard/common/steklyannaya-ploschadka.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "stoanka-u-treh-skal",
+      "name": "Стоянка у трёх скал",
+      "type": "scene",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/scenes/scorching-shard/common/stoanka-u-treh-skal.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "karavannaya-stoyanka",
+      "name": "Караванная стоянка Пепельной Степи",
+      "type": "scene",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/scenes/shadow-shard/ash-steppe/karavannaya-stoyanka.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "pepelnye-mayaki",
+      "name": "Пепельные маяки",
+      "type": "scene",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/scenes/shadow-shard/ash-steppe/pepelnye-mayaki.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "chaynyy-dvor",
+      "name": "Чайный двор Пепельной Степи",
+      "type": "scene",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/scenes/shadow-shard/ash-steppe/chaynyy-dvor.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "mhovaya-tropa",
+      "name": "Мховая тропа",
+      "type": "scene",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/scenes/shadow-shard/black-whisper-forest/mhovaya-tropa.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "seraya-chasovnya",
+      "name": "Серая часовня",
+      "type": "scene",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/scenes/shadow-shard/black-whisper-forest/seraya-chasovnya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "obshchiy-ogon-stantsii",
+      "name": "Общий огонь станции",
+      "type": "scene",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/scenes/shadow-shard/icy-limit/obshchiy-ogon-stantsii.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "pereval-sinego-vetra-scene",
+      "name": "Перевал Синего Ветра",
+      "type": "scene",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/scenes/shadow-shard/icy-limit/pereval-sinego-vetra-scene.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    }
+  ],
+  "handouts": [
+    {
+      "id": "source-import-batch-01",
+      "name": "Бестиарий: импорт чарников, партия 01",
+      "type": "handout",
+      "shard": "all",
+      "region": "all",
+      "path": "content/actor-statblocks/bestiary/source-import-batch-01.md",
+      "source": "book-iii-and-vii-final",
+      "status": "actor-ready-final"
+    },
+    {
+      "id": "bestiary-source-map",
+      "name": "Карта переноса чарников бестиария",
+      "type": "handout",
+      "shard": "all",
+      "region": "all",
+      "path": "content/actor-statblocks/bestiary/bestiary-source-map.md",
+      "source": "module-final",
+      "status": "actor-ready-map-final"
+    },
+    {
+      "id": "new-middle-creatures-batch-01",
+      "name": "Бестиарий: новые существа Срединных Земель, партия 01",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/bestiary/new-middle-creatures-batch-01.md",
+      "source": "module-expansion",
+      "status": "actor-ready-statblocks"
+    },
+    {
+      "id": "source-middle-expanded-creatures-batch-08",
+      "name": "Бестиарий: Срединные Земли, expanded source batch 08",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/bestiary/source-middle-expanded-creatures-batch-08.md",
+      "source": "book-iii-expanded-final",
+      "status": "actor-ready-final"
+    },
+    {
+      "id": "source-middle-creatures-batch-02",
+      "name": "Бестиарий: Срединные Земли, source batch 02",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/bestiary/source-middle-creatures-batch-02.md",
+      "source": "book-iii-final",
+      "status": "actor-ready-final"
+    },
+    {
+      "id": "source-middle-creatures-batch-03",
+      "name": "Бестиарий: Срединные Земли, source batch 03",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/bestiary/source-middle-creatures-batch-03.md",
+      "source": "book-iii-final",
+      "status": "actor-ready-final"
+    },
+    {
+      "id": "source-middle-creatures-batch-04",
+      "name": "Бестиарий: Срединные Земли, source batch 04",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/bestiary/source-middle-creatures-batch-04.md",
+      "source": "book-iii-final",
+      "status": "actor-ready-final"
+    },
+    {
+      "id": "source-middle-creatures-batch-05",
+      "name": "Бестиарий: Срединные Земли, source batch 05",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/bestiary/source-middle-creatures-batch-05.md",
+      "source": "book-iii-final",
+      "status": "actor-ready-final"
+    },
+    {
+      "id": "quest-archive-and-empty-name",
+      "name": "Городской квест: архив и пустая строка",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/city-quests/quest-archive-and-empty-name.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-water-and-wooden-paths",
+      "name": "Городской квест: вода и деревянные пути",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/city-quests/quest-water-and-wooden-paths.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-cargo-without-owner",
+      "name": "Городской квест: груз без владельца",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/city-quests/quest-cargo-without-owner.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-beast-roads-and-signs",
+      "name": "Городской квест: звериные дороги и ложные знаки",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/city-quests/quest-beast-roads-and-signs.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-bell-and-house-debt",
+      "name": "Городской квест: колокол и домовой долг",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/city-quests/quest-bell-and-house-debt.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-lower-gears-and-black-smoke",
+      "name": "Городской квест: нижние зубцы и чёрный дым",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/city-quests/quest-lower-gears-and-black-smoke.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "city-board-middle-lands",
+      "name": "Доски поручений Срединных Земель",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/boards/city-board-middle-lands.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "kniga-dorozhnyh-zametok",
+      "name": "Книга дорожных заметок",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/books/kniga-dorozhnyh-zametok.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "gm-city-scene-checklist",
+      "name": "Мастерская памятка: городская сцена Срединных Земель",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/common/gm-city-scene-checklist.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "adventure-dolg-na-rynke",
+      "name": "Мини-сценарий: долг на рынке",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/common/adventure-dolg-na-rynke.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "adventure-kolokol-i-most",
+      "name": "Мини-сценарий: колокол и мост",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/common/adventure-kolokol-i-most.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "encounter-market-debt",
+      "name": "Набор встреч: рыночный долг",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/encounters/encounter-market-debt.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "player-city-customs-handout",
+      "name": "Памятка игрокам: обычаи Срединных Земель",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/common/player-city-customs-handout.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "pismo-bez-dveri",
+      "name": "Письмо без двери",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/books/pismo-bez-dveri.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-nochnoy-kolokol",
+      "name": "Поручение: ночной колокол",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/common/quest-nochnoy-kolokol.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-rynkovaya-zapis",
+      "name": "Поручение: рыночная запись",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/handouts/middle-lands/common/quest-rynkovaya-zapis.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "middle-lands-city-npcs-batch-01",
+      "name": "Статблоки НИПов Срединных Земель, партия 01",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/npcs/middle-lands-city-npcs-batch-01.md",
+      "source": "module-expansion",
+      "status": "actor-ready-statblocks"
+    },
+    {
+      "id": "middle-lands-city-npcs-batch-02",
+      "name": "Статблоки НИПов Срединных Земель, партия 02",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/npcs/middle-lands-city-npcs-batch-02.md",
+      "source": "module-expansion",
+      "status": "actor-ready-statblocks"
+    },
+    {
+      "id": "middle-lands-common-npcs-batch-03",
+      "name": "Статблоки общих НИПов Срединных Земель, партия 03",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/npcs/middle-lands-common-npcs-batch-03.md",
+      "source": "module-expansion",
+      "status": "actor-ready-statblocks"
+    },
+    {
+      "id": "monster-statblocks",
+      "name": "Actor-ready статблоки бестиария Срединных Земель",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/middle-lands/monster-statblocks.md",
+      "source": "module-expansion",
+      "status": "actor-ready"
+    },
+    {
+      "id": "npc-statblocks",
+      "name": "Actor-ready статблоки НИПов Срединных Земель",
+      "type": "handout",
+      "shard": "middle-lands",
+      "region": "common",
+      "path": "content/actor-statblocks/middle-lands/npc-statblocks.md",
+      "source": "module-expansion",
+      "status": "actor-ready"
+    },
+    {
+      "id": "module-scorching-creatures-batch-02",
+      "name": "Бестиарий: модульные существа Палящего Осколка, партия 02",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/actor-statblocks/bestiary/module-scorching-creatures-batch-02.md",
+      "source": "module-final",
+      "status": "actor-ready-final"
+    },
+    {
+      "id": "source-scorching-creatures-batch-07",
+      "name": "Бестиарий: Палящий Осколок, source batch 07",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/actor-statblocks/bestiary/source-scorching-creatures-batch-07.md",
+      "source": "book-vii-final",
+      "status": "actor-ready-final"
+    },
+    {
+      "id": "city-board-scorching-shard",
+      "name": "Доски поручений Палящего Осколка",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/boards/city-board-scorching-shard.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "gm-road-scene-checklist",
+      "name": "Мастерская памятка: дорожная сцена Палящего Осколка",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/gm-road-scene-checklist.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "adventure-vorota-i-pechat",
+      "name": "Мини-сценарий: ворота и печать",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/adventure-vorota-i-pechat.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "adventure-melnitsa-i-staryy-put",
+      "name": "Мини-сценарий: мельница и старый путь",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/adventure-melnitsa-i-staryy-put.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "adventure-rodnik-i-metka",
+      "name": "Мини-сценарий: родник и метка",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/adventure-rodnik-i-metka.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "adventure-steklo-i-signal",
+      "name": "Мини-сценарий: стекло и сигнал",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/adventure-steklo-i-signal.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "encounter-dry-road",
+      "name": "Набор встреч: сухая дорога",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/encounters/encounter-dry-road.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-klinok-i-steklyannyy-gorodok",
+      "name": "Палящий квест: Клинок и Стеклянный Городок",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/city-quests/quest-klinok-i-steklyannyy-gorodok.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-melnitsa-porog-i-tihaya-korka",
+      "name": "Палящий квест: мельница, порог и Тихая Корка",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/city-quests/quest-melnitsa-porog-i-tihaya-korka.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-rodnik-i-belyy-kolodets",
+      "name": "Палящий квест: Родник и Белый Колодец",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/city-quests/quest-rodnik-i-belyy-kolodets.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-tri-teni-i-posledniy-vzdoh",
+      "name": "Палящий квест: Три Тени и Последний Вздох",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/city-quests/quest-tri-teni-i-posledniy-vzdoh.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-fort-dvorets-i-krasnaya-sol",
+      "name": "Палящий квест: форт, дворец и Красная Соль",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/city-quests/quest-fort-dvorets-i-krasnaya-sol.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "player-road-customs-handout",
+      "name": "Памятка игрокам: обычаи дорог Палящего Осколка",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/player-road-customs-handout.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-metka-u-rodnika",
+      "name": "Поручение: метка у родника",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/quest-metka-u-rodnika.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-nevernaya-karavannaya-pechat",
+      "name": "Поручение: неверная караванная печать",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/quest-nevernaya-karavannaya-pechat.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-propavshiy-signal",
+      "name": "Поручение: пропавший сигнал",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/quest-propavshiy-signal.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-ruiny-solyanoy-melnitsy",
+      "name": "Поручение: руины Соляной Мельницы",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/quest-ruiny-solyanoy-melnitsy.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-steklyannyy-obrazets",
+      "name": "Поручение: стеклянный образец",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/common/quest-steklyannyy-obrazets.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "spisok-suhoy-dorogi",
+      "name": "Список сухой дороги",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/handouts/scorching-shard/books/spisok-suhoy-dorogi.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "scorching-shard-npcs-batch-01",
+      "name": "Статблоки НИПов Палящего Осколка, партия 01",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/actor-statblocks/npcs/scorching-shard-npcs-batch-01.md",
+      "source": "module-expansion",
+      "status": "actor-ready-statblocks"
+    },
+    {
+      "id": "monster-statblocks",
+      "name": "Actor-ready статблоки бестиария Палящего Осколка",
+      "type": "handout",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/actor-statblocks/scorching-shard/monster-statblocks.md",
+      "source": "module-expansion",
+      "status": "actor-ready"
+    },
+    {
+      "id": "quest-okram-zakrytyy-uzel",
+      "name": "Городской квест: Окрам, закрытый узел",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/handouts/shadow-shard/ash-steppe/city-quests/quest-okram-zakrytyy-uzel.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "zapis-o-pyati-chashah",
+      "name": "Запись о пяти чашах",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/handouts/shadow-shard/ash-steppe/books/zapis-o-pyati-chashah.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "gm-ash-steppe-scene-checklist",
+      "name": "Мастерская памятка: сцена Пепельной Степи",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/handouts/shadow-shard/ash-steppe/gm-ash-steppe-scene-checklist.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "adventure-chasha-i-mayak",
+      "name": "Мини-сценарий: чаша и маяк",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/handouts/shadow-shard/ash-steppe/adventure-chasha-i-mayak.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "encounter-tea-house-dispute",
+      "name": "Набор встреч: спор в чайном доме",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/handouts/shadow-shard/ash-steppe/encounters/encounter-tea-house-dispute.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "tea-custom-player-handout",
+      "name": "Памятка игрокам: чай Пепельной Степи",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/handouts/shadow-shard/ash-steppe/tea-custom-player-handout.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-propavshiy-mayak",
+      "name": "Поручение: пропавший маяк",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/handouts/shadow-shard/ash-steppe/quest-propavshiy-mayak.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-pyataya-chasha",
+      "name": "Поручение: пятая чаша",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/handouts/shadow-shard/ash-steppe/quest-pyataya-chasha.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ash-steppe-npc-statblocks",
+      "name": "Actor-ready статблоки НИПов Пепельной Степи",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/actor-statblocks/shadow-shard/ash-steppe-npc-statblocks.md",
+      "source": "module-expansion",
+      "status": "actor-ready"
+    },
+    {
+      "id": "quest-koren-i-dom-mha",
+      "name": "Лесной квест: Корень и Дом Мха",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-koren-i-dom-mha.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-seryy-priyut-i-staraya-zastava",
+      "name": "Лесной квест: Серый Приют и старая застава",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/handouts/shadow-shard/black-whisper-forest/city-quests/quest-seryy-priyut-i-staraya-zastava.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "gm-forest-scene-checklist",
+      "name": "Мастерская памятка: сцена Леса Чёрного Шёпота",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/handouts/shadow-shard/black-whisper-forest/gm-forest-scene-checklist.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "adventure-tropa-i-chasovnya",
+      "name": "Мини-сценарий: тропа и часовня",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/handouts/shadow-shard/black-whisper-forest/adventure-tropa-i-chasovnya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "encounter-moss-path",
+      "name": "Набор встреч: мховая тропа",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/handouts/shadow-shard/black-whisper-forest/encounters/encounter-moss-path.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "player-forest-customs-handout",
+      "name": "Памятка игрокам: обычаи Леса Чёрного Шёпота",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/handouts/shadow-shard/black-whisper-forest/player-forest-customs-handout.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-sbitaya-tropa",
+      "name": "Поручение: сбитая тропа",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/handouts/shadow-shard/black-whisper-forest/quest-sbitaya-tropa.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-seraya-chasovnya",
+      "name": "Поручение: серая часовня",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/handouts/shadow-shard/black-whisper-forest/quest-seraya-chasovnya.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "shest-pravil-mha",
+      "name": "Шесть правил мха",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/handouts/shadow-shard/black-whisper-forest/books/shest-pravil-mha.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "forest-npc-statblocks",
+      "name": "Actor-ready статблоки НИПов Леса Чёрного Шёпота",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/actor-statblocks/shadow-shard/forest-npc-statblocks.md",
+      "source": "module-expansion",
+      "status": "actor-ready"
+    },
+    {
+      "id": "module-shadow-creatures-batch-02",
+      "name": "Бестиарий: модульные существа Теневого Осколка, партия 02",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "common",
+      "path": "content/actor-statblocks/bestiary/module-shadow-creatures-batch-02.md",
+      "source": "module-final",
+      "status": "actor-ready-final"
+    },
+    {
+      "id": "source-shadow-creatures-batch-06",
+      "name": "Бестиарий: Теневой Осколок, source batch 06",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "common",
+      "path": "content/actor-statblocks/bestiary/source-shadow-creatures-batch-06.md",
+      "source": "book-vii-final",
+      "status": "actor-ready-final"
+    },
+    {
+      "id": "city-board-shadow-shard",
+      "name": "Доски поручений Теневого Осколка",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "common",
+      "path": "content/handouts/shadow-shard/boards/city-board-shadow-shard.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "shadow-shard-npcs-batch-01",
+      "name": "Статблоки НИПов Теневого Осколка, партия 01",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "common",
+      "path": "content/actor-statblocks/npcs/shadow-shard-npcs-batch-01.md",
+      "source": "module-expansion",
+      "status": "actor-ready-statblocks"
+    },
+    {
+      "id": "monster-statblocks",
+      "name": "Actor-ready статблоки бестиария Теневого Осколка",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "common",
+      "path": "content/actor-statblocks/shadow-shard/monster-statblocks.md",
+      "source": "module-expansion",
+      "status": "actor-ready"
+    },
+    {
+      "id": "zapis-ob-obschem-ogne",
+      "name": "Запись об общем огне",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/handouts/shadow-shard/icy-limit/books/zapis-ob-obschem-ogne.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "gm-icy-limit-scene-checklist",
+      "name": "Мастерская памятка: сцена Вечных Льдов",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/handouts/shadow-shard/icy-limit/gm-icy-limit-scene-checklist.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "adventure-ogon-i-pereval",
+      "name": "Мини-сценарий: огонь и перевал",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/handouts/shadow-shard/icy-limit/adventure-ogon-i-pereval.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "encounter-last-fire",
+      "name": "Набор встреч: последний огонь",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/handouts/shadow-shard/icy-limit/encounters/encounter-last-fire.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "player-north-customs-handout",
+      "name": "Памятка игрокам: обычаи Вечных Льдов",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/handouts/shadow-shard/icy-limit/player-north-customs-handout.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-posledniy-ogon",
+      "name": "Поручение: последний огонь",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/handouts/shadow-shard/icy-limit/quest-posledniy-ogon.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-siniy-pereval",
+      "name": "Поручение: синий перевал",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/handouts/shadow-shard/icy-limit/quest-siniy-pereval.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "quest-ogon-i-ledyanoy-klyk",
+      "name": "Северный квест: огонь и Ледяной Клык",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/handouts/shadow-shard/icy-limit/city-quests/quest-ogon-i-ledyanoy-klyk.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    },
+    {
+      "id": "quest-pereval-i-belye-kamni",
+      "name": "Северный квест: перевал и Белые Камни",
+      "type": "handout",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/handouts/shadow-shard/icy-limit/city-quests/quest-pereval-i-belye-kamni.md",
+      "source": "module-final",
+      "status": "content-ready-final"
+    }
+  ],
+  "regions": [
+    {
+      "id": "burning-wastes-overview",
+      "name": "Выжженные Пустоши",
+      "type": "region",
+      "shard": "scorching-shard",
+      "region": "burning-wastes",
+      "path": "content/regions/scorching-shard/burning-wastes-overview.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "cave-routes-overview",
+      "name": "Пещерные маршруты",
+      "type": "region",
+      "shard": "scorching-shard",
+      "region": "cave-routes",
+      "path": "content/regions/scorching-shard/cave-routes-overview.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "scorching-shard-overview",
+      "name": "Палящий Осколок",
+      "type": "region",
+      "shard": "scorching-shard",
+      "region": "common",
+      "path": "content/regions/scorching-shard/scorching-shard-overview.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "salt-roads-overview",
+      "name": "Соляные дороги",
+      "type": "region",
+      "shard": "scorching-shard",
+      "region": "salt-roads",
+      "path": "content/regions/scorching-shard/salt-roads-overview.md",
+      "source": "module-expansion",
+      "status": "clean-card"
+    },
+    {
+      "id": "ash-steppe-overview",
+      "name": "Пепельная Степь",
+      "type": "region",
+      "shard": "shadow-shard",
+      "region": "ash-steppe",
+      "path": "content/regions/shadow-shard/ash-steppe/ash-steppe-overview.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "black-whisper-forest-overview",
+      "name": "Лес Чёрного Шёпота",
+      "type": "region",
+      "shard": "shadow-shard",
+      "region": "black-whisper-forest",
+      "path": "content/regions/shadow-shard/black-whisper-forest/black-whisper-forest-overview.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    },
+    {
+      "id": "icy-limit-overview",
+      "name": "Вечные Льды",
+      "type": "region",
+      "shard": "shadow-shard",
+      "region": "icy-limit",
+      "path": "content/regions/shadow-shard/icy-limit/icy-limit-overview.md",
+      "source": "new-documents",
+      "status": "clean-card"
+    }
+  ]
+}

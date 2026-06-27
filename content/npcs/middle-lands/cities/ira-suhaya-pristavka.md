@@ -4,7 +4,7 @@ name: "Ира, сухая приставка"
 shard: "middle-lands"
 region: "bereg-suhih-glaz"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Ира, сухая приставка

@@ -4,7 +4,7 @@ name: "Марта, управляющая Леденёвых"
 shard: "middle-lands"
 region: "usadba-ledenevyh"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Марта, управляющая Леденёвых

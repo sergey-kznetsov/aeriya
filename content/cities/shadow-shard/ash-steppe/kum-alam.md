@@ -4,7 +4,7 @@ name: "Кум-Алам"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "поселение"
   - "теневой осколок"

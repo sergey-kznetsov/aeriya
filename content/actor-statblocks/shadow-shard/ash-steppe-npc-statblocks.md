@@ -4,7 +4,7 @@ name: "Actor-ready статблоки НИПов Пепельной Степи"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "module-expansion"
-status: "actor-ready-draft"
+status: "actor-ready"
 ---
 
 # Actor-ready статблоки НИПов Пепельной Степи

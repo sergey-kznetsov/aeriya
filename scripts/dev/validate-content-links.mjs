@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.cwd();
-const SCAN_DIRS = ['content', 'docs'];
+const SCAN_DIRS = ['content'];
 const PATH_PREFIXES = ['content/', 'docs/', 'scripts/', 'module.json', 'README.md', 'CHANGELOG.md'];
 const IGNORE_SUFFIXES = ['/**', '/*'];
 

@@ -4,7 +4,7 @@ name: "Вечный Змей"
 shard: "all-shards"
 region: "common"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Вечный Змей

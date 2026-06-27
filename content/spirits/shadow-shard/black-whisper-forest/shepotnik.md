@@ -4,7 +4,7 @@ name: "Шёпотник"
 shard: "shadow-shard"
 region: "black-whisper-forest"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "дух"
   - "теневой осколок"

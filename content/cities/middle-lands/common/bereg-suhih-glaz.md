@@ -4,7 +4,7 @@ name: "Берег Сухих Глаз"
 shard: "middle-lands"
 region: "common"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "поселение"
   - "срединные земли"

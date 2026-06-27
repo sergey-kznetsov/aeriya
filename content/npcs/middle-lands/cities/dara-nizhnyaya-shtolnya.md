@@ -4,7 +4,7 @@ name: "Дара Нижней Штольни"
 shard: "middle-lands"
 region: "farnkrot"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Дара Нижней Штольни

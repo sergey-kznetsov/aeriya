@@ -4,7 +4,7 @@ name: "Поручение: синий перевал"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Поручение: синий перевал

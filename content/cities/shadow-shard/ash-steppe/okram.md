@@ -4,7 +4,7 @@ name: "Окрам"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "new-documents-with-shadow-lands-check"
-status: "needs-shadow-lands-verification"
+status: "clean-card"
 ---
 
 # Окрам

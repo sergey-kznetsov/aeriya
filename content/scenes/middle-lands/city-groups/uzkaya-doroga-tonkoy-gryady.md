@@ -4,7 +4,7 @@ name: "Узкая дорога Тонкой Гряды"
 shard: "middle-lands"
 region: "tonkaya-gryada"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Узкая дорога Тонкой Гряды

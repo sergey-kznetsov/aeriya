@@ -4,7 +4,7 @@ name: "Дар-Ол, кузнец"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Дар-Ол, кузнец

@@ -4,7 +4,7 @@ name: "Пепельная Степь"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "регион"
   - "теневой осколок"

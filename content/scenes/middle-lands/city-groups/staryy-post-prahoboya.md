@@ -4,7 +4,7 @@ name: "Старый пост Прахобоя"
 shard: "middle-lands"
 region: "ostrog-prahoboya"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Старый пост Прахобоя

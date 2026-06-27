@@ -4,7 +4,7 @@ name: "Мини-сценарий: родник и метка"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Мини-сценарий: родник и метка

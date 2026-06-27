@@ -4,7 +4,7 @@ name: "Омулу"
 shard: "all-shards"
 region: "common"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Омулу

@@ -4,7 +4,7 @@ name: "Ефим, варщик Чёрного Дыма"
 shard: "middle-lands"
 region: "varnitsa-chernogo-dyma"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Ефим, варщик Чёрного Дыма

@@ -4,7 +4,7 @@ name: "Маара-смотрительница"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "нип"
   - "теневой осколок"

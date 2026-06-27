@@ -4,7 +4,7 @@ name: "Зубчатый двор Скрежетника"
 shard: "middle-lands"
 region: "skrezhetnik"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Зубчатый двор Скрежетника

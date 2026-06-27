@@ -4,7 +4,7 @@ name: "Тихая Капля"
 shard: "scorching-shard"
 region: "cave-keepers"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Тихая Капля

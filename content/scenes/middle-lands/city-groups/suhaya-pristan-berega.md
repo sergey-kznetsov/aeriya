@@ -4,7 +4,7 @@ name: "Сухая пристань Берега Сухих Глаз"
 shard: "middle-lands"
 region: "bereg-suhih-glaz"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Сухая пристань Берега Сухих Глаз

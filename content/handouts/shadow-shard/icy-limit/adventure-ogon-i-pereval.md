@@ -4,7 +4,7 @@ name: "Мини-сценарий: огонь и перевал"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Мини-сценарий: огонь и перевал

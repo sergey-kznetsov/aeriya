@@ -4,7 +4,7 @@ name: "Рунай Степной"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Рунай Степной

@@ -4,7 +4,7 @@ name: "Малая колокольня Бьющего Колокола"
 shard: "middle-lands"
 region: "byuschiy-kolokol"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Малая колокольня Бьющего Колокола

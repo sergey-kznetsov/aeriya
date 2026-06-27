@@ -4,7 +4,7 @@ name: "Мокрые мостки Плавени"
 shard: "middle-lands"
 region: "plaven"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Мокрые мостки Плавени

@@ -4,7 +4,7 @@ name: "Мини-сценарий: чаша и маяк"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Мини-сценарий: чаша и маяк

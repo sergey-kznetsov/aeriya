@@ -4,7 +4,7 @@ name: "Выжженные Пустоши"
 shard: "scorching-shard"
 region: "burning-wastes"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Выжженные Пустоши

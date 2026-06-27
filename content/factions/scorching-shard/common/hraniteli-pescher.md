@@ -4,7 +4,7 @@ name: "Хранители Пещер"
 shard: "scorching-shard"
 region: "common"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Хранители Пещер

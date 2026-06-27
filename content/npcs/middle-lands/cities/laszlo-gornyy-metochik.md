@@ -4,7 +4,7 @@ name: "Ласло, горный меточник"
 shard: "middle-lands"
 region: "tonkaya-gryada"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Ласло, горный меточник

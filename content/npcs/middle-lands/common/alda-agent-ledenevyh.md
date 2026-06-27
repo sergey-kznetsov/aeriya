@@ -4,7 +4,7 @@ name: "Альда, агент Леденёвых"
 shard: "middle-lands"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Альда, агент Леденёвых

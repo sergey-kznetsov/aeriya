@@ -4,7 +4,7 @@ name: "Срединные Земли — дорожные события"
 shard: "middle-lands"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Срединные Земли — дорожные события

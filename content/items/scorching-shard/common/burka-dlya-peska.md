@@ -4,7 +4,7 @@ name: "Бурка для песка"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Бурка для песка

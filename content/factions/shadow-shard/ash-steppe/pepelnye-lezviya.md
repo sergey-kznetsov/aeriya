@@ -4,7 +4,7 @@ name: "Пепельные Лезвия"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "фракция"
   - "теневой осколок"

@@ -4,7 +4,7 @@ name: "Пещерные маршруты"
 shard: "scorching-shard"
 region: "cave-routes"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Пещерные маршруты

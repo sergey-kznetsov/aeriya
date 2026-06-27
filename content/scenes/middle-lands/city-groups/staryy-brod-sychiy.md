@@ -4,7 +4,7 @@ name: "Старый брод Сычьего Брода"
 shard: "middle-lands"
 region: "sychiy-brod"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Старый брод Сычьего Брода

@@ -4,7 +4,7 @@ name: "Старая лесная застава"
 shard: "shadow-shard"
 region: "black-whisper-forest"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "локация"
   - "теневой осколок"

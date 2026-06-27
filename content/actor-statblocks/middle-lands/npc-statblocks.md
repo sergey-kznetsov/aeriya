@@ -4,7 +4,7 @@ name: "Actor-ready статблоки НИПов Срединных Земель
 shard: "middle-lands"
 region: "common"
 source: "module-expansion"
-status: "actor-ready-draft"
+status: "actor-ready"
 ---
 
 # Actor-ready статблоки НИПов Срединных Земель

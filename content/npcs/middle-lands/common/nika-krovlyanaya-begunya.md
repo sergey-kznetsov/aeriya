@@ -4,7 +4,7 @@ name: "Ника, кровляная бегунья"
 shard: "middle-lands"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Ника, кровляная бегунья

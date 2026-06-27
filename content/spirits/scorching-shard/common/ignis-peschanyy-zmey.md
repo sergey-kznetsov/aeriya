@@ -4,7 +4,7 @@ name: "Игнис-Песчаный Змей"
 shard: "scorching-shard"
 region: "common"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Игнис-Песчаный Змей

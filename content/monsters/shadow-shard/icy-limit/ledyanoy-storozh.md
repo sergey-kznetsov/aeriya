@@ -4,7 +4,7 @@ name: "Ледяной сторож"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "монстр"
   - "теневой осколок"

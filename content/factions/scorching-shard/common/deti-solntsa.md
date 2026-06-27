@@ -4,7 +4,7 @@ name: "Дети Солнца"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Дети Солнца

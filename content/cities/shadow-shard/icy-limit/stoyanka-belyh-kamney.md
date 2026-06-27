@@ -4,7 +4,7 @@ name: "Стоянка Белых Камней"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "стоянка"
   - "теневой осколок"

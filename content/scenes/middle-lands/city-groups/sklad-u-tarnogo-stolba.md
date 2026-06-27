@@ -4,7 +4,7 @@ name: "Склад у Тарного Столба"
 shard: "middle-lands"
 region: "tarnyy-stolb"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Склад у Тарного Столба

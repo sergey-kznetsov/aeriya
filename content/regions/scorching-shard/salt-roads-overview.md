@@ -4,7 +4,7 @@ name: "Соляные дороги"
 shard: "scorching-shard"
 region: "salt-roads"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Соляные дороги

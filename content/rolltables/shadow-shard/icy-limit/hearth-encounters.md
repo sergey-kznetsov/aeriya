@@ -4,7 +4,7 @@ name: "Вечные Льды — встречи у огня"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "таблица"
   - "теневой осколок"

@@ -4,7 +4,7 @@ name: "Григор, посредник Пятого Зуба"
 shard: "middle-lands"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Григор, посредник Пятого Зуба

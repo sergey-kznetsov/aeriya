@@ -4,7 +4,7 @@ name: "Памятка игрокам: обычаи Вечных Льдов"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Памятка игрокам: обычаи Вечных Льдов

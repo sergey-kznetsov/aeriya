@@ -4,7 +4,7 @@ name: "Складской хват"
 shard: "middle-lands"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Складской хват

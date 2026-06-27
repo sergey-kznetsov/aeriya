@@ -4,7 +4,7 @@ name: "Родник у красного камня"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Родник у красного камня

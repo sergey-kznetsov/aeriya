@@ -4,7 +4,7 @@ name: "Песчаная Мать"
 shard: "scorching-shard"
 region: "common"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Песчаная Мать

@@ -4,7 +4,7 @@ name: "Дух Зеркала"
 shard: "scorching-shard"
 region: "salt-deserts"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Дух Зеркала

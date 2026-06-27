@@ -4,7 +4,7 @@ name: "Пепельная гиена"
 shard: "shadow-shard"
 region: "ash-steppe"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "монстр"
   - "теневой осколок"

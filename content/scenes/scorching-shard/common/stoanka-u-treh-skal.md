@@ -4,7 +4,7 @@ name: "Стоянка у трёх скал"
 shard: "scorching-shard"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Стоянка у трёх скал

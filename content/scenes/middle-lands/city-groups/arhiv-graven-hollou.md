@@ -4,7 +4,7 @@ name: "Архив Гравен Холлоу"
 shard: "middle-lands"
 region: "graven-hollou"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Архив Гравен Холлоу

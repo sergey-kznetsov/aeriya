@@ -4,7 +4,7 @@ name: "Липовая роща Липушей"
 shard: "middle-lands"
 region: "lipushi"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Липовая роща Липушей

@@ -4,7 +4,7 @@ name: "Химерный выкормок"
 shard: "middle-lands"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Химерный выкормок

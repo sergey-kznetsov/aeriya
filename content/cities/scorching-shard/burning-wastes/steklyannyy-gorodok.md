@@ -4,7 +4,7 @@ name: "Стеклянный Городок"
 shard: "scorching-shard"
 region: "burning-wastes"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Стеклянный Городок

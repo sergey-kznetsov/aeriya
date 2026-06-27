@@ -4,7 +4,7 @@ name: "Дорожный трактир"
 shard: "middle-lands"
 region: "common"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Дорожный трактир

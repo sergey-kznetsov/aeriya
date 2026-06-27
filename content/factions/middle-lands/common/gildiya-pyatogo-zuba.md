@@ -4,7 +4,7 @@ name: "Гильдия Пятого Зуба"
 shard: "middle-lands"
 region: "common"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Гильдия Пятого Зуба

@@ -4,7 +4,7 @@ name: "Тирон, страж Морнстэда"
 shard: "middle-lands"
 region: "mornsted"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Тирон, страж Морнстэда

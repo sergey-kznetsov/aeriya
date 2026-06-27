@@ -4,7 +4,7 @@ name: "Голос Лавы"
 shard: "scorching-shard"
 region: "fire-canyons"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Голос Лавы

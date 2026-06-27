@@ -4,7 +4,7 @@ name: "Обряд путевого шнура"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "ритуал"
   - "теневой осколок"

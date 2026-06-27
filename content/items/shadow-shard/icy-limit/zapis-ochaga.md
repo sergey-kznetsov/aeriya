@@ -4,7 +4,7 @@ name: "Запись очага"
 shard: "shadow-shard"
 region: "icy-limit"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 tags:
   - "предмет"
   - "теневой осколок"

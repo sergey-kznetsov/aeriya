@@ -4,7 +4,7 @@ name: "Три Тени"
 shard: "scorching-shard"
 region: "burning-wastes"
 source: "new-documents"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Три Тени

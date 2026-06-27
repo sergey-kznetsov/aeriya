@@ -4,7 +4,7 @@ name: "Чёрный чан Варницы"
 shard: "middle-lands"
 region: "varnitsa-chernogo-dyma"
 source: "module-expansion"
-status: "draft-clean-card"
+status: "clean-card"
 ---
 
 # Чёрный чан Варницы
