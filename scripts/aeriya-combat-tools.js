@@ -1,5 +1,5 @@
 const MODULE_ID = "aeriya";
-const SCHEMA = "combat-tools-v2-token-hud";
+const SCHEMA = "combat-tools-v3-token-combat-panel";
 const REACTION_MACRO_NAME = "Аэрия: Реакция в бою";
 
 const REACTION_FLAGS = Object.freeze({
@@ -39,6 +39,11 @@ function canControlActor(actor) {
   return game.user?.isGM || actor.isOwner || actor.testUserPermission?.(game.user, "OWNER");
 }
 
+function esc(value) {
+  const text = String(value ?? "");
+  return foundry?.utils?.escapeHTML?.(text) ?? text.replace(/[&<>"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[char]));
+}
+
 function reactionAvailable(actor) {
   if (!actor) return false;
   return Boolean(actor.getFlag(MODULE_ID, REACTION_FLAGS.available));
@@ -69,7 +74,7 @@ async function recoverReaction(actor, reason = "start-turn") {
   if (reason !== "silent") {
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor }),
-      content: `<p><strong>${actor.name}</strong> восстанавливает реакцию.</p>`
+      content: `<p><strong>${esc(actor.name)}</strong> восстанавливает реакцию.</p>`
     });
   }
   refreshTokenHud();
@@ -88,7 +93,7 @@ async function spendReaction(actor, reason = "reaction") {
   await setReaction(actor, false, reason);
   ChatMessage.create({
     speaker: ChatMessage.getSpeaker({ actor }),
-    content: `<p><strong>${actor.name}</strong> тратит реакцию: ${reactionLabel(reason)}.</p>`
+    content: `<p><strong>${esc(actor.name)}</strong> тратит реакцию: ${esc(reactionLabel(reason))}.</p>`
   });
   refreshTokenHud();
   return true;
@@ -98,7 +103,7 @@ async function announceCombatAction(actor, title, body = "") {
   if (!actor) return false;
   ChatMessage.create({
     speaker: ChatMessage.getSpeaker({ actor }),
-    content: `<div class="aeriya-content"><h3>${title}</h3><p><strong>${actor.name}</strong>${body ? ` ${body}` : ""}</p></div>`
+    content: `<div class="aeriya-content"><h3>${esc(title)}</h3><p><strong>${esc(actor.name)}</strong>${body ? ` ${esc(body)}` : ""}</p></div>`
   });
   return true;
 }
@@ -116,8 +121,8 @@ async function rollReactionRecovery(actor = getTargetActor()) {
   await roll.toMessage({
     speaker: ChatMessage.getSpeaker({ actor }),
     flavor: recovered
-      ? `<strong>${actor.name}</strong> восстанавливает реакцию. Порог: ${threshold}.`
-      : `<strong>${actor.name}</strong> не восстанавливает реакцию. Порог: ${threshold}.`
+      ? `<strong>${esc(actor.name)}</strong> восстанавливает реакцию. Порог: ${threshold}.`
+      : `<strong>${esc(actor.name)}</strong> не восстанавливает реакцию. Порог: ${threshold}.`
   });
   refreshTokenHud();
   return { actor, roll, recovered };
@@ -150,6 +155,10 @@ async function refreshActiveCombatantReaction(combat = game.combat) {
   return true;
 }
 
+function actorItems(actor) {
+  return Array.from(actor?.items ?? []);
+}
+
 function itemActivationType(item) {
   return item?.system?.activation?.type ?? item?.system?.activities?.contents?.[0]?.activation?.type ?? "";
 }
@@ -158,13 +167,84 @@ function itemActionType(item) {
   return item?.system?.actionType ?? item?.system?.activities?.contents?.[0]?.actionType ?? "";
 }
 
+function itemProperties(item) {
+  const props = item?.system?.properties;
+  if (!props) return [];
+  if (props instanceof Set) return Array.from(props);
+  if (Array.isArray(props)) return props;
+  if (typeof props === "object") return Object.entries(props).filter(([, enabled]) => Boolean(enabled)).map(([key]) => key);
+  return [];
+}
+
+function itemQuantity(item) {
+  return item?.system?.quantity ?? item?.system?.uses?.value ?? "";
+}
+
 function isEquipped(item) {
   return item?.system?.equipped !== false;
 }
 
+function canToggleEquipped(item) {
+  return typeof item?.system?.equipped === "boolean";
+}
+
+function isPreparedSpell(item) {
+  const prep = item?.system?.preparation;
+  if (!prep) return true;
+  return prep.mode === "always" || prep.prepared !== false;
+}
+
+function isMagicItem(item) {
+  if (item?.type === "spell") return true;
+  const props = itemProperties(item).map((property) => String(property).toLowerCase());
+  return props.includes("mgc") || props.includes("magic") || props.includes("magical") || /маг|spell|wand|scroll|potion|staff/i.test(item?.name ?? "");
+}
+
+function itemSubtitle(item) {
+  const bits = [];
+  if (item.type) bits.push(item.type);
+  const activation = itemActivationType(item);
+  if (activation) bits.push(`активация: ${activation}`);
+  const actionType = itemActionType(item);
+  if (actionType) bits.push(actionType);
+  const qty = itemQuantity(item);
+  if (qty !== "" && qty !== null && qty !== undefined) bits.push(`кол-во: ${qty}`);
+  if (canToggleEquipped(item)) bits.push(item.system.equipped ? "экипировано" : "не экипировано");
+  if (item.type === "spell") bits.push(isPreparedSpell(item) ? "подготовлено" : "не подготовлено");
+  return bits.join(" · ");
+}
+
+function getWeapons(actor) {
+  return actorItems(actor).filter((item) => item.type === "weapon");
+}
+
+function getInventory(actor) {
+  return actorItems(actor).filter((item) => ["consumable", "loot", "backpack", "container", "tool"].includes(item.type));
+}
+
+function getMagic(actor) {
+  return actorItems(actor).filter(isMagicItem);
+}
+
+function getFeatures(actor) {
+  return actorItems(actor).filter((item) => item.type === "feat" || item.type === "class" || item.type === "subclass");
+}
+
+function getEquipment(actor) {
+  return actorItems(actor).filter((item) => ["equipment", "weapon", "tool"].includes(item.type));
+}
+
+function getEquippedEffects(actor) {
+  const rows = [];
+  for (const item of getEquipment(actor).filter(isEquipped)) {
+    for (const effect of item.effects ?? []) rows.push({ effect, source: item.name, sourceItem: item });
+  }
+  for (const effect of actor?.effects ?? []) rows.push({ effect, source: actor.name, sourceItem: null });
+  return rows;
+}
+
 function findPrimaryAttack(actor) {
-  if (!actor?.items) return null;
-  const items = Array.from(actor.items);
+  const items = actorItems(actor);
   return items.find((item) => item.name === "Основная атака")
     ?? items.find((item) => item.type === "weapon" && isEquipped(item))
     ?? items.find((item) => ["mwak", "rwak", "msak", "rsak"].includes(itemActionType(item)))
@@ -172,8 +252,7 @@ function findPrimaryAttack(actor) {
 }
 
 function findSpecialAction(actor) {
-  if (!actor?.items) return null;
-  const items = Array.from(actor.items);
+  const items = actorItems(actor);
   return items.find((item) => item.name === "Особое действие")
     ?? items.find((item) => /особ|special|feature|приём|прием|способн/i.test(item.name) && itemActivationType(item) !== "passive")
     ?? items.find((item) => item.type === "feat" && itemActivationType(item) === "action");
@@ -198,6 +277,17 @@ async function useItemFromHud(item, actor) {
     actor?.sheet?.render?.(true);
     return false;
   }
+}
+
+async function toggleItemEquipped(item) {
+  if (!item) return false;
+  if (!canToggleEquipped(item)) {
+    item.sheet?.render?.(true);
+    return false;
+  }
+  await item.update({ "system.equipped": !item.system.equipped });
+  refreshTokenHud();
+  return true;
 }
 
 async function usePrimaryAttack(actor = getTargetActor()) {
@@ -252,6 +342,137 @@ async function finishTurn(actor = getTargetActor()) {
   return true;
 }
 
+function itemRows(actor, items) {
+  if (!items.length) return `<p class="aeriya-combat-browser__empty">Нет подходящих элементов.</p>`;
+  return `<div class="aeriya-combat-browser__list">${items.map((item) => `
+    <div class="aeriya-combat-browser__item" data-item-id="${esc(item.id)}">
+      <img src="${esc(item.img ?? "icons/svg/item-bag.svg")}" alt="" />
+      <div class="aeriya-combat-browser__body">
+        <strong>${esc(item.name)}</strong>
+        <span>${esc(itemSubtitle(item))}</span>
+      </div>
+      <div class="aeriya-combat-browser__actions">
+        <button type="button" data-aeriya-item-action="use">Применить</button>
+        ${canToggleEquipped(item) ? `<button type="button" data-aeriya-item-action="equip">${item.system.equipped ? "Снять" : "Экип."}</button>` : ""}
+        <button type="button" data-aeriya-item-action="open">Лист</button>
+      </div>
+    </div>
+  `).join("")}</div>`;
+}
+
+function getHtmlElement(html) {
+  if (!html) return null;
+  if (html instanceof HTMLElement) return html;
+  if (html[0] instanceof HTMLElement) return html[0];
+  return null;
+}
+
+function openItemBrowser(actor, title, items) {
+  if (!actor) return ui.notifications?.warn("Aeria Core: выбери токен."), null;
+  const dialog = new Dialog({
+    title: `${title}: ${actor.name}`,
+    content: `<div class="aeriya-combat-browser">${itemRows(actor, items)}</div>`,
+    buttons: { close: { label: "Закрыть" } },
+    render: (html) => {
+      const root = getHtmlElement(html);
+      if (!root) return;
+      root.addEventListener("click", async (event) => {
+        const buttonEl = event.target.closest("[data-aeriya-item-action]");
+        if (!buttonEl) return;
+        event.preventDefault();
+        event.stopPropagation();
+        const row = buttonEl.closest("[data-item-id]");
+        const item = actor.items.get(row?.dataset?.itemId);
+        if (!item) return;
+        const action = buttonEl.dataset.aeriyaItemAction;
+        if (action === "use") await useItemFromHud(item, actor);
+        if (action === "equip") await toggleItemEquipped(item);
+        if (action === "open") item.sheet?.render?.(true);
+      });
+    }
+  }, { width: 620, resizable: true });
+  dialog.render(true);
+  return dialog;
+}
+
+function effectRows(actor, rows) {
+  if (!rows.length) return `<p class="aeriya-combat-browser__empty">Нет активных эффектов или эффектов экипировки.</p>`;
+  return `<div class="aeriya-combat-browser__list">${rows.map(({ effect, source }) => `
+    <div class="aeriya-combat-browser__item" data-effect-id="${esc(effect.id)}" data-effect-parent="${esc(effect.parent?.id ?? "")}">
+      <img src="${esc(effect.img ?? effect.icon ?? "icons/svg/aura.svg")}" alt="" />
+      <div class="aeriya-combat-browser__body">
+        <strong>${esc(effect.name ?? effect.label ?? "Эффект")}</strong>
+        <span>${esc(source)} · ${effect.disabled ? "выключен" : "активен"}</span>
+      </div>
+      <div class="aeriya-combat-browser__actions">
+        <button type="button" data-aeriya-effect-action="toggle">${effect.disabled ? "Вкл." : "Выкл."}</button>
+        <button type="button" data-aeriya-effect-action="open">Лист</button>
+      </div>
+    </div>
+  `).join("")}</div>`;
+}
+
+function findEffectById(actor, id) {
+  const actorEffect = actor.effects?.get?.(id);
+  if (actorEffect) return actorEffect;
+  for (const item of actorItems(actor)) {
+    const itemEffect = item.effects?.get?.(id);
+    if (itemEffect) return itemEffect;
+  }
+  return null;
+}
+
+function openEffectsBrowser(actor) {
+  if (!actor) return ui.notifications?.warn("Aeria Core: выбери токен."), null;
+  const rows = getEquippedEffects(actor);
+  const dialog = new Dialog({
+    title: `Эффекты: ${actor.name}`,
+    content: `<div class="aeriya-combat-browser">${effectRows(actor, rows)}</div>`,
+    buttons: { close: { label: "Закрыть" } },
+    render: (html) => {
+      const root = getHtmlElement(html);
+      if (!root) return;
+      root.addEventListener("click", async (event) => {
+        const buttonEl = event.target.closest("[data-aeriya-effect-action]");
+        if (!buttonEl) return;
+        event.preventDefault();
+        event.stopPropagation();
+        const row = buttonEl.closest("[data-effect-id]");
+        const effect = findEffectById(actor, row?.dataset?.effectId);
+        if (!effect) return;
+        const action = buttonEl.dataset.aeriyaEffectAction;
+        if (action === "toggle") {
+          await effect.update({ disabled: !effect.disabled });
+          refreshTokenHud();
+        }
+        if (action === "open") effect.sheet?.render?.(true);
+      });
+    }
+  }, { width: 620, resizable: true });
+  dialog.render(true);
+  return dialog;
+}
+
+function openWeapons(actor = getTargetActor()) {
+  return openItemBrowser(actor, "Оружие", getWeapons(actor));
+}
+
+function openInventory(actor = getTargetActor()) {
+  return openItemBrowser(actor, "Инвентарь", getInventory(actor));
+}
+
+function openMagic(actor = getTargetActor()) {
+  return openItemBrowser(actor, "Магия", getMagic(actor));
+}
+
+function openFeatures(actor = getTargetActor()) {
+  return openItemBrowser(actor, "Особенности", getFeatures(actor));
+}
+
+function openEquipment(actor = getTargetActor()) {
+  return openItemBrowser(actor, "Экипировка", getEquipment(actor));
+}
+
 async function openReactionDialog(actor = getTargetActor()) {
   if (!actor) {
     ui.notifications?.warn("Aeria Core: выбери токен или активного участника боя.");
@@ -260,28 +481,13 @@ async function openReactionDialog(actor = getTargetActor()) {
 
   return Dialog.wait({
     title: REACTION_MACRO_NAME,
-    content: `<p><strong>${actor.name}</strong></p><p>Статус реакции: ${reactionAvailable(actor) ? "доступна" : "потрачена"}.</p>`,
+    content: `<p><strong>${esc(actor.name)}</strong></p><p>Статус реакции: ${reactionAvailable(actor) ? "доступна" : "потрачена"}.</p>`,
     buttons: {
-      parry: {
-        label: "Парирование",
-        callback: () => useParry(actor)
-      },
-      counterattack: {
-        label: "Контратака",
-        callback: () => useCounterattack(actor)
-      },
-      dodgeReaction: {
-        label: "Уклонение реакцией",
-        callback: () => spendReaction(actor, "dodge")
-      },
-      recover: {
-        label: "Восстановить",
-        callback: () => recoverReaction(actor, "manual")
-      },
-      roll: {
-        label: "Бросок восстановления 1к10",
-        callback: () => rollReactionRecovery(actor)
-      }
+      parry: { label: "Парирование", callback: () => useParry(actor) },
+      counterattack: { label: "Контратака", callback: () => useCounterattack(actor) },
+      dodgeReaction: { label: "Уклонение реакцией", callback: () => spendReaction(actor, "dodge") },
+      recover: { label: "Восстановить", callback: () => recoverReaction(actor, "manual") },
+      roll: { label: "Бросок восстановления 1к10", callback: () => rollReactionRecovery(actor) }
     },
     default: "parry"
   });
@@ -299,13 +505,6 @@ async function ensureReactionMacro() {
   return Macro.create(data);
 }
 
-function getHtmlElement(html) {
-  if (!html) return null;
-  if (html instanceof HTMLElement) return html;
-  if (html[0] instanceof HTMLElement) return html[0];
-  return null;
-}
-
 function getHudActor(app, data) {
   return app?.object?.actor
     ?? data?.object?.actor
@@ -314,7 +513,11 @@ function getHudActor(app, data) {
 }
 
 function button(label, action, title = label, disabled = false) {
-  return `<button type="button" class="aeriya-combat-hud__btn" data-aeriya-combat-action="${action}" title="${title}" ${disabled ? "disabled" : ""}>${label}</button>`;
+  return `<button type="button" class="aeriya-combat-hud__btn" data-aeriya-combat-action="${action}" title="${esc(title)}" ${disabled ? "disabled" : ""}>${esc(label)}</button>`;
+}
+
+function countLabel(label, count) {
+  return `${label}${Number.isFinite(count) ? ` (${count})` : ""}`;
 }
 
 function renderCombatHud(app, html, data) {
@@ -330,25 +533,44 @@ function renderCombatHud(app, html, data) {
   const isTurn = activeCombatantActor()?.id === actor.id;
   const attack = findPrimaryAttack(actor);
   const special = findSpecialAction(actor);
+  const weapons = getWeapons(actor);
+  const inventory = getInventory(actor);
+  const magic = getMagic(actor);
+  const features = getFeatures(actor);
+  const equipment = getEquipment(actor);
+  const effects = getEquippedEffects(actor);
 
   const panel = document.createElement("div");
   panel.className = HUD_ID;
   panel.innerHTML = `
     <div class="aeriya-combat-hud__title">Аэрия: бой ${isTurn ? "· ход" : ""}</div>
+    <div class="aeriya-combat-hud__section">Лист</div>
+    <div class="aeriya-combat-hud__row aeriya-combat-hud__row--3">
+      ${button(countLabel("Оружие", weapons.length), "weapons", "Открыть оружие")}
+      ${button(countLabel("Инвентарь", inventory.length), "inventory", "Открыть инвентарь")}
+      ${button(countLabel("Магия", magic.length), "magic", "Открыть магию и магические предметы")}
+    </div>
+    <div class="aeriya-combat-hud__row aeriya-combat-hud__row--3">
+      ${button(countLabel("Особенности", features.length), "features", "Открыть особенности")}
+      ${button(countLabel("Экипировка", equipment.length), "equipment", "Открыть экипировку")}
+      ${button(countLabel("Эффекты", effects.length), "effects", "Открыть активные эффекты и эффекты экипировки")}
+    </div>
+    <div class="aeriya-combat-hud__section">Быстро</div>
     <div class="aeriya-combat-hud__row">
       ${button("Атака", "attack", attack ? `Использовать: ${attack.name}` : "Атака не найдена")}
       ${button("Особое", "special", special ? `Использовать: ${special.name}` : "Особое действие")}
       ${button("Слабое место", "weakspot", "Выцелить слабое место")}
       ${button("Уклонение", "dodge", "Защитное действие")}
     </div>
+    <div class="aeriya-combat-hud__section">Реакция</div>
     <div class="aeriya-combat-hud__row">
       ${button("Парирование", "parry", "Потратить реакцию на парирование", !available)}
       ${button("Контратака", "counterattack", "Потратить реакцию и выполнить атаку", !available)}
-      ${button("Реакция 1к10", "recovery", "Бросок восстановления реакции")}
+      ${button("1к10", "recovery", "Бросок восстановления реакции")}
       ${button("Вернуть", "recover", "Вернуть реакцию вручную")}
     </div>
-    <div class="aeriya-combat-hud__row">
-      ${button("Лист", "sheet", "Открыть лист персонажа")}
+    <div class="aeriya-combat-hud__row aeriya-combat-hud__row--2">
+      ${button("Лист Actor", "sheet", "Открыть полный лист")}
       ${button("Конец хода", "endturn", "Передать ход")}
     </div>
     <div class="aeriya-combat-hud__state">Реакция: ${available ? "доступна" : "потрачена"}</div>
@@ -361,6 +583,12 @@ function renderCombatHud(app, html, data) {
     event.stopPropagation();
     const action = target.dataset.aeriyaCombatAction;
     const currentActor = getHudActor(app, data) ?? actor;
+    if (action === "weapons") openWeapons(currentActor);
+    if (action === "inventory") openInventory(currentActor);
+    if (action === "magic") openMagic(currentActor);
+    if (action === "features") openFeatures(currentActor);
+    if (action === "equipment") openEquipment(currentActor);
+    if (action === "effects") openEffectsBrowser(currentActor);
     if (action === "attack") await usePrimaryAttack(currentActor);
     if (action === "special") await useSpecialAction(currentActor);
     if (action === "weakspot") await useWeakSpot(currentActor);
@@ -394,7 +622,7 @@ function injectCombatHudStyles() {
       position: absolute;
       right: 52px;
       top: -4px;
-      min-width: 292px;
+      min-width: 356px;
       padding: 8px;
       border: 1px solid rgba(180, 150, 90, 0.9);
       border-radius: 8px;
@@ -411,14 +639,24 @@ function injectCombatHudStyles() {
       font-weight: 700;
       text-align: center;
     }
+    .aeriya-combat-hud__section {
+      margin: 5px 0 3px;
+      color: #c9ad72;
+      font-size: 10px;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
     .aeriya-combat-hud__row {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 4px;
       margin-bottom: 4px;
     }
+    .aeriya-combat-hud__row--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .aeriya-combat-hud__row--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .aeriya-combat-hud__btn {
-      min-height: 24px;
+      min-height: 25px;
       padding: 2px 4px;
       border: 1px solid rgba(210, 180, 110, 0.7);
       border-radius: 4px;
@@ -427,6 +665,9 @@ function injectCombatHudStyles() {
       font-size: 11px;
       line-height: 1.1;
       cursor: pointer;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .aeriya-combat-hud__btn:hover:not(:disabled) {
       background: rgba(104, 73, 35, 0.98);
@@ -440,6 +681,58 @@ function injectCombatHudStyles() {
       font-size: 11px;
       line-height: 1.2;
       text-align: center;
+    }
+    .aeriya-combat-browser__list {
+      display: grid;
+      gap: 6px;
+      max-height: 520px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+    .aeriya-combat-browser__item {
+      display: grid;
+      grid-template-columns: 36px 1fr auto;
+      gap: 8px;
+      align-items: center;
+      padding: 6px;
+      border: 1px solid rgba(150, 130, 90, 0.45);
+      border-radius: 6px;
+      background: rgba(0,0,0,0.18);
+    }
+    .aeriya-combat-browser__item img {
+      width: 36px;
+      height: 36px;
+      object-fit: cover;
+      border: 1px solid rgba(180, 150, 90, 0.55);
+      border-radius: 4px;
+    }
+    .aeriya-combat-browser__body strong {
+      display: block;
+      font-size: 13px;
+      line-height: 1.2;
+    }
+    .aeriya-combat-browser__body span {
+      display: block;
+      color: #7b6c52;
+      font-size: 11px;
+      line-height: 1.2;
+      margin-top: 2px;
+    }
+    .aeriya-combat-browser__actions {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .aeriya-combat-browser__actions button {
+      min-height: 24px;
+      padding: 2px 7px;
+      font-size: 11px;
+    }
+    .aeriya-combat-browser__empty {
+      margin: 0;
+      padding: 10px;
+      color: #6d6048;
     }
   `;
   document.head.append(style);
@@ -464,7 +757,7 @@ function registerSettings() {
   });
   game.settings.register(MODULE_ID, "showCombatTokenHud", {
     name: "Aeria Core: боевая панель на токене",
-    hint: "Показывает боевые кнопки Аэрии в Token HUD во время активного боя.",
+    hint: "Показывает боевой лист Аэрии в Token HUD во время активного боя: оружие, инвентарь, магия, особенности, экипировка, эффекты и реакции.",
     scope: "world",
     config: true,
     type: Boolean,
@@ -491,7 +784,13 @@ function exposeApi() {
     useWeakSpot,
     useParry,
     useCounterattack,
-    finishTurn
+    finishTurn,
+    openWeapons,
+    openInventory,
+    openMagic,
+    openFeatures,
+    openEquipment,
+    openEffectsBrowser
   };
 }
 
@@ -508,6 +807,12 @@ Hooks.once("ready", async () => {
 Hooks.on("renderTokenHUD", renderCombatHud);
 Hooks.on("controlToken", () => window.setTimeout(refreshTokenHud, 80));
 Hooks.on("updateActor", () => window.setTimeout(refreshTokenHud, 80));
+Hooks.on("createItem", () => window.setTimeout(refreshTokenHud, 80));
+Hooks.on("updateItem", () => window.setTimeout(refreshTokenHud, 80));
+Hooks.on("deleteItem", () => window.setTimeout(refreshTokenHud, 80));
+Hooks.on("createActiveEffect", () => window.setTimeout(refreshTokenHud, 80));
+Hooks.on("updateActiveEffect", () => window.setTimeout(refreshTokenHud, 80));
+Hooks.on("deleteActiveEffect", () => window.setTimeout(refreshTokenHud, 80));
 
 Hooks.on("createCombat", async (combat) => {
   await resetCombatReactions(combat);
