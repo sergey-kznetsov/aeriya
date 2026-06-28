@@ -489,14 +489,6 @@ async function importScenes({ overwrite = false } = {}) {
   try { scenesData = JSON.parse(await fetchText("content/generated/scenes-data.json")); }
   catch (error) { result.failed.push({ sourcePath: "content/generated/scenes-data.json", error: error.message }); return result; }
 
-  if (overwrite) {
-    const manifestPaths = new Set(scenesData.map(scene => scene.sourcePath));
-    const obsolete = game.scenes.filter(scene => {
-      const sourcePath = scene.getFlag(MODULE_ID, "sourcePath");
-      return sourcePath && !manifestPaths.has(sourcePath) && scene.getFlag(MODULE_ID, "documentKind") === "scene";
-    });
-    if (obsolete.length > 0) await Scene.deleteDocuments(obsolete.map(scene => scene.id));
-  }
 
   for (const spec of scenesData) {
     try {
