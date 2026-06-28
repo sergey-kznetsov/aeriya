@@ -1,13 +1,13 @@
 {
   "id": "aeriya",
   "title": "Aeria Core",
-  "description": "Модуль Foundry VTT для кампаний в мире Аэрии: лор, города, фракции, духи, бестиарий, квесты, атласы, дорожные байки, легенды, предания, предсказания и пророчества. Полный автоимпорт при включении у GM.",
+  "description": "Модуль Foundry VTT для кампаний в мире Аэрии: лор, города, фракции, духи, бестиарий, квесты, атласы, дорожные байки, легенды, предания, предсказания и пророчества. Безопасный автоимпорт у GM: пользовательские сцены, токены, стены, заметки, плитки, актёры и журналы не удаляются обновлятором.",
   "authors": [
     {
       "name": "Сергей"
     }
   ],
-  "version": "0.3.20",
+  "version": "0.3.21",
   "compatibility": {
     "minimum": "13",
     "verified": "13.350"
@@ -29,6 +29,7 @@
   "esmodules": [
     "scripts/aeriya-core.js",
     "scripts/aeriya-content-importer.js",
+    "scripts/aeriya-world-protection.js",
     "scripts/aeriya-book-scenes.js",
     "scripts/aeriya-scene-cleanup.js",
     "scripts/aeriya-external-bestiary-data-enoa.js",
@@ -43,7 +44,9 @@
     "scripts/aeriya-calendar.js",
     "scripts/aeriya-travel.js",
     "scripts/aeriya-travel-roles.js",
-    "scripts/aeriya-travel-role-ui.js"
+    "scripts/aeriya-travel-role-ui.js",
+    "scripts/aeriya-combat-tools.js",
+    "scripts/aeriya-safe-content-guard.js"
   ],
   "styles": [
     "styles/aeriya.css"
