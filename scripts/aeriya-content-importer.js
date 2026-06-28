@@ -544,4 +544,4 @@ class AeriyaContentBootstrap {
 }
 
 Hooks.once("init", () => { AeriyaContentBootstrap.registerSettings(); });
-Hooks.once("ready", () => { AeriyaContentBootstrap.exposeApi(); AeriyaContentBootstrap.runAutoImport(); });
+Hooks.once("ready", () => { AeriyaContentBootstrap.exposeApi(); });
