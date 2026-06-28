@@ -504,7 +504,11 @@ async function importScenes({ overwrite = false } = {}) {
       if (existing && !overwrite) { result.skipped += 1; continue; }
       const folder = await getOrCreateFolder("Scene", spec.folder || "Aeria Core / Сцены");
       const sceneData = { name: spec.name, folder: folder.id, width: existing?.width || 1600, height: existing?.height || 900, padding: 0, background: { src: "" }, grid: { type: 0, size: 100, distance: 5, units: "ft" }, tokenVision: false, fogExploration: false, navigation: false, darkness: 0, notes: [], tokens: [], tiles: [], walls: [], lights: [], sounds: [], drawings: [], flags: { [MODULE_ID]: { sourcePath: spec.sourcePath, documentKind: "scene", shard: spec.shard || "", region: spec.region || "", locationType: spec.type || "", description: spec.description || "", displayMode: "show-only-city-image", tacticalMap: false, playerMovement: false, importSchema: IMPORT_SCHEMA_VERSION } } };
-      if (existing && overwrite) { const update = { ...sceneData }; if (existing.background?.src) delete update.background; await existing.update(update); result.updated += 1; }
+      if (existing && overwrite) {
+        // Only update folder and module flags — never touch user content (tokens, walls, tiles, lights, etc.)
+        await existing.update({ name: sceneData.name, folder: sceneData.folder, flags: sceneData.flags });
+        result.updated += 1;
+      }
       else { await Scene.create(sceneData); result.created += 1; }
     } catch (error) { result.failed.push({ sourcePath: spec.sourcePath, error: error.message }); }
   }
